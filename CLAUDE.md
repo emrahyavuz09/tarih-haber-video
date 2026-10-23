@@ -34,7 +34,10 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
    Görsel olarak anlatılabilir (harita, savaş düzeni, karakterler), merak uyandıran bir konu seç. Klasör: `episodes/YYYY-MM-DD-kisa-ad/`.
 2. **Araştırma:** WebSearch/WebFetch ile en az 2 kaynak. Önemli bilgileri ve kaynak URL'lerini `notes.md`'ye yaz.
 3. **Metin:** `script.txt` (kurallar 1, 3, 4).
-4. **Ses (ElevenLabs bağlayıcısı):** `creative_create_flow` → `creative_generate_speech` (voice_id ve model yukarıda, prompt = script)
+4. **Ses (ElevenLabs bağlayıcısı):** Önce `creative_generate_speech` ile `estimate_only: true` çağır. Kredi yetersizlik hatası dönerse DUR:
+   video yayınlama, kullanıcıya "ElevenLabs kredin yetersiz, yükleme yap" bildirimi gönder. Tahmini krediyi `credits.md`'ye (tarih, kredi) ekle;
+   bu dosyada `Aylık kota:` yazıyorsa ve ayın toplamı kotanın %80'ini geçtiyse özet mesajında uyar.
+   Sonra `creative_create_flow` → `creative_generate_speech` (voice_id ve model yukarıda, prompt = script)
    → `creative_get_flow_run_status` ile tamamlanana kadar bekle → ilk okumanın `content_url`'ini `voice.mp3` olarak indir (curl).
    Aynı okumayı `creative_add_flow_asset_node` (generation_id) ile düğüme koy → `creative_transcribe_audio` (eleven_scribe_v1, connect_from)
    → bitince `words_download_url`'i `words.json` olarak indir. Üretimi asla yeniden deneme (kredi harcar).
