@@ -1,6 +1,6 @@
 # ElevenLabs kredi kaydı
 
-Aylık kota: (bilinmiyor)
+Aylık kota: 130000
 
 | Tarih | Kredi | Not |
 |---|---|---|
