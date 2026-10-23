@@ -25,7 +25,13 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
    Uydurma alıntı yok; rivayet ise öyle söyle. Kaynaklar YouTube açıklamasının en altına yazılır.
 4. **Seslendirme metni:** Sayılar yazıyla ("bin yetmiş bir"), noktalama tempoyu belirler (hızlı ses: kısa cümleler, "..." gerilim için).
    130–170 kelime. Son cümle güçlü bir kapanış.
-5. Konu tekrarı yok: `topics.md` listesine bak. Dönemleri çeşitlendir (Hun, Göktürk, Selçuklu, Osmanlı, Cumhuriyet, dünya tarihi, ilginç olaylar).
+5. **Milli değerler (çok önemli):** Türk Bayrağı yalnızca `turkFlag` / `flagPole` ile çizilir (resmî oranlar ve renk #E30A17).
+   Bayrak asla ters, yamuk, yerde, yırtık, yanarken ya da olumsuz bir sahnenin parçası olarak gösterilmez. Hilal ve yıldız elle çizilmez.
+   Atatürk yalnızca `ataturk()` şablonuyla, her zaman ağırbaşlı, saygın ve kahramanca çizilir: karikatür, komik ifade, abartı ya da alay yok.
+   Ağzı konuşurken bile oynatılmaz, alıntı balonu kullanılırsa sözü kelimesi kelimesine doğru ve kaynaklı olmalıdır.
+   Osmanlı padişahları (`padisah()`), Türk hükümdarları ve şehitler onurlu çizilir. Türk milletini, devletini ya da kurucularını küçük düşüren
+   espri, ifade ya da görsel yok. Tartışmalı siyasi konulara girilmez. Şüpheye düşersen daha saygılı olanı seç.
+6. Konu tekrarı yok: `topics.md` listesine bak. Dönemleri çeşitlendir (Hun, Göktürk, Selçuklu, Osmanlı, Cumhuriyet, dünya tarihi, ilginç olaylar).
 
 ## Günlük adımlar
 0. **Hazırlık:** Depo `/home/claude/tarih-haber-video` altında değilse `add_repo` (emrahyavuz09/tarih-haber-video, push) ile ekle ve klonla.
@@ -33,18 +39,18 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
 1. **Konu:** `topics.md`'yi oku. Gerekirse WebSearch ile bugünün tarihine denk gelen olaylara ve Türk tarih kanallarında tutan konulara bak.
    Görsel olarak anlatılabilir (harita, savaş düzeni, karakterler), merak uyandıran bir konu seç. Klasör: `episodes/YYYY-MM-DD-kisa-ad/`.
 2. **Araştırma:** WebSearch/WebFetch ile en az 2 kaynak. Önemli bilgileri ve kaynak URL'lerini `notes.md`'ye yaz.
-3. **Metin:** `script.txt` (kurallar 1, 3, 4).
+3. **Metin:** `script.txt` (kurallar 1, 3, 4, 5).
 4. **Ses (ElevenLabs bağlayıcısı):** Önce `creative_generate_speech` ile `estimate_only: true` çağır. Kredi yetersizlik hatası dönerse DUR:
    video yayınlama, kullanıcıya "ElevenLabs kredin yetersiz, yükleme yap" bildirimi gönder. Tahmini krediyi `credits.md`'ye (tarih, kredi) ekle;
    bu dosyada `Aylık kota:` yazıyorsa ve ayın toplamı kotanın %80'ini geçtiyse özet mesajında uyar.
-   Sonra `creative_create_flow` → `creative_generate_speech` (voice_id ve model yukarıda, prompt = script)
+   Sonra `creative_create_flow` → `creative_generate_speech` (voice_id ve model yukarıda, prompt = script, **`generations_count: 1`** — kullanıcı tek okuma istedi)
    → `creative_get_flow_run_status` ile tamamlanana kadar bekle → ilk okumanın `content_url`'ini `voice.mp3` olarak indir (curl).
    Aynı okumayı `creative_add_flow_asset_node` (generation_id) ile düğüme koy → `creative_transcribe_audio` (eleven_scribe_v1, connect_from)
    → bitince `words_download_url`'i `words.json` olarak indir. Üretimi asla yeniden deneme (kredi harcar).
 5. **Sahneler:** `scenes.js` yaz. `SCENES = [{s, e, draw(ctx, lt, d)}]`, `KEY = [...]` (BÜYÜK HARF anahtar kelimeler), `DURATION = son kelime bitişi + 2.2`,
    `OUTRO_AT = DURATION - 1.6`. Sahne sınırlarını `words.json` zamanlarına göre koy; 12–16 sahne, her biri 2,5–7 sn.
    İlk sahne hookCard. Kütüphane (`engine/lib.js`): `bg, camera(sahne dosyasında tanımla), tag, bigText, stamp, boxStamp, bubble, pin, arrow,
-   curvePts, shape, ell, line, pawn, sword, alparslan, diyojen (taçlı hükümdar şablonu), crown, horseArcher, arrowShot, yurt, chainLink,
+   curvePts, shape, ell, line, pawn, sword, alparslan, diyojen (taçlı hükümdar şablonu), padisah, ataturk ({kalpak:true} Kurtuluş Savaşı), turkFlag, flagPole, crown, horseArcher, arrowShot, yurt, chainLink,
    drawSea, drawLand, proj, ANATOLIA, THRACE, mountains, paperTex`. Yeni figür gerekiyorsa lib.js'e genel fonksiyon olarak ekle (sonraki günler de kullanır).
 6. **Kontrol:** `node engine/render.js episodes/<klasör> stills` → kareleri tek bir temas sayfasında birleştir (PIL) ve **Read ile bak**.
    Taşma, üst üste binme, okunmayan yazı, boş sahne varsa düzelt ve tekrar bak. Temiz olana kadar yayına geçme.

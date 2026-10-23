@@ -352,3 +352,79 @@ function render(t) {
   if (typeof OUTRO_AT !== 'undefined' && t >= OUTRO_AT) { ctx.save(); outro(ctx, t - OUTRO_AT); ctx.restore(); }
   drawCaption(ctx, t, typeof KEY !== 'undefined' ? KEY : []);
 }
+
+// ---------- MİLLİ DEĞERLER: saygılı, doğru çizimler ----------
+// Türk Bayrağı — resmî oranlar (Türk Bayrağı Kanunu): en/boy 2:3, hilal ve yıldız ölçüleri birebir.
+// x,y: bayrağın sol üst köşesi, h: yükseklik (G). wave: 0..1 hafif dalgalanma (oranları bozmaz, sadece gölgelendirir)
+function turkFlag(ctx, x, y, h, wave = 0, t = 0) {
+  const G = h, L = 1.5 * G, R = '#E30A17';
+  ctx.save(); ctx.translate(x, y);
+  ctx.fillStyle = R; ctx.fillRect(0, 0, L, G);
+  const k = G / 800; // SVG referansı (1200x800)
+  ctx.fillStyle = '#fff'; ctx.beginPath(); ctx.arc(425 * k, 400 * k, 200 * k, 0, 7); ctx.fill();
+  ctx.fillStyle = R; ctx.beginPath(); ctx.arc(475 * k, 400 * k, 160 * k, 0, 7); ctx.fill();
+  const sx = 683.334 * k, sy = 400 * k, sr = 100 * k; ctx.fillStyle = '#fff'; ctx.beginPath();
+  for (let i = 0; i < 10; i++) { const a = Math.PI + i * Math.PI / 5; const r = i % 2 ? sr * 0.381966 : sr; ctx.lineTo(sx + Math.cos(a) * r, sy + Math.sin(a) * r); }
+  ctx.closePath(); ctx.fill();
+  if (wave > 0) { // dalga gölgesi
+    for (let i = 0; i < 4; i++) { const gx = ((i / 4 + t * .25) % 1) * L; const g = ctx.createLinearGradient(gx - L * .12, 0, gx + L * .12, 0);
+      g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(.5, `rgba(0,0,0,${.12 * wave})`); g.addColorStop(1, 'rgba(0,0,0,0)'); ctx.fillStyle = g; ctx.fillRect(0, 0, L, G); }
+  }
+  ctx.strokeStyle = C.ink; ctx.lineWidth = Math.max(3, G * .012); ctx.strokeRect(0, 0, L, G);
+  ctx.restore();
+}
+// Direkli bayrak: direk dibi (x,y), bayrak yüksekliği h
+function flagPole(ctx, x, y, poleH, h, wave = .6, t = 0) {
+  line(ctx, [[x, y], [x, y - poleH]], '#6e4a2c', Math.max(8, h * .06), .5);
+  ell(ctx, x, y - poleH - 8, 12, 12, C.gold, C.ink, 3);
+  turkFlag(ctx, x + 4, y - poleH, h, wave, t);
+}
+// Atatürk büstü — her zaman ağırbaşlı ve saygılı (karikatür YOK). o.kalpak: true ise kalpaklı (Kurtuluş Savaşı), değilse takım elbise
+function ataturk(ctx, x, y, s, o = {}) {
+  if (o.kalpak && o.uniform === undefined) o.uniform = true;
+  const dir = o.dir || 1; ctx.save(); ctx.translate(x, y); ctx.scale(s * dir, s);
+  // ceket
+  shape(ctx, [[-170, 260], [-162, 118], [-112, 70], [-40, 52], [40, 52], [112, 70], [162, 118], [170, 260]], o.uniform ? '#6b6a4a' : '#3a3f47', C.ink, 6);
+  shape(ctx, [[-40, 52], [0, 170], [40, 52]], '#f4f1ea', C.ink, 5); // gömlek
+  if (!o.uniform) { shape(ctx, [[-10, 70], [10, 70], [16, 150], [0, 172], [-16, 150]], '#2a2d33', C.ink, 3); // kravat
+    shape(ctx, [[-40, 52], [-74, 150], [-20, 230], [0, 170]], '#3a3f47', C.ink, 5); shape(ctx, [[40, 52], [74, 150], [20, 230], [0, 170]], '#3a3f47', C.ink, 5); }
+  else { [-60, 60].forEach(px => ell(ctx, px, 140, 7, 7, C.gold, C.ink, 2)); }
+  shape(ctx, [[-26, 60], [-24, 20], [24, 20], [26, 60]], C.skin, C.ink, 5);
+  ell(ctx, 0, -42, 66, 84, C.skin, C.ink, 6);
+  ell(ctx, -66, -38, 11, 17, C.skin, C.ink, 4); ell(ctx, 66, -38, 11, 17, C.skin, C.ink, 4);
+  // keskin, kararlı bakış: açık mavi gözler, belirgin kaşlar
+  ell(ctx, -25, -50, 9, 7, '#fff', C.ink, 3); ell(ctx, 25, -50, 9, 7, '#fff', C.ink, 3);
+  ell(ctx, -25, -50, 4.5, 5, '#5b8fb9', null); ell(ctx, 25, -50, 4.5, 5, '#5b8fb9', null);
+  line(ctx, [[-46, -70], [-26, -76], [-8, -68]], '#7a5a32', 8); line(ctx, [[8, -68], [26, -76], [46, -70]], '#7a5a32', 8);
+  line(ctx, [[0, -46], [-5, -14], [6, -12]], C.ink, 4);
+  line(ctx, [[-18, 22], [0, 20], [18, 22]], C.ink, 4); // ciddi, sakin ağız
+  line(ctx, [[-30, 4], [-22, 10]], 'rgba(42,29,21,.5)', 3); line(ctx, [[30, 4], [22, 10]], 'rgba(42,29,21,.5)', 3);
+  if (o.kalpak) {
+    shape(ctx, [[-70, -96], [-74, -150], [-60, -196], [60, -196], [74, -150], [70, -96]], '#2b2420', C.ink, 6);
+    for (let i = -56; i <= 56; i += 14) line(ctx, [[i, -186], [i + 4, -106]], '#4a3e36', 3);
+  } else { // geriye taranmış açık kumral saç
+    shape(ctx, [[-66, -70], [-70, -110], [-48, -138], [0, -150], [48, -138], [70, -110], [66, -70], [44, -100], [0, -112], [-44, -100]], '#b8956a', C.ink, 5);
+    for (let i = -40; i <= 40; i += 20) line(ctx, [[i, -108], [i * 1.1, -140]], '#8c6d48', 3);
+  }
+  ctx.restore();
+}
+// Osmanlı padişahı büstü — kavuk (büyük beyaz sarık), kürk yakalı kaftan, sakal. Ağırbaşlı çizilir.
+function padisah(ctx, x, y, s, o = {}) {
+  const dir = o.dir || 1; ctx.save(); ctx.translate(x, y); ctx.scale(s * dir, s);
+  shape(ctx, [[-170, 260], [-160, 120], [-110, 70], [-40, 52], [40, 52], [110, 70], [160, 120], [170, 260]], o.kaftan || '#2f6b4f', C.ink, 6);
+  shape(ctx, [[-120, 74], [-40, 52], [-20, 260], [-90, 260]], '#8a6a48', C.ink, 5); shape(ctx, [[120, 74], [40, 52], [20, 260], [90, 260]], '#8a6a48', C.ink, 5); // kürk yaka
+  for (let i = 0; i < 4; i++) ell(ctx, 0, 110 + i * 38, 7, 7, C.gold, C.ink, 2);
+  shape(ctx, [[-26, 60], [-24, 20], [24, 20], [26, 60]], C.skin, C.ink, 5);
+  ell(ctx, 0, -40, 68, 82, C.skin, C.ink, 6);
+  ell(ctx, -26, -46, 6, 7, C.ink, null); ell(ctx, 26, -46, 6, 7, C.ink, null);
+  line(ctx, [[-44, -68], [-12, -64]], C.ink, 7); line(ctx, [[12, -64], [44, -68]], C.ink, 7);
+  line(ctx, [[0, -42], [-6, -12], [6, -10]], C.ink, 4);
+  shape(ctx, [[-66, -24], [-62, 26], [-36, 74], [0, 92], [36, 74], [62, 26], [66, -24], [40, 4], [0, 10], [-40, 4]], o.beard || '#3b2a1e', C.ink, 4);
+  shape(ctx, [[0, 4], [-40, 14], [-56, 30], [-30, 24], [0, 18], [30, 24], [56, 30], [40, 14]], o.beard || '#3b2a1e', C.ink, 3);
+  // kavuk
+  ell(ctx, 0, -150, 104, 76, '#f6f1e6', C.ink, 6);
+  for (let i = -2; i <= 2; i++) line(ctx, [[i * 34 - 20, -212], [i * 34 + 20, -94]], 'rgba(42,29,21,.35)', 3);
+  shape(ctx, [[-26, -222], [-20, -258], [20, -258], [26, -222]], o.kaftan || '#2f6b4f', C.ink, 5);
+  ell(ctx, 0, -168, 14, 18, '#b7342a', C.ink, 3); line(ctx, [[0, -186], [6, -236]], '#2a1d15', 4); // sorguç
+  ctx.restore();
+}
