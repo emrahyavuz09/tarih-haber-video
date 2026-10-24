@@ -646,3 +646,49 @@ function stampBox(ctx, s, x, y, size, color, lt, delay = 0, rot = -7, sub = '') 
 // Eski API'yi yeni tasarıma yönlendir (eski bölümler de güzelleşsin)
 stamp = function (ctx, s, x, y, r, color, lt, delay = 0, sub = '', rot = -9) { sealPro(ctx, s, sub, x, y, r * 1.15, color, lt, delay, '', rot); };
 boxStamp = function (ctx, s, x, y, size, color, lt, delay = 0, rot = -7) { stampBox(ctx, s, x, y, size, color, lt, delay, rot); };
+
+// ---------- HOOK YAZISI (açılış sahnesi; hookCard yerine) ----------
+// Konuya özel animasyonlu bir sahnenin ÜSTÜNE çizilir. Her videoda farklı stil seç.
+// style: 'slam' (kelimeler tek tek düşer + sarsıntı), 'marker' (fosforlu kalem vurgusu), 'news' (SON DAKİKA bandı),
+//        'zoom' (blok yakından uzaklaşır), 'split' (iki satır iki yandan kayar), 'stencil' (koyu bant üstünde beyaz büyük yazı), 'scroll' (fermanda açılan yazı)
+// y: yazı bloğunun orta yüksekliği (varsayılan 430). accent: vurgu rengi. key: vurgulanacak kelime (opsiyonel)
+function hookText(ctx, lt, text, o = {}) {
+  const style = o.style || 'slam', y = o.y || 430, accent = o.accent || C.red, key = o.key ? up(o.key) : null;
+  const cx = (SAFE.l + SAFE.r) / 2, maxW = SAFE.r - SAFE.l - 30; let size = o.size || 92;
+  ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0);
+  const words = up(text).split(' ');
+  const wrap = (sz) => { ctx.font = `700 ${sz}px ${F_SANS}`; const L = []; let cur = ''; words.forEach(w => { const t = cur ? cur + ' ' + w : w; if (ctx.measureText(t).width > maxW) { L.push(cur); cur = w; } else cur = t; }); L.push(cur); return L; };
+  let lines = wrap(size); while (lines.length > 3 && size > 50) { size -= 6; lines = wrap(size); }
+  const lh = size * 1.12, top = y - (lines.length - 1) * lh / 2;
+  const drawWord = (w, x, yy, col) => { ctx.lineWidth = size * .16; ctx.strokeStyle = 'rgba(20,12,6,.9)'; ctx.lineJoin = 'round'; ctx.strokeText(w, x, yy); ctx.fillStyle = col; ctx.fillText(w, x, yy); };
+  ctx.font = `700 ${size}px ${F_SANS}`; ctx.textBaseline = 'middle';
+  if (style === 'news') {
+    const p = eOut(clamp(lt / .25)); const bh = lines.length * lh + 70, by = top - lh / 2 - 50;
+    ctx.fillStyle = accent; ctx.fillRect(-20, by, (W + 40) * p, 54); ctx.fillStyle = 'rgba(20,12,6,.88)'; ctx.fillRect(-20, by + 54, (W + 40) * p, bh);
+    ctx.font = `700 34px ${F_SANS}`; ctx.fillStyle = '#fff'; ctx.textAlign = 'left'; ctx.fillText((o.label || 'SON DAKİKA') + '  •  TARİH HABER', SAFE.l + 6, by + 28);
+    ctx.font = `700 ${size}px ${F_SANS}`; ctx.textAlign = 'left';
+    lines.forEach((l, i) => { const k = clamp((lt - .1 - i * .08) / .25); ctx.globalAlpha = k; ctx.fillStyle = '#fff'; ctx.fillText(l, SAFE.l + 6 + (1 - k) * 60, top + i * lh + 40); }); ctx.globalAlpha = 1;
+  } else {
+    ctx.textAlign = 'left'; let wi = 0;
+    if (style === 'stencil') { const bh = lines.length * lh + 50; ctx.fillStyle = 'rgba(15,10,6,.82)'; ctx.fillRect(-20, top - lh / 2 - 25, W + 40, bh * eOut(clamp(lt / .2))); }
+    lines.forEach((l, i) => {
+      const lw = ctx.measureText(l).width; let x = cx - lw / 2; const yy = top + i * lh;
+      if (style === 'marker') { const k = eOut(clamp((lt - i * .12) / .3)); ctx.fillStyle = o.markerColor || 'rgba(247,201,72,.92)'; ctx.fillRect(x - 14, yy - size * .42, (lw + 28) * k, size * .86); }
+      if (style === 'split') { const k = eOut(clamp((lt - i * .06) / .3)); x += (i % 2 ? 1 : -1) * (1 - k) * 700; }
+      if (style === 'scroll') { const k = eOut(clamp((lt - i * .15) / .35)); ctx.save(); ctx.beginPath(); ctx.rect(0, yy - lh / 2, W, lh * k); ctx.clip(); }
+      l.split(' ').forEach(w => {
+        const ww = ctx.measureText(w + ' ').width; const isKey = key && w.includes(key);
+        const col = style === 'marker' ? (isKey ? accent : C.ink) : style === 'scroll' ? (isKey ? accent : C.ink) : (isKey ? (o.keyColor || '#f7c948') : '#fff');
+        let dx = 0, dy = 0, a = 1, sc = 1;
+        if (style === 'slam') { const k = clamp((lt - wi * .07) / .18); sc = lerp(2.2, 1, eOut(k)); a = k; }
+        if (style === 'zoom') { const k = eOut(clamp(lt / .35)); sc = lerp(1.6, 1, k) ; a = clamp(lt / .15); }
+        ctx.globalAlpha = a; ctx.save(); ctx.translate(x + dx + ww / 2, yy + dy); ctx.scale(sc, sc);
+        if (style === 'marker' || style === 'scroll') { ctx.fillStyle = col; ctx.fillText(w, -ww / 2, 0); } else drawWord(w, -ww / 2, 0, col);
+        ctx.restore(); x += ww; wi++;
+      });
+      if (style === 'scroll') ctx.restore();
+    });
+    ctx.globalAlpha = 1;
+  }
+  ctx.restore();
+}

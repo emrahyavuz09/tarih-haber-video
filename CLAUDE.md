@@ -15,8 +15,12 @@ Eski kâğıt dokusu, krem/kırmızı/koyu kahve palet, el çizimi titreyen çiz
 mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan kelime kırmızı). Örnek: `episodes/2026-10-24-malazgirt-1071/scenes.js`.
 
 ## Zorunlu kurallar
-1. **HOOK:** Metnin ilk cümlesi en fazla ~2,5 sn sürecek, merak uyandıran bir soru ya da şok edici bir bilgi olmalı
-   (ör. "Bir sultan savaşa kefen giyerek girdi. Neden?"). İlk sahne **her zaman** `hookCard(ctx, lt, d, 'büyük cümle', 'alt vurgu')` olur.
+1. **HOOK / AÇILIŞ:** Metnin ilk cümlesi en fazla ~2,5 sn, merak uyandıran bir soru ya da şok edici bilgi.
+   Açılış sahnesi HER VİDEODA FARKLI ve konunun kendisinden olmalı (aynı kırmızı kart YASAK, `hookCard` kullanma):
+   konuya özel hareketli bir görüntü (ör. uçan ok yakın çekim, batan gemi, dalgalanan bayrak, açılan ferman) + üstünde
+   `hookText(ctx, lt, 'hook cümlesi', {style, key, y, accent})`. Stiller: slam, marker, news, zoom, split, stencil, scroll.
+   Art arda iki video aynı stili ve aynı arka plan rengini kullanmaz; `topics.md`'deki son videoların stiline bak ve satıra kullandığın stili yaz.
+   İlk karede (lt=0) hem görüntü hem yazı dolu olmalı, ilk 0,3 sn'de güçlü bir hareket (darbe, yakınlaşma, patlama) olmalı.
 2. **Taşma / güvenli alan:** Instagram ve Shorts arayüzü kenarları kapatır. Tüm yazılar, etiketler ve önemli figürler
    x **70–930**, y **190–1330** içinde kalmalı (sağdaki ~150 px beğen/yorum butonlarına ayrılmış). Altyazı otomatik olarak y≈1430'da.
    `tag`, `bigText`, `stamp`, `boxStamp`, `bubble`, `pin` kenarlara otomatik sıkıştırılır ve gerekirse küçülür; düz `text()` sıkıştırılmaz, dikkatli kullan.
@@ -68,7 +72,7 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
    Hemen ardından `python3 engine/tighten.py episodes/<klasör>` (kural 6).
 5. **Sahneler:** `scenes.js` yaz. `SCENES = [{s, e, draw(ctx, lt, d)}]`, `KEY = [...]` (BÜYÜK HARF anahtar kelimeler), `DURATION = son kelime bitişi + 2.2`,
    `OUTRO_AT = DURATION - 1.6`. Sahne sınırlarını (sıkıştırılmış) `words.json` zamanlarına göre koy; 16–24 sahne, her biri 1,8–4 sn, her birinde sürekli aksiyon (kural 6).
-   İlk sahne hookCard. Kütüphane (`engine/lib.js`): `bg, camera(sahne dosyasında tanımla), tag, bigText, stamp, boxStamp, bubble, pin, arrow,
+   İlk sahne konuya özel hareketli görüntü + hookText (kural 1). Kütüphane (`engine/lib.js`): `bg, camera(sahne dosyasında tanımla), tag, bigText, stamp, boxStamp, bubble, pin, arrow,
    curvePts, shape, ell, line, pawn, sword, alparslan, diyojen (taçlı hükümdar şablonu), padisah, turkFlag, flagPole, meclis, crowd, crown, horseArcher, arrowShot, yurt, chainLink,
    drawSea, drawLand, proj, ANATOLIA, THRACE, mountains, paperTex, shake, pan, marching, dust, fire, hookCard, sealPro, stampBox`. Yeni figür gerekiyorsa lib.js'e genel fonksiyon olarak ekle (sonraki günler de kullanır).
 6. **Kontrol:** `node engine/render.js episodes/<klasör> stills` → kareleri tek bir temas sayfasında birleştir (PIL) ve **Read ile bak**.
