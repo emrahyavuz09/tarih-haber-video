@@ -428,3 +428,74 @@ function padisah(ctx, x, y, s, o = {}) {
   ell(ctx, 0, -168, 14, 18, '#b7342a', C.ink, 3); line(ctx, [[0, -186], [6, -236]], '#2a1d15', 4); // sorguç
   ctx.restore();
 }
+
+// ---------- GENEL HARİTA YARDIMCILARI (deniz poligonları + bölge haritası) ----------
+const SEA_BLACK = [[28.0,41.95],[28.0,43.5],[29.6,45.3],[30.8,46.6],[33.4,46.1],[33.5,44.5],[36.6,45.3],[38.3,44.4],[39.8,43.4],[41.6,42.6],[41.6,41.55],[41.0,41.3],[39.8,41.0],[38.4,40.95],[37.0,41.2],[36.1,41.65],[35.2,42.05],[33.8,42.0],[32.6,41.85],[31.4,41.3],[30.3,41.2],[29.0,41.25]];
+const SEA_MED = [[10,43],[19,42],[22.5,40.6],[24,40.9],[26.0,40.6],[26.7,40.35],[26.2,40.05],[26.1,39.5],[26.6,39.3],[26.9,38.7],[26.3,38.25],[26.9,38.0],[27.3,37.3],[27.6,36.7],[28.6,36.7],[29.6,36.2],[30.4,36.25],[30.6,36.8],[31.6,36.7],[32.6,36.1],[33.6,36.2],[34.6,36.8],[35.5,36.6],[35.9,36.5],[36.15,35.9],[35.9,35.4],[35.6,34.6],[35.0,33.0],[34.6,31.5],[32,31.0],[29,30.9],[10,30]];
+const SEA_MARMARA = [[26.6,40.45],[27.5,40.42],[29.0,40.9],[28.6,40.98],[27.5,40.95],[26.8,40.62]];
+const SEA_CASPIAN = [[47.0,38.4],[48.9,37.6],[50.3,37.1],[51.8,36.6],[53.9,36.9],[54.0,38.5],[53.0,40.0],[53.0,42.0],[51.5,45.5],[48.5,46.5],[47.5,43.0],[49.3,40.6],[48.9,38.9]];
+const SEA_GULF = [[47.9,30.0],[49.6,30.1],[50.6,29.1],[51.4,27.9],[53.5,26.7],[55.0,26.6],[56.3,27.2],[56.4,26.0],[56.0,24.0],[52.0,23.8],[51.2,25.5],[50.2,26.0],[49.0,27.8],[48.3,28.6]];
+function seaArea(ctx, m, poly) {
+  const pts = poly.map(p => proj(m, ...p));
+  ctx.save(); wpath(ctx, pts, true, 1.4); ctx.clip(); drawSea(ctx, [-300, -300, W + 600, H + 600]); ctx.restore();
+  shape(ctx, pts, null, C.ink, 4, 1.4);
+}
+// o: {seas:[...], lands:[...]} — kâğıt zemin + denizler + kara poligonları
+function regionMap(ctx, m, o = {}) {
+  ctx.drawImage(paperTex('#d9c393', 'mapland'), 0, 0); ctx.fillStyle = '#d9c393'; ctx.fillRect(-400, -400, W + 800, 400); ctx.fillRect(-400, H, W + 800, 400);
+  (o.seas || [SEA_BLACK, SEA_MED, SEA_MARMARA]).forEach(s => seaArea(ctx, m, s));
+  (o.lands || []).forEach(l => drawLand(ctx, m, l));
+}
+// Türkmen / Akkoyunlu beyi büstü — ağırbaşlı. o: {young, robe, taj (sarık içi külah rengi), beard, mouth, dir, sad}
+function turkmenBey(ctx, x, y, s, o = {}) {
+  const dir = o.dir || 1; ctx.save(); ctx.translate(x, y); ctx.scale(s * dir, s);
+  const robe = o.robe || '#2d5a7a';
+  shape(ctx, [[-170, 260], [-160, 120], [-110, 70], [-40, 52], [40, 52], [110, 70], [160, 120], [170, 260]], robe, C.ink, 6);
+  shape(ctx, [[-40, 52], [0, 140], [40, 52]], C.cream, C.ink, 5);
+  line(ctx, [[-150, 190], [150, 190]], C.gold, 10); // kuşak
+  shape(ctx, [[-26, 60], [-24, 20], [24, 20], [26, 60]], C.skin, C.ink, 5);
+  ell(ctx, 0, -40, 66, 80, C.skin, C.ink, 6);
+  ell(ctx, -66, -36, 11, 17, C.skin, C.ink, 4); ell(ctx, 66, -36, 11, 17, C.skin, C.ink, 4);
+  ell(ctx, -24, -46, 6, 7, C.ink, null); ell(ctx, 24, -46, 6, 7, C.ink, null);
+  if (o.sad) { line(ctx, [[-42, -62], [-12, -70]], C.ink, 6); line(ctx, [[12, -70], [42, -62]], C.ink, 6); }
+  else { line(ctx, [[-42, -68], [-12, -64]], C.ink, 6); line(ctx, [[12, -64], [42, -68]], C.ink, 6); }
+  line(ctx, [[0, -40], [-5, -12], [6, -10]], C.ink, 4);
+  if (!o.young) { // sakal + bıyık
+    shape(ctx, [[-62, -20], [-58, 26], [-34, 70], [0, 86], [34, 70], [58, 26], [62, -20], [38, 6], [0, 12], [-38, 6]], o.beard || '#3a2618', C.ink, 4);
+    shape(ctx, [[0, 6], [-36, 12], [-54, 26], [-28, 22], [0, 16], [28, 22], [54, 26], [36, 12]], o.beard || '#3a2618', C.ink, 3);
+  } else { // genç: ince bıyık
+    line(ctx, [[-22, 10], [0, 6], [22, 10]], '#4a3020', 5);
+  }
+  const mo = o.mouth || 0; ell(ctx, 0, 28, 12, 3 + mo * 9, mo > .1 ? '#6b2a20' : C.ink, C.ink, 3);
+  // Türkmen sarığı + uzun kırmızı külah (tac)
+  shape(ctx, [[-30, -110], [-22, -230], [0, -262], [22, -230], [30, -110]], o.taj || C.red, C.ink, 5);
+  ell(ctx, 0, -112, 90, 44, '#f6f1e6', C.ink, 6);
+  for (let i = -2; i <= 2; i++) line(ctx, [[i * 32 - 18, -146], [i * 32 + 18, -78]], 'rgba(42,29,21,.35)', 3);
+  ell(ctx, 0, -262, 9, 9, C.gold, C.ink, 3);
+  ctx.restore();
+}
+// taht
+function throne(ctx, x, y, s, col = C.red) {
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+  shape(ctx, [[-110, 0], [-110, -330], [-80, -380], [0, -410], [80, -380], [110, -330], [110, 0]], C.gold, C.ink, 7);
+  shape(ctx, [[-80, -60], [-80, -320], [0, -350], [80, -320], [80, -60]], col, C.ink, 5);
+  shape(ctx, [[-150, 0], [-150, -90], [150, -90], [150, 0]], '#8b6a45', C.ink, 6);
+  shape(ctx, [[-130, 60], [-130, 0], [130, 0], [130, 60]], '#6e4a2c', C.ink, 6);
+  ell(ctx, 0, -380, 16, 16, C.cream, C.ink, 4);
+  ctx.restore();
+}
+// mühürlü mektup
+function letter(ctx, x, y, s, rot = 0) {
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot); ctx.scale(s, s);
+  shape(ctx, [[-90, -60], [90, -60], [90, 60], [-90, 60]], C.cream, C.ink, 5);
+  line(ctx, [[-90, -60], [0, 10], [90, -60]], C.ink, 4);
+  ell(ctx, 0, 10, 20, 20, C.red, C.ink, 4);
+  ctx.restore();
+}
+// iç içe iki yüzük (evlilik)
+function rings(ctx, x, y, s) {
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+  [[-38, 0], [38, 0]].forEach(([dx, dy]) => { ctx.beginPath(); ctx.arc(dx, dy, 62, 0, 7); ctx.strokeStyle = C.ink; ctx.lineWidth = 26; ctx.stroke(); ctx.strokeStyle = C.gold; ctx.lineWidth = 16; ctx.stroke(); });
+  shape(ctx, [[38, -62], [22, -92], [38, -112], [54, -92]], '#bfe3ef', C.ink, 4);
+  ctx.restore();
+}

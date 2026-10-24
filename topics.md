@@ -3,6 +3,7 @@
 | Tarih | Konu | Durum |
 |---|---|---|
 | 2026-10-24 | Malazgirt 1071 (Alparslan, Romen Diyojen, hilal taktiği) | deneme videosu, yayınlanmadı |
+| 2026-10-24 | Uğurlu Mehmed: Fatih'e kılıç çeken şehzade, Fatih'in damadı (Otlukbeli, Gevherhan, Göde Ahmed) | planlandı: FB 11:00, YT 16:00, IG 20:00 |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)
