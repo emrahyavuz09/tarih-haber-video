@@ -113,9 +113,36 @@ function kosk(ctx, x, y, s) { ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
   shape(ctx, [[-240, -160], [0, -240], [240, -160]], '#7a3b26', C.ink, 5, .5); dome(ctx, 0, -230, 40, '#5d6f7a'); ctx.restore(); }
 
 const SCENES = [
-  { s: 0, e: 2.53, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Bir Osmanlı Boğaz\'ı uçarak geçti!', 'Hezârfen · Rivayet'); ctx.restore();
-    flyer(ctx, lerp(-100, 1150, lt / d), 1330 + Math.sin(lt * 3) * 12, .6, -.12, Math.sin(lt * 4) * .3);
+  { s: 0, e: 2.53, draw(ctx, lt, d) { // HOOK — gün batımında İstanbul: Galata Kulesi'nden süzülen kanatlı adam, martılar
+    shake(ctx, lt, 0, 16, .3);
+    const z = lt < .3 ? lerp(1.15, 1.0, eOut(lt / .3)) : lerp(1.0, 1.06, eInOut((lt - .3) / (d - .3)));
+    ctx.translate(W / 2, 1100); ctx.scale(z, z); ctx.translate(-W / 2, -1100);
+    skyGrad(ctx, '#c9764a', '#f7d9a4');
+    const sg = ctx.createRadialGradient(700, 1000, 20, 700, 1000, 520); sg.addColorStop(0, 'rgba(255,226,150,.9)'); sg.addColorStop(1, 'rgba(255,200,120,0)'); ctx.fillStyle = sg; ctx.fillRect(-200, 400, W + 400, 1000);
+    ell(ctx, 700, 1060, 120, 120, '#ffd98a', null);
+    clouds(ctx, lt, 70, .45);
+    ctx.save(); ctx.translate(0, 220);
+    // Anadolu yakası (sağ, uzak) — Üsküdar silueti
+    shape(ctx, [[480, 1110], [600, 1070], [760, 1080], [900, 1050], [1100, 1070], [1300, 1060], [1300, 1200], [480, 1200]], '#8a5a44', C.ink, 4, .8);
+    ctx.globalAlpha = .9; camii(ctx, 820, 1062, .42, '#9b6a50'); ctx.globalAlpha = 1;
+    waterBand(ctx, 1120, lt, '#6f8f9c');
+    // güneş yansıması
+    for (let i = 0; i < 7; i++) { const w = 80 - i * 8 + Math.sin(lt * 6 + i) * 16; line(ctx, [[700 - w, 1150 + i * 28], [700 + w, 1150 + i * 28]], 'rgba(255,220,150,.55)', 6, .3); }
+    // Avrupa yakası (sol, yakın) + Galata Kulesi
+    shape(ctx, [[-300, 1030], [80, 1010], [330, 1050], [470, 1120], [520, 1240], [-300, 1240]], '#5b3a2a', C.ink, 5, .9);
+    for (let i = 0; i < 6; i++) { const x = -20 + i * 70, h = 50 + hash(i + 2) * 50; shape(ctx, [[x, 1060], [x, 1060 - h], [x + 30, 1060 - h - 26], [x + 60, 1060 - h], [x + 60, 1060]], '#7a4e36', C.ink, 3, .4); }
+    galata(ctx, 210, 1090, .78);
+    ctx.restore();
+    // kalkış izi (kuleden süzülüş eğrisi)
+    const p = clamp((lt + .5) / (d + .5)); const fx = lerp(360, 720, eInOut(p)), fy = lerp(750, 900, p) + Math.sin(lt * 3) * 14;
+    ctx.save(); ctx.setLineDash([16, 18]); ctx.lineDashOffset = -lt * 120; line(ctx, curvePts([215, 700], [lerp(215, fx, .5), lerp(700, fy, .5) - 50], [fx - 30, fy + 20], 20), 'rgba(255,248,232,.75)', 5, 0); ctx.restore();
+    // kanatlı adam
+    flyer(ctx, fx, fy + 120, .95, lerp(.12, -.08, p), Math.sin(lt * 6) * .55);
+    // martılar: ilk anda kameranın önünden hızla geçer, sonra uzakta süzülür
+    const gull = (x, y, s, ph) => { const f = Math.sin(ph) * 18; ctx.save(); ctx.translate(x, y); ctx.scale(s, s); ctx.beginPath(); ctx.moveTo(-60, -10 - f); ctx.quadraticCurveTo(-28, -30 - f * .6, 0, 0); ctx.quadraticCurveTo(28, -30 - f * .6, 60, -10 - f); ctx.strokeStyle = '#2a1d15'; ctx.lineWidth = 8; ctx.lineCap = 'round'; ctx.stroke(); ctx.restore(); };
+    for (let i = 0; i < 3; i++) { const k = (lt + i * .12) / .55; if (k < 1) gull(lerp(-150, 1250, k), 820 + i * 190 - k * 120, 2.4 - i * .4, lt * 20 + i); }
+    for (let i = 0; i < 7; i++) { const x = ((lt * (90 + i * 12) + hash(i + 30) * 1300) % 1400) - 150, y = 640 + hash(i + 31) * 520 + Math.sin(lt * 2 + i) * 16; gull(x, y, .45 + hash(i + 32) * .3, lt * 10 + i * 2); }
+    hookText(ctx, lt + .6, "Bir Osmanlı, Boğaz'ı uçarak geçti!", { style: 'slam', key: 'UÇARAK', y: 420 });
   } },
   { s: 2.53, e: 5.08, draw(ctx, lt, d) { // tek kaynak
     ctx.drawImage(paperTex('#e2cfa6', 'warm'), 0, 0); camera(ctx, lt, d, 1, 1.07, W / 2, 900);
