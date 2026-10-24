@@ -14,3 +14,4 @@ Aylık kota: 130000
 | 2026-10-24 | 1004 | Talas 751, 2026-11-05 akşam (1 okuma) |
 | 2026-10-24 | 1037 | Kanuni'nin ölümü gizlendi, 2026-11-02 akşam (1 okuma) |
 | 2026-10-24 | 1012 | Preveze 1538, 2026-10-26 akşam (1 okuma) |
+| 2026-10-24 | 715 | Kaşgarlı haritası, 2026-10-30 sabah (1 okuma) |

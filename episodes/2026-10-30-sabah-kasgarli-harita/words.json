@@ -1,0 +1,592 @@
+{
+ "words": [
+  {
+   "text": "Dokuz",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.385
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 0.462,
+   "end": 0.538
+  },
+  {
+   "text": "yıl",
+   "type": "word",
+   "start": 0.615,
+   "end": 0.692
+  },
+  {
+   "text": "önce",
+   "type": "word",
+   "start": 0.769,
+   "end": 1.0
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 1.154,
+   "end": 1.308
+  },
+  {
+   "text": "Türk,",
+   "type": "word",
+   "start": 1.385,
+   "end": 1.808
+  },
+  {
+   "text": "dünya",
+   "type": "word",
+   "start": 1.923,
+   "end": 2.231
+  },
+  {
+   "text": "haritası",
+   "type": "word",
+   "start": 2.308,
+   "end": 2.692
+  },
+  {
+   "text": "çizdi!",
+   "type": "word",
+   "start": 2.731,
+   "end": 3.154
+  },
+  {
+   "text": "Kaşgarlı",
+   "type": "word",
+   "start": 3.24,
+   "end": 3.779
+  },
+  {
+   "text": "Mahmud.",
+   "type": "word",
+   "start": 3.856,
+   "end": 4.394
+  },
+  {
+   "text": "Bin",
+   "type": "word",
+   "start": 4.51,
+   "end": 4.663
+  },
+  {
+   "text": "yetmiş",
+   "type": "word",
+   "start": 4.74,
+   "end": 4.971
+  },
+  {
+   "text": "iki",
+   "type": "word",
+   "start": 5.048,
+   "end": 5.125
+  },
+  {
+   "text": "ile",
+   "type": "word",
+   "start": 5.202,
+   "end": 5.433
+  },
+  {
+   "text": "bin",
+   "type": "word",
+   "start": 5.51,
+   "end": 5.587
+  },
+  {
+   "text": "yetmiş",
+   "type": "word",
+   "start": 5.663,
+   "end": 5.894
+  },
+  {
+   "text": "dört",
+   "type": "word",
+   "start": 5.971,
+   "end": 6.048
+  },
+  {
+   "text": "arasında,",
+   "type": "word",
+   "start": 6.202,
+   "end": 6.894
+  },
+  {
+   "text": "Bağdat'ta",
+   "type": "word",
+   "start": 7.048,
+   "end": 7.663
+  },
+  {
+   "text": "Divânu",
+   "type": "word",
+   "start": 7.894,
+   "end": 8.356
+  },
+  {
+   "text": "Lügati't-Türk'ü",
+   "type": "word",
+   "start": 8.394,
+   "end": 9.279
+  },
+  {
+   "text": "yazdı.",
+   "type": "word",
+   "start": 9.317,
+   "end": 9.832
+  },
+  {
+   "text": "Araplara",
+   "type": "word",
+   "start": 9.856,
+   "end": 10.394
+  },
+  {
+   "text": "Türkçeyi",
+   "type": "word",
+   "start": 10.471,
+   "end": 10.933
+  },
+  {
+   "text": "öğretmek",
+   "type": "word",
+   "start": 11.087,
+   "end": 11.394
+  },
+  {
+   "text": "için",
+   "type": "word",
+   "start": 11.433,
+   "end": 11.625
+  },
+  {
+   "text": "hazırlanmış",
+   "type": "word",
+   "start": 11.676,
+   "end": 12.317
+  },
+  {
+   "text": "dev",
+   "type": "word",
+   "start": 12.471,
+   "end": 12.702
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 12.779,
+   "end": 12.856
+  },
+  {
+   "text": "sözlük.",
+   "type": "word",
+   "start": 12.933,
+   "end": 13.562
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 13.596,
+   "end": 13.827
+  },
+  {
+   "text": "kitabın",
+   "type": "word",
+   "start": 13.904,
+   "end": 14.212
+  },
+  {
+   "text": "içinde",
+   "type": "word",
+   "start": 14.288,
+   "end": 14.673
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 14.75,
+   "end": 14.904
+  },
+  {
+   "text": "sürpriz",
+   "type": "word",
+   "start": 14.981,
+   "end": 15.365
+  },
+  {
+   "text": "vardı:",
+   "type": "word",
+   "start": 15.481,
+   "end": 15.841
+  },
+  {
+   "text": "Bir",
+   "type": "word",
+   "start": 15.952,
+   "end": 16.106
+  },
+  {
+   "text": "dünya",
+   "type": "word",
+   "start": 16.26,
+   "end": 16.567
+  },
+  {
+   "text": "haritası.",
+   "type": "word",
+   "start": 16.644,
+   "end": 17.183
+  },
+  {
+   "text": "Harita",
+   "type": "word",
+   "start": 17.26,
+   "end": 17.721
+  },
+  {
+   "text": "daire",
+   "type": "word",
+   "start": 17.798,
+   "end": 18.106
+  },
+  {
+   "text": "şeklinde.",
+   "type": "word",
+   "start": 18.183,
+   "end": 18.784
+  },
+  {
+   "text": "Merkezinde",
+   "type": "word",
+   "start": 18.865,
+   "end": 19.481
+  },
+  {
+   "text": "Balasagun",
+   "type": "word",
+   "start": 19.558,
+   "end": 20.096
+  },
+  {
+   "text": "şehri",
+   "type": "word",
+   "start": 20.173,
+   "end": 20.404
+  },
+  {
+   "text": "var.",
+   "type": "word",
+   "start": 20.519,
+   "end": 20.764
+  },
+  {
+   "text": "Ve",
+   "type": "word",
+   "start": 20.865,
+   "end": 21.019
+  },
+  {
+   "text": "doğu,",
+   "type": "word",
+   "start": 21.096,
+   "end": 21.519
+  },
+  {
+   "text": "yukarıda!",
+   "type": "word",
+   "start": 21.635,
+   "end": 22.173
+  },
+  {
+   "text": "Dağlar",
+   "type": "word",
+   "start": 22.317,
+   "end": 22.702
+  },
+  {
+   "text": "kırmızı,",
+   "type": "word",
+   "start": 22.779,
+   "end": 23.433
+  },
+  {
+   "text": "denizler",
+   "type": "word",
+   "start": 23.548,
+   "end": 24.01
+  },
+  {
+   "text": "yeşil,",
+   "type": "word",
+   "start": 24.087,
+   "end": 24.644
+  },
+  {
+   "text": "ırmaklar",
+   "type": "word",
+   "start": 24.683,
+   "end": 25.183
+  },
+  {
+   "text": "mavi,",
+   "type": "word",
+   "start": 25.26,
+   "end": 25.875
+  },
+  {
+   "text": "çöller",
+   "type": "word",
+   "start": 25.913,
+   "end": 26.337
+  },
+  {
+   "text": "sarı.",
+   "type": "word",
+   "start": 26.413,
+   "end": 26.822
+  },
+  {
+   "text": "Türk",
+   "type": "word",
+   "start": 26.846,
+   "end": 27.077
+  },
+  {
+   "text": "boylarının",
+   "type": "word",
+   "start": 27.154,
+   "end": 27.615
+  },
+  {
+   "text": "yurtları,",
+   "type": "word",
+   "start": 27.692,
+   "end": 28.231
+  },
+  {
+   "text": "komşu",
+   "type": "word",
+   "start": 28.385,
+   "end": 28.692
+  },
+  {
+   "text": "milletler...",
+   "type": "word",
+   "start": 28.769,
+   "end": 29.519
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 29.596,
+   "end": 29.673
+  },
+  {
+   "text": "en",
+   "type": "word",
+   "start": 29.827,
+   "end": 29.981
+  },
+  {
+   "text": "doğuda,",
+   "type": "word",
+   "start": 30.058,
+   "end": 30.519
+  },
+  {
+   "text": "Japonya",
+   "type": "word",
+   "start": 30.75,
+   "end": 31.212
+  },
+  {
+   "text": "olduğu",
+   "type": "word",
+   "start": 31.288,
+   "end": 31.519
+  },
+  {
+   "text": "düşünülen",
+   "type": "word",
+   "start": 31.558,
+   "end": 32.058
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 32.135,
+   "end": 32.212
+  },
+  {
+   "text": "ada.",
+   "type": "word",
+   "start": 32.288,
+   "end": 32.596
+  },
+  {
+   "text": "Eserin",
+   "type": "word",
+   "start": 32.712,
+   "end": 33.096
+  },
+  {
+   "text": "bilinen",
+   "type": "word",
+   "start": 33.173,
+   "end": 33.481
+  },
+  {
+   "text": "tek",
+   "type": "word",
+   "start": 33.558,
+   "end": 33.712
+  },
+  {
+   "text": "nüshasını,",
+   "type": "word",
+   "start": 33.788,
+   "end": 34.558
+  },
+  {
+   "text": "yirminci",
+   "type": "word",
+   "start": 34.596,
+   "end": 34.942
+  },
+  {
+   "text": "yüzyılın",
+   "type": "word",
+   "start": 35.019,
+   "end": 35.327
+  },
+  {
+   "text": "başında",
+   "type": "word",
+   "start": 35.404,
+   "end": 35.865
+  },
+  {
+   "text": "Ali",
+   "type": "word",
+   "start": 36.019,
+   "end": 36.25
+  },
+  {
+   "text": "Emîrî",
+   "type": "word",
+   "start": 36.327,
+   "end": 36.712
+  },
+  {
+   "text": "Efendi",
+   "type": "word",
+   "start": 36.788,
+   "end": 37.173
+  },
+  {
+   "text": "İstanbul'da",
+   "type": "word",
+   "start": 37.327,
+   "end": 38.019
+  },
+  {
+   "text": "otuz",
+   "type": "word",
+   "start": 38.096,
+   "end": 38.327
+  },
+  {
+   "text": "altına",
+   "type": "word",
+   "start": 38.404,
+   "end": 38.635
+  },
+  {
+   "text": "satın",
+   "type": "word",
+   "start": 38.712,
+   "end": 38.942
+  },
+  {
+   "text": "aldı.",
+   "type": "word",
+   "start": 39.019,
+   "end": 39.327
+  },
+  {
+   "text": "Bugün",
+   "type": "word",
+   "start": 39.471,
+   "end": 39.779
+  },
+  {
+   "text": "Millet",
+   "type": "word",
+   "start": 39.856,
+   "end": 40.087
+  },
+  {
+   "text": "Kütüphanesi'nde.",
+   "type": "word",
+   "start": 40.163,
+   "end": 41.091
+  },
+  {
+   "text": "Türk",
+   "type": "word",
+   "start": 41.115,
+   "end": 41.346
+  },
+  {
+   "text": "dünyasının",
+   "type": "word",
+   "start": 41.385,
+   "end": 41.962
+  },
+  {
+   "text": "bilinen",
+   "type": "word",
+   "start": 42.038,
+   "end": 42.423
+  },
+  {
+   "text": "ilk",
+   "type": "word",
+   "start": 42.577,
+   "end": 42.808
+  },
+  {
+   "text": "haritası...",
+   "type": "word",
+   "start": 42.885,
+   "end": 43.615
+  },
+  {
+   "text": "dokuz",
+   "type": "word",
+   "start": 43.654,
+   "end": 43.923
+  },
+  {
+   "text": "asırdır",
+   "type": "word",
+   "start": 44.0,
+   "end": 44.462
+  },
+  {
+   "text": "yolu",
+   "type": "word",
+   "start": 44.538,
+   "end": 44.692
+  },
+  {
+   "text": "gösteriyor.",
+   "type": "word",
+   "start": 44.769,
+   "end": 45.548
+  }
+ ]
+}
