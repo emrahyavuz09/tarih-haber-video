@@ -212,9 +212,31 @@ function yMarch(ctx, lt, y, s, n, speed = 80, gap = 120) {
 }
 function lightning(ctx, lt, x, y, per = .9) { const k = (lt % per) / per; if (k > .25) return; ctx.save(); ctx.globalAlpha = 1 - k * 4; line(ctx, [[x, y], [x - 30, y + 80], [x + 10, y + 90], [x - 20, y + 190]], '#f8e27a', 10, .2); ctx.restore(); }
 const SCENES = [
-  { s: 0, e: 2.0, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'İki padişahın alamadığı kaleyi Kanuni aldı!', 'BELGRAD 1521'); ctx.restore();
-    for (let i = 0; i < 9; i++) yeniceri(ctx, -80 + ((lt * 110 + i * 120) % 1200), 1330, .75, lt + i, 1);
+  { s: 0, e: 2.0, draw(ctx, lt, d) { // AÇILIŞ (slam): Tuna kıyısında Belgrad surları, top ateşi, yıkılan taşlar
+    ctx.save(); shake(ctx, lt, 0, 26, .4); shake(ctx, lt, .3, 18, .3); shake(ctx, lt, 1.25, 14, .3);
+    const z = lt < .3 ? lerp(1.3, 1.0, eOut(lt / .3)) : lerp(1.0, 1.06, (lt - .3) / (d - .3));
+    ctx.translate(W / 2, 1050); ctx.scale(z, z); ctx.translate(-W / 2, -1050);
+    dusk(ctx, lt, { top: '#a9483a', bot: '#efb873', ground: '#8f7a4a' });
+    kale(ctx, 610, 1010, .86, { flag: 'hu', dmg: clamp(.25 + lt / d * .6), lt });
+    // Tuna
+    ctx.fillStyle = '#5c8aa0'; ctx.fillRect(-300, 1110, W + 600, 70); line(ctx, [[-300, 1110], [1400, 1110]], C.ink, 4, .6); line(ctx, [[-300, 1180], [1400, 1180]], C.ink, 4, .6);
+    for (let i = 0; i < 10; i++) { const x = ((lt * 110 + i * 140) % 1400) - 150; ctx.globalAlpha = .7; line(ctx, [[x, 1140 + (i % 2) * 18], [x + 50, 1140 + (i % 2) * 18]], '#dbeef2', 4, .2); } ctx.globalAlpha = 1;
+    // gülleler ve çarpma
+    const hits = [[0, 540, 880], [.95, 780, 850]];
+    for (const [t0, hx, hy] of hits) {
+      const sx = 330, sy = 1225; const k = (lt - t0) / .3;
+      if (k >= 0 && k < 1) { const bx = lerp(sx, hx, k), by = lerp(sy, hy, k) - Math.sin(k * Math.PI) * 160; ell(ctx, bx, by, 14, 14, '#2a1d15', null); line(ctx, [[bx - 60, by + 22], [bx - 10, by + 4]], 'rgba(255,255,255,.6)', 6, .2); }
+      const ti = lt - t0 - .3; if (ti > 0) {
+        if (ti < .22) { ctx.globalAlpha = 1 - ti / .22; for (let r = 0; r < 10; r++) { const a = r / 10 * Math.PI * 2; line(ctx, [[hx + Math.cos(a) * 30, hy + Math.sin(a) * 30], [hx + Math.cos(a) * (70 + ti * 400), hy + Math.sin(a) * (70 + ti * 400)]], '#f8d25a', 8, .3); } ell(ctx, hx, hy, 60, 60, '#f09a2a', null); ctx.globalAlpha = 1; }
+        for (let j = 0; j < 7; j++) { const vx = (hash(j + t0 * 9) - .5) * 520, vy = -200 - hash(j + 3) * 260; const x = hx + vx * ti, y = hy + vy * ti + 1300 * ti * ti; if (y > 1150) continue; ctx.save(); ctx.translate(x, y); ctx.rotate(ti * (4 + j)); const b = 16 + hash(j + 7) * 18; shape(ctx, [[-b, -b * .7], [b, -b * .7], [b, b * .7], [-b, b * .7]], '#cdb68a', C.ink, 3, .4); ctx.restore(); }
+        smoke(ctx, lt, hx, hy, t0 + .3, 7, 'rgba(90,70,50,.55)');
+      }
+    }
+    // Osmanlı topları
+    for (let i = 0; i < 2; i++) { const t0 = i ? .95 : 0; const f = (lt - t0) / .4; cannon(ctx, 190 + i * 130, 1265 + i * 45, 1.2, f, lt); smoke(ctx, lt, 325 + i * 130, 1218 + i * 45, t0, 6); }
+    dust(ctx, lt, 230, 1300, 8, 'rgba(90,60,30,.35)');
+    ctx.restore();
+    hookText(ctx, lt + .6, 'İki padişahın alamadığı kaleyi, Kanuni ilk seferinde aldı!', { style: 'slam', key: 'KANUNİ', y: 420, size: 80 });
   } },
   { s: 2.0, e: 4.15, draw(ctx, lt, d) { // Kanuni ilk seferinde
     dusk(ctx, lt, { top: '#e8c890', bot: '#f6e6c4' }); camera(ctx, lt, d, 1, 1.07, W / 2, 900);
