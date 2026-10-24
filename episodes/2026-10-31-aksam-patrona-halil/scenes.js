@@ -221,10 +221,21 @@ function mob(ctx, lt, x0, x1, y, n, s = 1.1, torches = true) {
 }
 
 const SCENES = [
-  { s: 0, e: 2.9, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Bir hamam tellağı padişahı tahttan indirdi!', 'Patrona Halil · 1730'); ctx.restore();
-    for (let i = 0; i < 4; i++) { const k = (lt * .6 + i / 4) % 1; ctx.globalAlpha = (1 - k) * .5; ell(ctx, CX - 40 + i * 30 + Math.sin(lt * 2 + i) * 20, 1180 - k * 160, 30 + k * 30, 22 + k * 20, '#fbf6ea', null); } ctx.globalAlpha = 1;
-    tas(ctx, CX, 1250, 1.0, Math.sin(lt * 5) * .12);
+  { s: 0, e: 2.9, draw(ctx, lt, d) { // HOOK — gece İstanbul sokağı, meşaleli kalabalık, öne atılan Patrona (bayraksız)
+    ctx.save(); shake(ctx, lt, 0, 22, .3); shake(ctx, lt, 1.2, 10, .3);
+    const z = lerp(1.22, 1, eOut(clamp(lt / .3))) * lerp(1, 1.06, eInOut(lt / d)); ctx.translate(W / 2, 1150); ctx.scale(z, z); ctx.translate(-W / 2, -1150);
+    const g = ctx.createLinearGradient(0, 0, 0, 1200); g.addColorStop(0, '#0f1328'); g.addColorStop(.7, '#3a2433'); g.addColorStop(1, '#a4512a'); ctx.fillStyle = g; ctx.fillRect(-300, -300, W + 600, H + 600);
+    for (let i = 0; i < 30; i++) { ctx.globalAlpha = .3 + .6 * Math.abs(Math.sin(lt * 2 + i)); ell(ctx, hash(i + 2) * W, 160 + hash(i + 30) * 500, 3, 3, '#fff6dc', null); } ctx.globalAlpha = 1;
+    ell(ctx, 820, 640, 54, 54, '#f3e6c4', null);
+    skyline(ctx, 1010, '#1c1218', -40 + lt * 10);
+    const gl = ctx.createRadialGradient(W / 2, 1150, 50, W / 2, 1150, 650); gl.addColorStop(0, `rgba(255,140,50,${.45 + .1 * Math.sin(lt * 9)})`); gl.addColorStop(1, 'rgba(255,140,50,0)'); ctx.fillStyle = gl; ctx.fillRect(-300, 500, W + 600, 1200);
+    ctx.fillStyle = '#2a1b17'; ctx.fillRect(-300, 1200, W + 600, 900);
+    for (let i = 0; i < 18; i++) { const k = (lt * .7 + hash(i)) % 1; ctx.globalAlpha = 1 - k; ell(ctx, 120 + hash(i + 8) * 800 + Math.sin(lt * 3 + i) * 20, 1100 - k * 420, 4, 4, '#ffcf6a', null); } ctx.globalAlpha = 1;
+    mob(ctx, lt, 40 - lt * 50, 1000 - lt * 50, 1040, 26, 1.15);
+    mob(ctx, lt + 3, 60, 290, 1180, 5, 1.45, true); mob(ctx, lt + 5, 740, 940, 1180, 5, 1.45, true);
+    patrona(ctx, CX - 10, 1075, .95, { fist: clamp((lt + .15) / .35), mouth: .5 + .5 * Math.sin(lt * 10) });
+    ctx.restore();
+    hookText(ctx, lt + 0.6, 'Bir hamam tellağı, padişahı tahttan indirdi!', { style: 'stencil', key: 'TELLAĞI', y: 420, size: 84 });
   } },
   { s: 2.9, e: 6.35, draw(ctx, lt, d) { // 1730, İstanbul'da Lale Devri
     const g = ctx.createLinearGradient(0, 0, 0, 1300); g.addColorStop(0, '#e9b07a'); g.addColorStop(1, '#f6dcae'); ctx.fillStyle = g; ctx.fillRect(-200, -200, W + 400, H + 400);
