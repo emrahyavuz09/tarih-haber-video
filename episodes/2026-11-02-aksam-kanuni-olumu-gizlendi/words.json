@@ -1,0 +1,814 @@
+{
+ "words": [
+  {
+   "text": "Padişah",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.538
+  },
+  {
+   "text": "ölmüştü...",
+   "type": "word",
+   "start": 0.615,
+   "end": 1.404
+  },
+  {
+   "text": "ama",
+   "type": "word",
+   "start": 1.519,
+   "end": 1.635
+  },
+  {
+   "text": "ordunun",
+   "type": "word",
+   "start": 1.788,
+   "end": 2.173
+  },
+  {
+   "text": "bundan",
+   "type": "word",
+   "start": 2.25,
+   "end": 2.558
+  },
+  {
+   "text": "haberi",
+   "type": "word",
+   "start": 2.635,
+   "end": 2.865
+  },
+  {
+   "text": "yoktu!",
+   "type": "word",
+   "start": 2.942,
+   "end": 3.404
+  },
+  {
+   "text": "Bin",
+   "type": "word",
+   "start": 3.519,
+   "end": 3.673
+  },
+  {
+   "text": "beş",
+   "type": "word",
+   "start": 3.75,
+   "end": 3.904
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 3.981,
+   "end": 4.084
+  },
+  {
+   "text": "altmış",
+   "type": "word",
+   "start": 4.135,
+   "end": 4.365
+  },
+  {
+   "text": "altı.",
+   "type": "word",
+   "start": 4.442,
+   "end": 4.87
+  },
+  {
+   "text": "Kanuni",
+   "type": "word",
+   "start": 4.933,
+   "end": 5.317
+  },
+  {
+   "text": "Sultan",
+   "type": "word",
+   "start": 5.394,
+   "end": 5.702
+  },
+  {
+   "text": "Süleyman,",
+   "type": "word",
+   "start": 5.779,
+   "end": 6.471
+  },
+  {
+   "text": "yetmişini",
+   "type": "word",
+   "start": 6.587,
+   "end": 6.933
+  },
+  {
+   "text": "aşmış",
+   "type": "word",
+   "start": 7.01,
+   "end": 7.317
+  },
+  {
+   "text": "yaşına",
+   "type": "word",
+   "start": 7.394,
+   "end": 7.702
+  },
+  {
+   "text": "rağmen",
+   "type": "word",
+   "start": 7.779,
+   "end": 8.087
+  },
+  {
+   "text": "son",
+   "type": "word",
+   "start": 8.24,
+   "end": 8.394
+  },
+  {
+   "text": "seferinde.",
+   "type": "word",
+   "start": 8.471,
+   "end": 9.111
+  },
+  {
+   "text": "Hedef:",
+   "type": "word",
+   "start": 9.154,
+   "end": 9.668
+  },
+  {
+   "text": "Macaristan'daki",
+   "type": "word",
+   "start": 9.75,
+   "end": 10.596
+  },
+  {
+   "text": "Zigetvar",
+   "type": "word",
+   "start": 10.673,
+   "end": 11.135
+  },
+  {
+   "text": "Kalesi.",
+   "type": "word",
+   "start": 11.212,
+   "end": 11.673
+  },
+  {
+   "text": "Kuşatma",
+   "type": "word",
+   "start": 11.74,
+   "end": 12.125
+  },
+  {
+   "text": "sürerken,",
+   "type": "word",
+   "start": 12.202,
+   "end": 12.971
+  },
+  {
+   "text": "Eylül'ün",
+   "type": "word",
+   "start": 13.01,
+   "end": 13.433
+  },
+  {
+   "text": "ilk",
+   "type": "word",
+   "start": 13.51,
+   "end": 13.663
+  },
+  {
+   "text": "haftasında",
+   "type": "word",
+   "start": 13.74,
+   "end": 14.279
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 14.356,
+   "end": 14.51
+  },
+  {
+   "text": "gece,",
+   "type": "word",
+   "start": 14.587,
+   "end": 15.024
+  },
+  {
+   "text": "Kanuni",
+   "type": "word",
+   "start": 15.087,
+   "end": 15.548
+  },
+  {
+   "text": "çadırında",
+   "type": "word",
+   "start": 15.702,
+   "end": 16.163
+  },
+  {
+   "text": "hayata",
+   "type": "word",
+   "start": 16.24,
+   "end": 16.548
+  },
+  {
+   "text": "gözlerini",
+   "type": "word",
+   "start": 16.625,
+   "end": 17.087
+  },
+  {
+   "text": "yumdu.",
+   "type": "word",
+   "start": 17.163,
+   "end": 17.471
+  },
+  {
+   "text": "Sadrazam",
+   "type": "word",
+   "start": 17.606,
+   "end": 18.144
+  },
+  {
+   "text": "Sokullu",
+   "type": "word",
+   "start": 18.221,
+   "end": 18.606
+  },
+  {
+   "text": "Mehmed",
+   "type": "word",
+   "start": 18.644,
+   "end": 18.913
+  },
+  {
+   "text": "Paşa",
+   "type": "word",
+   "start": 18.99,
+   "end": 19.298
+  },
+  {
+   "text": "hemen",
+   "type": "word",
+   "start": 19.452,
+   "end": 19.683
+  },
+  {
+   "text": "harekete",
+   "type": "word",
+   "start": 19.76,
+   "end": 20.144
+  },
+  {
+   "text": "geçti.",
+   "type": "word",
+   "start": 20.221,
+   "end": 20.606
+  },
+  {
+   "text": "Haber",
+   "type": "word",
+   "start": 20.75,
+   "end": 20.981
+  },
+  {
+   "text": "yayılırsa",
+   "type": "word",
+   "start": 21.058,
+   "end": 21.596
+  },
+  {
+   "text": "ordu",
+   "type": "word",
+   "start": 21.75,
+   "end": 21.981
+  },
+  {
+   "text": "dağılabilir,",
+   "type": "word",
+   "start": 22.058,
+   "end": 22.75
+  },
+  {
+   "text": "kuşatma",
+   "type": "word",
+   "start": 22.788,
+   "end": 23.135
+  },
+  {
+   "text": "çökebilirdi.",
+   "type": "word",
+   "start": 23.212,
+   "end": 24.014
+  },
+  {
+   "text": "Ölümü",
+   "type": "word",
+   "start": 24.087,
+   "end": 24.317
+  },
+  {
+   "text": "bilen",
+   "type": "word",
+   "start": 24.394,
+   "end": 24.625
+  },
+  {
+   "text": "birkaç",
+   "type": "word",
+   "start": 24.702,
+   "end": 25.01
+  },
+  {
+   "text": "kişiye",
+   "type": "word",
+   "start": 25.087,
+   "end": 25.394
+  },
+  {
+   "text": "susma",
+   "type": "word",
+   "start": 25.471,
+   "end": 25.779
+  },
+  {
+   "text": "emri",
+   "type": "word",
+   "start": 25.856,
+   "end": 26.01
+  },
+  {
+   "text": "verildi.",
+   "type": "word",
+   "start": 26.087,
+   "end": 26.553
+  },
+  {
+   "text": "Padişahın",
+   "type": "word",
+   "start": 26.615,
+   "end": 27.154
+  },
+  {
+   "text": "yatağına,",
+   "type": "word",
+   "start": 27.231,
+   "end": 27.769
+  },
+  {
+   "text": "hastaymış",
+   "type": "word",
+   "start": 27.846,
+   "end": 28.385
+  },
+  {
+   "text": "gibi",
+   "type": "word",
+   "start": 28.462,
+   "end": 28.615
+  },
+  {
+   "text": "başka",
+   "type": "word",
+   "start": 28.692,
+   "end": 28.923
+  },
+  {
+   "text": "biri",
+   "type": "word",
+   "start": 29.0,
+   "end": 29.154
+  },
+  {
+   "text": "yatırıldı.",
+   "type": "word",
+   "start": 29.231,
+   "end": 29.793
+  },
+  {
+   "text": "Askerlere,",
+   "type": "word",
+   "start": 29.865,
+   "end": 30.596
+  },
+  {
+   "text": "sultanın",
+   "type": "word",
+   "start": 30.712,
+   "end": 31.173
+  },
+  {
+   "text": "iyileştiği",
+   "type": "word",
+   "start": 31.25,
+   "end": 31.712
+  },
+  {
+   "text": "haberi",
+   "type": "word",
+   "start": 31.788,
+   "end": 32.019
+  },
+  {
+   "text": "gönderildi.",
+   "type": "word",
+   "start": 32.058,
+   "end": 32.726
+  },
+  {
+   "text": "Kısa",
+   "type": "word",
+   "start": 32.798,
+   "end": 32.952
+  },
+  {
+   "text": "süre",
+   "type": "word",
+   "start": 33.029,
+   "end": 33.183
+  },
+  {
+   "text": "sonra",
+   "type": "word",
+   "start": 33.26,
+   "end": 33.644
+  },
+  {
+   "text": "Zigetvar",
+   "type": "word",
+   "start": 33.875,
+   "end": 34.413
+  },
+  {
+   "text": "düştü.",
+   "type": "word",
+   "start": 34.49,
+   "end": 34.957
+  },
+  {
+   "text": "Sokullu,",
+   "type": "word",
+   "start": 35.029,
+   "end": 35.721
+  },
+  {
+   "text": "padişah",
+   "type": "word",
+   "start": 35.76,
+   "end": 36.183
+  },
+  {
+   "text": "adına",
+   "type": "word",
+   "start": 36.26,
+   "end": 36.567
+  },
+  {
+   "text": "emirler",
+   "type": "word",
+   "start": 36.644,
+   "end": 37.029
+  },
+  {
+   "text": "yayımlamayı",
+   "type": "word",
+   "start": 37.067,
+   "end": 37.567
+  },
+  {
+   "text": "sürdürdü.",
+   "type": "word",
+   "start": 37.644,
+   "end": 38.274
+  },
+  {
+   "text": "Kütahya'daki",
+   "type": "word",
+   "start": 38.279,
+   "end": 38.971
+  },
+  {
+   "text": "Şehzade",
+   "type": "word",
+   "start": 39.048,
+   "end": 39.51
+  },
+  {
+   "text": "Selim'e",
+   "type": "word",
+   "start": 39.587,
+   "end": 39.894
+  },
+  {
+   "text": "ise",
+   "type": "word",
+   "start": 40.048,
+   "end": 40.202
+  },
+  {
+   "text": "gizlice",
+   "type": "word",
+   "start": 40.356,
+   "end": 40.817
+  },
+  {
+   "text": "ulak",
+   "type": "word",
+   "start": 40.894,
+   "end": 41.125
+  },
+  {
+   "text": "yolladı.",
+   "type": "word",
+   "start": 41.202,
+   "end": 41.707
+  },
+  {
+   "text": "Ordu,",
+   "type": "word",
+   "start": 41.769,
+   "end": 42.308
+  },
+  {
+   "text": "kapalı",
+   "type": "word",
+   "start": 42.423,
+   "end": 42.654
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 42.692,
+   "end": 42.846
+  },
+  {
+   "text": "arabadaki",
+   "type": "word",
+   "start": 42.885,
+   "end": 43.308
+  },
+  {
+   "text": "tabutla",
+   "type": "word",
+   "start": 43.385,
+   "end": 43.769
+  },
+  {
+   "text": "birlikte",
+   "type": "word",
+   "start": 43.846,
+   "end": 44.308
+  },
+  {
+   "text": "Belgrad'a",
+   "type": "word",
+   "start": 44.462,
+   "end": 44.923
+  },
+  {
+   "text": "doğru",
+   "type": "word",
+   "start": 45.0,
+   "end": 45.154
+  },
+  {
+   "text": "yürüdü.",
+   "type": "word",
+   "start": 45.231,
+   "end": 45.687
+  },
+  {
+   "text": "Kaynaklara",
+   "type": "word",
+   "start": 45.75,
+   "end": 46.212
+  },
+  {
+   "text": "göre",
+   "type": "word",
+   "start": 46.288,
+   "end": 46.519
+  },
+  {
+   "text": "sır,",
+   "type": "word",
+   "start": 46.75,
+   "end": 47.135
+  },
+  {
+   "text": "kırk",
+   "type": "word",
+   "start": 47.212,
+   "end": 47.365
+  },
+  {
+   "text": "iki",
+   "type": "word",
+   "start": 47.442,
+   "end": 47.519
+  },
+  {
+   "text": "ile",
+   "type": "word",
+   "start": 47.596,
+   "end": 47.904
+  },
+  {
+   "text": "kırk",
+   "type": "word",
+   "start": 47.942,
+   "end": 48.058
+  },
+  {
+   "text": "sekiz",
+   "type": "word",
+   "start": 48.135,
+   "end": 48.365
+  },
+  {
+   "text": "gün",
+   "type": "word",
+   "start": 48.442,
+   "end": 48.519
+  },
+  {
+   "text": "arasında",
+   "type": "word",
+   "start": 48.596,
+   "end": 48.981
+  },
+  {
+   "text": "saklandı.",
+   "type": "word",
+   "start": 49.019,
+   "end": 49.63
+  },
+  {
+   "text": "Sonunda",
+   "type": "word",
+   "start": 49.74,
+   "end": 50.125
+  },
+  {
+   "text": "hafızlar",
+   "type": "word",
+   "start": 50.163,
+   "end": 50.663
+  },
+  {
+   "text": "Kur'an",
+   "type": "word",
+   "start": 50.817,
+   "end": 51.048
+  },
+  {
+   "text": "okumaya",
+   "type": "word",
+   "start": 51.125,
+   "end": 51.433
+  },
+  {
+   "text": "başlayınca,",
+   "type": "word",
+   "start": 51.471,
+   "end": 52.24
+  },
+  {
+   "text": "askerler",
+   "type": "word",
+   "start": 52.298,
+   "end": 52.837
+  },
+  {
+   "text": "gerçeği",
+   "type": "word",
+   "start": 52.913,
+   "end": 53.375
+  },
+  {
+   "text": "anladı.",
+   "type": "word",
+   "start": 53.452,
+   "end": 53.837
+  },
+  {
+   "text": "Belgrad'da",
+   "type": "word",
+   "start": 54.0,
+   "end": 54.692
+  },
+  {
+   "text": "yeni",
+   "type": "word",
+   "start": 54.923,
+   "end": 55.077
+  },
+  {
+   "text": "padişah",
+   "type": "word",
+   "start": 55.154,
+   "end": 55.692
+  },
+  {
+   "text": "İkinci",
+   "type": "word",
+   "start": 55.731,
+   "end": 56.0
+  },
+  {
+   "text": "Selim,",
+   "type": "word",
+   "start": 56.154,
+   "end": 56.538
+  },
+  {
+   "text": "babasını",
+   "type": "word",
+   "start": 56.615,
+   "end": 57.077
+  },
+  {
+   "text": "siyahlar",
+   "type": "word",
+   "start": 57.154,
+   "end": 57.538
+  },
+  {
+   "text": "içinde",
+   "type": "word",
+   "start": 57.615,
+   "end": 57.846
+  },
+  {
+   "text": "karşıladı.",
+   "type": "word",
+   "start": 57.923,
+   "end": 58.582
+  },
+  {
+   "text": "Kırk",
+   "type": "word",
+   "start": 58.625,
+   "end": 58.856
+  },
+  {
+   "text": "altı",
+   "type": "word",
+   "start": 58.971,
+   "end": 59.087
+  },
+  {
+   "text": "yıl",
+   "type": "word",
+   "start": 59.163,
+   "end": 59.24
+  },
+  {
+   "text": "hüküm",
+   "type": "word",
+   "start": 59.317,
+   "end": 59.548
+  },
+  {
+   "text": "süren",
+   "type": "word",
+   "start": 59.625,
+   "end": 59.856
+  },
+  {
+   "text": "sultan...",
+   "type": "word",
+   "start": 59.933,
+   "end": 60.606
+  },
+  {
+   "text": "son",
+   "type": "word",
+   "start": 60.683,
+   "end": 60.76
+  },
+  {
+   "text": "seferini",
+   "type": "word",
+   "start": 60.837,
+   "end": 61.298
+  },
+  {
+   "text": "de",
+   "type": "word",
+   "start": 61.375,
+   "end": 61.452
+  },
+  {
+   "text": "zaferle",
+   "type": "word",
+   "start": 61.683,
+   "end": 62.067
+  },
+  {
+   "text": "bitirmişti.",
+   "type": "word",
+   "start": 62.144,
+   "end": 62.913
+  }
+ ]
+}

@@ -10,6 +10,7 @@
 | 2026-10-26 | IV. Murad'ın kahve ve tütün yasağı (1633 Cibali yangını, kahvehaneler, fetva) — sabah | üretildi, planlanmadı |
 | 2026-10-29 | Cumhuriyet'in ilanı, 29 Ekim 1923 (101 pare top, 158 oy, Meclis; Atatürk çizilmedi) — akşam | üretildi, planlanmadı |
 | 2026-11-05 | Talas 751: Tang Çini, Abbasiler, Karluklar ve kâğıdın Batı'ya yolculuğu (rivayet) — akşam | üretildi, planlanmadı |
+| 2026-11-02 | Kanuni'nin Zigetvar'da ölümünün Sokullu tarafından gizlenmesi (1566) — akşam | üretildi, planlanmadı |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)
