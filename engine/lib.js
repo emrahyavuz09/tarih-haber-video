@@ -352,6 +352,15 @@ function render(t) {
   const since = t - sc.s; if (since < .1 && sc.s > 0) { ctx.fillStyle = `rgba(255,248,230,${(1 - since / .1) * .5})`; ctx.fillRect(0, 0, W, H); }
   if (typeof OUTRO_AT !== 'undefined' && t >= OUTRO_AT) { ctx.save(); outro(ctx, t - OUTRO_AT); ctx.restore(); }
   drawCaption(ctx, t, typeof KEY !== 'undefined' ? KEY : []);
+  watermark(ctx);
+}
+// Kanal imzası: küçük, yarı saydam, güvenli alanın sol üstünde (Reels/Shorts arayüzüne girmez, içeriği kapatmaz)
+function watermark(ctx) {
+  ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.font = `700 30px ${F_SANS}`; ctx.textAlign = 'left'; ctx.textBaseline = 'middle';
+  ctx.lineWidth = 4; ctx.strokeStyle = 'rgba(30,20,12,0.28)'; ctx.strokeText('@tarihhaber', SAFE.l + 6, SAFE.t + 4);
+  ctx.fillStyle = 'rgba(255,248,232,0.62)'; ctx.fillText('@tarihhaber', SAFE.l + 6, SAFE.t + 4);
+  ctx.restore();
 }
 
 // ---------- MİLLİ DEĞERLER: saygılı, doğru çizimler ----------

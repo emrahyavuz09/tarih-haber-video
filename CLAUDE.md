@@ -24,7 +24,8 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
 3. **Doğruluk:** Her bilgi en az 2 güvenilir kaynakla doğrulanır. Tartışmalı rakamları kesin söyleme ("kat kat kalabalık" gibi).
    Uydurma alıntı yok; rivayet ise öyle söyle. Kaynaklar YouTube açıklamasının en altına yazılır.
 4. **Seslendirme metni:** Sayılar yazıyla ("bin yetmiş bir"), noktalama tempoyu belirler (hızlı ses: kısa cümleler, "..." gerilim için).
-   130–170 kelime. Son cümle güçlü bir kapanış.
+   Akşam (büyük olay) videoları 130–160 kelime, sabah (kısa şaşırtıcı bilgi) videoları 95–115 kelime. Son cümle güçlü bir kapanış.
+   Kanal imzası `@tarihhaber` render tarafından otomatik eklenir (sol üst, küçük, yarı saydam); sahnelerde o köşeye (x<330, y<240) önemli öğe koyma.
 5. **Milli değerler (çok önemli):** Türk Bayrağı yalnızca `turkFlag` / `flagPole` ile çizilir (resmî oranlar ve renk #E30A17).
    Bayrak asla ters, yamuk, yerde, yırtık, yanarken ya da olumsuz bir sahnenin parçası olarak gösterilmez. Hilal ve yıldız elle çizilmez.
    **Atatürk ASLA çizilmez — ne yüz, ne büst, ne silüet** (yanlış çizim çok eleştiri getirir; kullanıcının kesin isteği).
