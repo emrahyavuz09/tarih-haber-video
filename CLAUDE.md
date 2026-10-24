@@ -60,6 +60,8 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
    - `instagram`: `caption` (ilk satır hook, 2–3 kısa satır, yorum getiren bir soru, 10–15 hashtag)
    - `facebook`: `title` + `text` (hikâye anlatır gibi 3–4 cümle, paylaşmaya davet, 3–5 hashtag)
    Üç metin birbirinin kopyası olmasın.
+   **Üç platformda da metnin en altına** (YouTube'da Kaynaklar listesinin altına) şu kısa notu ekle:
+   `🎨 Bu içerikler özgün çizimlerle hazırlanmaktadır.`
 9. **Medya yükle:** `final.mp4`'ü `media` dalına `videos/<klasör>.mp4` olarak koy ve gönder:
    `git fetch origin media && git worktree add /tmp/media origin/media` (dal yoksa `git worktree add --orphan -b media /tmp/media`),
    kopyala, commit, `git push origin HEAD:media`. Sonra `curl -sI <medya adresi>` ile 200 döndüğünü doğrula.
