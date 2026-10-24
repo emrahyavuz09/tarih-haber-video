@@ -96,8 +96,25 @@ function quill(ctx, x, y, s, lt) {
 
 const SCENES = [
   { s: 0, e: 2.65, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'İstanbul varken başkent neden Ankara?', '13 Ekim 1923'); ctx.restore();
-    ctx.save(); ctx.globalAlpha = .9; rails(ctx, 1290, lt, lt * 200); train(ctx, lerp(150, 700, lt / d), 1280, .38, lt); ctx.restore();
+    // Sabah ışığında bozkır: uzakta Meclis ve bayrak, önde hızla geçen buharlı tren (hızlı yakınlaşma + sarsıntı)
+    ctx.save(); shake(ctx, lt, 0, 18, .3);
+    const zi = lerp(1.35, 1, eOut(lt / .3)) * lerp(1, 1.05, eInOut(lt / d)); ctx.translate(W / 2, 1000); ctx.scale(zi, zi); ctx.translate(-W / 2, -1000);
+    sky(ctx, '#f0c983', '#f8ead0');
+    const sg = ctx.createRadialGradient(840, 990, 20, 840, 990, 560); sg.addColorStop(0, 'rgba(255,240,180,1)'); sg.addColorStop(.22, 'rgba(255,214,130,.5)'); sg.addColorStop(1, 'rgba(255,214,130,0)');
+    ctx.fillStyle = sg; ctx.fillRect(200, 400, 1300, 1200);
+    rays(ctx, lt, 840, 990, '#fff3c4', .2);
+    ell(ctx, 840, 990, 80, 80, '#ffeaa8', null);
+    for (let i = 0; i < 5; i++) { const bx = ((i * 260 - lt * 40) % 1300 + 1300) % 1300 - 150, by = 700 + (i % 3) * 40; ctx.globalAlpha = .6; line(ctx, [[bx, by], [bx + 14, by - 9], [bx + 28, by]], C.ink, 3, .3); }
+    ctx.globalAlpha = 1;
+    shape(ctx, [[-300, 1010], [200, 985], [600, 1020], [1000, 995], [1400, 1010], [1400, 2300], [-300, 2300]], '#c9a866', C.ink, 5, 1.2);
+    for (let i = 0; i < 40; i++) { const x = hash(i) * 1200 - 60, yy = 1060 + hash(i + 9) * 600; line(ctx, [[x, yy], [x + 8 + Math.sin(lt * 3 + i) * 7, yy - 26]], '#8a7a40', 4, .2); }
+    meclis(ctx, 560, 1000, .55, lt);
+    rails(ctx, 1222, lt, lt * 520);
+    const tx = lerp(330, 1180, lt / d);
+    train(ctx, tx, 1215, .62, lt * 1.6);
+    dust(ctx, lt * 2.5, tx - 420, 1210, 12, 'rgba(150,120,70,.35)');
+    ctx.restore();
+    hookText(ctx, lt + 0.6, 'İstanbul varken başkent neden Ankara?', { style: 'marker', key: 'ANKARA', y: 420 });
   } },
   { s: 2.65, e: 4.66, draw(ctx, lt, d) { // 16 Mart 1920
     sky(ctx, '#a8a0a0', '#d8cdb8'); camera(ctx, lt, d, 1, 1.06, CX, 900);
