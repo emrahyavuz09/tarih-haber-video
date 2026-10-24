@@ -24,7 +24,7 @@
 | 2026-10-28 | Seyit Onbaşı ve top mermisi (18 Mart 1915, Mecidiye Tabyası, 215 okka/~276 kg, tahta mermiyle fotoğraf) — sabah | üretildi, planlanmadı; açılış: zoom |
 | 2026-11-04 | Süleymaniye Camii'ndeki is odası (kandil isi, hava akımı; mürekkep kısmı rivayet) — sabah | üretildi, planlanmadı — açılış: marker |
 | 2026-11-07 | Belgrad'ın fethi 1521: Kanuni'nin ilk seferi (II. Murad ve Fatih'in kuşatmaları, Böğürdelen, Zemun, 29 Ağustos) — akşam | üretildi, planlanmadı; açılış: slam |
-| 2026-10-28 | Ankara Savaşı 1402 (Timur, Yıldırım Bayezid esir, Çubuk Çayı, Tatarların saf değiştirmesi, kafes rivayeti tartışmalı, Fetret) — akşam | üretildi, planlanmadı |
+| 2026-10-28 | Ankara Savaşı 1402 (Timur, Yıldırım Bayezid esir, Çubuk Çayı, Tatarların saf değiştirmesi, kafes rivayeti tartışmalı, Fetret) — akşam | üretildi, planlanmadı; açılış: split |
 | 2026-11-08 | "Barbaros" adı nereden geliyor (Oruç Reis, Barbarossa = kızıl sakal / Baba Oruç görüşü, Hızır'a geçişi, Hayreddin lakabı) — sabah | üretildi, planlanmadı; açılış: split |
 | 2026-10-29 | Ankara neden başkent oldu (16 Mart 1920 işgal, 23 Nisan 1920 TBMM, güvenli/merkezî konum, demiryolu, 13 Ekim 1923 kararı; Atatürk çizilmedi) — sabah | üretildi, planlanmadı; açılış: marker |
 | 2026-11-04 | Mercidabık 1516 (Yavuz Sultan Selim, Kansu Gavri, Memlük süvarisi, Halep ve Şam) — akşam | üretildi, planlanmadı — açılış: zoom |

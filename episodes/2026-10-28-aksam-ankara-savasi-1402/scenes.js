@@ -254,9 +254,38 @@ function ember(ctx, lt, x, y, n = 24) {
 function blocks(ctx, list, col) { list.forEach(([x, y]) => shape(ctx, [[x - 34, y - 18], [x + 34, y - 18], [x + 34, y + 18], [x - 34, y + 18]], col, C.ink, 3, .4)); }
 
 const SCENES = [
-  { s: 0, e: 2.37, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Esir düşen tek Osmanlı sultanı!', 'Ankara 1402'); ctx.restore();
-    for (let i = 0; i < 3; i++) { const sw = Math.sin(lt * 3 + i) * .4; ctx.save(); ctx.translate(500, 1220); ctx.rotate(sw * .3); chainLink(ctx, -90 + i * 90, 0, 1, (i % 2) * 1.57); ctx.restore(); }
+  { s: 0, e: 2.37, draw(ctx, lt, d) { // HOOK — kavurucu yaz ovası: soldan Osmanlı sipahileri, sağdan Timur'un filleri, ortada toz bulutu
+    shake(ctx, lt, 0, 20, .32);
+    const z = lt < .3 ? lerp(1.2, 1.0, eOut(lt / .3)) : lerp(1.0, 1.06, eInOut((lt - .3) / (d - .3)));
+    ctx.translate(W / 2, 1150); ctx.scale(z, z); ctx.translate(-W / 2, -1150);
+    const sky = ctx.createLinearGradient(0, 0, 0, 1100); sky.addColorStop(0, '#d9783a'); sky.addColorStop(1, '#f6d58e');
+    ctx.fillStyle = sky; ctx.fillRect(-300, -300, W + 600, 1500);
+    sun(ctx, 540, 770, 66, lt);
+    // sıcak hava titreşimi
+    ctx.strokeStyle = 'rgba(255,240,200,.45)'; ctx.lineWidth = 4;
+    for (let r = 0; r < 4; r++) { ctx.beginPath(); for (let x = -40; x <= W + 40; x += 20) { const y = 900 + r * 34 + Math.sin(x * .03 + lt * 6 + r) * 6; x === -40 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); } ctx.stroke(); }
+    shape(ctx, [[-300, 1010], [100, 975], [400, 995], [700, 965], [1000, 990], [1400, 975], [1400, 1100], [-300, 1100]], '#b98a52', C.ink, 4, .8);
+    shape(ctx, [[-300, 1060], [300, 1048], [700, 1070], [1400, 1052], [1400, 2200], [-300, 2200]], '#c9a15e', C.ink, 5, 1);
+    ctx.strokeStyle = 'rgba(110,80,40,.35)'; ctx.lineWidth = 3;
+    for (let i = 0; i < 26; i++) { const x = hash(i + 5) * W, y = 1100 + hash(i + 6) * 500; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + 6 + Math.sin(lt * 3 + i) * 4, y - 18); ctx.stroke(); }
+    const adv = eOut(clamp((lt + .3) / (d + .3)));
+    // arka sıra: flamalar ve tuğlar
+    for (let i = 0; i < 3; i++) pennant(ctx, -20 + i * 110 + adv * 90, 1110, 170, lt + i, C.red);
+    for (let i = 0; i < 2; i++) tug(ctx, 820 + i * 100 - adv * 60, 1110, 180, lt + i);
+    // Osmanlı sipahileri (soldan)
+    for (let i = 0; i < 3; i++) sipahi(ctx, lerp(-60, 120, adv) + i * 120, 1150 + (i % 2) * 14, .5, 1, lt * 15 + i * 1.7);
+    for (let i = 0; i < 2; i++) sipahi(ctx, lerp(-160, 110, adv) + i * 200, 1340 + i * 20, .9, 1, lt * 16 + i * 2.1);
+    // Timur'un filleri (sağdan)
+    elephant(ctx, lerp(1100, 800, adv), 1150, .5, -1, lt * 6);
+    elephant(ctx, lerp(1250, 960, adv), 1175, .5, -1, lt * 6 + 1);
+    elephant(ctx, lerp(1120, 790, adv), 1370, .95, -1, lt * 6 + 2);
+    // ortada çarpışan toz bulutu (ilk anda patlar)
+    const db = eOut(clamp((lt + .1) / .4));
+    for (let i = 0; i < 14; i++) { const a = hash(i + 90) * Math.PI * 2, r = (60 + hash(i + 91) * 160) * db; ctx.globalAlpha = .55 - .2 * hash(i + 92);
+      ell(ctx, 530 + Math.cos(a) * r * 1.3 + Math.sin(lt * 2 + i) * 14, 1210 + Math.sin(a) * r * .5 - lt * 20, 70 + hash(i + 93) * 50, 46 + hash(i + 94) * 30, '#e8d2a2', null); }
+    ctx.globalAlpha = 1;
+    dust(ctx, lt, 200, 1340, 12, 'rgba(150,110,60,.45)'); dust(ctx, lt, 860, 1360, 12, 'rgba(150,110,60,.45)');
+    hookText(ctx, lt + .6, 'Esir düşen tek Osmanlı sultanı!', { style: 'split', key: 'ESİR', y: 430 });
   } },
   { s: 2.37, e: 6.13, draw(ctx, lt, d) { // Doğuda Timur, batıda Bayezid
     ctx.drawImage(paperTex('#e2cfa6', 'warm'), 0, 0); camera(ctx, lt, d, 1, 1.05, CX, 860);
