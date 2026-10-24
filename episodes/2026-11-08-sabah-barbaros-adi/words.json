@@ -1,0 +1,604 @@
+{
+ "words": [
+  {
+   "text": "Barbaros,",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.692
+  },
+  {
+   "text": "aslında",
+   "type": "word",
+   "start": 0.769,
+   "end": 1.154
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 1.231,
+   "end": 1.385
+  },
+  {
+   "text": "Türk",
+   "type": "word",
+   "start": 1.462,
+   "end": 1.692
+  },
+  {
+   "text": "adı",
+   "type": "word",
+   "start": 1.731,
+   "end": 1.846
+  },
+  {
+   "text": "değil!",
+   "type": "word",
+   "start": 1.923,
+   "end": 2.332
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 2.423,
+   "end": 2.5
+  },
+  {
+   "text": "ad,",
+   "type": "word",
+   "start": 2.577,
+   "end": 2.885
+  },
+  {
+   "text": "Avrupalıların",
+   "type": "word",
+   "start": 2.962,
+   "end": 3.577
+  },
+  {
+   "text": "taktığı",
+   "type": "word",
+   "start": 3.654,
+   "end": 3.962
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 4.038,
+   "end": 4.115
+  },
+  {
+   "text": "lakaptı.",
+   "type": "word",
+   "start": 4.192,
+   "end": 4.808
+  },
+  {
+   "text": "Hikâye",
+   "type": "word",
+   "start": 4.875,
+   "end": 5.337
+  },
+  {
+   "text": "Midilli",
+   "type": "word",
+   "start": 5.49,
+   "end": 5.798
+  },
+  {
+   "text": "adasında",
+   "type": "word",
+   "start": 5.875,
+   "end": 6.26
+  },
+  {
+   "text": "başlıyor.",
+   "type": "word",
+   "start": 6.337,
+   "end": 6.976
+  },
+  {
+   "text": "Dört",
+   "type": "word",
+   "start": 7.077,
+   "end": 7.231
+  },
+  {
+   "text": "kardeşten",
+   "type": "word",
+   "start": 7.308,
+   "end": 7.846
+  },
+  {
+   "text": "ikisi,",
+   "type": "word",
+   "start": 7.923,
+   "end": 8.5
+  },
+  {
+   "text": "Oruç",
+   "type": "word",
+   "start": 8.615,
+   "end": 8.846
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 8.923,
+   "end": 9.0
+  },
+  {
+   "text": "Hızır,",
+   "type": "word",
+   "start": 9.077,
+   "end": 9.5
+  },
+  {
+   "text": "Akdeniz'in",
+   "type": "word",
+   "start": 9.567,
+   "end": 10.106
+  },
+  {
+   "text": "en",
+   "type": "word",
+   "start": 10.337,
+   "end": 10.413
+  },
+  {
+   "text": "ünlü",
+   "type": "word",
+   "start": 10.49,
+   "end": 10.683
+  },
+  {
+   "text": "denizcileri",
+   "type": "word",
+   "start": 10.721,
+   "end": 11.298
+  },
+  {
+   "text": "oldu.",
+   "type": "word",
+   "start": 11.337,
+   "end": 11.721
+  },
+  {
+   "text": "Kuzey",
+   "type": "word",
+   "start": 11.779,
+   "end": 12.01
+  },
+  {
+   "text": "Afrika",
+   "type": "word",
+   "start": 12.087,
+   "end": 12.394
+  },
+  {
+   "text": "kıyılarında",
+   "type": "word",
+   "start": 12.433,
+   "end": 13.01
+  },
+  {
+   "text": "İspanyollarla",
+   "type": "word",
+   "start": 13.087,
+   "end": 13.779
+  },
+  {
+   "text": "savaştılar.",
+   "type": "word",
+   "start": 13.856,
+   "end": 14.601
+  },
+  {
+   "text": "Avrupalılar",
+   "type": "word",
+   "start": 14.683,
+   "end": 15.298
+  },
+  {
+   "text": "önce",
+   "type": "word",
+   "start": 15.452,
+   "end": 15.76
+  },
+  {
+   "text": "ağabey",
+   "type": "word",
+   "start": 15.913,
+   "end": 16.221
+  },
+  {
+   "text": "Oruç",
+   "type": "word",
+   "start": 16.298,
+   "end": 16.606
+  },
+  {
+   "text": "Reis'e",
+   "type": "word",
+   "start": 16.644,
+   "end": 17.067
+  },
+  {
+   "text": "\"Barbarossa\"",
+   "type": "word",
+   "start": 17.221,
+   "end": 17.875
+  },
+  {
+   "text": "dediler.",
+   "type": "word",
+   "start": 17.913,
+   "end": 18.375
+  },
+  {
+   "text": "İtalyancada",
+   "type": "word",
+   "start": 18.452,
+   "end": 19.221
+  },
+  {
+   "text": "\"kızıl",
+   "type": "word",
+   "start": 19.375,
+   "end": 19.683
+  },
+  {
+   "text": "sakal\"",
+   "type": "word",
+   "start": 19.721,
+   "end": 20.029
+  },
+  {
+   "text": "demek.",
+   "type": "word",
+   "start": 20.067,
+   "end": 20.466
+  },
+  {
+   "text": "Bir",
+   "type": "word",
+   "start": 20.558,
+   "end": 20.635
+  },
+  {
+   "text": "görüşe",
+   "type": "word",
+   "start": 20.712,
+   "end": 21.058
+  },
+  {
+   "text": "göre",
+   "type": "word",
+   "start": 21.096,
+   "end": 21.327
+  },
+  {
+   "text": "bu",
+   "type": "word",
+   "start": 21.481,
+   "end": 21.558
+  },
+  {
+   "text": "ad,",
+   "type": "word",
+   "start": 21.635,
+   "end": 21.942
+  },
+  {
+   "text": "kızıla",
+   "type": "word",
+   "start": 22.019,
+   "end": 22.327
+  },
+  {
+   "text": "çalan",
+   "type": "word",
+   "start": 22.404,
+   "end": 22.635
+  },
+  {
+   "text": "sakalından",
+   "type": "word",
+   "start": 22.712,
+   "end": 23.25
+  },
+  {
+   "text": "geliyor.",
+   "type": "word",
+   "start": 23.288,
+   "end": 23.784
+  },
+  {
+   "text": "Başka",
+   "type": "word",
+   "start": 23.865,
+   "end": 24.096
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 24.173,
+   "end": 24.25
+  },
+  {
+   "text": "görüşe",
+   "type": "word",
+   "start": 24.327,
+   "end": 24.635
+  },
+  {
+   "text": "göre",
+   "type": "word",
+   "start": 24.712,
+   "end": 24.865
+  },
+  {
+   "text": "ise",
+   "type": "word",
+   "start": 25.019,
+   "end": 25.173
+  },
+  {
+   "text": "\"Baba",
+   "type": "word",
+   "start": 25.404,
+   "end": 25.712
+  },
+  {
+   "text": "Oruç\"",
+   "type": "word",
+   "start": 25.788,
+   "end": 26.058
+  },
+  {
+   "text": "sözü,",
+   "type": "word",
+   "start": 26.096,
+   "end": 26.481
+  },
+  {
+   "text": "Avrupa",
+   "type": "word",
+   "start": 26.654,
+   "end": 26.962
+  },
+  {
+   "text": "dillerinde",
+   "type": "word",
+   "start": 27.0,
+   "end": 27.577
+  },
+  {
+   "text": "\"Barbarossa\"ya",
+   "type": "word",
+   "start": 27.731,
+   "end": 28.423
+  },
+  {
+   "text": "dönüştü.",
+   "type": "word",
+   "start": 28.462,
+   "end": 28.962
+  },
+  {
+   "text": "Bin",
+   "type": "word",
+   "start": 29.058,
+   "end": 29.212
+  },
+  {
+   "text": "beş",
+   "type": "word",
+   "start": 29.288,
+   "end": 29.404
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 29.442,
+   "end": 29.558
+  },
+  {
+   "text": "on",
+   "type": "word",
+   "start": 29.596,
+   "end": 29.673
+  },
+  {
+   "text": "sekizde",
+   "type": "word",
+   "start": 29.75,
+   "end": 30.212
+  },
+  {
+   "text": "Oruç",
+   "type": "word",
+   "start": 30.365,
+   "end": 30.596
+  },
+  {
+   "text": "Reis",
+   "type": "word",
+   "start": 30.673,
+   "end": 30.981
+  },
+  {
+   "text": "şehit",
+   "type": "word",
+   "start": 31.058,
+   "end": 31.288
+  },
+  {
+   "text": "düştü.",
+   "type": "word",
+   "start": 31.365,
+   "end": 31.793
+  },
+  {
+   "text": "Lakap,",
+   "type": "word",
+   "start": 31.885,
+   "end": 32.423
+  },
+  {
+   "text": "kardeşi",
+   "type": "word",
+   "start": 32.5,
+   "end": 32.885
+  },
+  {
+   "text": "Hızır'a",
+   "type": "word",
+   "start": 32.962,
+   "end": 33.269
+  },
+  {
+   "text": "geçti.",
+   "type": "word",
+   "start": 33.346,
+   "end": 33.731
+  },
+  {
+   "text": "Hızır'a",
+   "type": "word",
+   "start": 33.875,
+   "end": 34.26
+  },
+  {
+   "text": "\"Hayreddin\"",
+   "type": "word",
+   "start": 34.337,
+   "end": 34.913
+  },
+  {
+   "text": "adını",
+   "type": "word",
+   "start": 34.952,
+   "end": 35.183
+  },
+  {
+   "text": "ise",
+   "type": "word",
+   "start": 35.337,
+   "end": 35.49
+  },
+  {
+   "text": "Yavuz",
+   "type": "word",
+   "start": 35.644,
+   "end": 35.875
+  },
+  {
+   "text": "Sultan",
+   "type": "word",
+   "start": 35.952,
+   "end": 36.26
+  },
+  {
+   "text": "Selim",
+   "type": "word",
+   "start": 36.337,
+   "end": 36.567
+  },
+  {
+   "text": "verdi.",
+   "type": "word",
+   "start": 36.683,
+   "end": 37.144
+  },
+  {
+   "text": "Ve",
+   "type": "word",
+   "start": 37.221,
+   "end": 37.298
+  },
+  {
+   "text": "Akdeniz'in",
+   "type": "word",
+   "start": 37.452,
+   "end": 38.067
+  },
+  {
+   "text": "korkulu",
+   "type": "word",
+   "start": 38.221,
+   "end": 38.606
+  },
+  {
+   "text": "rüyası",
+   "type": "word",
+   "start": 38.683,
+   "end": 39.067
+  },
+  {
+   "text": "doğdu:",
+   "type": "word",
+   "start": 39.183,
+   "end": 39.529
+  },
+  {
+   "text": "Barbaros",
+   "type": "word",
+   "start": 39.673,
+   "end": 40.288
+  },
+  {
+   "text": "Hayreddin",
+   "type": "word",
+   "start": 40.365,
+   "end": 40.904
+  },
+  {
+   "text": "Paşa!",
+   "type": "word",
+   "start": 40.981,
+   "end": 41.365
+  },
+  {
+   "text": "Bir",
+   "type": "word",
+   "start": 41.538,
+   "end": 41.692
+  },
+  {
+   "text": "lakap...",
+   "type": "word",
+   "start": 41.769,
+   "end": 42.519
+  },
+  {
+   "text": "beş",
+   "type": "word",
+   "start": 42.558,
+   "end": 42.673
+  },
+  {
+   "text": "asırdır",
+   "type": "word",
+   "start": 42.75,
+   "end": 43.365
+  },
+  {
+   "text": "Akdeniz'in",
+   "type": "word",
+   "start": 43.481,
+   "end": 43.981
+  },
+  {
+   "text": "dalgalarında",
+   "type": "word",
+   "start": 44.058,
+   "end": 44.596
+  },
+  {
+   "text": "yaşıyor.",
+   "type": "word",
+   "start": 44.673,
+   "end": 45.365
+  }
+ ]
+}
