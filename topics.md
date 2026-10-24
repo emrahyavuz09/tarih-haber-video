@@ -21,7 +21,7 @@
 | 2026-11-06 | Sakarya Meydan Muharebesi 1921 ("Hattı müdafaa yoktur, sathı müdafaa vardır...", 22 gün 22 gece, Mareşal ve Gazi; Atatürk çizilmedi) — akşam | üretildi, planlanmadı; açılış: stencil |
 | 2026-10-27 | Niğbolu 1396: Yıldırım Bayezid, Sigismund'un Haçlı ordusu, kayıkla kaçış, Nevers fidyesi — akşam | üretildi, planlanmadı; açılış: stencil |
 | 2026-11-07 | Pîrî Reis'in 1513 dünya haritası (Gelibolu, Kolomb haritası, Topkapı'da bulunuşu, Kitâb-ı Bahriye) — sabah | üretildi, planlanmadı; açılış: marker |
-| 2026-10-28 | Seyit Onbaşı ve top mermisi (18 Mart 1915, Mecidiye Tabyası, 215 okka/~276 kg, tahta mermiyle fotoğraf) — sabah | üretildi, planlanmadı |
+| 2026-10-28 | Seyit Onbaşı ve top mermisi (18 Mart 1915, Mecidiye Tabyası, 215 okka/~276 kg, tahta mermiyle fotoğraf) — sabah | üretildi, planlanmadı; açılış: zoom |
 | 2026-11-04 | Süleymaniye Camii'ndeki is odası (kandil isi, hava akımı; mürekkep kısmı rivayet) — sabah | üretildi, planlanmadı — açılış: marker |
 | 2026-11-07 | Belgrad'ın fethi 1521: Kanuni'nin ilk seferi (II. Murad ve Fatih'in kuşatmaları, Böğürdelen, Zemun, 29 Ağustos) — akşam | üretildi, planlanmadı; açılış: slam |
 | 2026-10-28 | Ankara Savaşı 1402 (Timur, Yıldırım Bayezid esir, Çubuk Çayı, Tatarların saf değiştirmesi, kafes rivayeti tartışmalı, Fetret) — akşam | üretildi, planlanmadı |

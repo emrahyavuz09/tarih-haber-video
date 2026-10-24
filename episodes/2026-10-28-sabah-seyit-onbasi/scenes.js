@@ -135,9 +135,27 @@ function chevron(ctx, x, y, s, p) { // onbaşı rütbesi (temsili kol şeridi)
 }
 
 const SCENES = [
-  { s: 0, e: 2.55, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Dev top mermisini sırtında taşıdı!', 'Seyit Onbaşı'); ctx.restore();
-    shell(ctx, lerp(380, 560, lt / d), 1210 + Math.sin(lt * 4) * 8, 1.1, Math.sin(lt * 3) * .08);
+  { s: 0, e: 2.55, draw(ctx, lt, d) { // HOOK — dev mermiye yakın çekimden geri çekilme: Seyit (arkadan) mermiyi sırtlamış, tabya topu ateşliyor
+    shake(ctx, lt, 0, 18, .3); shake(ctx, lt, 1.3, 12, .3);
+    const z = lt < .4 ? lerp(1.9, 1.0, eOut(lt / .4)) : lerp(1.0, 1.05, eInOut((lt - .4) / (d - .4)));
+    ctx.translate(330, 880); ctx.scale(z, z); ctx.translate(-330, -880);
+    sky(ctx, '#5b5049', '#d9a66c');
+    // ufukta yükselen duman sütunları
+    [[140, .38], [560, .3], [960, .34]].forEach(([x0, a], j) => { for (let i = 0; i < 9; i++) { const k = ((i / 9) + lt * .18 + j * .1) % 1; ctx.globalAlpha = a * (1 - k); ell(ctx, x0 + k * 140 + Math.sin(lt + i) * 10, 1000 - k * 420, 40 + k * 70, 30 + k * 46, '#3e3631', null); } }); ctx.globalAlpha = 1;
+    sea(ctx, 1010, lt, '#6f8f98');
+    battleship(ctx, 800 - lt * 25, 1022, .34, -1, lt, .2);
+    splash(ctx, 610, 1030, .7, ((lt + .3) % 1.1) / 1.1); splash(ctx, 880, 1040, .5, ((lt + .85) % 1.3) / 1.3);
+    burst(ctx, 700, 960, .45, ((lt + .1) % 1.4) / .5);
+    rampart(ctx, 1260, lt);
+    // tabya topu ateşler (periyodik), namlu dumanı
+    const f = ((lt + .05) % 1.3) / .35;
+    coastGun(ctx, 690, 1270, .72, f < 1 ? f : 0, -.32);
+    smoke(ctx, lt + 1.2, 900, 1080, 0, 10, 'rgba(232,226,212,.8)'); smoke(ctx, (lt + .05) % 1.3, 920, 1070, 0, 8, 'rgba(240,234,220,.85)');
+    // uçuşan toz/kıvılcım
+    for (let i = 0; i < 14; i++) { const k = (lt * .7 + hash(i + 50)) % 1; ctx.globalAlpha = (1 - k) * .8; ell(ctx, 120 + hash(i + 51) * 760 + k * 80, 1300 - k * 420, 5, 5, '#f3c56a', null); } ctx.globalAlpha = 1;
+    // Seyit (arkadan, yüz yok) mermiyi sırtlamış, adım atıyor
+    seyit(ctx, 320 + Math.sin(lt * 5) * 6, 1450, 1.18, 1, { step: Math.sin(lt * 8) * 10 });
+    hookText(ctx, lt + .6, 'Dev top mermisini... sırtında taşıdı!', { style: 'zoom', key: 'SIRTINDA', y: 430 });
   } },
   { s: 2.55, e: 5.83, draw(ctx, lt, d) { // 18 Mart 1915, Çanakkale Boğazı
     camera(ctx, lt, d, 1, 1.1, 480, 880); straitMap(ctx);
