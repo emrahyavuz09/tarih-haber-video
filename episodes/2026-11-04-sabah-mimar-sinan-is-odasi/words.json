@@ -1,0 +1,616 @@
+{
+ "words": [
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.154
+  },
+  {
+   "text": "camide,",
+   "type": "word",
+   "start": 0.308,
+   "end": 0.846
+  },
+  {
+   "text": "kandillerin",
+   "type": "word",
+   "start": 0.885,
+   "end": 1.538
+  },
+  {
+   "text": "isi",
+   "type": "word",
+   "start": 1.692,
+   "end": 1.846
+  },
+  {
+   "text": "bile",
+   "type": "word",
+   "start": 1.897,
+   "end": 2.0
+  },
+  {
+   "text": "boşa",
+   "type": "word",
+   "start": 2.077,
+   "end": 2.308
+  },
+  {
+   "text": "gitmedi!",
+   "type": "word",
+   "start": 2.385,
+   "end": 2.947
+  },
+  {
+   "text": "İstanbul.",
+   "type": "word",
+   "start": 2.971,
+   "end": 3.697
+  },
+  {
+   "text": "Süleymaniye",
+   "type": "word",
+   "start": 3.788,
+   "end": 4.404
+  },
+  {
+   "text": "Camii.",
+   "type": "word",
+   "start": 4.481,
+   "end": 5.053
+  },
+  {
+   "text": "Mimar",
+   "type": "word",
+   "start": 5.106,
+   "end": 5.413
+  },
+  {
+   "text": "Sinan,",
+   "type": "word",
+   "start": 5.49,
+   "end": 5.875
+  },
+  {
+   "text": "onu",
+   "type": "word",
+   "start": 5.952,
+   "end": 6.106
+  },
+  {
+   "text": "bin",
+   "type": "word",
+   "start": 6.183,
+   "end": 6.337
+  },
+  {
+   "text": "beş",
+   "type": "word",
+   "start": 6.413,
+   "end": 6.529
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 6.567,
+   "end": 6.721
+  },
+  {
+   "text": "elli",
+   "type": "word",
+   "start": 6.798,
+   "end": 6.875
+  },
+  {
+   "text": "yedide",
+   "type": "word",
+   "start": 6.952,
+   "end": 7.183
+  },
+  {
+   "text": "tamamladı.",
+   "type": "word",
+   "start": 7.26,
+   "end": 7.875
+  },
+  {
+   "text": "O",
+   "type": "word",
+   "start": 8.019,
+   "end": 8.058
+  },
+  {
+   "text": "devirde",
+   "type": "word",
+   "start": 8.096,
+   "end": 8.481
+  },
+  {
+   "text": "cami,",
+   "type": "word",
+   "start": 8.558,
+   "end": 9.096
+  },
+  {
+   "text": "yüzlerce",
+   "type": "word",
+   "start": 9.173,
+   "end": 9.712
+  },
+  {
+   "text": "kandille",
+   "type": "word",
+   "start": 9.788,
+   "end": 10.173
+  },
+  {
+   "text": "aydınlanıyordu.",
+   "type": "word",
+   "start": 10.327,
+   "end": 11.12
+  },
+  {
+   "text": "Ve",
+   "type": "word",
+   "start": 11.183,
+   "end": 11.337
+  },
+  {
+   "text": "her",
+   "type": "word",
+   "start": 11.413,
+   "end": 11.567
+  },
+  {
+   "text": "kandil,",
+   "type": "word",
+   "start": 11.644,
+   "end": 12.106
+  },
+  {
+   "text": "havaya",
+   "type": "word",
+   "start": 12.26,
+   "end": 12.644
+  },
+  {
+   "text": "kapkara",
+   "type": "word",
+   "start": 12.798,
+   "end": 13.26
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 13.337,
+   "end": 13.413
+  },
+  {
+   "text": "is",
+   "type": "word",
+   "start": 13.567,
+   "end": 13.721
+  },
+  {
+   "text": "bırakıyordu.",
+   "type": "word",
+   "start": 13.798,
+   "end": 14.49
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 14.606,
+   "end": 14.683
+  },
+  {
+   "text": "is,",
+   "type": "word",
+   "start": 14.76,
+   "end": 15.144
+  },
+  {
+   "text": "zamanla",
+   "type": "word",
+   "start": 15.221,
+   "end": 15.683
+  },
+  {
+   "text": "kubbeyi",
+   "type": "word",
+   "start": 15.76,
+   "end": 16.221
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 16.298,
+   "end": 16.375
+  },
+  {
+   "text": "süslemeleri",
+   "type": "word",
+   "start": 16.452,
+   "end": 17.029
+  },
+  {
+   "text": "karartabilirdi.",
+   "type": "word",
+   "start": 17.067,
+   "end": 18.005
+  },
+  {
+   "text": "Sinan'ın",
+   "type": "word",
+   "start": 18.125,
+   "end": 18.433
+  },
+  {
+   "text": "çözümü...",
+   "type": "word",
+   "start": 18.51,
+   "end": 19.183
+  },
+  {
+   "text": "havanın",
+   "type": "word",
+   "start": 19.26,
+   "end": 19.567
+  },
+  {
+   "text": "kendisiydi.",
+   "type": "word",
+   "start": 19.644,
+   "end": 20.38
+  },
+  {
+   "text": "Caminin",
+   "type": "word",
+   "start": 20.471,
+   "end": 20.933
+  },
+  {
+   "text": "içindeki",
+   "type": "word",
+   "start": 21.01,
+   "end": 21.394
+  },
+  {
+   "text": "hava",
+   "type": "word",
+   "start": 21.471,
+   "end": 21.702
+  },
+  {
+   "text": "akımı,",
+   "type": "word",
+   "start": 21.779,
+   "end": 22.24
+  },
+  {
+   "text": "dumanı",
+   "type": "word",
+   "start": 22.317,
+   "end": 22.625
+  },
+  {
+   "text": "tek",
+   "type": "word",
+   "start": 22.702,
+   "end": 22.856
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 22.933,
+   "end": 23.01
+  },
+  {
+   "text": "yöne",
+   "type": "word",
+   "start": 23.087,
+   "end": 23.24
+  },
+  {
+   "text": "taşıyordu.",
+   "type": "word",
+   "start": 23.317,
+   "end": 23.933
+  },
+  {
+   "text": "Ana",
+   "type": "word",
+   "start": 24.058,
+   "end": 24.212
+  },
+  {
+   "text": "kapının",
+   "type": "word",
+   "start": 24.288,
+   "end": 24.596
+  },
+  {
+   "text": "üstündeki",
+   "type": "word",
+   "start": 24.673,
+   "end": 25.212
+  },
+  {
+   "text": "küçük",
+   "type": "word",
+   "start": 25.288,
+   "end": 25.596
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 25.673,
+   "end": 25.75
+  },
+  {
+   "text": "odaya.",
+   "type": "word",
+   "start": 25.904,
+   "end": 26.212
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 26.288,
+   "end": 26.442
+  },
+  {
+   "text": "odaya",
+   "type": "word",
+   "start": 26.596,
+   "end": 26.827
+  },
+  {
+   "text": "\"is",
+   "type": "word",
+   "start": 27.019,
+   "end": 27.25
+  },
+  {
+   "text": "odası\"",
+   "type": "word",
+   "start": 27.327,
+   "end": 27.686
+  },
+  {
+   "text": "denir.",
+   "type": "word",
+   "start": 27.737,
+   "end": 28.139
+  },
+  {
+   "text": "Anlatılana",
+   "type": "word",
+   "start": 28.202,
+   "end": 28.74
+  },
+  {
+   "text": "göre,",
+   "type": "word",
+   "start": 28.817,
+   "end": 29.202
+  },
+  {
+   "text": "burada",
+   "type": "word",
+   "start": 29.279,
+   "end": 29.51
+  },
+  {
+   "text": "biriken",
+   "type": "word",
+   "start": 29.587,
+   "end": 29.894
+  },
+  {
+   "text": "is",
+   "type": "word",
+   "start": 30.048,
+   "end": 30.202
+  },
+  {
+   "text": "toplandı",
+   "type": "word",
+   "start": 30.279,
+   "end": 30.817
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 30.971,
+   "end": 31.048
+  },
+  {
+   "text": "mürekkep",
+   "type": "word",
+   "start": 31.202,
+   "end": 31.587
+  },
+  {
+   "text": "yapımında",
+   "type": "word",
+   "start": 31.663,
+   "end": 32.048
+  },
+  {
+   "text": "kullanıldı.",
+   "type": "word",
+   "start": 32.125,
+   "end": 32.774
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 32.837,
+   "end": 32.913
+  },
+  {
+   "text": "kısım,",
+   "type": "word",
+   "start": 32.99,
+   "end": 33.452
+  },
+  {
+   "text": "belgelerden",
+   "type": "word",
+   "start": 33.529,
+   "end": 34.144
+  },
+  {
+   "text": "çok",
+   "type": "word",
+   "start": 34.221,
+   "end": 34.375
+  },
+  {
+   "text": "rivayete",
+   "type": "word",
+   "start": 34.452,
+   "end": 34.913
+  },
+  {
+   "text": "dayanıyor.",
+   "type": "word",
+   "start": 34.99,
+   "end": 35.543
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 35.606,
+   "end": 35.76
+  },
+  {
+   "text": "fikir",
+   "type": "word",
+   "start": 35.837,
+   "end": 36.221
+  },
+  {
+   "text": "yine",
+   "type": "word",
+   "start": 36.452,
+   "end": 36.606
+  },
+  {
+   "text": "de",
+   "type": "word",
+   "start": 36.683,
+   "end": 36.76
+  },
+  {
+   "text": "çarpıcı.",
+   "type": "word",
+   "start": 36.837,
+   "end": 37.375
+  },
+  {
+   "text": "İbadetin",
+   "type": "word",
+   "start": 37.5,
+   "end": 38.038
+  },
+  {
+   "text": "ışığından",
+   "type": "word",
+   "start": 38.115,
+   "end": 38.577
+  },
+  {
+   "text": "çıkan",
+   "type": "word",
+   "start": 38.654,
+   "end": 38.885
+  },
+  {
+   "text": "duman,",
+   "type": "word",
+   "start": 38.962,
+   "end": 39.423
+  },
+  {
+   "text": "yazıya",
+   "type": "word",
+   "start": 39.462,
+   "end": 39.808
+  },
+  {
+   "text": "dönüşüyordu.",
+   "type": "word",
+   "start": 39.846,
+   "end": 40.577
+  },
+  {
+   "text": "Kandil",
+   "type": "word",
+   "start": 40.683,
+   "end": 40.99
+  },
+  {
+   "text": "söndü,",
+   "type": "word",
+   "start": 41.067,
+   "end": 41.678
+  },
+  {
+   "text": "is",
+   "type": "word",
+   "start": 41.75,
+   "end": 41.904
+  },
+  {
+   "text": "kaldı.",
+   "type": "word",
+   "start": 41.981,
+   "end": 42.548
+  },
+  {
+   "text": "Ve",
+   "type": "word",
+   "start": 42.587,
+   "end": 42.625
+  },
+  {
+   "text": "belki",
+   "type": "word",
+   "start": 42.779,
+   "end": 43.087
+  },
+  {
+   "text": "de",
+   "type": "word",
+   "start": 43.163,
+   "end": 43.24
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 43.471,
+   "end": 43.625
+  },
+  {
+   "text": "hattatın",
+   "type": "word",
+   "start": 43.702,
+   "end": 44.163
+  },
+  {
+   "text": "kaleminde",
+   "type": "word",
+   "start": 44.24,
+   "end": 44.702
+  },
+  {
+   "text": "yaşadı.",
+   "type": "word",
+   "start": 44.779,
+   "end": 45.327
+  }
+ ]
+}

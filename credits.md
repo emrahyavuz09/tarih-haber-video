@@ -25,3 +25,4 @@ Aylık kota: 130000
 | 2026-10-24 | 1012 | Niğbolu 1396, 2026-10-27 akşam (1 okuma) |
 | 2026-10-24 | 745 | Pîrî Reis haritası, 2026-11-07 sabah (1 okuma) |
 | 2026-10-24 | 752 | Seyit Onbaşı, 2026-10-28 sabah (1 okuma) |
+| 2026-10-24 | 723 | Süleymaniye is odası, 2026-11-04 sabah (1 okuma) |

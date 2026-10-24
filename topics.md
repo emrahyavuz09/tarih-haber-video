@@ -22,6 +22,7 @@
 | 2026-10-27 | Niğbolu 1396: Yıldırım Bayezid, Sigismund'un Haçlı ordusu, kayıkla kaçış, Nevers fidyesi — akşam | üretildi, planlanmadı |
 | 2026-11-07 | Pîrî Reis'in 1513 dünya haritası (Gelibolu, Kolomb haritası, Topkapı'da bulunuşu, Kitâb-ı Bahriye) — sabah | üretildi, planlanmadı |
 | 2026-10-28 | Seyit Onbaşı ve top mermisi (18 Mart 1915, Mecidiye Tabyası, 215 okka/~276 kg, tahta mermiyle fotoğraf) — sabah | üretildi, planlanmadı |
+| 2026-11-04 | Süleymaniye Camii'ndeki is odası (kandil isi, hava akımı; mürekkep kısmı rivayet) — sabah | üretildi, planlanmadı |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)
