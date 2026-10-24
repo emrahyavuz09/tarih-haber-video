@@ -18,7 +18,7 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
 1. **HOOK / AÇILIŞ:** Metnin ilk cümlesi en fazla ~2,5 sn, merak uyandıran bir soru ya da şok edici bilgi.
    Açılış sahnesi HER VİDEODA FARKLI ve konunun kendisinden olmalı (aynı kırmızı kart YASAK, `hookCard` kullanma):
    konuya özel hareketli bir görüntü (ör. uçan ok yakın çekim, batan gemi, dalgalanan bayrak, açılan ferman) + üstünde
-   `hookText(ctx, lt, 'hook cümlesi', {style, key, y, accent})`. Stiller: slam, marker, news, zoom, split, stencil, scroll.
+   `hookText(ctx, lt, 'hook cümlesi', {style, key, y, accent})`. Stiller: slam, marker, zoom, split, stencil, scroll. ('news' / SON DAKİKA bandı YASAK — kullanıcı kesinlikle istemiyor.)
    Art arda iki video aynı stili ve aynı arka plan rengini kullanmaz; `topics.md`'deki son videoların stiline bak ve satıra kullandığın stili yaz.
    İlk karede (lt=0) hem görüntü hem yazı dolu olmalı, ilk 0,3 sn'de güçlü bir hareket (darbe, yakınlaşma, patlama) olmalı.
 2. **Taşma / güvenli alan:** Instagram ve Shorts arayüzü kenarları kapatır. Tüm yazılar, etiketler ve önemli figürler

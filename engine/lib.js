@@ -662,7 +662,8 @@ function hookText(ctx, lt, text, o = {}) {
   const lh = size * 1.12, top = y - (lines.length - 1) * lh / 2;
   const drawWord = (w, x, yy, col) => { ctx.lineWidth = size * .16; ctx.strokeStyle = 'rgba(20,12,6,.9)'; ctx.lineJoin = 'round'; ctx.strokeText(w, x, yy); ctx.fillStyle = col; ctx.fillText(w, x, yy); };
   ctx.font = `700 ${size}px ${F_SANS}`; ctx.textBaseline = 'middle';
-  if (style === 'news') {
+  if (style === 'news') style = 'stencil'; // SON DAKİKA bandı kullanıcı isteğiyle kaldırıldı
+  if (false) {
     const p = eOut(clamp(lt / .25)); const bh = lines.length * lh + 70, by = top - lh / 2 - 50;
     ctx.fillStyle = accent; ctx.fillRect(-20, by, (W + 40) * p, 54); ctx.fillStyle = 'rgba(20,12,6,.88)'; ctx.fillRect(-20, by + 54, (W + 40) * p, bh);
     ctx.font = `700 34px ${F_SANS}`; ctx.fillStyle = '#fff'; ctx.textAlign = 'left'; ctx.fillText((o.label || 'SON DAKİKA') + '  •  TARİH HABER', SAFE.l + 6, by + 28);
