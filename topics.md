@@ -27,6 +27,7 @@
 | 2026-10-28 | Ankara Savaşı 1402 (Timur, Yıldırım Bayezid esir, Çubuk Çayı, Tatarların saf değiştirmesi, kafes rivayeti tartışmalı, Fetret) — akşam | üretildi, planlanmadı |
 | 2026-11-08 | "Barbaros" adı nereden geliyor (Oruç Reis, Barbarossa = kızıl sakal / Baba Oruç görüşü, Hızır'a geçişi, Hayreddin lakabı) — sabah | üretildi, planlanmadı |
 | 2026-10-29 | Ankara neden başkent oldu (16 Mart 1920 işgal, 23 Nisan 1920 TBMM, güvenli/merkezî konum, demiryolu, 13 Ekim 1923 kararı; Atatürk çizilmedi) — sabah | üretildi, planlanmadı |
+| 2026-11-04 | Mercidabık 1516 (Yavuz Sultan Selim, Kansu Gavri, Memlük süvarisi, Halep ve Şam) — akşam | üretildi, planlanmadı |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)

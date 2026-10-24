@@ -1,0 +1,802 @@
+{
+ "words": [
+  {
+   "text": "Memlüklerin",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.692
+  },
+  {
+   "text": "kaderi,",
+   "type": "word",
+   "start": 0.731,
+   "end": 1.269
+  },
+  {
+   "text": "tek",
+   "type": "word",
+   "start": 1.337,
+   "end": 1.567
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 1.644,
+   "end": 1.721
+  },
+  {
+   "text": "günde",
+   "type": "word",
+   "start": 1.798,
+   "end": 2.029
+  },
+  {
+   "text": "değişti!",
+   "type": "word",
+   "start": 2.106,
+   "end": 2.697
+  },
+  {
+   "text": "Bin",
+   "type": "word",
+   "start": 2.808,
+   "end": 2.885
+  },
+  {
+   "text": "beş",
+   "type": "word",
+   "start": 2.962,
+   "end": 3.115
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 3.192,
+   "end": 3.269
+  },
+  {
+   "text": "on",
+   "type": "word",
+   "start": 3.423,
+   "end": 3.5
+  },
+  {
+   "text": "altı.",
+   "type": "word",
+   "start": 3.577,
+   "end": 4.058
+  },
+  {
+   "text": "Yavuz",
+   "type": "word",
+   "start": 4.096,
+   "end": 4.288
+  },
+  {
+   "text": "Sultan",
+   "type": "word",
+   "start": 4.365,
+   "end": 4.673
+  },
+  {
+   "text": "Selim,",
+   "type": "word",
+   "start": 4.75,
+   "end": 5.135
+  },
+  {
+   "text": "ordusuyla",
+   "type": "word",
+   "start": 5.212,
+   "end": 5.75
+  },
+  {
+   "text": "güneye,",
+   "type": "word",
+   "start": 5.827,
+   "end": 6.442
+  },
+  {
+   "text": "Suriye'ye",
+   "type": "word",
+   "start": 6.519,
+   "end": 6.981
+  },
+  {
+   "text": "yürüdü.",
+   "type": "word",
+   "start": 7.058,
+   "end": 7.519
+  },
+  {
+   "text": "Karşısında,",
+   "type": "word",
+   "start": 7.606,
+   "end": 8.413
+  },
+  {
+   "text": "Mısır",
+   "type": "word",
+   "start": 8.529,
+   "end": 8.837
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 8.913,
+   "end": 9.067
+  },
+  {
+   "text": "Suriye'yi",
+   "type": "word",
+   "start": 9.221,
+   "end": 9.606
+  },
+  {
+   "text": "yöneten",
+   "type": "word",
+   "start": 9.683,
+   "end": 10.144
+  },
+  {
+   "text": "Memlük",
+   "type": "word",
+   "start": 10.221,
+   "end": 10.529
+  },
+  {
+   "text": "Devleti",
+   "type": "word",
+   "start": 10.606,
+   "end": 10.913
+  },
+  {
+   "text": "vardı.",
+   "type": "word",
+   "start": 11.067,
+   "end": 11.428
+  },
+  {
+   "text": "Başlarında,",
+   "type": "word",
+   "start": 11.519,
+   "end": 12.25
+  },
+  {
+   "text": "yetmişini",
+   "type": "word",
+   "start": 12.365,
+   "end": 12.827
+  },
+  {
+   "text": "aşmış",
+   "type": "word",
+   "start": 12.904,
+   "end": 13.288
+  },
+  {
+   "text": "Sultan",
+   "type": "word",
+   "start": 13.519,
+   "end": 13.904
+  },
+  {
+   "text": "Kansu",
+   "type": "word",
+   "start": 14.058,
+   "end": 14.365
+  },
+  {
+   "text": "Gavri.",
+   "type": "word",
+   "start": 14.442,
+   "end": 14.928
+  },
+  {
+   "text": "Yirmi",
+   "type": "word",
+   "start": 15.038,
+   "end": 15.231
+  },
+  {
+   "text": "dört",
+   "type": "word",
+   "start": 15.269,
+   "end": 15.423
+  },
+  {
+   "text": "Ağustos.",
+   "type": "word",
+   "start": 15.5,
+   "end": 16.115
+  },
+  {
+   "text": "Halep'in",
+   "type": "word",
+   "start": 16.269,
+   "end": 16.654
+  },
+  {
+   "text": "kuzeyi.",
+   "type": "word",
+   "start": 16.731,
+   "end": 17.274
+  },
+  {
+   "text": "Mercidabık",
+   "type": "word",
+   "start": 17.346,
+   "end": 18.038
+  },
+  {
+   "text": "Ovası.",
+   "type": "word",
+   "start": 18.077,
+   "end": 18.5
+  },
+  {
+   "text": "Memlükler,",
+   "type": "word",
+   "start": 18.625,
+   "end": 19.317
+  },
+  {
+   "text": "ünlü",
+   "type": "word",
+   "start": 19.356,
+   "end": 19.587
+  },
+  {
+   "text": "süvarilerine",
+   "type": "word",
+   "start": 19.625,
+   "end": 20.317
+  },
+  {
+   "text": "güveniyordu.",
+   "type": "word",
+   "start": 20.394,
+   "end": 21.087
+  },
+  {
+   "text": "Zırhlı,",
+   "type": "word",
+   "start": 21.288,
+   "end": 21.827
+  },
+  {
+   "text": "usta",
+   "type": "word",
+   "start": 22.01,
+   "end": 22.394
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 22.625,
+   "end": 22.702
+  },
+  {
+   "text": "cesur.",
+   "type": "word",
+   "start": 22.779,
+   "end": 23.341
+  },
+  {
+   "text": "Yavuz",
+   "type": "word",
+   "start": 23.442,
+   "end": 23.75
+  },
+  {
+   "text": "ise",
+   "type": "word",
+   "start": 23.865,
+   "end": 23.981
+  },
+  {
+   "text": "ordusunu",
+   "type": "word",
+   "start": 24.135,
+   "end": 24.673
+  },
+  {
+   "text": "güçlü",
+   "type": "word",
+   "start": 24.75,
+   "end": 25.058
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 25.135,
+   "end": 25.212
+  },
+  {
+   "text": "siperin",
+   "type": "word",
+   "start": 25.288,
+   "end": 25.596
+  },
+  {
+   "text": "arkasına",
+   "type": "word",
+   "start": 25.673,
+   "end": 26.058
+  },
+  {
+   "text": "dizdi.",
+   "type": "word",
+   "start": 26.135,
+   "end": 26.654
+  },
+  {
+   "text": "Önde",
+   "type": "word",
+   "start": 26.731,
+   "end": 27.038
+  },
+  {
+   "text": "birbirine",
+   "type": "word",
+   "start": 27.115,
+   "end": 27.577
+  },
+  {
+   "text": "zincirlenmiş",
+   "type": "word",
+   "start": 27.654,
+   "end": 28.269
+  },
+  {
+   "text": "toplar,",
+   "type": "word",
+   "start": 28.346,
+   "end": 28.808
+  },
+  {
+   "text": "arkada",
+   "type": "word",
+   "start": 28.952,
+   "end": 29.413
+  },
+  {
+   "text": "tüfekli",
+   "type": "word",
+   "start": 29.567,
+   "end": 29.952
+  },
+  {
+   "text": "yeniçeriler.",
+   "type": "word",
+   "start": 30.029,
+   "end": 30.832
+  },
+  {
+   "text": "Memlük",
+   "type": "word",
+   "start": 30.904,
+   "end": 31.212
+  },
+  {
+   "text": "süvarisi",
+   "type": "word",
+   "start": 31.288,
+   "end": 31.827
+  },
+  {
+   "text": "hücuma",
+   "type": "word",
+   "start": 31.904,
+   "end": 32.288
+  },
+  {
+   "text": "kalktı.",
+   "type": "word",
+   "start": 32.327,
+   "end": 32.851
+  },
+  {
+   "text": "Toplar",
+   "type": "word",
+   "start": 32.913,
+   "end": 33.298
+  },
+  {
+   "text": "gürledi,",
+   "type": "word",
+   "start": 33.375,
+   "end": 34.01
+  },
+  {
+   "text": "tüfekler",
+   "type": "word",
+   "start": 34.087,
+   "end": 34.548
+  },
+  {
+   "text": "ateş",
+   "type": "word",
+   "start": 34.625,
+   "end": 34.933
+  },
+  {
+   "text": "açtı.",
+   "type": "word",
+   "start": 35.01,
+   "end": 35.471
+  },
+  {
+   "text": "Toz",
+   "type": "word",
+   "start": 35.548,
+   "end": 35.779
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 35.856,
+   "end": 35.933
+  },
+  {
+   "text": "barut",
+   "type": "word",
+   "start": 36.087,
+   "end": 36.317
+  },
+  {
+   "text": "dumanı",
+   "type": "word",
+   "start": 36.356,
+   "end": 36.702
+  },
+  {
+   "text": "ovayı",
+   "type": "word",
+   "start": 36.856,
+   "end": 37.163
+  },
+  {
+   "text": "kapladı.",
+   "type": "word",
+   "start": 37.24,
+   "end": 37.755
+  },
+  {
+   "text": "Önce",
+   "type": "word",
+   "start": 37.817,
+   "end": 38.125
+  },
+  {
+   "text": "Memlük",
+   "type": "word",
+   "start": 38.279,
+   "end": 38.587
+  },
+  {
+   "text": "sol",
+   "type": "word",
+   "start": 38.663,
+   "end": 38.817
+  },
+  {
+   "text": "kanadı",
+   "type": "word",
+   "start": 38.894,
+   "end": 39.163
+  },
+  {
+   "text": "dağıldı.",
+   "type": "word",
+   "start": 39.202,
+   "end": 39.74
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 39.779,
+   "end": 39.817
+  },
+  {
+   "text": "kanadın",
+   "type": "word",
+   "start": 39.894,
+   "end": 40.279
+  },
+  {
+   "text": "komutanı,",
+   "type": "word",
+   "start": 40.356,
+   "end": 40.971
+  },
+  {
+   "text": "Halep",
+   "type": "word",
+   "start": 41.01,
+   "end": 41.279
+  },
+  {
+   "text": "valisi",
+   "type": "word",
+   "start": 41.356,
+   "end": 41.817
+  },
+  {
+   "text": "Hayır",
+   "type": "word",
+   "start": 41.894,
+   "end": 42.125
+  },
+  {
+   "text": "Bey'di.",
+   "type": "word",
+   "start": 42.202,
+   "end": 42.702
+  },
+  {
+   "text": "Ardından",
+   "type": "word",
+   "start": 42.74,
+   "end": 43.317
+  },
+  {
+   "text": "bütün",
+   "type": "word",
+   "start": 43.394,
+   "end": 43.625
+  },
+  {
+   "text": "ordu",
+   "type": "word",
+   "start": 43.702,
+   "end": 44.01
+  },
+  {
+   "text": "geri",
+   "type": "word",
+   "start": 44.087,
+   "end": 44.24
+  },
+  {
+   "text": "çekildi.",
+   "type": "word",
+   "start": 44.356,
+   "end": 44.856
+  },
+  {
+   "text": "Kargaşanın",
+   "type": "word",
+   "start": 44.894,
+   "end": 45.394
+  },
+  {
+   "text": "içinde",
+   "type": "word",
+   "start": 45.471,
+   "end": 45.856
+  },
+  {
+   "text": "Sultan",
+   "type": "word",
+   "start": 46.087,
+   "end": 46.394
+  },
+  {
+   "text": "Kansu",
+   "type": "word",
+   "start": 46.548,
+   "end": 46.856
+  },
+  {
+   "text": "Gavri",
+   "type": "word",
+   "start": 46.894,
+   "end": 47.24
+  },
+  {
+   "text": "hayatını",
+   "type": "word",
+   "start": 47.317,
+   "end": 47.779
+  },
+  {
+   "text": "kaybetti.",
+   "type": "word",
+   "start": 47.856,
+   "end": 48.51
+  },
+  {
+   "text": "Anlatılana",
+   "type": "word",
+   "start": 48.587,
+   "end": 49.048
+  },
+  {
+   "text": "göre,",
+   "type": "word",
+   "start": 49.125,
+   "end": 49.548
+  },
+  {
+   "text": "atından",
+   "type": "word",
+   "start": 49.625,
+   "end": 50.01
+  },
+  {
+   "text": "düşerek",
+   "type": "word",
+   "start": 50.087,
+   "end": 50.471
+  },
+  {
+   "text": "öldü.",
+   "type": "word",
+   "start": 50.51,
+   "end": 50.962
+  },
+  {
+   "text": "Savaş,",
+   "type": "word",
+   "start": 51.038,
+   "end": 51.654
+  },
+  {
+   "text": "aynı",
+   "type": "word",
+   "start": 51.731,
+   "end": 51.962
+  },
+  {
+   "text": "gün",
+   "type": "word",
+   "start": 52.038,
+   "end": 52.192
+  },
+  {
+   "text": "sona",
+   "type": "word",
+   "start": 52.269,
+   "end": 52.5
+  },
+  {
+   "text": "erdi.",
+   "type": "word",
+   "start": 52.577,
+   "end": 53.01
+  },
+  {
+   "text": "Yavuz",
+   "type": "word",
+   "start": 53.048,
+   "end": 53.471
+  },
+  {
+   "text": "önce",
+   "type": "word",
+   "start": 53.548,
+   "end": 53.856
+  },
+  {
+   "text": "Halep'e,",
+   "type": "word",
+   "start": 53.894,
+   "end": 54.51
+  },
+  {
+   "text": "ardından",
+   "type": "word",
+   "start": 54.625,
+   "end": 55.048
+  },
+  {
+   "text": "Şam'a",
+   "type": "word",
+   "start": 55.125,
+   "end": 55.356
+  },
+  {
+   "text": "girdi.",
+   "type": "word",
+   "start": 55.433,
+   "end": 56.038
+  },
+  {
+   "text": "Suriye,",
+   "type": "word",
+   "start": 56.077,
+   "end": 56.654
+  },
+  {
+   "text": "Osmanlı'ya",
+   "type": "word",
+   "start": 56.769,
+   "end": 57.269
+  },
+  {
+   "text": "geçti.",
+   "type": "word",
+   "start": 57.346,
+   "end": 57.827
+  },
+  {
+   "text": "Ertesi",
+   "type": "word",
+   "start": 57.904,
+   "end": 58.25
+  },
+  {
+   "text": "yıl,",
+   "type": "word",
+   "start": 58.288,
+   "end": 58.673
+  },
+  {
+   "text": "Ridaniye'nin",
+   "type": "word",
+   "start": 58.712,
+   "end": 59.288
+  },
+  {
+   "text": "ardından",
+   "type": "word",
+   "start": 59.365,
+   "end": 59.827
+  },
+  {
+   "text": "Memlük",
+   "type": "word",
+   "start": 60.058,
+   "end": 60.365
+  },
+  {
+   "text": "Devleti",
+   "type": "word",
+   "start": 60.442,
+   "end": 60.904
+  },
+  {
+   "text": "tarihe",
+   "type": "word",
+   "start": 61.058,
+   "end": 61.442
+  },
+  {
+   "text": "karıştı.",
+   "type": "word",
+   "start": 61.519,
+   "end": 62.087
+  },
+  {
+   "text": "Mercidabık...",
+   "type": "word",
+   "start": 62.24,
+   "end": 63.135
+  },
+  {
+   "text": "Osmanlı'ya",
+   "type": "word",
+   "start": 63.212,
+   "end": 63.904
+  },
+  {
+   "text": "Mısır'ın",
+   "type": "word",
+   "start": 63.981,
+   "end": 64.365
+  },
+  {
+   "text": "kapısını",
+   "type": "word",
+   "start": 64.442,
+   "end": 64.827
+  },
+  {
+   "text": "açtı.",
+   "type": "word",
+   "start": 64.904,
+   "end": 65.404
+  }
+ ]
+}
