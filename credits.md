@@ -35,3 +35,4 @@ Aylık kota: 130000
 | 2026-10-24 | 653 | Göktürk alfabesi, 2026-11-01 sabah (1 okuma) |
 | 2026-10-24 | 1003 | Büyük Taarruz 1922, 2026-11-08 akşam (1 okuma) |
 | 2026-10-24 | 732 | Osmanlı ulakları, 2026-11-05 sabah (1 okuma) |
+| 2026-10-24 | 966 | Harf Devrimi, 2026-11-01 akşam (1 okuma) |
