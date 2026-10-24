@@ -186,12 +186,35 @@ function chest(ctx, x, y, s) {
 const CX = 500;
 const NIK = [24.9, 43.7];
 const SCENES = [
-  { s: 0, e: 2.37, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Haçlı kralı bir kayıkla kaçtı!', 'Niğbolu 1396'); ctx.restore();
-    ctx.save(); ctx.beginPath(); ctx.rect(0, 1150, W, 400); ctx.clip();
-    for (let i = 0; i < 3; i++) line(ctx, [[-50, 1250 + i * 40], [300, 1240 + i * 40 + Math.sin(lt * 3 + i) * 8], [700, 1252 + i * 40], [1150, 1244 + i * 40]], 'rgba(243,233,210,.5)', 5, 1);
-    ctx.restore();
-    kayikKral(ctx, lerp(300, 640, lt / d), 1230, .75, lt);
+  { s: 0, e: 2.37, draw(ctx, lt, d) { // HOOK — Tuna kıyısı: kazık sırası fırlar, ağır şövalyeler hücuma kalkar, ok yağmuru
+    shake(ctx, lt, 0, 20, .32);
+    const z = lt < .3 ? lerp(1.18, 1.0, eOut(lt / .3)) : lerp(1.0, 1.06, eInOut((lt - .3) / (d - .3)));
+    ctx.translate(W / 2, 1150); ctx.scale(z, z); ctx.translate(-W / 2, -1150);
+    const sky = ctx.createLinearGradient(0, 0, 0, 1000); sky.addColorStop(0, '#3d2b2c'); sky.addColorStop(.6, '#a85a3a'); sky.addColorStop(1, '#e8a660');
+    ctx.fillStyle = sky; ctx.fillRect(-300, -300, W + 600, 1500);
+    for (let i = 0; i < 4; i++) { const x = ((lt * 40 + i * 340) % 1500) - 250, y = 620 + (i % 2) * 110; ctx.globalAlpha = .25; ell(ctx, x, y, 140, 24, '#ffd9a8', null); ell(ctx, x + 70, y - 16, 80, 20, '#ffd9a8', null); } ctx.globalAlpha = 1;
+    // uzak kıyı + Niğbolu Kalesi
+    shape(ctx, [[-300, 960], [200, 930], [520, 950], [700, 880], [900, 860], [1400, 900], [1400, 1010], [-300, 1010]], '#6b4a3a', C.ink, 4, .8);
+    ctx.globalAlpha = .9; fortress(ctx, 820, 900, .42, lt); ctx.globalAlpha = 1;
+    // Tuna
+    ctx.fillStyle = '#7d98a0'; ctx.fillRect(-300, 1000, W + 600, 80);
+    ctx.strokeStyle = 'rgba(255,240,220,.55)'; ctx.lineWidth = 4;
+    for (let i = 0; i < 12; i++) { const x = ((i * 130 + lt * 160) % 1500) - 200, y = 1018 + (i % 3) * 20; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + 50, y); ctx.stroke(); }
+    // ova
+    shape(ctx, [[-300, 1080], [300, 1070], [700, 1085], [1400, 1072], [1400, 2200], [-300, 2200]], '#8f7848', C.ink, 5, 1);
+    ctx.fillStyle = '#6e5a34'; ctx.fillRect(-300, 1420, W + 600, 900);
+    // ağır şövalye hücumu (sağdan sola, kazıklara doğru)
+    for (let i = 0; i < 4; i++) { const x = 1300 - ((lt * 300 + i * 330) % 1320); knight(ctx, x, 1170, .55, -1, lt * 14 + i * 1.6, i % 2 ? '#3e5f8a' : '#7a3b26'); }
+    for (let i = 0; i < 3; i++) { const x = 1400 - ((lt * 420 + i * 480) % 1100); knight(ctx, x, 1330, .95, -1, lt * 16 + i * 2.2, i % 2 ? '#7a3b26' : '#3e5f8a'); dust(ctx, lt, x + 170, 1330, 10, 'rgba(110,85,50,.45)'); }
+    // ok yağmuru (soldan, Osmanlı okçularından)
+    for (let i = 0; i < 24; i++) { const p = (lt * .8 + i / 24 + hash(i + 70) * .04) % 1; const x0 = -40 + hash(i + 71) * 200, tx = 600 + hash(i + 72) * 360, A = 330 + hash(i + 73) * 160, y0 = 1180 + hash(i + 74) * 60;
+      const x = lerp(x0, tx, p), y = lerp(y0, 1230, p) - Math.sin(p * Math.PI) * A; const dy = (1230 - y0) - Math.cos(p * Math.PI) * A * Math.PI;
+      arrowShot(ctx, x, y, Math.atan2(dy, tx - x0), 66, '#1d130c'); }
+    // ön planda kazık sırası: ilk anda yerden fırlar
+    const sp = eBack(clamp((lt + .12) / .3));
+    for (let i = 0; i < 7; i++) { const x = 90 + i * 84, y = 1480 + (i % 2) * 18; ctx.save(); ctx.translate(x, y); ctx.scale(1, sp); stake(ctx, 0, 0, 1.6); ctx.restore(); }
+    shape(ctx, [[-200, 1530], [40, 1470], [400, 1462], [700, 1490], [760, 1530]], '#5e4a2a', C.ink, 4, .6);
+    hookText(ctx, lt + .6, 'Haçlı kralı, bir kayıkla kaçtı!', { style: 'stencil', key: 'KAYIK', y: 430 });
   } },
   { s: 2.37, e: 5.28, draw(ctx, lt, d) { // 1396, Sigismund
     ctx.drawImage(paperTex('#e2cfa6', 'warm'), 0, 0); camera(ctx, lt, d, 1, 1.06, CX, 850);
