@@ -107,10 +107,28 @@ function quoteCard(ctx, lines, lt, d0, size = 66) {
 }
 
 const SCENES = [
-  { s: 0, e: 2.0, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Düşman Ankara\'ya dayanmıştı!', 'SAKARYA 1921'); ctx.restore();
-    for (let i = 0; i < 7; i++) enemyPawn(ctx, -100 + ((lt * 120 + i * 90) % 1100), 1290, 1.0, lt + i, 1);
-    dust(ctx, lt, 400, 1300, 10, 'rgba(60,30,20,.3)');
+  { s: 0, e: 2.0, draw(ctx, lt, d) { // AÇILIŞ (stencil): Sakarya boyunca siperler, top ateşi, dik dalgalanan bayrak
+    ctx.save(); shake(ctx, lt, 0, 24, .4); shake(ctx, lt, 1.25, 12, .3);
+    const z = lt < .35 ? lerp(1.3, 1.0, eOut(lt / .35)) : lerp(1.0, 1.06, (lt - .35) / (d - .35));
+    ctx.translate(W / 2, 1100); ctx.scale(z, z); ctx.translate(-W / 2, -1100);
+    steppeBg(ctx, lt, { top: '#b9603e', bot: '#efc27e', sun: true, sunX: 300, sunY: 860, hill: '#9c8250', ground: '#8f7a48' });
+    // Sakarya Irmağı (akıntı parıltıları)
+    const ry = (x) => 1085 + Math.sin(x / 140) * 14;
+    shape(ctx, [[-300, ry(-300) - 26], ...[...Array(15)].map((_, i) => [-300 + i * 120, ry(-300 + i * 120) - 26]), [1400, ry(1400) + 26], ...[...Array(15)].map((_, i) => [1380 - i * 120, ry(1380 - i * 120) + 26])], '#5f8fa8', C.ink, 4, .8);
+    for (let i = 0; i < 10; i++) { const x = ((lt * 140 + i * 130) % 1300) - 120; ctx.globalAlpha = .7; line(ctx, [[x, ry(x) - 4], [x + 50, ry(x + 50) - 4]], '#d9ecef', 4, .2); }
+    ctx.globalAlpha = 1;
+    // karşı kıyıda ilerleyen düşman ve patlamalar
+    for (let i = 0; i < 9; i++) enemyPawn(ctx, -60 + ((lt * 70 + i * 120) % 1150), 1040 + (i % 2) * 8, .5, lt + i, 1);
+    for (const [bx, t0] of [[260, .25], [790, .85], [150, 1.45]]) { const k = lt - t0; if (k > 0 && k < .25) { ctx.globalAlpha = 1 - k / .25; shape(ctx, [[bx - 60, 1040], [bx - 20, 960], [bx, 1010], [bx + 30, 940], [bx + 60, 1040]], '#f8d25a', '#e2572b', 4, 3); ctx.globalAlpha = 1; } smoke(ctx, lt, bx, 1010, t0, 8, 'rgba(70,55,40,.55)'); }
+    // siper hattı
+    trench(ctx, 1235);
+    flagPole(ctx, 490, 1225, 400, 120, .9, lt);
+    for (let i = 0; i < 3; i++) { mehmetcik(ctx, 130 + i * 135, 1240, 1.2, lt, { aim: true, dir: -1 }); const f = (lt * .9 + i * .41) % 1.3; if (f < .18) shape(ctx, [[130 + i * 135 - 165, 1105], [130 + i * 135 - 205, 1095], [130 + i * 135 - 175, 1118]], '#f8d25a', '#e2572b', 3, 1); }
+    const gf = lt < .4 ? lt / .4 : (lt - 1.25) / .4; fieldGun(ctx, 820, 1238, 1.1, gf, -1);
+    smoke(ctx, lt, 690, 1175, 0, 5, 'rgba(235,228,214,.7)'); smoke(ctx, lt, 690, 1175, 1.25, 4, 'rgba(235,228,214,.7)');
+    dust(ctx, lt, 820, 1250, 8, 'rgba(90,60,30,.35)');
+    ctx.restore();
+    hookText(ctx, lt + .6, 'Düşman, Ankara\'ya dayanmıştı!', { style: 'stencil', key: 'ANKARA\'YA', y: 430, size: 92 });
   } },
   { s: 2.0, e: 4.4, draw(ctx, lt, d) { // 1921 yazı: Yunan ordusu Anadolu'da
     camera(ctx, lt, d, 1, 1.08, 400, 800); waMap(ctx);
