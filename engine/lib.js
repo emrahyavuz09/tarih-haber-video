@@ -322,6 +322,7 @@ function bubble(ctx, s, x, y, w, size, lt, delay, tail = 'left', fill = C.cream,
 // ---------- HOOK kartı (her videonun ilk ~2 sn'si) ----------
 // line1: büyük merak cümlesi, line2: alt vurgu. bgc: arka plan rengi
 function hookCard(ctx, lt, d, line1, line2 = '', bgc = '#a8352b') {
+  lt += 0.45; // hook yazısı ilk karede tam görünsün (hızlı giriş)
   ctx.drawImage(paperTex(bgc, 'hook' + bgc), 0, 0);
   const z = lerp(1.0, 1.08, eInOut(lt / d)); ctx.translate(W / 2, 800); ctx.scale(z, z); ctx.translate(-W / 2, -800);
   // satır kır
