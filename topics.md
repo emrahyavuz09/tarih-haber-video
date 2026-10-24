@@ -6,6 +6,7 @@
 | 2026-10-24 | Uğurlu Mehmed: Fatih'e kılıç çeken şehzade, Fatih'in damadı (Otlukbeli, Gevherhan, Göde Ahmed) | planlandı: FB 11:00, YT 16:00, IG 20:00 |
 | 2026-10-25 | Mete Han'ın ıslıklı okları (Asya Hun, Tuman Han, onlu sistem) — sabah | üretildi, planlanmadı |
 | 2026-10-25 | Mohaç 1526: İki saatte biten savaş (Kanuni, II. Layoş, Budin) — akşam | üretildi, planlanmadı |
+| 2026-11-02 | Kafes usulü: şehzadelerin sarayda tutulması (I. Ahmed, ekber-erşed, II. Süleyman) — sabah | üretildi, planlanmadı |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)
