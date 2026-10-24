@@ -24,6 +24,7 @@
 | 2026-10-28 | Seyit Onbaşı ve top mermisi (18 Mart 1915, Mecidiye Tabyası, 215 okka/~276 kg, tahta mermiyle fotoğraf) — sabah | üretildi, planlanmadı |
 | 2026-11-04 | Süleymaniye Camii'ndeki is odası (kandil isi, hava akımı; mürekkep kısmı rivayet) — sabah | üretildi, planlanmadı |
 | 2026-11-07 | Belgrad'ın fethi 1521: Kanuni'nin ilk seferi (II. Murad ve Fatih'in kuşatmaları, Böğürdelen, Zemun, 29 Ağustos) — akşam | üretildi, planlanmadı |
+| 2026-10-28 | Ankara Savaşı 1402 (Timur, Yıldırım Bayezid esir, Çubuk Çayı, Tatarların saf değiştirmesi, kafes rivayeti tartışmalı, Fetret) — akşam | üretildi, planlanmadı |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)

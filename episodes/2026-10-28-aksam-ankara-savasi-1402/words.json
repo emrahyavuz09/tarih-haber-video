@@ -1,0 +1,802 @@
+{
+ "words": [
+  {
+   "text": "Esir",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.308
+  },
+  {
+   "text": "düşen",
+   "type": "word",
+   "start": 0.385,
+   "end": 0.692
+  },
+  {
+   "text": "tek",
+   "type": "word",
+   "start": 0.846,
+   "end": 1.077
+  },
+  {
+   "text": "Osmanlı",
+   "type": "word",
+   "start": 1.154,
+   "end": 1.615
+  },
+  {
+   "text": "sultanı!",
+   "type": "word",
+   "start": 1.654,
+   "end": 2.231
+  },
+  {
+   "text": "Bin",
+   "type": "word",
+   "start": 2.365,
+   "end": 2.519
+  },
+  {
+   "text": "dört",
+   "type": "word",
+   "start": 2.596,
+   "end": 2.75
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 2.827,
+   "end": 2.904
+  },
+  {
+   "text": "iki.",
+   "type": "word",
+   "start": 2.981,
+   "end": 3.404
+  },
+  {
+   "text": "Doğuda",
+   "type": "word",
+   "start": 3.481,
+   "end": 3.788
+  },
+  {
+   "text": "Timur,",
+   "type": "word",
+   "start": 3.865,
+   "end": 4.404
+  },
+  {
+   "text": "batıda",
+   "type": "word",
+   "start": 4.558,
+   "end": 4.942
+  },
+  {
+   "text": "Yıldırım",
+   "type": "word",
+   "start": 5.019,
+   "end": 5.404
+  },
+  {
+   "text": "Bayezid.",
+   "type": "word",
+   "start": 5.481,
+   "end": 6.019
+  },
+  {
+   "text": "İki",
+   "type": "word",
+   "start": 6.135,
+   "end": 6.288
+  },
+  {
+   "text": "büyük",
+   "type": "word",
+   "start": 6.365,
+   "end": 6.596
+  },
+  {
+   "text": "hükümdar,",
+   "type": "word",
+   "start": 6.673,
+   "end": 7.288
+  },
+  {
+   "text": "birbirine",
+   "type": "word",
+   "start": 7.365,
+   "end": 7.75
+  },
+  {
+   "text": "meydan",
+   "type": "word",
+   "start": 7.827,
+   "end": 8.135
+  },
+  {
+   "text": "okur.",
+   "type": "word",
+   "start": 8.212,
+   "end": 8.519
+  },
+  {
+   "text": "Bayezid,",
+   "type": "word",
+   "start": 8.654,
+   "end": 9.269
+  },
+  {
+   "text": "İstanbul",
+   "type": "word",
+   "start": 9.308,
+   "end": 9.731
+  },
+  {
+   "text": "kuşatmasını",
+   "type": "word",
+   "start": 9.808,
+   "end": 10.346
+  },
+  {
+   "text": "bırakır",
+   "type": "word",
+   "start": 10.423,
+   "end": 10.808
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 10.962,
+   "end": 11.038
+  },
+  {
+   "text": "ordusuyla",
+   "type": "word",
+   "start": 11.192,
+   "end": 11.885
+  },
+  {
+   "text": "Ankara'ya",
+   "type": "word",
+   "start": 11.962,
+   "end": 12.423
+  },
+  {
+   "text": "yürür.",
+   "type": "word",
+   "start": 12.5,
+   "end": 12.899
+  },
+  {
+   "text": "Yirmi",
+   "type": "word",
+   "start": 13.0,
+   "end": 13.192
+  },
+  {
+   "text": "sekiz",
+   "type": "word",
+   "start": 13.231,
+   "end": 13.462
+  },
+  {
+   "text": "Temmuz.",
+   "type": "word",
+   "start": 13.538,
+   "end": 14.125
+  },
+  {
+   "text": "Çubuk",
+   "type": "word",
+   "start": 14.279,
+   "end": 14.51
+  },
+  {
+   "text": "Ovası.",
+   "type": "word",
+   "start": 14.587,
+   "end": 15.082
+  },
+  {
+   "text": "Yakıcı",
+   "type": "word",
+   "start": 15.192,
+   "end": 15.577
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 15.654,
+   "end": 15.808
+  },
+  {
+   "text": "yaz",
+   "type": "word",
+   "start": 15.885,
+   "end": 16.038
+  },
+  {
+   "text": "günü.",
+   "type": "word",
+   "start": 16.115,
+   "end": 16.423
+  },
+  {
+   "text": "Timur,",
+   "type": "word",
+   "start": 16.519,
+   "end": 17.058
+  },
+  {
+   "text": "iki",
+   "type": "word",
+   "start": 17.173,
+   "end": 17.288
+  },
+  {
+   "text": "ordunun",
+   "type": "word",
+   "start": 17.365,
+   "end": 17.673
+  },
+  {
+   "text": "da",
+   "type": "word",
+   "start": 17.75,
+   "end": 17.827
+  },
+  {
+   "text": "su",
+   "type": "word",
+   "start": 17.904,
+   "end": 17.981
+  },
+  {
+   "text": "kaynağı",
+   "type": "word",
+   "start": 18.058,
+   "end": 18.442
+  },
+  {
+   "text": "olan",
+   "type": "word",
+   "start": 18.596,
+   "end": 18.75
+  },
+  {
+   "text": "Çubuk",
+   "type": "word",
+   "start": 18.827,
+   "end": 19.058
+  },
+  {
+   "text": "Çayı'nın",
+   "type": "word",
+   "start": 19.135,
+   "end": 19.442
+  },
+  {
+   "text": "suyunu",
+   "type": "word",
+   "start": 19.596,
+   "end": 19.904
+  },
+  {
+   "text": "kendi",
+   "type": "word",
+   "start": 20.058,
+   "end": 20.288
+  },
+  {
+   "text": "tarafına",
+   "type": "word",
+   "start": 20.365,
+   "end": 20.673
+  },
+  {
+   "text": "çevirir.",
+   "type": "word",
+   "start": 20.75,
+   "end": 21.212
+  },
+  {
+   "text": "Osmanlı",
+   "type": "word",
+   "start": 21.308,
+   "end": 21.769
+  },
+  {
+   "text": "askeri",
+   "type": "word",
+   "start": 21.885,
+   "end": 22.231
+  },
+  {
+   "text": "susuz",
+   "type": "word",
+   "start": 22.308,
+   "end": 22.692
+  },
+  {
+   "text": "kalır.",
+   "type": "word",
+   "start": 22.769,
+   "end": 23.077
+  },
+  {
+   "text": "Timur'un",
+   "type": "word",
+   "start": 23.202,
+   "end": 23.51
+  },
+  {
+   "text": "ordusunda",
+   "type": "word",
+   "start": 23.587,
+   "end": 24.125
+  },
+  {
+   "text": "savaş",
+   "type": "word",
+   "start": 24.279,
+   "end": 24.587
+  },
+  {
+   "text": "filleri",
+   "type": "word",
+   "start": 24.663,
+   "end": 24.971
+  },
+  {
+   "text": "bile",
+   "type": "word",
+   "start": 25.01,
+   "end": 25.125
+  },
+  {
+   "text": "vardır.",
+   "type": "word",
+   "start": 25.202,
+   "end": 25.663
+  },
+  {
+   "text": "Savaş",
+   "type": "word",
+   "start": 25.817,
+   "end": 26.202
+  },
+  {
+   "text": "başlar.",
+   "type": "word",
+   "start": 26.279,
+   "end": 26.822
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 26.865,
+   "end": 27.096
+  },
+  {
+   "text": "ordudaki",
+   "type": "word",
+   "start": 27.25,
+   "end": 27.712
+  },
+  {
+   "text": "Kara",
+   "type": "word",
+   "start": 27.788,
+   "end": 27.942
+  },
+  {
+   "text": "Tatarlar",
+   "type": "word",
+   "start": 28.019,
+   "end": 28.481
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 28.558,
+   "end": 28.712
+  },
+  {
+   "text": "Anadolu",
+   "type": "word",
+   "start": 28.788,
+   "end": 29.173
+  },
+  {
+   "text": "beyliklerinin",
+   "type": "word",
+   "start": 29.25,
+   "end": 29.788
+  },
+  {
+   "text": "askerleri,",
+   "type": "word",
+   "start": 29.904,
+   "end": 30.558
+  },
+  {
+   "text": "saf",
+   "type": "word",
+   "start": 30.596,
+   "end": 30.788
+  },
+  {
+   "text": "değiştirip",
+   "type": "word",
+   "start": 30.865,
+   "end": 31.327
+  },
+  {
+   "text": "Timur'a",
+   "type": "word",
+   "start": 31.404,
+   "end": 31.712
+  },
+  {
+   "text": "geçer.",
+   "type": "word",
+   "start": 31.788,
+   "end": 32.173
+  },
+  {
+   "text": "Sağ",
+   "type": "word",
+   "start": 32.385,
+   "end": 32.538
+  },
+  {
+   "text": "kanatta",
+   "type": "word",
+   "start": 32.615,
+   "end": 33.077
+  },
+  {
+   "text": "Sırp",
+   "type": "word",
+   "start": 33.231,
+   "end": 33.385
+  },
+  {
+   "text": "şövalyeleri",
+   "type": "word",
+   "start": 33.462,
+   "end": 34.038
+  },
+  {
+   "text": "direnir.",
+   "type": "word",
+   "start": 34.077,
+   "end": 34.611
+  },
+  {
+   "text": "Merkezde",
+   "type": "word",
+   "start": 34.663,
+   "end": 35.202
+  },
+  {
+   "text": "yeniçeriler,",
+   "type": "word",
+   "start": 35.279,
+   "end": 36.048
+  },
+  {
+   "text": "sultanlarının",
+   "type": "word",
+   "start": 36.087,
+   "end": 36.74
+  },
+  {
+   "text": "yanından",
+   "type": "word",
+   "start": 36.817,
+   "end": 37.125
+  },
+  {
+   "text": "ayrılmaz.",
+   "type": "word",
+   "start": 37.279,
+   "end": 37.928
+  },
+  {
+   "text": "Yıldırım",
+   "type": "word",
+   "start": 38.0,
+   "end": 38.385
+  },
+  {
+   "text": "Bayezid,",
+   "type": "word",
+   "start": 38.462,
+   "end": 39.0
+  },
+  {
+   "text": "yanında",
+   "type": "word",
+   "start": 39.077,
+   "end": 39.308
+  },
+  {
+   "text": "kalan",
+   "type": "word",
+   "start": 39.385,
+   "end": 39.692
+  },
+  {
+   "text": "birkaç",
+   "type": "word",
+   "start": 39.769,
+   "end": 40.154
+  },
+  {
+   "text": "bin",
+   "type": "word",
+   "start": 40.231,
+   "end": 40.308
+  },
+  {
+   "text": "askerle",
+   "type": "word",
+   "start": 40.423,
+   "end": 40.769
+  },
+  {
+   "text": "çarpışmayı",
+   "type": "word",
+   "start": 40.846,
+   "end": 41.385
+  },
+  {
+   "text": "sürdürür...",
+   "type": "word",
+   "start": 41.462,
+   "end": 42.144
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 42.183,
+   "end": 42.221
+  },
+  {
+   "text": "sonunda",
+   "type": "word",
+   "start": 42.375,
+   "end": 42.837
+  },
+  {
+   "text": "esir",
+   "type": "word",
+   "start": 43.067,
+   "end": 43.298
+  },
+  {
+   "text": "düşer.",
+   "type": "word",
+   "start": 43.375,
+   "end": 43.861
+  },
+  {
+   "text": "Sonraki",
+   "type": "word",
+   "start": 43.981,
+   "end": 44.365
+  },
+  {
+   "text": "yüzyıllarda,",
+   "type": "word",
+   "start": 44.404,
+   "end": 45.212
+  },
+  {
+   "text": "onun",
+   "type": "word",
+   "start": 45.288,
+   "end": 45.519
+  },
+  {
+   "text": "demir",
+   "type": "word",
+   "start": 45.596,
+   "end": 45.827
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 45.904,
+   "end": 46.058
+  },
+  {
+   "text": "kafeste",
+   "type": "word",
+   "start": 46.135,
+   "end": 46.519
+  },
+  {
+   "text": "taşındığı",
+   "type": "word",
+   "start": 46.635,
+   "end": 46.981
+  },
+  {
+   "text": "anlatıldı.",
+   "type": "word",
+   "start": 47.058,
+   "end": 47.596
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 47.683,
+   "end": 47.913
+  },
+  {
+   "text": "bu",
+   "type": "word",
+   "start": 47.99,
+   "end": 48.067
+  },
+  {
+   "text": "hikâye,",
+   "type": "word",
+   "start": 48.144,
+   "end": 48.76
+  },
+  {
+   "text": "tarihçiler",
+   "type": "word",
+   "start": 48.798,
+   "end": 49.298
+  },
+  {
+   "text": "arasında",
+   "type": "word",
+   "start": 49.375,
+   "end": 49.837
+  },
+  {
+   "text": "tartışmalıdır.",
+   "type": "word",
+   "start": 49.913,
+   "end": 50.784
+  },
+  {
+   "text": "Bayezid,",
+   "type": "word",
+   "start": 50.856,
+   "end": 51.471
+  },
+  {
+   "text": "ertesi",
+   "type": "word",
+   "start": 51.587,
+   "end": 51.933
+  },
+  {
+   "text": "yıl",
+   "type": "word",
+   "start": 51.971,
+   "end": 52.087
+  },
+  {
+   "text": "Akşehir'de,",
+   "type": "word",
+   "start": 52.24,
+   "end": 52.933
+  },
+  {
+   "text": "esaretteyken",
+   "type": "word",
+   "start": 53.087,
+   "end": 53.856
+  },
+  {
+   "text": "vefat",
+   "type": "word",
+   "start": 53.933,
+   "end": 54.24
+  },
+  {
+   "text": "eder.",
+   "type": "word",
+   "start": 54.317,
+   "end": 54.625
+  },
+  {
+   "text": "Osmanlı,",
+   "type": "word",
+   "start": 54.779,
+   "end": 55.394
+  },
+  {
+   "text": "on",
+   "type": "word",
+   "start": 55.471,
+   "end": 55.625
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 55.702,
+   "end": 55.779
+  },
+  {
+   "text": "yıl",
+   "type": "word",
+   "start": 55.856,
+   "end": 56.01
+  },
+  {
+   "text": "sürecek",
+   "type": "word",
+   "start": 56.087,
+   "end": 56.471
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 56.548,
+   "end": 56.625
+  },
+  {
+   "text": "taht",
+   "type": "word",
+   "start": 56.702,
+   "end": 56.933
+  },
+  {
+   "text": "kavgasına",
+   "type": "word",
+   "start": 57.01,
+   "end": 57.471
+  },
+  {
+   "text": "düşer.",
+   "type": "word",
+   "start": 57.522,
+   "end": 57.976
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 58.048,
+   "end": 58.279
+  },
+  {
+   "text": "devlet",
+   "type": "word",
+   "start": 58.356,
+   "end": 58.74
+  },
+  {
+   "text": "yıkılmadı...",
+   "type": "word",
+   "start": 58.817,
+   "end": 59.519
+  },
+  {
+   "text": "küllerinden",
+   "type": "word",
+   "start": 59.558,
+   "end": 60.212
+  },
+  {
+   "text": "yeniden",
+   "type": "word",
+   "start": 60.442,
+   "end": 60.827
+  },
+  {
+   "text": "doğdu.",
+   "type": "word",
+   "start": 60.904,
+   "end": 61.365
+  }
+ ]
+}

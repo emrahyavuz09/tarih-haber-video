@@ -28,3 +28,4 @@ Aylık kota: 130000
 | 2026-10-24 | 723 | Süleymaniye is odası, 2026-11-04 sabah (1 okuma) |
 | 2026-10-24 | 925 | Belgrad 1521, 2026-11-07 akşam (1 okuma) |
 | 2026-10-24 | 996 | Patrona Halil 1730, 2026-10-31 akşam (1 okuma) |
+| 2026-10-24 | 996 | Ankara Savaşı 1402, 2026-10-28 akşam (1 okuma) |
