@@ -1,0 +1,580 @@
+{
+ "words": [
+  {
+   "text": "Bir",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.154
+  },
+  {
+   "text": "padişah,",
+   "type": "word",
+   "start": 0.231,
+   "end": 0.962
+  },
+  {
+   "text": "kahveyi",
+   "type": "word",
+   "start": 1.077,
+   "end": 1.462
+  },
+  {
+   "text": "yasakladı!",
+   "type": "word",
+   "start": 1.577,
+   "end": 2.154
+  },
+  {
+   "text": "Bin",
+   "type": "word",
+   "start": 2.317,
+   "end": 2.394
+  },
+  {
+   "text": "altı",
+   "type": "word",
+   "start": 2.471,
+   "end": 2.625
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 2.702,
+   "end": 2.779
+  },
+  {
+   "text": "otuz",
+   "type": "word",
+   "start": 2.856,
+   "end": 3.087
+  },
+  {
+   "text": "üç.",
+   "type": "word",
+   "start": 3.163,
+   "end": 3.51
+  },
+  {
+   "text": "İstanbul,",
+   "type": "word",
+   "start": 3.587,
+   "end": 4.279
+  },
+  {
+   "text": "Cibali'de",
+   "type": "word",
+   "start": 4.317,
+   "end": 4.894
+  },
+  {
+   "text": "korkunç",
+   "type": "word",
+   "start": 4.971,
+   "end": 5.433
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 5.51,
+   "end": 5.587
+  },
+  {
+   "text": "yangın",
+   "type": "word",
+   "start": 5.663,
+   "end": 5.971
+  },
+  {
+   "text": "çıkar.",
+   "type": "word",
+   "start": 6.048,
+   "end": 6.596
+  },
+  {
+   "text": "Şehrin",
+   "type": "word",
+   "start": 6.635,
+   "end": 6.981
+  },
+  {
+   "text": "koca",
+   "type": "word",
+   "start": 7.058,
+   "end": 7.365
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 7.442,
+   "end": 7.519
+  },
+  {
+   "text": "bölümü",
+   "type": "word",
+   "start": 7.596,
+   "end": 7.904
+  },
+  {
+   "text": "kül",
+   "type": "word",
+   "start": 7.981,
+   "end": 8.135
+  },
+  {
+   "text": "olur.",
+   "type": "word",
+   "start": 8.212,
+   "end": 8.615
+  },
+  {
+   "text": "Söylentiye",
+   "type": "word",
+   "start": 8.654,
+   "end": 9.154
+  },
+  {
+   "text": "göre",
+   "type": "word",
+   "start": 9.231,
+   "end": 9.385
+  },
+  {
+   "text": "yangın,",
+   "type": "word",
+   "start": 9.462,
+   "end": 10.0
+  },
+  {
+   "text": "tütün",
+   "type": "word",
+   "start": 10.051,
+   "end": 10.231
+  },
+  {
+   "text": "içenler",
+   "type": "word",
+   "start": 10.308,
+   "end": 10.692
+  },
+  {
+   "text": "yüzünden",
+   "type": "word",
+   "start": 10.731,
+   "end": 11.077
+  },
+  {
+   "text": "çıkmıştır.",
+   "type": "word",
+   "start": 11.154,
+   "end": 11.812
+  },
+  {
+   "text": "Genç",
+   "type": "word",
+   "start": 11.894,
+   "end": 12.125
+  },
+  {
+   "text": "padişah",
+   "type": "word",
+   "start": 12.202,
+   "end": 12.663
+  },
+  {
+   "text": "Dördüncü",
+   "type": "word",
+   "start": 12.74,
+   "end": 13.125
+  },
+  {
+   "text": "Murad",
+   "type": "word",
+   "start": 13.202,
+   "end": 13.433
+  },
+  {
+   "text": "harekete",
+   "type": "word",
+   "start": 13.51,
+   "end": 13.894
+  },
+  {
+   "text": "geçer.",
+   "type": "word",
+   "start": 13.971,
+   "end": 14.437
+  },
+  {
+   "text": "Şeyhülislamdan",
+   "type": "word",
+   "start": 14.548,
+   "end": 15.317
+  },
+  {
+   "text": "fetva",
+   "type": "word",
+   "start": 15.394,
+   "end": 15.779
+  },
+  {
+   "text": "alınır:",
+   "type": "word",
+   "start": 15.817,
+   "end": 16.264
+  },
+  {
+   "text": "Kahve",
+   "type": "word",
+   "start": 16.327,
+   "end": 16.635
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 16.712,
+   "end": 16.788
+  },
+  {
+   "text": "tütün,",
+   "type": "word",
+   "start": 16.865,
+   "end": 17.25
+  },
+  {
+   "text": "kötü",
+   "type": "word",
+   "start": 17.404,
+   "end": 17.635
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 17.712,
+   "end": 17.788
+  },
+  {
+   "text": "yeniliktir.",
+   "type": "word",
+   "start": 17.865,
+   "end": 18.524
+  },
+  {
+   "text": "Kahvehaneler",
+   "type": "word",
+   "start": 18.529,
+   "end": 19.221
+  },
+  {
+   "text": "kapatılır,",
+   "type": "word",
+   "start": 19.298,
+   "end": 20.029
+  },
+  {
+   "text": "tütün",
+   "type": "word",
+   "start": 20.077,
+   "end": 20.385
+  },
+  {
+   "text": "yasaklanır.",
+   "type": "word",
+   "start": 20.5,
+   "end": 21.149
+  },
+  {
+   "text": "Yalnızca",
+   "type": "word",
+   "start": 21.25,
+   "end": 21.788
+  },
+  {
+   "text": "Eyüp",
+   "type": "word",
+   "start": 21.865,
+   "end": 22.096
+  },
+  {
+   "text": "çevresinde",
+   "type": "word",
+   "start": 22.173,
+   "end": 22.788
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 22.942,
+   "end": 23.173
+  },
+  {
+   "text": "yirmi",
+   "type": "word",
+   "start": 23.25,
+   "end": 23.404
+  },
+  {
+   "text": "kahve",
+   "type": "word",
+   "start": 23.481,
+   "end": 23.712
+  },
+  {
+   "text": "dükkânı",
+   "type": "word",
+   "start": 23.788,
+   "end": 24.122
+  },
+  {
+   "text": "yıkılır.",
+   "type": "word",
+   "start": 24.147,
+   "end": 24.659
+  },
+  {
+   "text": "Peki",
+   "type": "word",
+   "start": 24.712,
+   "end": 25.019
+  },
+  {
+   "text": "asıl",
+   "type": "word",
+   "start": 25.25,
+   "end": 25.481
+  },
+  {
+   "text": "sebep",
+   "type": "word",
+   "start": 25.558,
+   "end": 25.865
+  },
+  {
+   "text": "sadece",
+   "type": "word",
+   "start": 25.942,
+   "end": 26.327
+  },
+  {
+   "text": "yangın",
+   "type": "word",
+   "start": 26.481,
+   "end": 26.712
+  },
+  {
+   "text": "mıydı?",
+   "type": "word",
+   "start": 26.788,
+   "end": 27.096
+  },
+  {
+   "text": "Hayır.",
+   "type": "word",
+   "start": 27.212,
+   "end": 27.596
+  },
+  {
+   "text": "Kahvehaneler,",
+   "type": "word",
+   "start": 27.702,
+   "end": 28.587
+  },
+  {
+   "text": "dedikodunun",
+   "type": "word",
+   "start": 28.702,
+   "end": 29.317
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 29.394,
+   "end": 29.471
+  },
+  {
+   "text": "isyan",
+   "type": "word",
+   "start": 29.625,
+   "end": 30.01
+  },
+  {
+   "text": "sözlerinin",
+   "type": "word",
+   "start": 30.087,
+   "end": 30.548
+  },
+  {
+   "text": "kaynadığı",
+   "type": "word",
+   "start": 30.625,
+   "end": 31.087
+  },
+  {
+   "text": "yerlerdi.",
+   "type": "word",
+   "start": 31.163,
+   "end": 31.793
+  },
+  {
+   "text": "Rivayete",
+   "type": "word",
+   "start": 31.885,
+   "end": 32.346
+  },
+  {
+   "text": "göre",
+   "type": "word",
+   "start": 32.423,
+   "end": 32.577
+  },
+  {
+   "text": "padişah,",
+   "type": "word",
+   "start": 32.654,
+   "end": 33.269
+  },
+  {
+   "text": "kılık",
+   "type": "word",
+   "start": 33.346,
+   "end": 33.538
+  },
+  {
+   "text": "değiştirip",
+   "type": "word",
+   "start": 33.577,
+   "end": 34.115
+  },
+  {
+   "text": "geceleri",
+   "type": "word",
+   "start": 34.192,
+   "end": 34.654
+  },
+  {
+   "text": "sokakları",
+   "type": "word",
+   "start": 34.692,
+   "end": 35.115
+  },
+  {
+   "text": "dolaşırdı.",
+   "type": "word",
+   "start": 35.192,
+   "end": 35.832
+  },
+  {
+   "text": "Tütün",
+   "type": "word",
+   "start": 35.856,
+   "end": 36.087
+  },
+  {
+   "text": "içenlere",
+   "type": "word",
+   "start": 36.163,
+   "end": 36.625
+  },
+  {
+   "text": "çok",
+   "type": "word",
+   "start": 36.779,
+   "end": 36.933
+  },
+  {
+   "text": "ağır",
+   "type": "word",
+   "start": 37.01,
+   "end": 37.24
+  },
+  {
+   "text": "cezalar",
+   "type": "word",
+   "start": 37.317,
+   "end": 37.779
+  },
+  {
+   "text": "verildi.",
+   "type": "word",
+   "start": 37.856,
+   "end": 38.332
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 38.404,
+   "end": 38.635
+  },
+  {
+   "text": "Dördüncü",
+   "type": "word",
+   "start": 38.712,
+   "end": 39.096
+  },
+  {
+   "text": "Murad'dan",
+   "type": "word",
+   "start": 39.173,
+   "end": 39.635
+  },
+  {
+   "text": "sonra",
+   "type": "word",
+   "start": 39.712,
+   "end": 40.019
+  },
+  {
+   "text": "yasak",
+   "type": "word",
+   "start": 40.096,
+   "end": 40.404
+  },
+  {
+   "text": "gevşedi.",
+   "type": "word",
+   "start": 40.481,
+   "end": 41.043
+  },
+  {
+   "text": "Kahvehaneler",
+   "type": "word",
+   "start": 41.115,
+   "end": 41.808
+  },
+  {
+   "text": "yeniden",
+   "type": "word",
+   "start": 41.962,
+   "end": 42.269
+  },
+  {
+   "text": "açıldı.",
+   "type": "word",
+   "start": 42.308,
+   "end": 42.812
+  },
+  {
+   "text": "Yasaklar",
+   "type": "word",
+   "start": 42.885,
+   "end": 43.346
+  },
+  {
+   "text": "geçti...",
+   "type": "word",
+   "start": 43.423,
+   "end": 43.986
+  },
+  {
+   "text": "kahve",
+   "type": "word",
+   "start": 44.058,
+   "end": 44.365
+  },
+  {
+   "text": "kaldı.",
+   "type": "word",
+   "start": 44.442,
+   "end": 44.923
+  }
+ ]
+}
