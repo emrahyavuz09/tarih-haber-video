@@ -653,7 +653,7 @@ boxStamp = function (ctx, s, x, y, size, color, lt, delay = 0, rot = -7) { stamp
 //        'zoom' (blok yakından uzaklaşır), 'split' (iki satır iki yandan kayar), 'stencil' (koyu bant üstünde beyaz büyük yazı), 'scroll' (fermanda açılan yazı)
 // y: yazı bloğunun orta yüksekliği (varsayılan 430). accent: vurgu rengi. key: vurgulanacak kelime (opsiyonel)
 function hookText(ctx, lt, text, o = {}) {
-  const style = o.style || 'slam', y = o.y || 430, accent = o.accent || C.red, key = o.key ? up(o.key) : null;
+  let style = o.style || 'slam'; const y = o.y || 430, accent = o.accent || C.red, key = o.key ? up(o.key) : null;
   const cx = (SAFE.l + SAFE.r) / 2, maxW = SAFE.r - SAFE.l - 30; let size = o.size || 92;
   ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0);
   const words = up(text).split(' ');
