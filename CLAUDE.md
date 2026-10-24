@@ -93,7 +93,7 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
 11. **Planla (Metricool `createScheduledPost`, her ağ için AYRI gönderi):**
     - Instagram: `providers [{network:"instagram"}]`, `instagramData {type:"REEL", showReelOnFeed:true, isAiGenerated:true}`, text = caption
     - Facebook: `providers [{network:"facebook"}]`, `facebookData {type:"REEL", title}`, text = facebook text
-    - YouTube: `providers [{network:"youtube"}]`, `youtubeData {title, type:"short", privacy:"public", tags, category:"EDUCATION", madeForKids:false, isAiGeneratedContent:false}`, text = description
+    - YouTube: **Metricool KULLANMA** (kullanıcı isteği, 24 Eki 2026). YouTube Studio'ya tarayıcıdan manuel yükle ve planla (başlık, açıklama, etiketler, "çocuklara özel değil", "değiştirilmiş içerik: hayır", Planla: tarih+saat).
     - Hepsinde `media: [medya adresi]`, `autoPublish: true`, `publicationDate {dateTime, timezone:"Europe/Istanbul"}`.
 12. **Kayıt:** `topics.md`'ye satır ekle (tarih, konu, saatler). `stills/`, `music.wav`, `voice.mp3`, `final.mp4` main'e girmez (.gitignore).
     `scenes.js, script.txt, notes.md, meta.json, words.json, timeline.json` commit + `git push origin main`.
