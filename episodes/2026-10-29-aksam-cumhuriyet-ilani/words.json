@@ -1,0 +1,832 @@
+{
+ "words": [
+  {
+   "text": "Bir",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.154
+  },
+  {
+   "text": "gecede",
+   "type": "word",
+   "start": 0.231,
+   "end": 0.692
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 0.846,
+   "end": 1.0
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 1.077,
+   "end": 1.231
+  },
+  {
+   "text": "pare",
+   "type": "word",
+   "start": 1.308,
+   "end": 1.538
+  },
+  {
+   "text": "top",
+   "type": "word",
+   "start": 1.615,
+   "end": 1.769
+  },
+  {
+   "text": "atıldı.",
+   "type": "word",
+   "start": 1.846,
+   "end": 2.308
+  },
+  {
+   "text": "Neden?",
+   "type": "word",
+   "start": 2.471,
+   "end": 2.937
+  },
+  {
+   "text": "Yirmi",
+   "type": "word",
+   "start": 2.99,
+   "end": 3.221
+  },
+  {
+   "text": "dokuz",
+   "type": "word",
+   "start": 3.298,
+   "end": 3.452
+  },
+  {
+   "text": "Ekim,",
+   "type": "word",
+   "start": 3.529,
+   "end": 3.913
+  },
+  {
+   "text": "bin",
+   "type": "word",
+   "start": 3.99,
+   "end": 4.067
+  },
+  {
+   "text": "dokuz",
+   "type": "word",
+   "start": 4.144,
+   "end": 4.375
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 4.452,
+   "end": 4.606
+  },
+  {
+   "text": "yirmi",
+   "type": "word",
+   "start": 4.683,
+   "end": 4.837
+  },
+  {
+   "text": "üç.",
+   "type": "word",
+   "start": 4.913,
+   "end": 5.236
+  },
+  {
+   "text": "Ankara.",
+   "type": "word",
+   "start": 5.298,
+   "end": 5.822
+  },
+  {
+   "text": "Kurtuluş",
+   "type": "word",
+   "start": 5.875,
+   "end": 6.26
+  },
+  {
+   "text": "Savaşı",
+   "type": "word",
+   "start": 6.298,
+   "end": 6.644
+  },
+  {
+   "text": "kazanılmış,",
+   "type": "word",
+   "start": 6.683,
+   "end": 7.49
+  },
+  {
+   "text": "Lozan",
+   "type": "word",
+   "start": 7.567,
+   "end": 7.875
+  },
+  {
+   "text": "Antlaşması",
+   "type": "word",
+   "start": 7.952,
+   "end": 8.413
+  },
+  {
+   "text": "imzalanmıştı.",
+   "type": "word",
+   "start": 8.49,
+   "end": 9.351
+  },
+  {
+   "text": "Saltanat",
+   "type": "word",
+   "start": 9.452,
+   "end": 9.99
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 10.144,
+   "end": 10.298
+  },
+  {
+   "text": "yıl",
+   "type": "word",
+   "start": 10.337,
+   "end": 10.452
+  },
+  {
+   "text": "önce",
+   "type": "word",
+   "start": 10.529,
+   "end": 10.683
+  },
+  {
+   "text": "kaldırılmıştı.",
+   "type": "word",
+   "start": 10.76,
+   "end": 11.63
+  },
+  {
+   "text": "On",
+   "type": "word",
+   "start": 11.702,
+   "end": 11.779
+  },
+  {
+   "text": "üç",
+   "type": "word",
+   "start": 11.817,
+   "end": 11.933
+  },
+  {
+   "text": "Ekim'de",
+   "type": "word",
+   "start": 12.01,
+   "end": 12.394
+  },
+  {
+   "text": "Ankara",
+   "type": "word",
+   "start": 12.548,
+   "end": 12.933
+  },
+  {
+   "text": "başkent",
+   "type": "word",
+   "start": 13.01,
+   "end": 13.394
+  },
+  {
+   "text": "olmuştu.",
+   "type": "word",
+   "start": 13.471,
+   "end": 14.067
+  },
+  {
+   "text": "Şimdi",
+   "type": "word",
+   "start": 14.144,
+   "end": 14.452
+  },
+  {
+   "text": "sıra,",
+   "type": "word",
+   "start": 14.529,
+   "end": 14.875
+  },
+  {
+   "text": "yeni",
+   "type": "word",
+   "start": 14.99,
+   "end": 15.144
+  },
+  {
+   "text": "devletin",
+   "type": "word",
+   "start": 15.221,
+   "end": 15.606
+  },
+  {
+   "text": "adını",
+   "type": "word",
+   "start": 15.683,
+   "end": 15.913
+  },
+  {
+   "text": "koymaktaydı.",
+   "type": "word",
+   "start": 15.99,
+   "end": 16.774
+  },
+  {
+   "text": "Akşam",
+   "type": "word",
+   "start": 16.837,
+   "end": 17.144
+  },
+  {
+   "text": "saat",
+   "type": "word",
+   "start": 17.221,
+   "end": 17.452
+  },
+  {
+   "text": "altıda",
+   "type": "word",
+   "start": 17.606,
+   "end": 17.99
+  },
+  {
+   "text": "Meclis",
+   "type": "word",
+   "start": 18.067,
+   "end": 18.375
+  },
+  {
+   "text": "toplandı.",
+   "type": "word",
+   "start": 18.452,
+   "end": 19.072
+  },
+  {
+   "text": "Anayasa",
+   "type": "word",
+   "start": 19.144,
+   "end": 19.529
+  },
+  {
+   "text": "değişikliği",
+   "type": "word",
+   "start": 19.567,
+   "end": 20.067
+  },
+  {
+   "text": "okundu:",
+   "type": "word",
+   "start": 20.144,
+   "end": 20.611
+  },
+  {
+   "text": "\"Türkiye",
+   "type": "word",
+   "start": 20.654,
+   "end": 21.038
+  },
+  {
+   "text": "Devleti'nin",
+   "type": "word",
+   "start": 21.115,
+   "end": 21.654
+  },
+  {
+   "text": "şekl-i",
+   "type": "word",
+   "start": 21.808,
+   "end": 22.115
+  },
+  {
+   "text": "hükümeti,",
+   "type": "word",
+   "start": 22.154,
+   "end": 22.962
+  },
+  {
+   "text": "Cumhuriyettir.\"",
+   "type": "word",
+   "start": 23.077,
+   "end": 24.005
+  },
+  {
+   "text": "Salon",
+   "type": "word",
+   "start": 24.144,
+   "end": 24.452
+  },
+  {
+   "text": "tek",
+   "type": "word",
+   "start": 24.606,
+   "end": 24.76
+  },
+  {
+   "text": "sesle",
+   "type": "word",
+   "start": 24.837,
+   "end": 25.144
+  },
+  {
+   "text": "yankılandı:",
+   "type": "word",
+   "start": 25.183,
+   "end": 25.837
+  },
+  {
+   "text": "\"Yaşasın",
+   "type": "word",
+   "start": 25.971,
+   "end": 26.51
+  },
+  {
+   "text": "Cumhuriyet!\"",
+   "type": "word",
+   "start": 26.587,
+   "end": 27.37
+  },
+  {
+   "text": "Saat",
+   "type": "word",
+   "start": 27.5,
+   "end": 27.885
+  },
+  {
+   "text": "yirmi",
+   "type": "word",
+   "start": 28.038,
+   "end": 28.231
+  },
+  {
+   "text": "otuz...",
+   "type": "word",
+   "start": 28.269,
+   "end": 28.856
+  },
+  {
+   "text": "Yüz",
+   "type": "word",
+   "start": 28.894,
+   "end": 29.01
+  },
+  {
+   "text": "elli",
+   "type": "word",
+   "start": 29.087,
+   "end": 29.163
+  },
+  {
+   "text": "sekiz",
+   "type": "word",
+   "start": 29.24,
+   "end": 29.471
+  },
+  {
+   "text": "milletvekili,",
+   "type": "word",
+   "start": 29.625,
+   "end": 30.548
+  },
+  {
+   "text": "oy",
+   "type": "word",
+   "start": 30.625,
+   "end": 30.702
+  },
+  {
+   "text": "birliğiyle",
+   "type": "word",
+   "start": 30.779,
+   "end": 31.317
+  },
+  {
+   "text": "Gazi",
+   "type": "word",
+   "start": 31.471,
+   "end": 31.779
+  },
+  {
+   "text": "Mustafa",
+   "type": "word",
+   "start": 31.856,
+   "end": 32.163
+  },
+  {
+   "text": "Kemal",
+   "type": "word",
+   "start": 32.24,
+   "end": 32.471
+  },
+  {
+   "text": "Paşa'yı",
+   "type": "word",
+   "start": 32.548,
+   "end": 32.933
+  },
+  {
+   "text": "ilk",
+   "type": "word",
+   "start": 33.087,
+   "end": 33.317
+  },
+  {
+   "text": "Cumhurbaşkanı",
+   "type": "word",
+   "start": 33.394,
+   "end": 34.01
+  },
+  {
+   "text": "seçti.",
+   "type": "word",
+   "start": 34.087,
+   "end": 34.562
+  },
+  {
+   "text": "Milletvekilleri",
+   "type": "word",
+   "start": 34.635,
+   "end": 35.404
+  },
+  {
+   "text": "uzun",
+   "type": "word",
+   "start": 35.558,
+   "end": 35.865
+  },
+  {
+   "text": "süre",
+   "type": "word",
+   "start": 35.942,
+   "end": 36.096
+  },
+  {
+   "text": "alkış",
+   "type": "word",
+   "start": 36.173,
+   "end": 36.481
+  },
+  {
+   "text": "tuttu.",
+   "type": "word",
+   "start": 36.558,
+   "end": 36.942
+  },
+  {
+   "text": "Hükümeti",
+   "type": "word",
+   "start": 37.058,
+   "end": 37.519
+  },
+  {
+   "text": "kurma",
+   "type": "word",
+   "start": 37.596,
+   "end": 37.827
+  },
+  {
+   "text": "görevi",
+   "type": "word",
+   "start": 37.904,
+   "end": 38.212
+  },
+  {
+   "text": "İsmet",
+   "type": "word",
+   "start": 38.365,
+   "end": 38.673
+  },
+  {
+   "text": "Paşa'ya",
+   "type": "word",
+   "start": 38.75,
+   "end": 39.058
+  },
+  {
+   "text": "verildi.",
+   "type": "word",
+   "start": 39.135,
+   "end": 39.519
+  },
+  {
+   "text": "Meclis,",
+   "type": "word",
+   "start": 39.644,
+   "end": 40.183
+  },
+  {
+   "text": "Cumhuriyet'in",
+   "type": "word",
+   "start": 40.337,
+   "end": 41.029
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 41.106,
+   "end": 41.26
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 41.337,
+   "end": 41.49
+  },
+  {
+   "text": "pare",
+   "type": "word",
+   "start": 41.567,
+   "end": 41.798
+  },
+  {
+   "text": "topla",
+   "type": "word",
+   "start": 41.875,
+   "end": 42.106
+  },
+  {
+   "text": "kutlanmasına",
+   "type": "word",
+   "start": 42.183,
+   "end": 42.798
+  },
+  {
+   "text": "karar",
+   "type": "word",
+   "start": 42.875,
+   "end": 43.106
+  },
+  {
+   "text": "verdi.",
+   "type": "word",
+   "start": 43.183,
+   "end": 43.587
+  },
+  {
+   "text": "Gece",
+   "type": "word",
+   "start": 43.663,
+   "end": 43.894
+  },
+  {
+   "text": "yarısından",
+   "type": "word",
+   "start": 43.971,
+   "end": 44.433
+  },
+  {
+   "text": "sonra",
+   "type": "word",
+   "start": 44.51,
+   "end": 44.74
+  },
+  {
+   "text": "toplar",
+   "type": "word",
+   "start": 44.817,
+   "end": 45.202
+  },
+  {
+   "text": "gürledi.",
+   "type": "word",
+   "start": 45.279,
+   "end": 45.832
+  },
+  {
+   "text": "Ankara'da",
+   "type": "word",
+   "start": 45.856,
+   "end": 46.471
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 46.548,
+   "end": 46.702
+  },
+  {
+   "text": "yurdun",
+   "type": "word",
+   "start": 46.779,
+   "end": 47.087
+  },
+  {
+   "text": "dört",
+   "type": "word",
+   "start": 47.24,
+   "end": 47.394
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 47.471,
+   "end": 47.548
+  },
+  {
+   "text": "yanında",
+   "type": "word",
+   "start": 47.625,
+   "end": 48.01
+  },
+  {
+   "text": "halk,",
+   "type": "word",
+   "start": 48.163,
+   "end": 48.548
+  },
+  {
+   "text": "bayraklarla",
+   "type": "word",
+   "start": 48.663,
+   "end": 49.24
+  },
+  {
+   "text": "sokaklara",
+   "type": "word",
+   "start": 49.279,
+   "end": 49.702
+  },
+  {
+   "text": "döküldü.",
+   "type": "word",
+   "start": 49.779,
+   "end": 50.332
+  },
+  {
+   "text": "Mustafa",
+   "type": "word",
+   "start": 50.404,
+   "end": 50.712
+  },
+  {
+   "text": "Kemal",
+   "type": "word",
+   "start": 50.788,
+   "end": 51.096
+  },
+  {
+   "text": "o",
+   "type": "word",
+   "start": 51.25,
+   "end": 51.288
+  },
+  {
+   "text": "gün",
+   "type": "word",
+   "start": 51.327,
+   "end": 51.558
+  },
+  {
+   "text": "Meclis",
+   "type": "word",
+   "start": 51.635,
+   "end": 51.942
+  },
+  {
+   "text": "kürsüsünden",
+   "type": "word",
+   "start": 52.019,
+   "end": 52.712
+  },
+  {
+   "text": "şöyle",
+   "type": "word",
+   "start": 52.788,
+   "end": 53.019
+  },
+  {
+   "text": "seslendi:",
+   "type": "word",
+   "start": 53.096,
+   "end": 53.712
+  },
+  {
+   "text": "\"Türkiye",
+   "type": "word",
+   "start": 53.798,
+   "end": 54.183
+  },
+  {
+   "text": "Cumhuriyeti",
+   "type": "word",
+   "start": 54.26,
+   "end": 54.952
+  },
+  {
+   "text": "mesut,",
+   "type": "word",
+   "start": 55.231,
+   "end": 55.808
+  },
+  {
+   "text": "muvaffak",
+   "type": "word",
+   "start": 55.923,
+   "end": 56.538
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 56.692,
+   "end": 56.769
+  },
+  {
+   "text": "muzaffer",
+   "type": "word",
+   "start": 56.846,
+   "end": 57.308
+  },
+  {
+   "text": "olacaktır.\"",
+   "type": "word",
+   "start": 57.385,
+   "end": 58.12
+  },
+  {
+   "text": "Yüz",
+   "type": "word",
+   "start": 58.212,
+   "end": 58.365
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 58.442,
+   "end": 58.596
+  },
+  {
+   "text": "pare",
+   "type": "word",
+   "start": 58.673,
+   "end": 58.981
+  },
+  {
+   "text": "top...",
+   "type": "word",
+   "start": 59.135,
+   "end": 59.452
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 59.529,
+   "end": 59.683
+  },
+  {
+   "text": "milletin",
+   "type": "word",
+   "start": 59.721,
+   "end": 60.221
+  },
+  {
+   "text": "yeniden",
+   "type": "word",
+   "start": 60.375,
+   "end": 60.76
+  },
+  {
+   "text": "doğuşunu",
+   "type": "word",
+   "start": 60.837,
+   "end": 61.221
+  },
+  {
+   "text": "müjdeliyordu.",
+   "type": "word",
+   "start": 61.298,
+   "end": 62.072
+  },
+  {
+   "text": "Cumhuriyet",
+   "type": "word",
+   "start": 62.192,
+   "end": 62.654
+  },
+  {
+   "text": "Bayramımız",
+   "type": "word",
+   "start": 62.731,
+   "end": 63.346
+  },
+  {
+   "text": "kutlu",
+   "type": "word",
+   "start": 63.5,
+   "end": 63.731
+  },
+  {
+   "text": "olsun!",
+   "type": "word",
+   "start": 63.808,
+   "end": 64.327
+  }
+ ]
+}

@@ -8,6 +8,7 @@
 | 2026-10-25 | Mohaç 1526: İki saatte biten savaş (Kanuni, II. Layoş, Budin) — akşam | üretildi, planlanmadı |
 | 2026-11-02 | Kafes usulü: şehzadelerin sarayda tutulması (I. Ahmed, ekber-erşed, II. Süleyman) — sabah | üretildi, planlanmadı |
 | 2026-10-26 | IV. Murad'ın kahve ve tütün yasağı (1633 Cibali yangını, kahvehaneler, fetva) — sabah | üretildi, planlanmadı |
+| 2026-10-29 | Cumhuriyet'in ilanı, 29 Ekim 1923 (101 pare top, 158 oy, Meclis; Atatürk çizilmedi) — akşam | üretildi, planlanmadı |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)
