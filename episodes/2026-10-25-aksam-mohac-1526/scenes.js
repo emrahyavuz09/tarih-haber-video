@@ -139,9 +139,30 @@ function budin(ctx, x, y, s) { // tepe üstünde kale-şehir
 }
 
 const SCENES = [
-  { s: 0, e: 2.2, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt + .5, d + .5, 'Bir krallık, iki saatte çöktü!', 'Mohaç 1526'); ctx.restore();
-    const k = eInOut(prog(lt, 0, d)); crown(ctx, 540, lerp(1140, 1230, k), .9, lerp(-.05, .5, k));
+  { s: 0, e: 2.2, draw(ctx, lt, d) { // HOOK — sisli bataklık ovası, şövalye hücumu, top dumanı
+    shake(ctx, lt, 0, 20, .3);
+    const z = lt < .3 ? lerp(1.18, 1.0, eOut(lt / .3)) : lerp(1.0, 1.06, eInOut((lt - .3) / (d - .3)));
+    ctx.translate(W / 2, 1000); ctx.scale(z, z); ctx.translate(-W / 2, -1000);
+    const sky = ctx.createLinearGradient(0, 0, 0, 1100); sky.addColorStop(0, '#5d625a'); sky.addColorStop(1, '#b9b8a2');
+    ctx.fillStyle = sky; ctx.fillRect(-200, -200, W + 400, 1400);
+    shape(ctx, [[-300, 960], [100, 930], [420, 950], [760, 920], [1100, 945], [1400, 930], [1400, 2200], [-300, 2200]], '#7d7f5e', C.ink, 4, 1);
+    shape(ctx, [[-300, 1080], [400, 1060], [900, 1085], [1400, 1065], [1400, 2200], [-300, 2200]], '#646844', null);
+    // bataklık su birikintileri + sazlar
+    [[220, 1180, 170], [760, 1330, 200], [420, 1480, 230]].forEach(([x, y, r], i) => { ell(ctx, x, y, r, r * .18, '#9fb0a6', 'rgba(42,29,21,.5)', 3); ctx.strokeStyle = 'rgba(255,255,255,.4)'; ctx.lineWidth = 3; ctx.beginPath(); ctx.moveTo(x - r * .5 + Math.sin(lt * 3 + i) * 20, y); ctx.lineTo(x + Math.sin(lt * 3 + i) * 20, y); ctx.stroke(); });
+    for (let i = 0; i < 26; i++) { const x = hash(i + 3) * W, y = 1120 + hash(i + 8) * 520, sw = Math.sin(lt * 4 + i) * 8; line(ctx, [[x, y], [x + sw, y - 46]], '#3f4228', 4, .3); line(ctx, [[x + 8, y], [x + 8 + sw * 1.3, y - 34]], '#3f4228', 3, .3); }
+    // sağda Osmanlı topları ateş ediyor (uzakta)
+    for (let i = 0; i < 5; i++) { ctx.globalAlpha = .45; ell(ctx, 120 + i * 230 + Math.sin(lt + i) * 30, 1000 + (i % 2) * 60, 360, 40, '#e8e6da', null); } ctx.globalAlpha = 1;
+    for (let i = 0; i < 3; i++) { const cx = 720 + i * 95, cy = 955 + i * 6, f = ((lt + i * .35) % 1.05) / .35; cannon(ctx, cx, cy, .42, f < 1 ? f : 0, lt); }
+    smoke(ctx, lt + .8, 800, 930, 0, 12, 'rgba(232,228,214,.85)'); smoke(ctx, lt + 1.8, 900, 920, 0, 10, 'rgba(232,228,214,.75)');
+    if (lt < .3) { const fg = ctx.createRadialGradient(820, 930, 10, 820, 930, 520); fg.addColorStop(0, `rgba(255,214,120,${(1 - lt / .3) * .8})`); fg.addColorStop(1, 'rgba(255,214,120,0)'); ctx.fillStyle = fg; ctx.fillRect(-200, 300, W + 400, 1300); }
+    // şövalye hücumu: iki sıra, dörtnala
+    for (let i = 0; i < 4; i++) { const x = ((lt * 260 + i * 330) % 1400) - 300; knight(ctx, x, 1130, .62, 1, lt * 14 + i * 1.7, '#3e5f8a'); }
+    dust(ctx, lt, ((lt * 260) % 1400) - 420, 1130, 10, 'rgba(150,140,110,.4)');
+    for (let i = 0; i < 3; i++) { const x = ((lt * 430 + i * 470) % 1410) - 330; knight(ctx, x, 1320, 1.05, 1, lt * 16 + i * 2.1, i % 2 ? '#7a3b26' : '#3e5f8a'); dust(ctx, lt, x - 160, 1320, 10, 'rgba(120,110,80,.45)'); }
+    // sis bantları (hafif, ön planda)
+    for (let i = 0; i < 3; i++) { const x = ((lt * (60 + i * 25) + i * 500) % 1700) - 400, y = 1220 + i * 170; ctx.globalAlpha = .16; ell(ctx, x, y, 420, 50, '#e8e6da', null); ell(ctx, x + 700, y + 30, 380, 44, '#e8e6da', null); }
+    ctx.globalAlpha = 1;
+    hookText(ctx, lt + .6, 'Bir krallık, iki saatte çöktü!', { style: 'slam', key: 'SAATTE', y: 440 });
   } },
   { s: 2.2, e: 5.1, draw(ctx, lt, d) { // 1526, Kanuni
     ctx.drawImage(paperTex('#e2cfa6', 'warm'), 0, 0); camera(ctx, lt, d, 1, 1.06, W / 2, 850);
