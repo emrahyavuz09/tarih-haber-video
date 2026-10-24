@@ -152,9 +152,24 @@ function petals(ctx, lt, n = 12, col = C.red) {
 
 function coinFlat(ctx, x, y, s) { ell(ctx, x, y + 6 * s, 40 * s, 13 * s, '#a87a1a', C.ink, 3); ell(ctx, x, y, 40 * s, 13 * s, C.gold, C.ink, 3); }
 const SCENES = [
-  { s: 0, e: 2.85, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Bir çiçek soğanı için ferman!', 'Lale Devri'); ctx.restore();
-    bulb(ctx, CX, 1250, 1.05 + Math.sin(lt * 6) * .04, Math.sin(lt * 5) * .25, .8);
+  { s: 0, e: 2.85, draw(ctx, lt, d) { // HOOK — açan dev lale yakın çekim, havada uçuşan altınlar
+    ctx.save(); shake(ctx, lt, 0, 16, .3);
+    const z = lerp(1.15, 1, eOut(clamp(lt / .3))) * lerp(1, 1.06, eInOut(lt / d)); ctx.translate(CX, 1150); ctx.scale(z, z); ctx.translate(-CX, -1150);
+    bg(ctx, '#f1e3c4');
+    ctx.save(); ctx.translate(CX, 760); ctx.rotate(lt * .35); for (let i = 0; i < 16; i++) { ctx.rotate(Math.PI / 8); ctx.fillStyle = i % 2 ? 'rgba(217,166,48,.16)' : 'rgba(200,53,43,.07)'; ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(1200, -120); ctx.lineTo(1200, 120); ctx.fill(); } ctx.restore();
+    const gg = ctx.createRadialGradient(CX, 760, 30, CX, 760, 520); gg.addColorStop(0, 'rgba(255,226,140,.75)'); gg.addColorStop(1, 'rgba(255,226,140,0)'); ctx.fillStyle = gg; ctx.fillRect(-300, 200, W + 600, 1200);
+    shape(ctx, [[-300, 1290], [200, 1270], [600, 1295], [1400, 1270], [1400, 2300], [-300, 2300]], '#6f8f4e', C.ink, 5, 1);
+    tulip(ctx, 170, 1300, 1.0, TCOL[1], Math.sin(lt * 2.4), 1, 240); tulip(ctx, 840, 1300, 1.0, TCOL[2], Math.sin(lt * 2.4 + 1), 1, 240);
+    tulip(ctx, 300, 1320, .8, TCOL[3], Math.sin(lt * 2.6 + 2), 1, 200); tulip(ctx, 710, 1320, .8, TCOL[5], Math.sin(lt * 2.6 + 3), 1, 200);
+    for (let i = 0; i < 14; i++) { const per = 1.4, k = ((lt + hash(i) * per) % per) / per; const a = -Math.PI / 2 + (hash(i + 5) - .5) * 2.2; const v = 900 + hash(i + 9) * 500;
+      const x = CX + Math.cos(a) * v * k, y = 760 + Math.sin(a) * v * k * .55 + 900 * k * k; if (y > 1330 || x < 80 || x > 930) continue;
+      ctx.globalAlpha = clamp((1 - k) * 2.5); coin(ctx, x, y, .7 + hash(i) * .3, lt * 9 + i); }
+    ctx.globalAlpha = 1;
+    tulip(ctx, CX, 1320, 2.0, C.red, Math.sin(lt * 1.8) * .6, lerp(.78, 1, eOut(clamp(lt / .5))), 195);
+    sparkle(ctx, lt, CX, 700, 200);
+    petals(ctx, lt, 10, C.red);
+    ctx.restore();
+    hookText(ctx, lt + 0.6, 'Bir çiçek soğanı için devlet ferman çıkardı!', { style: 'marker', key: 'FERMAN', y: 410, size: 80 });
   } },
   { s: 2.85, e: 5.1, draw(ctx, lt, d) { // Lale Devri
     bg(ctx, '#e8dcc0'); camera(ctx, lt, d, 1, 1.07, W / 2, 900);
