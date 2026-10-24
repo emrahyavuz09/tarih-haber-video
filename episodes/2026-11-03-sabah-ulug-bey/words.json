@@ -1,0 +1,604 @@
+{
+ "words": [
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.154
+  },
+  {
+   "text": "hükümdar,",
+   "type": "word",
+   "start": 0.192,
+   "end": 0.846
+  },
+  {
+   "text": "gökyüzünü",
+   "type": "word",
+   "start": 0.923,
+   "end": 1.462
+  },
+  {
+   "text": "kırk",
+   "type": "word",
+   "start": 1.615,
+   "end": 1.846
+  },
+  {
+   "text": "metrelik",
+   "type": "word",
+   "start": 1.962,
+   "end": 2.308
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 2.385,
+   "end": 2.462
+  },
+  {
+   "text": "aletle",
+   "type": "word",
+   "start": 2.538,
+   "end": 2.923
+  },
+  {
+   "text": "ölçtü!",
+   "type": "word",
+   "start": 3.0,
+   "end": 3.514
+  },
+  {
+   "text": "Timur'un",
+   "type": "word",
+   "start": 3.548,
+   "end": 3.933
+  },
+  {
+   "text": "torunu",
+   "type": "word",
+   "start": 4.01,
+   "end": 4.394
+  },
+  {
+   "text": "Uluğ",
+   "type": "word",
+   "start": 4.471,
+   "end": 4.74
+  },
+  {
+   "text": "Bey,",
+   "type": "word",
+   "start": 4.779,
+   "end": 5.087
+  },
+  {
+   "text": "Semerkant'ın",
+   "type": "word",
+   "start": 5.163,
+   "end": 5.779
+  },
+  {
+   "text": "hükümdarıydı.",
+   "type": "word",
+   "start": 5.856,
+   "end": 6.716
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 6.779,
+   "end": 7.01
+  },
+  {
+   "text": "asıl",
+   "type": "word",
+   "start": 7.087,
+   "end": 7.394
+  },
+  {
+   "text": "tutkusu",
+   "type": "word",
+   "start": 7.471,
+   "end": 7.933
+  },
+  {
+   "text": "yıldızlardı.",
+   "type": "word",
+   "start": 8.01,
+   "end": 8.779
+  },
+  {
+   "text": "Bin",
+   "type": "word",
+   "start": 8.875,
+   "end": 8.952
+  },
+  {
+   "text": "dört",
+   "type": "word",
+   "start": 9.029,
+   "end": 9.183
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 9.26,
+   "end": 9.413
+  },
+  {
+   "text": "yirmilerde,",
+   "type": "word",
+   "start": 9.49,
+   "end": 10.106
+  },
+  {
+   "text": "şehrin",
+   "type": "word",
+   "start": 10.183,
+   "end": 10.49
+  },
+  {
+   "text": "dışındaki",
+   "type": "word",
+   "start": 10.567,
+   "end": 10.952
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 11.029,
+   "end": 11.106
+  },
+  {
+   "text": "tepeye",
+   "type": "word",
+   "start": 11.183,
+   "end": 11.567
+  },
+  {
+   "text": "dev",
+   "type": "word",
+   "start": 11.721,
+   "end": 11.952
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 12.029,
+   "end": 12.106
+  },
+  {
+   "text": "rasathane",
+   "type": "word",
+   "start": 12.183,
+   "end": 12.721
+  },
+  {
+   "text": "kurdurdu.",
+   "type": "word",
+   "start": 12.76,
+   "end": 13.37
+  },
+  {
+   "text": "İçindeki",
+   "type": "word",
+   "start": 13.413,
+   "end": 13.952
+  },
+  {
+   "text": "yay",
+   "type": "word",
+   "start": 14.029,
+   "end": 14.183
+  },
+  {
+   "text": "biçimli",
+   "type": "word",
+   "start": 14.26,
+   "end": 14.567
+  },
+  {
+   "text": "aletin",
+   "type": "word",
+   "start": 14.644,
+   "end": 15.029
+  },
+  {
+   "text": "yarıçapı,",
+   "type": "word",
+   "start": 15.106,
+   "end": 15.721
+  },
+  {
+   "text": "yaklaşık",
+   "type": "word",
+   "start": 15.798,
+   "end": 16.26
+  },
+  {
+   "text": "kırk",
+   "type": "word",
+   "start": 16.337,
+   "end": 16.529
+  },
+  {
+   "text": "metreydi.",
+   "type": "word",
+   "start": 16.567,
+   "end": 17.197
+  },
+  {
+   "text": "Devrinin",
+   "type": "word",
+   "start": 17.269,
+   "end": 17.731
+  },
+  {
+   "text": "en",
+   "type": "word",
+   "start": 17.885,
+   "end": 18.038
+  },
+  {
+   "text": "büyük",
+   "type": "word",
+   "start": 18.115,
+   "end": 18.346
+  },
+  {
+   "text": "gözlem",
+   "type": "word",
+   "start": 18.423,
+   "end": 18.731
+  },
+  {
+   "text": "aletlerinden",
+   "type": "word",
+   "start": 18.808,
+   "end": 19.5
+  },
+  {
+   "text": "biriydi.",
+   "type": "word",
+   "start": 19.577,
+   "end": 20.038
+  },
+  {
+   "text": "Ali",
+   "type": "word",
+   "start": 20.183,
+   "end": 20.337
+  },
+  {
+   "text": "Kuşçu",
+   "type": "word",
+   "start": 20.413,
+   "end": 20.644
+  },
+  {
+   "text": "gibi",
+   "type": "word",
+   "start": 20.721,
+   "end": 20.875
+  },
+  {
+   "text": "bilginlerle",
+   "type": "word",
+   "start": 20.952,
+   "end": 21.49
+  },
+  {
+   "text": "birlikte,",
+   "type": "word",
+   "start": 21.567,
+   "end": 22.106
+  },
+  {
+   "text": "yaklaşık",
+   "type": "word",
+   "start": 22.183,
+   "end": 22.644
+  },
+  {
+   "text": "bin",
+   "type": "word",
+   "start": 22.798,
+   "end": 22.952
+  },
+  {
+   "text": "yıldızın",
+   "type": "word",
+   "start": 23.029,
+   "end": 23.413
+  },
+  {
+   "text": "yerini",
+   "type": "word",
+   "start": 23.49,
+   "end": 23.798
+  },
+  {
+   "text": "yeniden",
+   "type": "word",
+   "start": 23.875,
+   "end": 24.26
+  },
+  {
+   "text": "ölçtü.",
+   "type": "word",
+   "start": 24.337,
+   "end": 24.736
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 24.788,
+   "end": 24.865
+  },
+  {
+   "text": "çalışmayla,",
+   "type": "word",
+   "start": 24.942,
+   "end": 25.635
+  },
+  {
+   "text": "Batlamyus'un",
+   "type": "word",
+   "start": 25.712,
+   "end": 26.327
+  },
+  {
+   "text": "hesaplarındaki",
+   "type": "word",
+   "start": 26.404,
+   "end": 27.096
+  },
+  {
+   "text": "hataları",
+   "type": "word",
+   "start": 27.135,
+   "end": 27.558
+  },
+  {
+   "text": "da",
+   "type": "word",
+   "start": 27.635,
+   "end": 27.712
+  },
+  {
+   "text": "düzeltti.",
+   "type": "word",
+   "start": 27.75,
+   "end": 28.351
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 28.413,
+   "end": 28.644
+  },
+  {
+   "text": "bin",
+   "type": "word",
+   "start": 28.721,
+   "end": 28.798
+  },
+  {
+   "text": "dört",
+   "type": "word",
+   "start": 28.952,
+   "end": 29.029
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 29.106,
+   "end": 29.221
+  },
+  {
+   "text": "kırk",
+   "type": "word",
+   "start": 29.26,
+   "end": 29.413
+  },
+  {
+   "text": "dokuzda,",
+   "type": "word",
+   "start": 29.49,
+   "end": 30.029
+  },
+  {
+   "text": "kendi",
+   "type": "word",
+   "start": 30.106,
+   "end": 30.413
+  },
+  {
+   "text": "oğlunun",
+   "type": "word",
+   "start": 30.49,
+   "end": 30.798
+  },
+  {
+   "text": "emriyle",
+   "type": "word",
+   "start": 30.875,
+   "end": 31.337
+  },
+  {
+   "text": "öldürüldü.",
+   "type": "word",
+   "start": 31.413,
+   "end": 32.029
+  },
+  {
+   "text": "Rasathane",
+   "type": "word",
+   "start": 32.144,
+   "end": 32.683
+  },
+  {
+   "text": "de",
+   "type": "word",
+   "start": 32.76,
+   "end": 32.913
+  },
+  {
+   "text": "zamanla",
+   "type": "word",
+   "start": 32.99,
+   "end": 33.375
+  },
+  {
+   "text": "yıkılıp",
+   "type": "word",
+   "start": 33.452,
+   "end": 33.76
+  },
+  {
+   "text": "toprağa",
+   "type": "word",
+   "start": 33.837,
+   "end": 34.221
+  },
+  {
+   "text": "gömüldü.",
+   "type": "word",
+   "start": 34.298,
+   "end": 34.76
+  },
+  {
+   "text": "Kalıntıları",
+   "type": "word",
+   "start": 34.827,
+   "end": 35.442
+  },
+  {
+   "text": "ancak",
+   "type": "word",
+   "start": 35.519,
+   "end": 35.904
+  },
+  {
+   "text": "bin",
+   "type": "word",
+   "start": 35.981,
+   "end": 36.058
+  },
+  {
+   "text": "dokuz",
+   "type": "word",
+   "start": 36.135,
+   "end": 36.365
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 36.442,
+   "end": 36.519
+  },
+  {
+   "text": "sekizde,",
+   "type": "word",
+   "start": 36.596,
+   "end": 37.173
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 37.212,
+   "end": 37.365
+  },
+  {
+   "text": "arkeolog",
+   "type": "word",
+   "start": 37.442,
+   "end": 37.904
+  },
+  {
+   "text": "tarafından",
+   "type": "word",
+   "start": 37.981,
+   "end": 38.365
+  },
+  {
+   "text": "bulundu.",
+   "type": "word",
+   "start": 38.442,
+   "end": 38.904
+  },
+  {
+   "text": "Tahttan",
+   "type": "word",
+   "start": 39.01,
+   "end": 39.394
+  },
+  {
+   "text": "çok",
+   "type": "word",
+   "start": 39.471,
+   "end": 39.625
+  },
+  {
+   "text": "yıldızları",
+   "type": "word",
+   "start": 39.702,
+   "end": 40.163
+  },
+  {
+   "text": "seven",
+   "type": "word",
+   "start": 40.24,
+   "end": 40.548
+  },
+  {
+   "text": "bu",
+   "type": "word",
+   "start": 40.625,
+   "end": 40.702
+  },
+  {
+   "text": "hükümdar...",
+   "type": "word",
+   "start": 40.74,
+   "end": 41.462
+  },
+  {
+   "text": "adını",
+   "type": "word",
+   "start": 41.538,
+   "end": 41.846
+  },
+  {
+   "text": "bugün",
+   "type": "word",
+   "start": 41.923,
+   "end": 42.231
+  },
+  {
+   "text": "Ay'daki",
+   "type": "word",
+   "start": 42.423,
+   "end": 42.808
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 42.885,
+   "end": 42.962
+  },
+  {
+   "text": "kraterde",
+   "type": "word",
+   "start": 43.038,
+   "end": 43.577
+  },
+  {
+   "text": "yaşatıyor.",
+   "type": "word",
+   "start": 43.615,
+   "end": 44.356
+  }
+ ]
+}

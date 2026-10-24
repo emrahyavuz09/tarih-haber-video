@@ -16,3 +16,4 @@ Aylık kota: 130000
 | 2026-10-24 | 1012 | Preveze 1538, 2026-10-26 akşam (1 okuma) |
 | 2026-10-24 | 715 | Kaşgarlı haritası, 2026-10-30 sabah (1 okuma) |
 | 2026-10-24 | 746 | Sabiha Gökçen, 2026-11-06 sabah (1 okuma) |
+| 2026-10-24 | 751 | Uluğ Bey, 2026-11-03 sabah (1 okuma) |
