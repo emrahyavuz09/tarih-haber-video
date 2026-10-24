@@ -167,9 +167,29 @@ function seaShore(ctx, lt, o = {}) {
   shape(ctx, [[-300, y0 + 220], [300, y0 + 200], [700, y0 + 230], [1400, y0 + 210], [1400, 2200], [-300, 2200]], '#d9c393', C.ink, 5, 1);
 }
 const SCENES = [
-  { s: 0, e: 2.0, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Bir emir ordulara tek bir hedef gösterdi!', 'AKDENİZ'); ctx.restore();
-    for (let i = 0; i < 4; i++) sovari(ctx, -100 + ((lt * 260 + i * 300) % 1300), 1340, .5, 1, lt * 10 + i);
+  { s: 0, e: 2.0, draw(ctx, lt, d) { // AÇILIŞ (zoom): Kocatepe'de şafak, yükselen güneş, ileri atılan süvariler, dik dalgalanan bayrak
+    ctx.save(); shake(ctx, lt, 0, 22, .4);
+    const z = lt < .35 ? lerp(1.32, 1.0, eOut(lt / .35)) : lerp(1.0, 1.07, (lt - .35) / (d - .35));
+    ctx.translate(W / 2, 1000); ctx.scale(z, z); ctx.translate(-W / 2, -1000);
+    const g = ctx.createLinearGradient(0, 0, 0, 1300); g.addColorStop(0, '#34405e'); g.addColorStop(.45, '#c8664a'); g.addColorStop(.8, '#f2b468'); g.addColorStop(1, '#f6dca4');
+    ctx.fillStyle = g; ctx.fillRect(-300, -300, W + 600, H + 600);
+    // yükselen güneş + dönen ışınlar
+    const sx = 330, sy = lerp(1010, 900, lt / d);
+    ctx.save(); ctx.translate(sx, sy); ctx.rotate(lt * .35); for (let i = 0; i < 14; i++) { ctx.rotate(Math.PI * 2 / 14); ctx.globalAlpha = .18; shape(ctx, [[0, 0], [-40, -900], [40, -900]], '#fff1c4', null); } ctx.restore(); ctx.globalAlpha = 1;
+    const sg = ctx.createRadialGradient(sx, sy, 30, sx, sy, 420); sg.addColorStop(0, 'rgba(255,225,150,.9)'); sg.addColorStop(1, 'rgba(255,225,150,0)'); ctx.fillStyle = sg; ctx.fillRect(-300, 300, W + 600, 1100);
+    ell(ctx, sx, sy, 110, 110, '#f7c25a', null);
+    ctx.save(); ctx.globalAlpha = .2; ctx.globalCompositeOperation = 'multiply'; ctx.drawImage(paperTex('#e8dcc0', '#e8dcc0'), 0, 0); ctx.restore();
+    // Kocatepe ve tepedeki bayrak
+    hill(ctx, 100, 1090, 500, '#7d6740');
+    hill(ctx, 620, 960, 700, '#6e5a3a');
+    flagPole(ctx, 588, 965, 270, 115, .9, lt);
+    // ileri atılan süvariler + toz
+    for (let i = 0; i < 5; i++) sovari(ctx, -160 + ((lt * 330 + i * 270) % 1350), 1265 + (i % 2) * 34, .82, 1, lt * 12 + i);
+    dust(ctx, lt, 250, 1300, 12, 'rgba(90,60,30,.4)'); dust(ctx, lt + .4, 700, 1300, 12, 'rgba(90,60,30,.4)');
+    // ilk anda kameranın önünden dörtnala geçen süvari
+    if (lt < .55) sovari(ctx, lerp(150, 1350, eOut(lt / .55)), 1420, 1.7, 1, lt * 14);
+    ctx.restore();
+    hookText(ctx, lt + .6, 'Bir emir, ordulara tek bir hedef gösterdi: Akdeniz!', { style: 'zoom', key: 'AKDENİZ', y: 420, size: 84 });
   } },
   { s: 2.0, e: 5.33, draw(ctx, lt, d) { // Akdeniz! — 1922
     camera(ctx, lt, d, 1, 1.08, 400, 860); waMap(ctx);
