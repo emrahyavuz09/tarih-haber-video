@@ -156,9 +156,25 @@ function section(ctx, lt, o = {}) { // caminin kesit çizimi
 }
 
 const SCENES = [
-  { s: 0, e: 2.95, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt + .5, d + .5, 'Kandillerin isi bile boşa gitmedi!', 'Süleymaniye Camii'); ctx.restore();
-    kandil(ctx, CX, 1290, .9, lt, 1, 1, 120); soot(ctx, lt, CX, 1210, 8, 60, .5, 'rgba(25,18,14,.6)', .7);
+  { s: 0, e: 2.95, draw(ctx, lt, d) { // HOOK — kubbe altında yüzlerce kandil, kubbeye yükselen is kıvrımları
+    ctx.save();
+    const z = lerp(1.45, 1.0, eOut(clamp(lt / .3))) + lt * .025; const ty = lerp(160, 0, eOut(clamp(lt / .5)));
+    ctx.translate(CX, 1000 + ty); ctx.scale(z, z); ctx.translate(-CX, -1000);
+    interior(ctx, lt, 1.2); ctx.translate(0, 170);
+    // kubbe iç yüzeyi + pencere kuşağı
+    ctx.save(); ctx.beginPath(); ctx.ellipse(CX, 720, 620, 760, 0, Math.PI, 0); ctx.closePath();
+    const dg = ctx.createRadialGradient(CX, 260, 30, CX, 600, 640); dg.addColorStop(0, '#6a5038'); dg.addColorStop(1, '#2c2018'); ctx.fillStyle = dg; ctx.fill();
+    ctx.strokeStyle = C.gold; ctx.lineWidth = 8; ctx.stroke(); ctx.restore();
+    for (let i = 1; i < 12; i++) { const a = Math.PI + (i + .5) / 13 * Math.PI; const wx = CX + Math.cos(a) * 560, wy = 720 + Math.sin(a) * 540 * .12 + 0;
+      const ww = 22, wh = 46; shape(ctx, [[wx - ww, wy], [wx - ww, wy - wh], [wx, wy - wh - 18], [wx + ww, wy - wh], [wx + ww, wy]], '#f6dfa0', C.ink, 3, .2); }
+    line(ctx, [[CX - 620, 720], [CX + 620, 720]], '#3a2a1a', 14, .2);
+    // yükselen is kıvrımları (kubbeye doğru)
+    [[250, 980], [420, 1010], [580, 1010], [750, 980], [330, 870], [670, 870]].forEach(([x, y], i) => soot(ctx, lt + i * .3, x, y, 7, (CX - x) * .5, 1.25, 'rgba(22,16,12,.5)', .55));
+    // uzak ve yakın kandil halkaları
+    ctx.save(); ctx.globalAlpha = .85; avize(ctx, CX, 760, 270, 14, lt); ctx.restore();
+    avize(ctx, CX, 930, 420, 18, lt + 1);
+    ctx.restore();
+    hookText(ctx, lt + .6, 'Bu camide, kandillerin isi bile boşa gitmedi!', { style: 'marker', key: 'İS', y: 410, size: 84 });
   } },
   { s: 2.95, e: 5.05, draw(ctx, lt, d) { // İstanbul, Süleymaniye
     camera(ctx, lt, d, 1, 1.08, CX, 900); sky(ctx, lt, '#e7cf9f', '#f4e4c0');

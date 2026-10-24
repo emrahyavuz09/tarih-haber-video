@@ -116,9 +116,28 @@ function chest(ctx, x, y, s, lt) {
 }
 
 const SCENES = [
-  { s: 0, e: 2.2, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt + .5, d + .5, 'Topu olmayan ordu, toplara hücum etti!', 'Çaldıran 1514'); ctx.restore();
-    cannon(ctx, 470, 1290, 1.0, prog(lt, .9, .5)); smoke(ctx, lt, 600, 1240, 1.0, 6);
+  { s: 0, e: 2.2, draw(ctx, lt, d) { // HOOK — top ateşi, duman, toplara hücum eden süvariler
+    ctx.save();
+    shake(ctx, lt, 0, 26, .35); shake(ctx, lt, 1.0, 16, .3);
+    const z = lerp(1.7, 1.3, eOut(clamp(lt / .3))) + lt * .04; ctx.translate(500, 1320); ctx.scale(z, z); ctx.translate(-500, -1320);
+    plain(ctx, lt, { top: '#c98a52', bot: '#e8c48e', mount: '#a98a62', ground: '#a88d58' });
+    // hücum eden süvariler (sağdan sola)
+    for (let r = 0; r < 2; r++) for (let i = 0; i < 4; i++) { const x = 1250 - ((lt * 330 + i * 260 + r * 130) % 1100); if (x < 560) continue; rider(ctx, x, 1130 + r * 150, .7 + r * .15, -1, lt * 14 + i + r); }
+    dust(ctx, lt, 820, 1260, 16, 'rgba(150,120,80,.4)');
+    // Osmanlı tuğları (rüzgârda)
+    tug(ctx, 200, 1240, 470, lt * 1.5);
+    // araba siperi + toplar (solda)
+    wagon(ctx, 250, 1325, .85); wagon(ctx, 420, 1335, .85);
+    line(ctx, [[315, 1305], [355, 1305]], '#555', 5, .2);
+    cannon(ctx, 260, 1150, 1.05, prog(lt, 1.0, .45));
+    cannon(ctx, 330, 1255, 1.35, clamp(lt / .45));
+    // uçan gülle
+    const bk = clamp(lt / .5); if (bk < 1) ell(ctx, 480 + bk * 520, 1180 - Math.sin(bk * Math.PI) * 80, 14, 14, '#2a1d15', null);
+    smoke(ctx, lt, 480, 1190, 0, 12); smoke(ctx, lt, 390, 1100, 1.0, 9); smoke(ctx, lt + 1.2, 300, 980, 0, 8, 'rgba(120,100,80,.45)');
+    ctx.restore();
+    // namlu parlaması
+    const fl = Math.max(1 - lt / .1, 0) * .6 + Math.max(0, 1 - Math.abs(lt - 1.03) / .08) * .5; if (fl > 0) { ctx.save(); ctx.globalAlpha = fl * .45; ctx.fillStyle = '#fff1c8'; ctx.fillRect(0, 0, W, H); ctx.restore(); }
+    hookText(ctx, lt + .6, 'Topu olmayan bir ordu, toplara karşı hücuma kalktı!', { style: 'slam', key: 'toplara', y: 410, size: 82 });
   } },
   { s: 2.2, e: 4.5, draw(ctx, lt, d) { // süvari hücumu, 1514
     plain(ctx, lt); shake(ctx, lt, 1.6, 10); camera(ctx, lt, d, 1, 1.08, W / 2, 1000);

@@ -130,9 +130,25 @@ function postahane(ctx, x, y, s, lt) {
 function hud(ctx, fn) { ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); fn(); ctx.restore(); }
 
 const SCENES = [
-  { s: 0, e: 2.75, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt + .5, d + .5, 'Osmanlı\'da haber at değiştirerek uçardı!', 'Ulaklar ve menziller'); ctx.restore();
-    const x = ((lt * 380) % 1400) - 250; ulakRider(ctx, x, 1320, .55, 1, lt * 16); dust(ctx, lt, x - 120, 1310, 8, 'rgba(240,220,190,.4)');
+  { s: 0, e: 2.75, draw(ctx, lt, d) { // HOOK — dörtnala ulak, ufukta menzilhane, bekleyen taze at, toz
+    ctx.save();
+    shake(ctx, lt, 0, 14, .3);
+    const z = lerp(1.95, 1.55, eOut(clamp(lt / .3))) + lt * .02; ctx.translate(CX, 1330); ctx.scale(z, z); ctx.translate(-CX, -1330);
+    skyLand(ctx, lt, { scroll: 650, cs: 90, top: '#e9c98e', bot: '#f6e6c2' });
+    // ufukta yaklaşan menzilhane + kapıda bekleyen taze at
+    const mx = lerp(700, 630, lt / d);
+    menzilhane(ctx, mx, 1180, .3, lt);
+    horse(ctx, mx - 10, 1252, .36, -1, Math.sin(lt * 3) * .3, '#7a5a3a', .1, C.red);
+    villager(ctx, mx + 78, 1252, .45);
+    // dörtnala ulak (soldan hızla girer)
+    const rx = lerp(390, 330, eOut(clamp(lt / .35))) + Math.sin(lt * 2) * 12;
+    dust(ctx, lt * 1.6, rx - 170, 1290, 18, 'rgba(150,115,70,.55)');
+    ulakRider(ctx, rx, 1290, .8, 1, lt * 20);
+    // hız çizgileri
+    for (let i = 0; i < 9; i++) { const yy = 1000 + hash(i) * 300, x = ((hash(i + 4) * 1400 - lt * 1800) % 1400 + 1400) % 1400 - 200; ctx.globalAlpha = .35; line(ctx, [[x, yy], [x + 120, yy]], '#fff8e8', 4, 0); }
+    ctx.globalAlpha = 1;
+    ctx.restore();
+    hookText(ctx, lt + .6, 'Osmanlı\'da haber, at değiştirerek uçardı!', { style: 'split', key: 'uçardı', y: 410, size: 86 });
   } },
   { s: 2.75, e: 5.35, draw(ctx, lt, d) { // devletin haberleri
     ctx.drawImage(paperTex('#e2cfa6', 'warm'), 0, 0); camera(ctx, lt, d, 1, 1.07, CX, 900);

@@ -171,10 +171,24 @@ function gate(ctx, x, y, s, open, lt) { // şehir kapısı (Mısır'ın kapısı
 }
 
 const SCENES = [
-  { s: 0, e: 2.75, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt + .5, d + .5, 'Memlüklerin kaderi tek bir günde değişti!', 'Mercidabık 1516'); ctx.restore();
-    banner(ctx, 300, 1330, 170, lt, MAML, Math.min(.9, prog(lt, .6, 1.6) * .9));
-    cannon(ctx, 640, 1300, .9, prog(lt, 1.0, .5)); smoke(ctx, lt, 760, 1250, 1.0, 6);
+  { s: 0, e: 2.75, draw(ctx, lt, d) { // HOOK — sarı çöl, sarı Memlük sancakları, ilerleyen ordu, kum fırtınası
+    ctx.save();
+    shake(ctx, lt, 0, 20, .3);
+    const z = lerp(1.5, 1.08, eOut(clamp(lt / .3))) + lt * .03; ctx.translate(CX, 1250); ctx.scale(z, z); ctx.translate(-CX, -1250);
+    desert(ctx, lt, { top: '#e9b45e', bot: '#f3d595', sx: 760, sy: 700, sun: '#fff3c8' });
+    // uzak sancak ormanı
+    for (let i = 0; i < 9; i++) { const x = 60 + i * 110 - ((lt * 40) % 110); banner(ctx, x, 1060, 200 + (i % 3) * 30, lt + i, i % 2 ? MAML : MAML_D); }
+    // ilerleyen Memlük süvarileri (iki saf)
+    for (let r = 0; r < 2; r++) for (let i = 0; i < 5; i++) { const x = 1150 - ((lt * (240 + r * 80) + i * 250 + r * 120) % 1350); mamluk(ctx, x, 1130 + r * 150, .7 + r * .18, -1, lt * 12 + i + r * 2); }
+    banner(ctx, 860 - lt * 60, 1300, 380, lt, MAML); banner(ctx, 200 - lt * 60, 1290, 340, lt + 2, MAML);
+    dust(ctx, lt, 700, 1260, 16, 'rgba(200,160,100,.45)'); dust(ctx, lt + .5, 300, 1300, 12, 'rgba(200,160,100,.4)');
+    ctx.restore();
+    // kum fırtınası: yatay savrulan kum çizgileri + pus
+    ctx.save(); ctx.fillStyle = 'rgba(226,180,110,' + (.18 + .06 * Math.sin(lt * 3)) + ')'; ctx.fillRect(0, 0, W, H);
+    for (let i = 0; i < 46; i++) { const sp = 900 + hash(i) * 900; const x = ((hash(i + 3) * 1600 - lt * sp) % 1600 + 1600) % 1600 - 300, y = 500 + hash(i + 7) * 1000, l = 60 + hash(i + 2) * 140;
+      ctx.globalAlpha = .25 + hash(i + 5) * .4; line(ctx, [[x, y], [x + l, y - l * .08]], '#fbe7bf', 3 + hash(i) * 3, 0); }
+    ctx.restore();
+    hookText(ctx, lt + .6, 'Memlüklerin kaderi, tek bir günde değişti!', { style: 'zoom', key: 'tek', y: 410, size: 86, keyColor: '#ff6a3d' });
   } },
   { s: 2.75, e: 5.15, draw(ctx, lt, d) { // 1516, Yavuz Sultan Selim
     ctx.drawImage(paperTex('#e2cfa6', 'warm'), 0, 0); camera(ctx, lt, d, 1, 1.07, CX, 900);

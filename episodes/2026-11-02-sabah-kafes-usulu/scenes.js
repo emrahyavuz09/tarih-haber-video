@@ -101,9 +101,34 @@ function balance(ctx, x, y, s, tilt, lt) {
 }
 
 const SCENES = [
-  { s: 0, e: 2.1, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt + .5, d + .5, 'Bu şehzade öldürüleceğini sandı!', 'Kafes usulü'); ctx.restore();
-    const k = eInOut(prog(lt, 0, d)); lattice(ctx, 390, 1130, 220, 170, .35 + k * .65);
+  { s: 0, e: 2.1, draw(ctx, lt, d) { // HOOK — loş oda, demir parmaklıklı pencere, mum, kapı aralanıyor
+    ctx.save();
+    shake(ctx, lt, 0, 22, .3); // kapı darbesi
+    const z = lerp(1.22, 1.0, eOut(clamp(lt / .3))) + lt * .03; ctx.translate(500, 1000); ctx.scale(z, z); ctx.translate(-500, -1000);
+    roomBg(ctx, '#2a1f18');
+    // demir parmaklıklı pencere (ay ışığı)
+    const wx = 175, wy = 600, ww = 250, wh = 300;
+    shape(ctx, [[wx - 20, wy + wh + 20], [wx - 20, wy - 20], [wx + ww + 20, wy - 20], [wx + ww + 20, wy + wh + 20]], '#5a4030', C.ink, 6, .4);
+    ctx.fillStyle = '#1d2a44'; ctx.fillRect(wx, wy, ww, wh);
+    ell(ctx, wx + 150, wy + 95, 52, 52, '#efe6c8', null);
+    ctx.save(); ctx.globalAlpha = .14 + Math.sin(lt * 3) * .03; ctx.fillStyle = '#cfe0ff';
+    ctx.beginPath(); ctx.moveTo(wx, wy + wh); ctx.lineTo(wx + ww, wy + wh); ctx.lineTo(wx + ww + 260, 1300); ctx.lineTo(wx + 60, 1300); ctx.fill(); ctx.restore();
+    for (let i = 1; i < 5; i++) { const bx = wx + i * ww / 5; ctx.fillStyle = C.ink; ctx.fillRect(bx - 9, wy - 4, 18, wh + 8); ctx.fillStyle = '#6b7075'; ctx.fillRect(bx - 5, wy - 4, 8, wh + 8); }
+    [wy + 90, wy + 210].forEach(by => { ctx.fillStyle = C.ink; ctx.fillRect(wx - 4, by - 9, ww + 8, 18); ctx.fillStyle = '#6b7075'; ctx.fillRect(wx - 4, by - 5, ww + 8, 8); });
+    // kapı ilk anda aralanır, ışık sızar
+    const op = .15 + eOut(clamp(lt / .25)) * .45 + Math.sin(lt * 2.4) * .03;
+    archDoor(ctx, 770, 1250, 250, 600, op, lt);
+    // kapıdan uzanan gölge (gelen kişi)
+    const sh = eOut(prog(lt, .4, 1.2));
+    ctx.save(); ctx.globalAlpha = .45 * sh; ctx.fillStyle = '#120c08'; ctx.beginPath(); ctx.ellipse(700 - sh * 120, 1300, 150 * sh + 1, 30, -.2, 0, 7); ctx.fill(); ctx.restore();
+    // şehzade irkilerek kapıya bakar
+    const jolt = Math.sin(clamp(lt / .25) * Math.PI) * 18;
+    sehzade(ctx, 430 - jolt, 1030, 1.05, { worried: true, look: 14 });
+    // titreyen mum ve ışık titreşimi
+    candle(ctx, 200, 1320, .85, lt);
+    ctx.restore();
+    ctx.save(); ctx.globalAlpha = .12 + Math.abs(Math.sin(lt * 11)) * .06; ctx.fillStyle = '#000'; ctx.fillRect(0, 0, W, H); ctx.restore();
+    hookText(ctx, lt + .6, 'Bu şehzade, tahta çağrıldığında öldürüleceğini sandı!', { style: 'stencil', key: 'öldürüleceğini', y: 410, size: 78 });
   } },
   { s: 2.1, e: 4.75, draw(ctx, lt, d) { // tahta çağrıldı: kapı açılıyor, şehzade korkuyla bakıyor
     roomBg(ctx); shake(ctx, lt, .9, 10); camera(ctx, lt, d, 1, 1.08, 540, 900);

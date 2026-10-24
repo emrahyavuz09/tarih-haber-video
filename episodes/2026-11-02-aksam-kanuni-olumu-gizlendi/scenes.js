@@ -168,9 +168,29 @@ function yMarch(ctx, lt, y, s, n, speed = 80, gap = 120) { // yürüyen yeniçer
   const span = n * gap; for (let i = 0; i < n; i++) { const x = ((lt * speed + i * gap) % span) - 120; yeniceri(ctx, x, y + Math.abs(Math.sin(lt * 8 + i)) * -5, s, lt, 1); }
 }
 const SCENES = [
-  { s: 0, e: 2.2, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt + .5, d + .5, 'Padişah ölmüştü... ama ordu bilmiyordu!', 'Zigetvar 1566'); ctx.restore();
-    ctx.save(); ctx.translate(500, 1330); ctx.scale(.3, .3); otag(ctx, 0, 0, 1, lt, .9, 0); ctx.restore();
+  { s: 0, e: 2.2, draw(ctx, lt, d) { // HOOK — gece ordugâh, otağda titreyen mum, perdeler kapanıyor (saygılı, gizemli)
+    ctx.save();
+    shake(ctx, lt, 0, 18, .3);
+    const z = lerp(1.35, 1.0, eOut(clamp(lt / .3))) + lt * .035; ctx.translate(500, 1150); ctx.scale(z, z); ctx.translate(-500, -1150);
+    plain(ctx, lt, { top: '#0d1222', bot: '#2b2a3a', ground: '#3b3224', stars: true });
+    ell(ctx, 800, 640, 40, 40, '#efe6c8', null);
+    ctx.save(); ctx.globalAlpha = .18; ell(ctx, 800, 640, 80, 80, '#efe6c8', null); ctx.restore();
+    // sürüklenen bulut (rüzgâr)
+    for (let i = 0; i < 3; i++) { const x = ((lt * 160 + i * 420) % 1500) - 300, y = 600 + i * 60; ctx.globalAlpha = .28; ell(ctx, x, y, 150, 22, '#8a8aa0', null); ell(ctx, x + 70, y - 14, 90, 20, '#8a8aa0', null); }
+    ctx.globalAlpha = 1;
+    // uzak çadırlar (karanlık)
+    [[140, 1080, .32], [880, 1075, .3], [330, 1060, .22], [690, 1058, .22]].forEach(([x, y, s]) => { ctx.save(); ctx.globalAlpha = .75; otag(ctx, x, y, s, lt, .25, .9); ctx.restore(); });
+    // otağ: içeride titreyen mum, perdeler yavaşça kapanıyor
+    otag(ctx, 500, 1250, 1.0, lt, 1, .25 + eInOut(prog(lt, .4, 1.6)) * .45);
+    tug(ctx, 150, 1300, 420, lt * 1.6); tug(ctx, 850, 1300, 420, lt * 1.6 + 1);
+    // nöbetçiler
+    yeniceri(ctx, 290, 1300, .95, lt); yeniceri(ctx, 710, 1300, .95, lt + 1);
+    dust(ctx, lt, 500, 1330, 10, 'rgba(160,150,140,.25)');
+    ctx.restore();
+    // karanlık vinyet + mum titreşimi
+    const g = ctx.createRadialGradient(500, 1050, 200, 500, 1000, 900); g.addColorStop(0, 'rgba(0,0,0,0)'); g.addColorStop(1, 'rgba(0,0,0,' + (.55 + Math.sin(lt * 9) * .04) + ')');
+    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    hookText(ctx, lt + .6, 'Padişah ölmüştü... ama ordunun bundan haberi yoktu!', { style: 'split', key: 'ölmüştü', y: 420, size: 82 });
   } },
   { s: 2.2, e: 4.85, draw(ctx, lt, d) { // ordugâh, 1566
     plain(ctx, lt); camera(ctx, lt, d, 1, 1.07, W / 2, 1000);

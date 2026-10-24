@@ -60,9 +60,33 @@ function shovelDigger(ctx, x, y, s, lt) {
 }
 
 const SCENES = [
-  { s: 0, e: 2.1, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt + .5, d + .5, 'Gökyüzünü 40 metrelik aletle ölçtü!', 'Uluğ Bey'); ctx.restore();
-    for (let i = 0; i < 5; i++) { const a = lt * .8 + i * 1.256; star(ctx, 500 + Math.cos(a) * 120, 1250 + Math.sin(a) * 50, 14, '#f3e9d2'); }
+  { s: 0, e: 2.1, draw(ctx, lt, d) { // HOOK — yıldızlı gece, dev meridyen yayı, kayan yıldızlar
+    ctx.save();
+    const z = lerp(1.45, 1.0, eOut(clamp(lt / .3))) + lt * .03; ctx.translate(500, 1150); ctx.scale(z, z); ctx.translate(-500, -1150);
+    night(ctx, lt, 0, '#070d1f', '#26304e');
+    // dönen gökyüzü (yıldız izleri)
+    ctx.save(); ctx.translate(500, 560); ctx.rotate(lt * .12);
+    for (let i = 0; i < 110; i++) { const r = 80 + hash(i) * 900, a = hash(i + 50) * 6.283; ctx.globalAlpha = .3 + .6 * Math.abs(Math.sin(lt * 2 + i));
+      ctx.strokeStyle = 'rgba(246,236,208,.25)'; ctx.lineWidth = 2; ctx.beginPath(); ctx.arc(0, 0, r, a, a + .18); ctx.stroke();
+      star(ctx, Math.cos(a + .18) * r, Math.sin(a + .18) * r, 2 + hash(i + 9) * 4); }
+    ctx.restore(); ctx.globalAlpha = 1;
+    moon(ctx, 810, 650, 46);
+    // kayan yıldızlar
+    [[0, -100, 260, 1], [.7, 1000, 520, -1], [1.3, -100, 720, 1]].forEach(([t0, x0, y0, dir]) => { const k = clamp((lt - t0) / .55); if (k <= 0 || k >= 1) return;
+      const x = x0 + dir * k * 1300, y = y0 + k * 330; const gr = ctx.createLinearGradient(x, y, x - dir * 260, y - 66); gr.addColorStop(0, 'rgba(255,245,210,.95)'); gr.addColorStop(1, 'rgba(255,245,210,0)');
+      ctx.strokeStyle = gr; ctx.lineWidth = 6; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x - dir * 260, y - 66); ctx.stroke(); star(ctx, x, y, 14, '#fff6d8'); });
+    hill(ctx, '#2e281f');
+    // dev sekstant yayı + gözlem çizgisi (süpürür)
+    meridianArc(ctx, 500, 720, 620, 1, lt);
+    const a = Math.PI * .5 + Math.sin(lt * 1.6) * .42; const tx = 500 + Math.cos(a) * 572, ty = 720 + Math.sin(a) * 572;
+    const sx = 500 - Math.cos(a) * 150, sy = 720 - Math.sin(a) * 150;
+    const sa0 = clamp((lt - .22) / .15); line(ctx, [[lerp(500, sx, sa0), lerp(720, sy, sa0)], [tx, ty]], 'rgba(247,201,72,.6)', 5, 0);
+    ell(ctx, 500, 720, 10, 10, C.gold, C.ink, 3);
+    ell(ctx, tx, ty, 16, 16, C.gold, C.ink, 4);
+    const sa = clamp((lt - .22) / .15); ctx.save(); ctx.globalAlpha = sa * (.35 + .3 * Math.abs(Math.sin(lt * 5))); ell(ctx, sx, sy, 34, 34, '#fff3c4', null); ctx.globalAlpha = sa;
+    star(ctx, sx, sy, 24, C.gold); ctx.restore();
+    ctx.restore();
+    hookText(ctx, lt + .6, 'Bu hükümdar, gökyüzünü kırk metrelik bir aletle ölçtü!', { style: 'zoom', key: 'kırk', y: 410, size: 80 });
   } },
   { s: 2.1, e: 4.4, draw(ctx, lt, d) { // dev yay
     night(ctx, lt); camera(ctx, lt, d, 1, 1.08, W / 2, 900);
