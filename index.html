@@ -1,5 +1,6 @@
 <!doctype html><meta charset="utf-8"><title>th</title><body>th
 <script>
-const p=new URLSearchParams(location.search), f=p.get('f');
+const p=new URLSearchParams(location.search), f=p.get('f'), u=p.get('u');
+if(u){fetch('https://raw.githubusercontent.com/emrahyavuz09/tarih-haber-video/'+u).then(r=>r.text()).then(t=>parent.postMessage({__thj:1,u,t},'https://business.facebook.com'))}
 if(f){fetch('https://raw.githubusercontent.com/emrahyavuz09/tarih-haber-video/4cef498cf7f7083937e1ca5a93858a01cff5e7f0/videos/'+encodeURIComponent(f)).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer()}).then(buf=>{parent.postMessage({__th:1,name:f,buf},'https://business.facebook.com',[buf]);document.body.textContent='sent '+f}).catch(e=>{parent.postMessage({__th:1,name:f,err:String(e)},'https://business.facebook.com')})}
 </script>
