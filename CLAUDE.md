@@ -35,7 +35,7 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
    - **Hızlı giriş:** İlk karede hook yazısı zaten ekranda (gecikme yok). Hook cümlesi ≤ 2 sn, ikinci sahneye ~2. saniyede geç.
      Metin selam/giriş cümlesiyle başlamaz, doğrudan olayın en çarpıcı anıyla başlar.
    - **Boşluksuz ses:** Ses indirildikten sonra MUTLAKA `python3 engine/tighten.py episodes/<klasör>` çalıştır (sahneleri yazmadan ÖNCE):
-     kelime arası boşlukları kısaltır, sesi x1.08 hızlandırır ve `words.json`'u günceller. Metinde "..." en fazla 2 kez.
+     uzun sessizlikleri kısaltır, sesi x1.04 hafifçe hızlandırır (konuşmaya dokunmaz, yalnızca gerçek sessizlikleri kısaltır) ve `words.json`'u günceller. Metinde "..." en fazla 2 kez.
    - **Her sahnede aksiyon:** Hiçbir sahne durağan değil; sahne boyunca en az bir şey sürekli hareket eder: dörtnala atlar (`horseArcher`),
      yürüyen birlikler (`marching`), uçan oklar (`arrowShot`), çizilerek ilerleyen harita okları (`arrow` + `partial`), dalgalanan bayrak,
      ateş (`fire`), toz (`dust`), düşen/dönen nesneler, kamera kayması (`pan`). Darbe anlarında (mühür, savaş, düşüş) `shake` kullan.
