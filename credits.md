@@ -18,3 +18,4 @@ Aylık kota: 130000
 | 2026-10-24 | 746 | Sabiha Gökçen, 2026-11-06 sabah (1 okuma) |
 | 2026-10-24 | 751 | Uluğ Bey, 2026-11-03 sabah (1 okuma) |
 | 2026-10-24 | 727 | Hezârfen, 2026-10-27 sabah (1 okuma) |
+| 2026-10-24 | 1059 | Dandanakan 1040, 2026-10-30 akşam (1 okuma) |
