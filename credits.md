@@ -32,3 +32,4 @@ Aylık kota: 130000
 | 2026-10-24 | 730 | Barbaros adı, 2026-11-08 sabah (1 okuma) |
 | 2026-10-24 | 764 | Ankara başkent, 2026-10-29 sabah (1 okuma) |
 | 2026-10-24 | 997 | Mercidabık 1516, 2026-11-04 akşam (1 okuma) |
+| 2026-10-24 | 653 | Göktürk alfabesi, 2026-11-01 sabah (1 okuma) |

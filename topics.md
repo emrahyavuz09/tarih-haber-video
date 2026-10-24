@@ -38,3 +38,4 @@
 - Büyük Türk boyları / Oğuz boyları
 | 2026-10-31 | Lale Devri: lale soğanına narh (1722 fermanı, 839 tür, Lâlezârî, kaplumbağa mumları) — sabah | üretildi, planlanmadı |
 | 2026-10-31 | Patrona Halil İsyanı 1730 ve Lale Devri'nin sonu (III. Ahmed, I. Mahmud, Damad İbrahim Paşa) — akşam | üretildi, planlanmadı |
+| 2026-11-01 | Göktürk (Orhun) alfabesi: 38 harf, sağdan sola, Kül Tigin/Bilge Kağan yazıtları, Thomsen 1893 — sabah | üretildi, planlanmadı |
