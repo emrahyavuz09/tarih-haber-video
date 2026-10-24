@@ -163,11 +163,30 @@ function morph(ctx, a, b, k, x, y, size, col) { // harf harf dönüşüm
 const ORUC = { robe: '#7a2a22', beard: '#c0562a', cap: '#2d4a7a' }, HIZIR = { robe: '#2d4a7a', beard: '#b5502a', cap: C.red };
 function nameTag(ctx, s, x, y, size, lt, delay, bg = C.red) { tag(ctx, s, x, y, size, lt, delay, bg, C.cream, -3); }
 const SCENES = [
-  { s: 0, e: 2.0, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Barbaros aslında bir Türk adı değil!', 'NEREDEN GELİYOR?'); ctx.restore();
-    ctx.strokeStyle = 'rgba(243,233,210,.5)'; ctx.lineWidth = 4;
-    for (let r = 0; r < 3; r++) for (let i = 0; i < 9; i++) { const x = ((i * 150 + r * 70 + lt * 50 * (r % 2 ? 1 : -1)) % 1500 + 1500) % 1500 - 200, y = 1320 + r * 40; ctx.beginPath(); ctx.moveTo(x, y); ctx.quadraticCurveTo(x + 20, y - 10, x + 40, y); ctx.stroke(); }
-    kadirga(ctx, 160 + lt * 150, 1300, .55, lt);
+  { s: 0, e: 2.0, draw(ctx, lt, d) { // AÇILIŞ (split): fırtınalı denizde rüzgârla şişen yelkenli kadırga
+    ctx.save(); shake(ctx, lt, 0, 24, .4); shake(ctx, lt, 1.2, 12, .3);
+    const z = lt < .35 ? lerp(1.3, 1.0, eOut(lt / .35)) : lerp(1.0, 1.06, (lt - .35) / (d - .35));
+    ctx.translate(W / 2, 1100); ctx.scale(z, z); ctx.translate(-W / 2, -1100);
+    const g = ctx.createLinearGradient(0, 0, 0, 1200); g.addColorStop(0, '#2e3a44'); g.addColorStop(1, '#7d8c8e');
+    ctx.fillStyle = g; ctx.fillRect(-300, -300, W + 600, H + 600);
+    // şimşek çakması
+    for (const t0 of [0, 1.2]) { const k = (lt - t0) / .25; if (k >= 0 && k < 1) { ctx.globalAlpha = (1 - k) * .55; ctx.fillStyle = '#f4f1e6'; ctx.fillRect(-300, -300, W + 600, H + 600); ctx.globalAlpha = 1 - k; const bx = t0 ? 780 : 260; line(ctx, [[bx, 640], [bx - 40, 740], [bx + 10, 760], [bx - 50, 900], [bx - 10, 910], [bx - 70, 1040]], '#fff7d0', 9, .4); ctx.globalAlpha = 1; } }
+    // koyu bulutlar
+    for (let i = 0; i < 6; i++) { const x = ((lt * 90 + i * 260) % 1500) - 250, y = 650 + (i % 3) * 60; ctx.globalAlpha = .7; ell(ctx, x, y, 170, 50, '#26313a', null); ell(ctx, x + 80, y - 30, 110, 46, '#26313a', null); } ctx.globalAlpha = 1;
+    const wave = (y0, amp, sp, ph, col) => { const pts = []; for (let x = -300; x <= 1400; x += 40) pts.push([x, y0 + Math.sin(x / 110 + lt * sp + ph) * amp]); pts.push([1400, 2400], [-300, 2400]); shape(ctx, pts, col, C.ink, 4, .6); };
+    wave(1080, 26, 3, 0, '#3f6a7a');
+    // kadırga: dalgalarda yükselip iner, yalpalar
+    ctx.save(); const sx = 480, sy = 1140 + Math.sin(lt * 3.2) * 22; ctx.translate(sx, sy); ctx.rotate(Math.sin(lt * 2.6) * .09); ctx.translate(-sx, -sy);
+    kadirga(ctx, sx, sy, 1.3, lt * 2.2); ctx.restore();
+    wave(1180, 34, 4, 2, '#355d6d');
+    // köpük ve serpinti
+    for (let i = 0; i < 14; i++) { const k = (lt * 1.4 + i / 14) % 1; const x = 120 + hash(i) * 800 + k * 60, y = 1180 - Math.sin(k * Math.PI) * 140; ctx.globalAlpha = 1 - k; ell(ctx, x, y, 12, 9, '#eef3f2', null); } ctx.globalAlpha = 1;
+    // ilk anda kameraya çarpan dalga
+    if (lt < .5) { const k = eOut(lt / .5); const top = lerp(1090, 1550, k); const pts = []; for (let x = -300; x <= 1400; x += 40) pts.push([x, top + Math.sin(x / 90) * 40]); pts.push([1400, 2400], [-300, 2400]); ctx.globalAlpha = 1 - k * .5; shape(ctx, pts, '#2c5161', C.ink, 5, .6); ctx.globalAlpha = 1; }
+    // yağmur
+    ctx.globalAlpha = .45; for (let i = 0; i < 40; i++) { const k = (lt * 2.5 + hash(i)) % 1; const x = hash(i + 50) * 1300 - 100 + k * 120, y = -100 + k * 1500; line(ctx, [[x, y], [x - 26, y - 70]], '#dfe8ea', 3, .1); } ctx.globalAlpha = 1;
+    ctx.restore();
+    hookText(ctx, lt + .6, 'Barbaros, aslında bir Türk adı değil!', { style: 'split', key: 'BARBAROS', y: 420, size: 92 });
   } },
   { s: 2.0, e: 4.88, draw(ctx, lt, d) { // Avrupalıların lakabı
     camera(ctx, lt, d, 1, 1.07, 480, 820); geoMap(ctx, MED, GEO_MED);
