@@ -148,9 +148,24 @@ function certificate(ctx, x, y, s, rot) {
 }
 
 const SCENES = [
-  { s: 0, e: 2.8, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Bir milletin alfabesi üç ayda değişti!', 'Harf Devrimi · 1928'); ctx.restore();
-    ['A', 'B', 'C', 'Ç'].forEach((L, i) => { const p = eBack(prog(lt + .45, i * .15, .4)); if (p <= 0) return; ctx.save(); ctx.translate(250 + i * 170, 1240 + Math.sin(lt * 4 + i) * 12); ctx.rotate(Math.sin(lt * 3 + i) * .12); ctx.scale(p, p); tornRect(ctx, -65, -70, 130, 140, C.cream, 30 + i); text(ctx, L, 0, 4, 96, C.red); ctx.restore(); });
+  { s: 0, e: 2.8, draw(ctx, lt, d) { // HOOK — kara tahta: eski harfler siliniyor, yeni harfler tebeşirle yazılıyor, tebeşir tozu
+    ctx.save(); shake(ctx, lt, 0, 18, .3);
+    const z = lerp(1.25, 1, eOut(clamp(lt / .3))) * lerp(1, 1.06, eInOut(lt / d)); ctx.translate(CX, 930); ctx.scale(z, z); ctx.translate(-CX, -930);
+    bg(ctx, '#d9c7a2'); ctx.fillStyle = '#8b6a45'; ctx.fillRect(-300, 1260, W + 600, 900); line(ctx, [[-300, 1260], [W + 300, 1260]], C.ink, 5, .5);
+    const bx = CX, by = 930, bw = 760, bh = 520; blackboard(ctx, bx, by, bw, bh, [], 0, 90, false);
+    // eski harfler (üst satır) — sünger geçtikçe silinir
+    const ex = lerp(bx + bw / 2 + 40, bx - bw / 2 - 40, clamp((lt + .2) / 1.5));
+    ctx.save(); ctx.beginPath(); ctx.rect(bx - bw / 2, by - bh / 2, ex - 50 - (bx - bw / 2), 230); ctx.clip(); ctx.font = `700 110px serif`; ctx.fillStyle = 'rgba(242,239,230,.9)'; ctx.textAlign = 'center'; ctx.textBaseline = 'middle'; ctx.direction = 'rtl'; ctx.fillText('ا  ب  ت  ث  ج', bx, by - 140); ctx.restore();
+    ctx.save(); ctx.globalAlpha = .1; for (let x = Math.max(ex + 40, bx - bw / 2 + 70); x < bx + bw / 2 - 60; x += 70) ell(ctx, x, by - 140 + Math.sin(x) * 14, 70, 50, '#f2efe6', null); ctx.restore();
+    if (lt < 1.4) { ctx.save(); ctx.translate(ex, by - 140 + Math.sin(lt * 30) * 26); ctx.rotate(Math.sin(lt * 30) * .1); shape(ctx, [[-50, -70], [50, -70], [50, 70], [-50, 70]], '#c9a14a', C.ink, 4, .3); shape(ctx, [[-50, 40], [50, 40], [50, 70], [-50, 70]], '#5b4636', C.ink, 4, .3); ctx.restore(); dust(ctx, lt * 2, ex, by - 90, 10, 'rgba(240,238,230,.5)'); }
+    // yeni harfler (alt satır) — tebeşirle yazılır
+    const L = ['A', 'B', 'C', 'Ç', 'D']; const n = (lt + .5) * 3.2; let cx2 = bx - 280;
+    L.forEach((ch, i) => { const k = clamp(n - i); if (k > 0) { ctx.save(); ctx.globalAlpha = k; ctx.translate(cx2 + i * 140, by + 110); ctx.scale(lerp(1.5, 1, eOut(k)), lerp(1.5, 1, eOut(k))); text(ctx, ch, 0, 0, 150, '#f2efe6', F_SERIF, 700); ctx.restore(); } });
+    const hi = Math.min(4, Math.floor(n)); chalkHand(ctx, cx2 + hi * 140 + 30, by + 60, lt);
+    for (let i = 0; i < 10; i++) { const k = (lt * 1.3 + hash(i)) % 1; ctx.globalAlpha = (1 - k) * .8; ell(ctx, cx2 + hi * 140 + 40 + (hash(i + 3) - .5) * 80, by + 120 + k * 200, 3 + k * 6, 3 + k * 6, '#f2efe6', null); } ctx.globalAlpha = 1;
+    shape(ctx, [[bx - bw / 2 - 30, by + bh / 2 + 18], [bx + bw / 2 + 30, by + bh / 2 + 18], [bx + bw / 2 + 30, by + bh / 2 + 38], [bx - bw / 2 - 30, by + bh / 2 + 38]], '#6e4a2c', C.ink, 4, .3);
+    ctx.restore();
+    hookText(ctx, lt + 0.6, 'Bir milletin alfabesi, üç ayda değişti!', { style: 'zoom', key: 'ALFABESİ', y: 420 });
   } },
   { s: 2.8, e: 5.0, draw(ctx, lt, d) { // 1928, Ağustos
     bg(ctx, '#e2cfa6'); camera(ctx, lt, d, 1, 1.07, W / 2, 850);
