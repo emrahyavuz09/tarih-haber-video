@@ -125,11 +125,32 @@ function shelf(ctx, y0, lt) {
       shape(ctx, [[bx, yy], [bx, yy - bh], [bx + 50, yy - bh], [bx + 50, yy]], ['#7a3b26', '#3e5f8a', '#6b5a2a', '#4a3a5a', '#2f5a4f'][(i + r) % 5], C.ink, 3, .3); line(ctx, [[bx + 8, yy - bh + 26], [bx + 42, yy - bh + 26]], C.gold, 3, .1); } }
 }
 const SCENES = [
-  { s: 0, e: 2.0, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Bir Osmanlı denizcisi Amerika\'yı çizdi!', 'PÎRÎ REİS · 1513'); ctx.restore();
-    ctx.strokeStyle = 'rgba(243,233,210,.5)'; ctx.lineWidth = 4;
-    for (let r = 0; r < 3; r++) for (let i = 0; i < 9; i++) { const x = ((i * 150 + r * 70 + lt * 50 * (r % 2 ? 1 : -1)) % 1500 + 1500) % 1500 - 200, y = 1320 + r * 40; ctx.beginPath(); ctx.moveTo(x, y); ctx.quadraticCurveTo(x + 20, y - 10, x + 40, y); ctx.stroke(); }
-    kadirga(ctx, 160 + lt * 150, 1300, .55, lt);
+  { s: 0, e: 2.0, draw(ctx, lt, d) { // AÇILIŞ (marker): deniz rüzgârında açılan portolan harita, Amerika kıyısı beliriyor
+    ctx.save(); shake(ctx, lt, 0, 18, .35);
+    const z = lt < .35 ? lerp(1.28, 1.0, eOut(lt / .35)) : lerp(1.0, 1.05, (lt - .35) / (d - .35));
+    ctx.translate(W / 2, 950); ctx.scale(z, z); ctx.translate(-W / 2, -950);
+    seaSide(ctx, lt * 3, { top: '#9fc1c9', bot: '#e9dcb8', y0: 1190, sea: '#5f8fa3' });
+    // rüzgâr çizgileri
+    for (let i = 0; i < 8; i++) { const k = (lt * 1.5 + i / 8) % 1; const yy = 600 + hash(i + 3) * 650, xx = -300 + k * 1600; ctx.globalAlpha = .6 * Math.sin(k * Math.PI); line(ctx, [[xx, yy], [xx + 150, yy - 10]], '#ffffff', 4, .3); }
+    ctx.globalAlpha = 1;
+    kadirga(ctx, 120 + lt * 120, 1330, .42, lt);
+    // harita: aşağıdan fırlayıp açılır, rüzgârda dalgalanır
+    const cx = 490, cy = 910, w = 760, h = 500;
+    const fly = eOut(clamp(lt / .35)); const rev = lerp(.5, 1, eOut(clamp(lt / .9)));
+    ctx.save(); ctx.translate(cx, cy + (1 - fly) * 260); ctx.rotate(lerp(-.18, 0, fly) + Math.sin(lt * 3.2) * .022); ctx.translate(-cx, -cy);
+    ctx.save(); ctx.beginPath(); ctx.rect(cx - w / 2 - 40, cy - h / 2 - 60, w * rev + 40, h + 140); ctx.clip(); piriMap(ctx, cx, cy, w, h, { lt, reveal: rev }); ctx.restore();
+    // Amerika kıyısı kırmızıyla çiziliyor
+    const m = { x: cx, y: cy, lon: -28, lat: 8, k: w / 95 };
+    ctx.save(); ctx.beginPath(); ctx.rect(cx - w / 2, cy - h / 2, w * rev, h); ctx.clip();
+    const k = eInOut(clamp((lt - .15) / 1.3)); const pts = COAST_SAM_N.slice().reverse().concat(COAST_SAM.slice(1)).map(p => proj(m, ...p));
+    if (k > 0) { line(ctx, partial(pts, k), C.red, 10, .5); const q = partial(pts, k).slice(-1)[0]; sparkle(ctx, lt, q[0], q[1], 60); }
+    ctx.restore();
+    // açılan rulo (sağ kenarda)
+    const ex = cx - w / 2 + w * rev; shape(ctx, [[ex - 16, cy - h / 2 - 20], [ex + 16, cy - h / 2 - 20], [ex + 16, cy + h / 2 + 20], [ex - 16, cy + h / 2 + 20]], '#b88a52', C.ink, 4, .6);
+    ctx.restore();
+    compassRose(ctx, 790, 1185, 95, lt * 2.4);
+    ctx.restore();
+    hookText(ctx, lt + .6, 'Bir Osmanlı denizcisi, Amerika\'yı haritaya çizdi!', { style: 'marker', key: 'AMERİKA', y: 420, accent: C.red, size: 82 });
   } },
   { s: 2.0, e: 4.86, draw(ctx, lt, d) { // Amerika'yı haritaya çizdi — 1513
     camera(ctx, lt, d, 1, 1.08, 400, 900); geoMap(ctx, ATL, GEO_ATL);
