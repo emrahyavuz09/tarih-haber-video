@@ -129,10 +129,27 @@ function balkanMap(ctx) {
 }
 
 const SCENES = [
-  { s: 0, e: 2.3, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Dünyanın ilk kadın savaş pilotu', 'BİR TÜRK KIZIYDI'); ctx.restore();
-    biplane(ctx, lerp(-250, 1300, lt / d), 1210 - Math.sin(lt * 2) * 30, .8, -.05, lt);
-    trail(ctx, [[-400, 1215], [lerp(-450, 1100, lt / d), 1215 - Math.sin(lt * 2) * 30]], 'rgba(243,233,210,.7)');
+  { s: 0, e: 2.3, draw(ctx, lt, d) { // AÇILIŞ (zoom): bulutların arasından dalışa geçen çift kanatlı uçak
+    ctx.save(); shake(ctx, lt, 0, 20, .35);
+    const z = lt < .35 ? lerp(1.35, 1.0, eOut(lt / .35)) : lerp(1.0, 1.08, (lt - .35) / (d - .35));
+    ctx.translate(W / 2, 900); ctx.scale(z, z); ctx.translate(-W / 2, -900);
+    const g = ctx.createLinearGradient(0, 0, 0, 1700); g.addColorStop(0, '#3f86b8'); g.addColorStop(.6, '#8fc3dc'); g.addColorStop(1, '#d9ecef');
+    ctx.fillStyle = g; ctx.fillRect(-300, -300, W + 600, H + 600);
+    ctx.save(); ctx.globalAlpha = .22; ctx.globalCompositeOperation = 'multiply'; ctx.drawImage(paperTex('#e8dcc0', '#e8dcc0'), 0, 0); ctx.restore();
+        // bulutlar: dalış hissi için hızla YUKARI akar
+    for (let i = 0; i < 9; i++) { const k = (lt * (.55 + hash(i) * .4) + hash(i + 9)) % 1; const x = -120 + hash(i + 3) * 1300; const y = 1750 - k * 2000; ctx.globalAlpha = .85; cloud(ctx, x, y, .8 + hash(i + 5) * .9); }
+    ctx.globalAlpha = 1;
+    // hız çizgileri
+    for (let i = 0; i < 12; i++) { const k = (lt * 2.2 + i / 12) % 1; const x = 90 + hash(i + 20) * 860; const y = 1500 - k * 1300; ctx.globalAlpha = .6 * Math.sin(k * Math.PI); line(ctx, [[x, y], [x - 50, y - 130]], '#ffffff', 5, .2); }
+    ctx.globalAlpha = 1;
+    // uçak: dalışa geçer, kameraya yaklaşır, hafif yalpalar
+    const p = eOut(clamp(lt / .5)); const px = lerp(800, 560, p) + Math.sin(lt * 3) * 14, py = lerp(780, 920, p) + lt * 40;
+    trail(ctx, [[px - 420, py - 230], [px - 160, py - 90]], 'rgba(255,255,255,.85)');
+    biplane(ctx, px, py, lerp(1.1, 1.55, clamp(lt / d)), .42 + Math.sin(lt * 4) * .04, lt);
+    // ilk anda kameranın önünden geçen dev bulut
+    if (lt < .6) { const k = eOut(lt / .6); ctx.globalAlpha = 1 - k * .6; cloud(ctx, lerp(260, 200, k), lerp(1250, -400, k), 3.6); cloud(ctx, lerp(900, 1000, k), lerp(1450, 200, k), 3); ctx.globalAlpha = 1; }
+    ctx.restore();
+    hookText(ctx, lt + .6, 'Dünyanın ilk kadın savaş pilotu, bir Türk kızıydı!', { style: 'zoom', key: 'TÜRK', y: 420, size: 88 });
   } },
   { s: 2.3, e: 4.95, draw(ctx, lt, d) { // Adı Sabiha Gökçen
     sky(ctx, lt, { fast: true }); camera(ctx, lt, d, 1, 1.06, W / 2, 800);
