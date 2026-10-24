@@ -1,0 +1,622 @@
+{
+ "words": [
+  {
+   "text": "Osmanlı'da",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.615
+  },
+  {
+   "text": "haber,",
+   "type": "word",
+   "start": 0.692,
+   "end": 1.192
+  },
+  {
+   "text": "at",
+   "type": "word",
+   "start": 1.25,
+   "end": 1.404
+  },
+  {
+   "text": "değiştirerek",
+   "type": "word",
+   "start": 1.481,
+   "end": 2.096
+  },
+  {
+   "text": "uçardı!",
+   "type": "word",
+   "start": 2.173,
+   "end": 2.635
+  },
+  {
+   "text": "Devletin",
+   "type": "word",
+   "start": 2.808,
+   "end": 3.192
+  },
+  {
+   "text": "haberlerini",
+   "type": "word",
+   "start": 3.269,
+   "end": 3.808
+  },
+  {
+   "text": "taşıyan",
+   "type": "word",
+   "start": 3.885,
+   "end": 4.269
+  },
+  {
+   "text": "atlı",
+   "type": "word",
+   "start": 4.346,
+   "end": 4.577
+  },
+  {
+   "text": "görevlilere",
+   "type": "word",
+   "start": 4.654,
+   "end": 5.269
+  },
+  {
+   "text": "ulak",
+   "type": "word",
+   "start": 5.423,
+   "end": 5.731
+  },
+  {
+   "text": "denirdi.",
+   "type": "word",
+   "start": 5.808,
+   "end": 6.269
+  },
+  {
+   "text": "Halk",
+   "type": "word",
+   "start": 6.385,
+   "end": 6.615
+  },
+  {
+   "text": "onlara",
+   "type": "word",
+   "start": 6.692,
+   "end": 7.077
+  },
+  {
+   "text": "tatar",
+   "type": "word",
+   "start": 7.231,
+   "end": 7.538
+  },
+  {
+   "text": "da",
+   "type": "word",
+   "start": 7.615,
+   "end": 7.692
+  },
+  {
+   "text": "derdi.",
+   "type": "word",
+   "start": 7.808,
+   "end": 8.154
+  },
+  {
+   "text": "Ulak",
+   "type": "word",
+   "start": 8.26,
+   "end": 8.49
+  },
+  {
+   "text": "yola",
+   "type": "word",
+   "start": 8.567,
+   "end": 8.721
+  },
+  {
+   "text": "çıkar,",
+   "type": "word",
+   "start": 8.798,
+   "end": 9.337
+  },
+  {
+   "text": "atı",
+   "type": "word",
+   "start": 9.413,
+   "end": 9.567
+  },
+  {
+   "text": "yorulana",
+   "type": "word",
+   "start": 9.644,
+   "end": 10.029
+  },
+  {
+   "text": "kadar",
+   "type": "word",
+   "start": 10.106,
+   "end": 10.413
+  },
+  {
+   "text": "dörtnala",
+   "type": "word",
+   "start": 10.49,
+   "end": 10.952
+  },
+  {
+   "text": "giderdi.",
+   "type": "word",
+   "start": 10.99,
+   "end": 11.49
+  },
+  {
+   "text": "Yol",
+   "type": "word",
+   "start": 11.635,
+   "end": 11.788
+  },
+  {
+   "text": "boyunca",
+   "type": "word",
+   "start": 11.865,
+   "end": 12.25
+  },
+  {
+   "text": "menzilhaneler",
+   "type": "word",
+   "start": 12.327,
+   "end": 13.096
+  },
+  {
+   "text": "vardı.",
+   "type": "word",
+   "start": 13.173,
+   "end": 13.558
+  },
+  {
+   "text": "Ulak",
+   "type": "word",
+   "start": 13.683,
+   "end": 13.913
+  },
+  {
+   "text": "burada",
+   "type": "word",
+   "start": 13.99,
+   "end": 14.375
+  },
+  {
+   "text": "yorgun",
+   "type": "word",
+   "start": 14.452,
+   "end": 14.76
+  },
+  {
+   "text": "atını",
+   "type": "word",
+   "start": 14.837,
+   "end": 15.067
+  },
+  {
+   "text": "bırakır,",
+   "type": "word",
+   "start": 15.118,
+   "end": 15.644
+  },
+  {
+   "text": "dinlenmiş",
+   "type": "word",
+   "start": 15.721,
+   "end": 16.183
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 16.26,
+   "end": 16.337
+  },
+  {
+   "text": "ata",
+   "type": "word",
+   "start": 16.452,
+   "end": 16.567
+  },
+  {
+   "text": "atlayıp",
+   "type": "word",
+   "start": 16.644,
+   "end": 17.029
+  },
+  {
+   "text": "yoluna",
+   "type": "word",
+   "start": 17.106,
+   "end": 17.413
+  },
+  {
+   "text": "devam",
+   "type": "word",
+   "start": 17.49,
+   "end": 17.721
+  },
+  {
+   "text": "ederdi.",
+   "type": "word",
+   "start": 17.798,
+   "end": 18.26
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 18.394,
+   "end": 18.548
+  },
+  {
+   "text": "ağ,",
+   "type": "word",
+   "start": 18.625,
+   "end": 18.933
+  },
+  {
+   "text": "İstanbul'dan",
+   "type": "word",
+   "start": 18.971,
+   "end": 19.702
+  },
+  {
+   "text": "üç",
+   "type": "word",
+   "start": 19.856,
+   "end": 20.01
+  },
+  {
+   "text": "ana",
+   "type": "word",
+   "start": 20.087,
+   "end": 20.24
+  },
+  {
+   "text": "kolla",
+   "type": "word",
+   "start": 20.317,
+   "end": 20.625
+  },
+  {
+   "text": "Anadolu'ya",
+   "type": "word",
+   "start": 20.779,
+   "end": 21.24
+  },
+  {
+   "text": "uzanıyordu.",
+   "type": "word",
+   "start": 21.317,
+   "end": 22.01
+  },
+  {
+   "text": "Halep'e,",
+   "type": "word",
+   "start": 22.125,
+   "end": 22.663
+  },
+  {
+   "text": "Bağdat'a,",
+   "type": "word",
+   "start": 22.894,
+   "end": 23.51
+  },
+  {
+   "text": "Tebriz'e.",
+   "type": "word",
+   "start": 23.683,
+   "end": 24.221
+  },
+  {
+   "text": "Rumeli'de",
+   "type": "word",
+   "start": 24.375,
+   "end": 24.837
+  },
+  {
+   "text": "de",
+   "type": "word",
+   "start": 24.913,
+   "end": 24.99
+  },
+  {
+   "text": "üç",
+   "type": "word",
+   "start": 25.144,
+   "end": 25.298
+  },
+  {
+   "text": "kol",
+   "type": "word",
+   "start": 25.375,
+   "end": 25.529
+  },
+  {
+   "text": "vardı.",
+   "type": "word",
+   "start": 25.683,
+   "end": 25.99
+  },
+  {
+   "text": "Ulağın",
+   "type": "word",
+   "start": 26.106,
+   "end": 26.413
+  },
+  {
+   "text": "elinde",
+   "type": "word",
+   "start": 26.452,
+   "end": 26.798
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 26.875,
+   "end": 26.952
+  },
+  {
+   "text": "belge",
+   "type": "word",
+   "start": 27.029,
+   "end": 27.337
+  },
+  {
+   "text": "olurdu:",
+   "type": "word",
+   "start": 27.375,
+   "end": 27.798
+  },
+  {
+   "text": "ulak",
+   "type": "word",
+   "start": 27.913,
+   "end": 28.221
+  },
+  {
+   "text": "hükmü.",
+   "type": "word",
+   "start": 28.26,
+   "end": 28.683
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 28.788,
+   "end": 28.865
+  },
+  {
+   "text": "belgeyle",
+   "type": "word",
+   "start": 28.942,
+   "end": 29.481
+  },
+  {
+   "text": "menzilden",
+   "type": "word",
+   "start": 29.558,
+   "end": 30.173
+  },
+  {
+   "text": "at",
+   "type": "word",
+   "start": 30.25,
+   "end": 30.404
+  },
+  {
+   "text": "alabilirdi.",
+   "type": "word",
+   "start": 30.481,
+   "end": 31.096
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 31.192,
+   "end": 31.423
+  },
+  {
+   "text": "bazı",
+   "type": "word",
+   "start": 31.5,
+   "end": 31.769
+  },
+  {
+   "text": "ulaklar",
+   "type": "word",
+   "start": 31.808,
+   "end": 32.269
+  },
+  {
+   "text": "yetkiyi",
+   "type": "word",
+   "start": 32.346,
+   "end": 32.731
+  },
+  {
+   "text": "kötüye",
+   "type": "word",
+   "start": 32.808,
+   "end": 33.115
+  },
+  {
+   "text": "kullanıp",
+   "type": "word",
+   "start": 33.192,
+   "end": 33.577
+  },
+  {
+   "text": "halkın",
+   "type": "word",
+   "start": 33.808,
+   "end": 34.115
+  },
+  {
+   "text": "atlarına",
+   "type": "word",
+   "start": 34.192,
+   "end": 34.577
+  },
+  {
+   "text": "el",
+   "type": "word",
+   "start": 34.654,
+   "end": 34.808
+  },
+  {
+   "text": "koydu.",
+   "type": "word",
+   "start": 34.885,
+   "end": 35.269
+  },
+  {
+   "text": "Buna",
+   "type": "word",
+   "start": 35.433,
+   "end": 35.663
+  },
+  {
+   "text": "\"ulak",
+   "type": "word",
+   "start": 35.865,
+   "end": 36.173
+  },
+  {
+   "text": "zulmü\"",
+   "type": "word",
+   "start": 36.25,
+   "end": 36.519
+  },
+  {
+   "text": "denirdi.",
+   "type": "word",
+   "start": 36.558,
+   "end": 37.111
+  },
+  {
+   "text": "On",
+   "type": "word",
+   "start": 37.192,
+   "end": 37.269
+  },
+  {
+   "text": "dokuzuncu",
+   "type": "word",
+   "start": 37.346,
+   "end": 37.769
+  },
+  {
+   "text": "yüzyılda",
+   "type": "word",
+   "start": 37.808,
+   "end": 38.269
+  },
+  {
+   "text": "posta",
+   "type": "word",
+   "start": 38.423,
+   "end": 38.654
+  },
+  {
+   "text": "teşkilatı",
+   "type": "word",
+   "start": 38.731,
+   "end": 39.308
+  },
+  {
+   "text": "kuruldu",
+   "type": "word",
+   "start": 39.346,
+   "end": 39.731
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 39.962,
+   "end": 40.115
+  },
+  {
+   "text": "ulak",
+   "type": "word",
+   "start": 40.269,
+   "end": 40.5
+  },
+  {
+   "text": "sistemi",
+   "type": "word",
+   "start": 40.577,
+   "end": 40.962
+  },
+  {
+   "text": "tarihe",
+   "type": "word",
+   "start": 41.038,
+   "end": 41.346
+  },
+  {
+   "text": "karıştı.",
+   "type": "word",
+   "start": 41.423,
+   "end": 41.976
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 42.038,
+   "end": 42.192
+  },
+  {
+   "text": "atlı",
+   "type": "word",
+   "start": 42.346,
+   "end": 42.577
+  },
+  {
+   "text": "posta",
+   "type": "word",
+   "start": 42.654,
+   "end": 42.962
+  },
+  {
+   "text": "tatarları,",
+   "type": "word",
+   "start": 43.0,
+   "end": 43.654
+  },
+  {
+   "text": "mektupları",
+   "type": "word",
+   "start": 43.731,
+   "end": 44.269
+  },
+  {
+   "text": "daha",
+   "type": "word",
+   "start": 44.423,
+   "end": 44.654
+  },
+  {
+   "text": "uzun",
+   "type": "word",
+   "start": 44.731,
+   "end": 44.962
+  },
+  {
+   "text": "yıllar",
+   "type": "word",
+   "start": 45.0,
+   "end": 45.269
+  },
+  {
+   "text": "taşıdı.",
+   "type": "word",
+   "start": 45.346,
+   "end": 45.894
+  }
+ ]
+}

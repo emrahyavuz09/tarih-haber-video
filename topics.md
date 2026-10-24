@@ -29,6 +29,7 @@
 | 2026-10-29 | Ankara neden başkent oldu (16 Mart 1920 işgal, 23 Nisan 1920 TBMM, güvenli/merkezî konum, demiryolu, 13 Ekim 1923 kararı; Atatürk çizilmedi) — sabah | üretildi, planlanmadı |
 | 2026-11-04 | Mercidabık 1516 (Yavuz Sultan Selim, Kansu Gavri, Memlük süvarisi, Halep ve Şam) — akşam | üretildi, planlanmadı |
 | 2026-11-08 | Büyük Taarruz 1922 (Kocatepe, Dumlupınar/Başkomutanlık Meydan Muharebesi, "Ordular! İlk hedefiniz Akdeniz'dir. İleri!", 9 Eylül İzmir; Atatürk çizilmedi) — akşam | üretildi, planlanmadı |
+| 2026-11-05 | Osmanlı'da haberleşme: ulaklar ve menzilhaneler (tatar, ulak hükmü, üç kol, ulak zulmü) — sabah | üretildi, planlanmadı |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)
