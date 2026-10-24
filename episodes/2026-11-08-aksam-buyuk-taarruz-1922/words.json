@@ -1,0 +1,796 @@
+{
+ "words": [
+  {
+   "text": "Bir",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.154
+  },
+  {
+   "text": "emir,",
+   "type": "word",
+   "start": 0.231,
+   "end": 0.615
+  },
+  {
+   "text": "ordulara",
+   "type": "word",
+   "start": 0.769,
+   "end": 1.231
+  },
+  {
+   "text": "tek",
+   "type": "word",
+   "start": 1.385,
+   "end": 1.538
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 1.615,
+   "end": 1.769
+  },
+  {
+   "text": "hedef",
+   "type": "word",
+   "start": 1.846,
+   "end": 2.0
+  },
+  {
+   "text": "gösterdi:",
+   "type": "word",
+   "start": 2.077,
+   "end": 2.692
+  },
+  {
+   "text": "Akdeniz!",
+   "type": "word",
+   "start": 2.827,
+   "end": 3.562
+  },
+  {
+   "text": "Yıl",
+   "type": "word",
+   "start": 3.644,
+   "end": 3.798
+  },
+  {
+   "text": "bin",
+   "type": "word",
+   "start": 3.875,
+   "end": 4.029
+  },
+  {
+   "text": "dokuz",
+   "type": "word",
+   "start": 4.106,
+   "end": 4.337
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 4.413,
+   "end": 4.49
+  },
+  {
+   "text": "yirmi",
+   "type": "word",
+   "start": 4.644,
+   "end": 4.798
+  },
+  {
+   "text": "iki.",
+   "type": "word",
+   "start": 4.875,
+   "end": 5.25
+  },
+  {
+   "text": "Sakarya'dan",
+   "type": "word",
+   "start": 5.327,
+   "end": 5.865
+  },
+  {
+   "text": "sonra",
+   "type": "word",
+   "start": 5.942,
+   "end": 6.25
+  },
+  {
+   "text": "Türk",
+   "type": "word",
+   "start": 6.404,
+   "end": 6.596
+  },
+  {
+   "text": "ordusu,",
+   "type": "word",
+   "start": 6.635,
+   "end": 7.096
+  },
+  {
+   "text": "yaklaşık",
+   "type": "word",
+   "start": 7.173,
+   "end": 7.635
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 7.788,
+   "end": 7.942
+  },
+  {
+   "text": "yıl",
+   "type": "word",
+   "start": 7.981,
+   "end": 8.096
+  },
+  {
+   "text": "boyunca",
+   "type": "word",
+   "start": 8.173,
+   "end": 8.558
+  },
+  {
+   "text": "sessizce",
+   "type": "word",
+   "start": 8.712,
+   "end": 9.25
+  },
+  {
+   "text": "hazırlandı.",
+   "type": "word",
+   "start": 9.301,
+   "end": 9.942
+  },
+  {
+   "text": "Yirmi",
+   "type": "word",
+   "start": 10.077,
+   "end": 10.346
+  },
+  {
+   "text": "altı",
+   "type": "word",
+   "start": 10.385,
+   "end": 10.538
+  },
+  {
+   "text": "Ağustos",
+   "type": "word",
+   "start": 10.615,
+   "end": 11.0
+  },
+  {
+   "text": "sabahı,",
+   "type": "word",
+   "start": 11.077,
+   "end": 11.577
+  },
+  {
+   "text": "Kocatepe.",
+   "type": "word",
+   "start": 11.606,
+   "end": 12.322
+  },
+  {
+   "text": "Toplar",
+   "type": "word",
+   "start": 12.337,
+   "end": 12.798
+  },
+  {
+   "text": "gün",
+   "type": "word",
+   "start": 12.952,
+   "end": 13.106
+  },
+  {
+   "text": "doğarken",
+   "type": "word",
+   "start": 13.183,
+   "end": 13.644
+  },
+  {
+   "text": "gürledi.",
+   "type": "word",
+   "start": 13.721,
+   "end": 14.26
+  },
+  {
+   "text": "Büyük",
+   "type": "word",
+   "start": 14.442,
+   "end": 14.673
+  },
+  {
+   "text": "Taarruz",
+   "type": "word",
+   "start": 14.75,
+   "end": 15.135
+  },
+  {
+   "text": "başladı!",
+   "type": "word",
+   "start": 15.212,
+   "end": 15.88
+  },
+  {
+   "text": "Piyadeler,",
+   "type": "word",
+   "start": 15.88,
+   "end": 16.567
+  },
+  {
+   "text": "Tınaztepe'yi",
+   "type": "word",
+   "start": 16.644,
+   "end": 17.26
+  },
+  {
+   "text": "ilk",
+   "type": "word",
+   "start": 17.413,
+   "end": 17.567
+  },
+  {
+   "text": "saatlerde",
+   "type": "word",
+   "start": 17.644,
+   "end": 18.106
+  },
+  {
+   "text": "ele",
+   "type": "word",
+   "start": 18.183,
+   "end": 18.337
+  },
+  {
+   "text": "geçirdi.",
+   "type": "word",
+   "start": 18.413,
+   "end": 18.966
+  },
+  {
+   "text": "Mehmetçik",
+   "type": "word",
+   "start": 19.029,
+   "end": 19.644
+  },
+  {
+   "text": "tepe",
+   "type": "word",
+   "start": 19.798,
+   "end": 20.029
+  },
+  {
+   "text": "tepe",
+   "type": "word",
+   "start": 20.106,
+   "end": 20.337
+  },
+  {
+   "text": "ilerledi.",
+   "type": "word",
+   "start": 20.452,
+   "end": 21.005
+  },
+  {
+   "text": "Düşman",
+   "type": "word",
+   "start": 21.087,
+   "end": 21.394
+  },
+  {
+   "text": "hatları",
+   "type": "word",
+   "start": 21.471,
+   "end": 21.856
+  },
+  {
+   "text": "birer",
+   "type": "word",
+   "start": 22.01,
+   "end": 22.317
+  },
+  {
+   "text": "birer",
+   "type": "word",
+   "start": 22.394,
+   "end": 22.625
+  },
+  {
+   "text": "yarıldı.",
+   "type": "word",
+   "start": 22.702,
+   "end": 23.255
+  },
+  {
+   "text": "Düşman",
+   "type": "word",
+   "start": 23.337,
+   "end": 23.644
+  },
+  {
+   "text": "ordusu",
+   "type": "word",
+   "start": 23.721,
+   "end": 24.106
+  },
+  {
+   "text": "çember",
+   "type": "word",
+   "start": 24.26,
+   "end": 24.567
+  },
+  {
+   "text": "içine",
+   "type": "word",
+   "start": 24.606,
+   "end": 24.798
+  },
+  {
+   "text": "alındı.",
+   "type": "word",
+   "start": 24.875,
+   "end": 25.38
+  },
+  {
+   "text": "Otuz",
+   "type": "word",
+   "start": 25.442,
+   "end": 25.673
+  },
+  {
+   "text": "Ağustos'ta",
+   "type": "word",
+   "start": 25.75,
+   "end": 26.365
+  },
+  {
+   "text": "Dumlupınar'da,",
+   "type": "word",
+   "start": 26.519,
+   "end": 27.404
+  },
+  {
+   "text": "Başkomutanlık",
+   "type": "word",
+   "start": 27.519,
+   "end": 28.212
+  },
+  {
+   "text": "Meydan",
+   "type": "word",
+   "start": 28.288,
+   "end": 28.596
+  },
+  {
+   "text": "Muharebesi",
+   "type": "word",
+   "start": 28.673,
+   "end": 29.212
+  },
+  {
+   "text": "zaferle",
+   "type": "word",
+   "start": 29.365,
+   "end": 29.75
+  },
+  {
+   "text": "sonuçlandı.",
+   "type": "word",
+   "start": 29.827,
+   "end": 30.582
+  },
+  {
+   "text": "Ardından",
+   "type": "word",
+   "start": 30.606,
+   "end": 31.144
+  },
+  {
+   "text": "Başkomutan",
+   "type": "word",
+   "start": 31.298,
+   "end": 31.913
+  },
+  {
+   "text": "Mustafa",
+   "type": "word",
+   "start": 32.029,
+   "end": 32.298
+  },
+  {
+   "text": "Kemal",
+   "type": "word",
+   "start": 32.337,
+   "end": 32.606
+  },
+  {
+   "text": "Paşa'dan",
+   "type": "word",
+   "start": 32.683,
+   "end": 33.067
+  },
+  {
+   "text": "tarihe",
+   "type": "word",
+   "start": 33.221,
+   "end": 33.606
+  },
+  {
+   "text": "geçen",
+   "type": "word",
+   "start": 33.683,
+   "end": 33.99
+  },
+  {
+   "text": "emir",
+   "type": "word",
+   "start": 34.067,
+   "end": 34.298
+  },
+  {
+   "text": "geldi:",
+   "type": "word",
+   "start": 34.375,
+   "end": 34.851
+  },
+  {
+   "text": "\"Ordular!",
+   "type": "word",
+   "start": 34.894,
+   "end": 35.601
+  },
+  {
+   "text": "İlk",
+   "type": "word",
+   "start": 35.644,
+   "end": 35.875
+  },
+  {
+   "text": "hedefiniz",
+   "type": "word",
+   "start": 35.952,
+   "end": 36.413
+  },
+  {
+   "text": "Akdeniz'dir.",
+   "type": "word",
+   "start": 36.49,
+   "end": 37.341
+  },
+  {
+   "text": "İleri!\"",
+   "type": "word",
+   "start": 37.385,
+   "end": 37.846
+  },
+  {
+   "text": "Süvariler",
+   "type": "word",
+   "start": 38.048,
+   "end": 38.587
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 38.625,
+   "end": 38.663
+  },
+  {
+   "text": "piyadeler,",
+   "type": "word",
+   "start": 38.74,
+   "end": 39.394
+  },
+  {
+   "text": "çekilen",
+   "type": "word",
+   "start": 39.433,
+   "end": 39.817
+  },
+  {
+   "text": "düşmanı",
+   "type": "word",
+   "start": 39.894,
+   "end": 40.279
+  },
+  {
+   "text": "durmadan",
+   "type": "word",
+   "start": 40.433,
+   "end": 40.894
+  },
+  {
+   "text": "takip",
+   "type": "word",
+   "start": 40.971,
+   "end": 41.279
+  },
+  {
+   "text": "etti.",
+   "type": "word",
+   "start": 41.356,
+   "end": 41.745
+  },
+  {
+   "text": "Yunan",
+   "type": "word",
+   "start": 41.837,
+   "end": 42.067
+  },
+  {
+   "text": "komutanı",
+   "type": "word",
+   "start": 42.144,
+   "end": 42.529
+  },
+  {
+   "text": "Trikupis",
+   "type": "word",
+   "start": 42.606,
+   "end": 43.221
+  },
+  {
+   "text": "esir",
+   "type": "word",
+   "start": 43.298,
+   "end": 43.529
+  },
+  {
+   "text": "alındı.",
+   "type": "word",
+   "start": 43.606,
+   "end": 44.053
+  },
+  {
+   "text": "Yüzlerce",
+   "type": "word",
+   "start": 44.173,
+   "end": 44.635
+  },
+  {
+   "text": "kilometrelik",
+   "type": "word",
+   "start": 44.712,
+   "end": 45.25
+  },
+  {
+   "text": "takip,",
+   "type": "word",
+   "start": 45.327,
+   "end": 45.918
+  },
+  {
+   "text": "on",
+   "type": "word",
+   "start": 45.981,
+   "end": 46.135
+  },
+  {
+   "text": "gün",
+   "type": "word",
+   "start": 46.212,
+   "end": 46.365
+  },
+  {
+   "text": "sürdü.",
+   "type": "word",
+   "start": 46.442,
+   "end": 46.899
+  },
+  {
+   "text": "Ve",
+   "type": "word",
+   "start": 46.962,
+   "end": 47.115
+  },
+  {
+   "text": "dokuz",
+   "type": "word",
+   "start": 47.269,
+   "end": 47.5
+  },
+  {
+   "text": "Eylül'de",
+   "type": "word",
+   "start": 47.577,
+   "end": 48.038
+  },
+  {
+   "text": "Türk",
+   "type": "word",
+   "start": 48.192,
+   "end": 48.385
+  },
+  {
+   "text": "birlikleri",
+   "type": "word",
+   "start": 48.423,
+   "end": 48.962
+  },
+  {
+   "text": "İzmir'e",
+   "type": "word",
+   "start": 49.115,
+   "end": 49.5
+  },
+  {
+   "text": "girdi.",
+   "type": "word",
+   "start": 49.577,
+   "end": 50.014
+  },
+  {
+   "text": "Hükümet",
+   "type": "word",
+   "start": 50.048,
+   "end": 50.433
+  },
+  {
+   "text": "konağına",
+   "type": "word",
+   "start": 50.51,
+   "end": 50.971
+  },
+  {
+   "text": "Türk",
+   "type": "word",
+   "start": 51.125,
+   "end": 51.317
+  },
+  {
+   "text": "bayrağı",
+   "type": "word",
+   "start": 51.356,
+   "end": 51.663
+  },
+  {
+   "text": "çekildi.",
+   "type": "word",
+   "start": 51.74,
+   "end": 52.322
+  },
+  {
+   "text": "İzmir'in",
+   "type": "word",
+   "start": 52.413,
+   "end": 52.875
+  },
+  {
+   "text": "üç",
+   "type": "word",
+   "start": 53.029,
+   "end": 53.183
+  },
+  {
+   "text": "yılı",
+   "type": "word",
+   "start": 53.26,
+   "end": 53.413
+  },
+  {
+   "text": "aşan",
+   "type": "word",
+   "start": 53.452,
+   "end": 53.644
+  },
+  {
+   "text": "işgali",
+   "type": "word",
+   "start": 53.721,
+   "end": 54.26
+  },
+  {
+   "text": "sona",
+   "type": "word",
+   "start": 54.413,
+   "end": 54.644
+  },
+  {
+   "text": "ermişti.",
+   "type": "word",
+   "start": 54.721,
+   "end": 55.293
+  },
+  {
+   "text": "Otuz",
+   "type": "word",
+   "start": 55.356,
+   "end": 55.587
+  },
+  {
+   "text": "Ağustos,",
+   "type": "word",
+   "start": 55.663,
+   "end": 56.293
+  },
+  {
+   "text": "o",
+   "type": "word",
+   "start": 56.375,
+   "end": 56.413
+  },
+  {
+   "text": "günden",
+   "type": "word",
+   "start": 56.452,
+   "end": 56.76
+  },
+  {
+   "text": "beri",
+   "type": "word",
+   "start": 56.837,
+   "end": 57.067
+  },
+  {
+   "text": "Zafer",
+   "type": "word",
+   "start": 57.144,
+   "end": 57.452
+  },
+  {
+   "text": "Bayramı",
+   "type": "word",
+   "start": 57.529,
+   "end": 57.837
+  },
+  {
+   "text": "olarak",
+   "type": "word",
+   "start": 57.952,
+   "end": 58.144
+  },
+  {
+   "text": "kutlanıyor.",
+   "type": "word",
+   "start": 58.221,
+   "end": 58.889
+  },
+  {
+   "text": "Kocatepe'de",
+   "type": "word",
+   "start": 58.904,
+   "end": 59.519
+  },
+  {
+   "text": "başlayan",
+   "type": "word",
+   "start": 59.596,
+   "end": 59.981
+  },
+  {
+   "text": "yürüyüş...",
+   "type": "word",
+   "start": 60.058,
+   "end": 60.63
+  },
+  {
+   "text": "Akdeniz",
+   "type": "word",
+   "start": 60.692,
+   "end": 61.154
+  },
+  {
+   "text": "kıyısında",
+   "type": "word",
+   "start": 61.192,
+   "end": 61.769
+  },
+  {
+   "text": "zaferle",
+   "type": "word",
+   "start": 62.0,
+   "end": 62.462
+  },
+  {
+   "text": "bitti.",
+   "type": "word",
+   "start": 62.589,
+   "end": 62.971
+  }
+ ]
+}
