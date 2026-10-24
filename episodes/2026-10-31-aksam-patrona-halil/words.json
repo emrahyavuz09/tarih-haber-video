@@ -1,0 +1,802 @@
+{
+ "words": [
+  {
+   "text": "Bir",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.154
+  },
+  {
+   "text": "hamam",
+   "type": "word",
+   "start": 0.231,
+   "end": 0.538
+  },
+  {
+   "text": "tellağı,",
+   "type": "word",
+   "start": 0.615,
+   "end": 1.231
+  },
+  {
+   "text": "padişahı",
+   "type": "word",
+   "start": 1.269,
+   "end": 1.846
+  },
+  {
+   "text": "tahttan",
+   "type": "word",
+   "start": 1.923,
+   "end": 2.231
+  },
+  {
+   "text": "indirdi!",
+   "type": "word",
+   "start": 2.308,
+   "end": 2.769
+  },
+  {
+   "text": "Yıl",
+   "type": "word",
+   "start": 2.952,
+   "end": 3.183
+  },
+  {
+   "text": "bin",
+   "type": "word",
+   "start": 3.26,
+   "end": 3.413
+  },
+  {
+   "text": "yedi",
+   "type": "word",
+   "start": 3.49,
+   "end": 3.644
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 3.721,
+   "end": 3.824
+  },
+  {
+   "text": "otuz.",
+   "type": "word",
+   "start": 3.875,
+   "end": 4.26
+  },
+  {
+   "text": "İstanbul'da",
+   "type": "word",
+   "start": 4.394,
+   "end": 5.01
+  },
+  {
+   "text": "Lale",
+   "type": "word",
+   "start": 5.087,
+   "end": 5.317
+  },
+  {
+   "text": "Devri",
+   "type": "word",
+   "start": 5.394,
+   "end": 5.625
+  },
+  {
+   "text": "yaşanıyor.",
+   "type": "word",
+   "start": 5.702,
+   "end": 6.351
+  },
+  {
+   "text": "Köşkler,",
+   "type": "word",
+   "start": 6.394,
+   "end": 7.048
+  },
+  {
+   "text": "lale",
+   "type": "word",
+   "start": 7.163,
+   "end": 7.394
+  },
+  {
+   "text": "bahçeleri,",
+   "type": "word",
+   "start": 7.471,
+   "end": 8.202
+  },
+  {
+   "text": "gece",
+   "type": "word",
+   "start": 8.317,
+   "end": 8.548
+  },
+  {
+   "text": "eğlenceleri...",
+   "type": "word",
+   "start": 8.625,
+   "end": 9.413
+  },
+  {
+   "text": "Devletin",
+   "type": "word",
+   "start": 9.49,
+   "end": 9.875
+  },
+  {
+   "text": "dümeninde",
+   "type": "word",
+   "start": 9.913,
+   "end": 10.337
+  },
+  {
+   "text": "ise",
+   "type": "word",
+   "start": 10.49,
+   "end": 10.644
+  },
+  {
+   "text": "padişahın",
+   "type": "word",
+   "start": 10.798,
+   "end": 11.413
+  },
+  {
+   "text": "damadı,",
+   "type": "word",
+   "start": 11.49,
+   "end": 12.183
+  },
+  {
+   "text": "Sadrazam",
+   "type": "word",
+   "start": 12.26,
+   "end": 12.875
+  },
+  {
+   "text": "Nevşehirli",
+   "type": "word",
+   "start": 12.913,
+   "end": 13.567
+  },
+  {
+   "text": "İbrahim",
+   "type": "word",
+   "start": 13.644,
+   "end": 14.106
+  },
+  {
+   "text": "Paşa",
+   "type": "word",
+   "start": 14.183,
+   "end": 14.337
+  },
+  {
+   "text": "var.",
+   "type": "word",
+   "start": 14.413,
+   "end": 14.736
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 14.788,
+   "end": 15.019
+  },
+  {
+   "text": "doğudan,",
+   "type": "word",
+   "start": 15.096,
+   "end": 15.683
+  },
+  {
+   "text": "İran",
+   "type": "word",
+   "start": 15.76,
+   "end": 15.99
+  },
+  {
+   "text": "cephesinden",
+   "type": "word",
+   "start": 16.067,
+   "end": 16.683
+  },
+  {
+   "text": "kötü",
+   "type": "word",
+   "start": 16.76,
+   "end": 16.952
+  },
+  {
+   "text": "haberler",
+   "type": "word",
+   "start": 16.99,
+   "end": 17.375
+  },
+  {
+   "text": "geliyor.",
+   "type": "word",
+   "start": 17.452,
+   "end": 17.986
+  },
+  {
+   "text": "Ordu",
+   "type": "word",
+   "start": 18.077,
+   "end": 18.385
+  },
+  {
+   "text": "Üsküdar",
+   "type": "word",
+   "start": 18.538,
+   "end": 18.923
+  },
+  {
+   "text": "yakasında",
+   "type": "word",
+   "start": 19.0,
+   "end": 19.462
+  },
+  {
+   "text": "sefer",
+   "type": "word",
+   "start": 19.538,
+   "end": 19.846
+  },
+  {
+   "text": "bekliyor,",
+   "type": "word",
+   "start": 19.923,
+   "end": 20.567
+  },
+  {
+   "text": "sefer",
+   "type": "word",
+   "start": 20.644,
+   "end": 20.952
+  },
+  {
+   "text": "ise",
+   "type": "word",
+   "start": 21.067,
+   "end": 21.183
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 21.26,
+   "end": 21.413
+  },
+  {
+   "text": "türlü",
+   "type": "word",
+   "start": 21.49,
+   "end": 21.721
+  },
+  {
+   "text": "başlamıyor.",
+   "type": "word",
+   "start": 21.798,
+   "end": 22.486
+  },
+  {
+   "text": "İstanbul'da",
+   "type": "word",
+   "start": 22.577,
+   "end": 23.192
+  },
+  {
+   "text": "öfke",
+   "type": "word",
+   "start": 23.346,
+   "end": 23.654
+  },
+  {
+   "text": "büyüyor.",
+   "type": "word",
+   "start": 23.731,
+   "end": 24.303
+  },
+  {
+   "text": "Eylül",
+   "type": "word",
+   "start": 24.346,
+   "end": 24.654
+  },
+  {
+   "text": "sonunda,",
+   "type": "word",
+   "start": 24.769,
+   "end": 25.192
+  },
+  {
+   "text": "Bayezid",
+   "type": "word",
+   "start": 25.346,
+   "end": 25.731
+  },
+  {
+   "text": "Hamamı'nın",
+   "type": "word",
+   "start": 25.769,
+   "end": 26.192
+  },
+  {
+   "text": "Arnavut",
+   "type": "word",
+   "start": 26.269,
+   "end": 26.654
+  },
+  {
+   "text": "asıllı",
+   "type": "word",
+   "start": 26.731,
+   "end": 27.038
+  },
+  {
+   "text": "tellağı",
+   "type": "word",
+   "start": 27.115,
+   "end": 27.5
+  },
+  {
+   "text": "Patrona",
+   "type": "word",
+   "start": 27.654,
+   "end": 28.115
+  },
+  {
+   "text": "Halil",
+   "type": "word",
+   "start": 28.192,
+   "end": 28.423
+  },
+  {
+   "text": "ayaklanma",
+   "type": "word",
+   "start": 28.5,
+   "end": 28.962
+  },
+  {
+   "text": "başlatır.",
+   "type": "word",
+   "start": 29.038,
+   "end": 29.649
+  },
+  {
+   "text": "İsyan",
+   "type": "word",
+   "start": 29.731,
+   "end": 30.115
+  },
+  {
+   "text": "kısa",
+   "type": "word",
+   "start": 30.192,
+   "end": 30.423
+  },
+  {
+   "text": "sürede",
+   "type": "word",
+   "start": 30.5,
+   "end": 30.808
+  },
+  {
+   "text": "büyür.",
+   "type": "word",
+   "start": 30.885,
+   "end": 31.303
+  },
+  {
+   "text": "Yanında",
+   "type": "word",
+   "start": 31.394,
+   "end": 31.856
+  },
+  {
+   "text": "yeniçeri",
+   "type": "word",
+   "start": 32.01,
+   "end": 32.471
+  },
+  {
+   "text": "Muslu",
+   "type": "word",
+   "start": 32.548,
+   "end": 32.856
+  },
+  {
+   "text": "Beşe",
+   "type": "word",
+   "start": 32.933,
+   "end": 33.087
+  },
+  {
+   "text": "gibi",
+   "type": "word",
+   "start": 33.163,
+   "end": 33.317
+  },
+  {
+   "text": "zorbalar",
+   "type": "word",
+   "start": 33.394,
+   "end": 33.856
+  },
+  {
+   "text": "da",
+   "type": "word",
+   "start": 33.933,
+   "end": 34.01
+  },
+  {
+   "text": "vardır.",
+   "type": "word",
+   "start": 34.125,
+   "end": 34.524
+  },
+  {
+   "text": "Âsilerin",
+   "type": "word",
+   "start": 34.587,
+   "end": 35.125
+  },
+  {
+   "text": "istediği",
+   "type": "word",
+   "start": 35.279,
+   "end": 35.663
+  },
+  {
+   "text": "üç",
+   "type": "word",
+   "start": 35.74,
+   "end": 35.894
+  },
+  {
+   "text": "isim",
+   "type": "word",
+   "start": 35.971,
+   "end": 36.125
+  },
+  {
+   "text": "var:",
+   "type": "word",
+   "start": 36.202,
+   "end": 36.558
+  },
+  {
+   "text": "Sadrazam",
+   "type": "word",
+   "start": 36.635,
+   "end": 37.173
+  },
+  {
+   "text": "İbrahim",
+   "type": "word",
+   "start": 37.25,
+   "end": 37.635
+  },
+  {
+   "text": "Paşa,",
+   "type": "word",
+   "start": 37.712,
+   "end": 38.154
+  },
+  {
+   "text": "kaptanıderya",
+   "type": "word",
+   "start": 38.231,
+   "end": 39.0
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 39.231,
+   "end": 39.308
+  },
+  {
+   "text": "kethüda.",
+   "type": "word",
+   "start": 39.462,
+   "end": 40.062
+  },
+  {
+   "text": "Sultan",
+   "type": "word",
+   "start": 40.135,
+   "end": 40.519
+  },
+  {
+   "text": "Üçüncü",
+   "type": "word",
+   "start": 40.596,
+   "end": 40.904
+  },
+  {
+   "text": "Ahmed",
+   "type": "word",
+   "start": 40.981,
+   "end": 41.288
+  },
+  {
+   "text": "çaresizdir;",
+   "type": "word",
+   "start": 41.365,
+   "end": 42.187
+  },
+  {
+   "text": "üç",
+   "type": "word",
+   "start": 42.26,
+   "end": 42.375
+  },
+  {
+   "text": "paşayı",
+   "type": "word",
+   "start": 42.413,
+   "end": 42.875
+  },
+  {
+   "text": "âsilere",
+   "type": "word",
+   "start": 42.952,
+   "end": 43.49
+  },
+  {
+   "text": "teslim",
+   "type": "word",
+   "start": 43.567,
+   "end": 43.875
+  },
+  {
+   "text": "etmek",
+   "type": "word",
+   "start": 43.913,
+   "end": 44.106
+  },
+  {
+   "text": "zorunda",
+   "type": "word",
+   "start": 44.183,
+   "end": 44.49
+  },
+  {
+   "text": "kalır.",
+   "type": "word",
+   "start": 44.567,
+   "end": 44.928
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 45.0,
+   "end": 45.154
+  },
+  {
+   "text": "âsiler",
+   "type": "word",
+   "start": 45.308,
+   "end": 45.846
+  },
+  {
+   "text": "durmaz!",
+   "type": "word",
+   "start": 45.923,
+   "end": 46.457
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 46.548,
+   "end": 46.625
+  },
+  {
+   "text": "kez",
+   "type": "word",
+   "start": 46.702,
+   "end": 46.933
+  },
+  {
+   "text": "padişahın",
+   "type": "word",
+   "start": 47.01,
+   "end": 47.625
+  },
+  {
+   "text": "tahttan",
+   "type": "word",
+   "start": 47.702,
+   "end": 48.01
+  },
+  {
+   "text": "inmesini",
+   "type": "word",
+   "start": 48.048,
+   "end": 48.394
+  },
+  {
+   "text": "isterler.",
+   "type": "word",
+   "start": 48.587,
+   "end": 49.082
+  },
+  {
+   "text": "İki",
+   "type": "word",
+   "start": 49.144,
+   "end": 49.298
+  },
+  {
+   "text": "Ekim'de",
+   "type": "word",
+   "start": 49.375,
+   "end": 49.837
+  },
+  {
+   "text": "Üçüncü",
+   "type": "word",
+   "start": 49.99,
+   "end": 50.298
+  },
+  {
+   "text": "Ahmed,",
+   "type": "word",
+   "start": 50.375,
+   "end": 50.861
+  },
+  {
+   "text": "tahtı",
+   "type": "word",
+   "start": 50.952,
+   "end": 51.26
+  },
+  {
+   "text": "yeğeni",
+   "type": "word",
+   "start": 51.413,
+   "end": 51.721
+  },
+  {
+   "text": "Birinci",
+   "type": "word",
+   "start": 51.875,
+   "end": 52.183
+  },
+  {
+   "text": "Mahmud'a",
+   "type": "word",
+   "start": 52.26,
+   "end": 52.567
+  },
+  {
+   "text": "bırakır.",
+   "type": "word",
+   "start": 52.644,
+   "end": 53.13
+  },
+  {
+   "text": "Patrona",
+   "type": "word",
+   "start": 53.192,
+   "end": 53.577
+  },
+  {
+   "text": "Halil'in",
+   "type": "word",
+   "start": 53.654,
+   "end": 53.962
+  },
+  {
+   "text": "haftalarca",
+   "type": "word",
+   "start": 54.115,
+   "end": 54.731
+  },
+  {
+   "text": "İstanbul'da",
+   "type": "word",
+   "start": 54.808,
+   "end": 55.346
+  },
+  {
+   "text": "sözü",
+   "type": "word",
+   "start": 55.385,
+   "end": 55.577
+  },
+  {
+   "text": "geçer.",
+   "type": "word",
+   "start": 55.654,
+   "end": 56.082
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 56.154,
+   "end": 56.308
+  },
+  {
+   "text": "yirmi",
+   "type": "word",
+   "start": 56.462,
+   "end": 56.654
+  },
+  {
+   "text": "beş",
+   "type": "word",
+   "start": 56.692,
+   "end": 56.846
+  },
+  {
+   "text": "Kasım'da,",
+   "type": "word",
+   "start": 56.923,
+   "end": 57.5
+  },
+  {
+   "text": "sarayda",
+   "type": "word",
+   "start": 57.615,
+   "end": 58.0
+  },
+  {
+   "text": "öldürülür.",
+   "type": "word",
+   "start": 58.077,
+   "end": 58.716
+  },
+  {
+   "text": "Bir",
+   "type": "word",
+   "start": 58.817,
+   "end": 58.971
+  },
+  {
+   "text": "hamam",
+   "type": "word",
+   "start": 59.048,
+   "end": 59.356
+  },
+  {
+   "text": "tellağının",
+   "type": "word",
+   "start": 59.394,
+   "end": 59.894
+  },
+  {
+   "text": "başlattığı",
+   "type": "word",
+   "start": 59.971,
+   "end": 60.51
+  },
+  {
+   "text": "isyan...",
+   "type": "word",
+   "start": 60.625,
+   "end": 61.144
+  },
+  {
+   "text": "Lale",
+   "type": "word",
+   "start": 61.183,
+   "end": 61.452
+  },
+  {
+   "text": "Devri'ni",
+   "type": "word",
+   "start": 61.529,
+   "end": 61.837
+  },
+  {
+   "text": "bitirdi.",
+   "type": "word",
+   "start": 61.913,
+   "end": 62.5
+  }
+ ]
+}
