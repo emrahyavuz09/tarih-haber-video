@@ -27,8 +27,11 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
    130–170 kelime. Son cümle güçlü bir kapanış.
 5. **Milli değerler (çok önemli):** Türk Bayrağı yalnızca `turkFlag` / `flagPole` ile çizilir (resmî oranlar ve renk #E30A17).
    Bayrak asla ters, yamuk, yerde, yırtık, yanarken ya da olumsuz bir sahnenin parçası olarak gösterilmez. Hilal ve yıldız elle çizilmez.
-   Atatürk yalnızca `ataturk()` şablonuyla, her zaman ağırbaşlı, saygın ve kahramanca çizilir: karikatür, komik ifade, abartı ya da alay yok.
-   Ağzı konuşurken bile oynatılmaz, alıntı balonu kullanılırsa sözü kelimesi kelimesine doğru ve kaynaklı olmalıdır.
+   **Atatürk ASLA çizilmez — ne yüz, ne büst, ne silüet** (yanlış çizim çok eleştiri getirir; kullanıcının kesin isteği).
+   Atatürk'ün geçtiği sahneler sembollerle anlatılır: Türk Bayrağı (`flagPole`), ilk Meclis binası (`meclis`), kutlayan halk (`crowd`),
+   tarih mühürleri (`stamp`, `tag`), haritalar. Adı yazı etiketlerinde ve seslendirmede geçebilir.
+   Ondan bir söz aktarılırsa kelimesi kelimesine doğru ve kaynaklı olmalıdır (yazı olarak, konuşma balonu olmadan).
+   Hz. Muhammed, peygamberler ve sahabeler de hiçbir şekilde çizilmez.
    Osmanlı padişahları (`padisah()`), Türk hükümdarları ve şehitler onurlu çizilir. Türk milletini, devletini ya da kurucularını küçük düşüren
    espri, ifade ya da görsel yok. Tartışmalı siyasi konulara girilmez. Şüpheye düşersen daha saygılı olanı seç.
 6. **TEMPO ve AKSİYON (çok önemli):** Video hızlı ve akıcı olmalı, dikkat hiç düşmemeli.
@@ -61,7 +64,7 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
 5. **Sahneler:** `scenes.js` yaz. `SCENES = [{s, e, draw(ctx, lt, d)}]`, `KEY = [...]` (BÜYÜK HARF anahtar kelimeler), `DURATION = son kelime bitişi + 2.2`,
    `OUTRO_AT = DURATION - 1.6`. Sahne sınırlarını (sıkıştırılmış) `words.json` zamanlarına göre koy; 16–24 sahne, her biri 1,8–4 sn, her birinde sürekli aksiyon (kural 6).
    İlk sahne hookCard. Kütüphane (`engine/lib.js`): `bg, camera(sahne dosyasında tanımla), tag, bigText, stamp, boxStamp, bubble, pin, arrow,
-   curvePts, shape, ell, line, pawn, sword, alparslan, diyojen (taçlı hükümdar şablonu), padisah, ataturk ({kalpak:true} Kurtuluş Savaşı), turkFlag, flagPole, crown, horseArcher, arrowShot, yurt, chainLink,
+   curvePts, shape, ell, line, pawn, sword, alparslan, diyojen (taçlı hükümdar şablonu), padisah, turkFlag, flagPole, meclis, crowd, crown, horseArcher, arrowShot, yurt, chainLink,
    drawSea, drawLand, proj, ANATOLIA, THRACE, mountains, paperTex, shake, pan, marching, dust, fire, hookCard`. Yeni figür gerekiyorsa lib.js'e genel fonksiyon olarak ekle (sonraki günler de kullanır).
 6. **Kontrol:** `node engine/render.js episodes/<klasör> stills` → kareleri tek bir temas sayfasında birleştir (PIL) ve **Read ile bak**.
    Taşma, üst üste binme, okunmayan yazı, boş ya da durağan sahne varsa düzelt ve tekrar bak. Temiz olana kadar yayına geçme.

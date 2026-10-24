@@ -379,6 +379,7 @@ function flagPole(ctx, x, y, poleH, h, wave = .6, t = 0) {
   ell(ctx, x, y - poleH - 8, 12, 12, C.gold, C.ink, 3);
   turkFlag(ctx, x + 4, y - poleH, h, wave, t);
 }
+// !!! KULLANMA: Kural gereği Atatürk ÇİZİLMEZ (yüz de silüet de). Bu fonksiyon yalnızca arşiv için duruyor.
 // Atatürk büstü — her zaman ağırbaşlı ve saygılı (karikatür YOK). o.kalpak: true ise kalpaklı (Kurtuluş Savaşı), değilse takım elbise
 function ataturk(ctx, x, y, s, o = {}) {
   if (o.kalpak && o.uniform === undefined) o.uniform = true;
@@ -525,4 +526,52 @@ function fire(ctx, x, y, s, lt) {
   ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
   for (let i = 0; i < 3; i++) { const h = 90 - i * 24 + Math.sin(lt * 14 + i) * 10; const w = 40 - i * 10; shape(ctx, [[-w, 0], [-w * .6, -h * .5], [0, -h], [w * .6, -h * .5], [w, 0]], ['#e2572b', '#f09a2a', '#f8d25a'][i], i ? null : C.ink, 4, 3); }
   ctx.restore();
+}
+
+// !!! KULLANMA: Kural gereği Atatürk ÇİZİLMEZ. Arşiv için duruyor.
+// Atatürk — YÜZ ÇİZİLMEZ. Yalnızca kalpaklı, ufka bakan profil silüeti (ağırbaşlı, temiz çizgi, titreme yok).
+// x,y: ayak/taban ortası; s: ölçek (s=1 → ~640 px yükseklik); color: silüet rengi
+function ataturkSilhouette(ctx, x, y, s, color = '#1f1712', glow = true) {
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+  if (glow) { const g = ctx.createRadialGradient(10, -380, 40, 10, -380, 420); g.addColorStop(0, 'rgba(255,214,140,.55)'); g.addColorStop(1, 'rgba(255,214,140,0)'); ctx.fillStyle = g; ctx.fillRect(-460, -820, 920, 860); }
+  const path = (P) => { ctx.beginPath(); P.forEach((p, i) => i ? ctx.lineTo(p[0], p[1]) : ctx.moveTo(p[0], p[1])); ctx.closePath(); ctx.fill(); };
+  ctx.fillStyle = color;
+  // palto (omuzlar geniş, aşağı doğru hafif açılır)
+  path([[-40, -300], [-90, -292], [-150, -262], [-178, -205], [-188, 0], [188, 0], [180, -205], [154, -260], [96, -290], [30, -294]]);
+  // baş + boyun (sağa bakan profil)
+  path([[30, -294], [28, -312], [44, -318], [62, -322], [72, -334], [75, -344], [71, -350], [76, -357], [72, -364],
+        [90, -372], [86, -382], [70, -398], [73, -410], [70, -428], [66, -444],
+        [-70, -444], [-72, -404], [-62, -372], [-50, -350], [-42, -318], [-40, -300]]);
+  // kalpak: geniş, basık, üstü hafif açılan
+  path([[-76, -436], [-80, -470], [-84, -528], [-74, -540], [72, -540], [84, -528], [80, -470], [76, -436]]);
+  // kürk yaka (palto renginden biraz açık)
+  ctx.fillStyle = 'rgba(255,240,210,.10)';
+  path([[-40, -300], [-96, -290], [-120, -250], [-60, -236], [30, -240], [98, -252], [96, -290], [30, -294]]);
+  // ince ışık çizgileri: kalpak dokusu, palto önü
+  ctx.strokeStyle = 'rgba(255,240,210,.16)'; ctx.lineWidth = 3;
+  for (let i = -64; i <= 64; i += 16) { ctx.beginPath(); ctx.moveTo(i, -532); ctx.lineTo(i * 1.02, -444); ctx.stroke(); }
+  ctx.beginPath(); ctx.moveTo(40, -240); ctx.lineTo(30, -120); ctx.lineTo(34, 0); ctx.stroke();
+  ctx.restore();
+}
+
+// Birinci TBMM binası (Ankara, Ulus) — taş, iki katlı, kemerli pencereler, çatıda bayrak
+function meclis(ctx, x, y, s, lt = 0) {
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+  shape(ctx, [[-300, 0], [-300, -230], [300, -230], [300, 0]], '#c9a27a', C.ink, 6, 1);           // gövde
+  shape(ctx, [[-90, -230], [-90, -290], [90, -290], [90, -230]], '#c9a27a', C.ink, 6, 1);          // orta çıkıntı
+  shape(ctx, [[-320, -230], [320, -230], [300, -250], [-300, -250]], '#a5805c', C.ink, 5, 1);       // korniş
+  shape(ctx, [[-110, -290], [110, -290], [90, -310], [-90, -310]], '#a5805c', C.ink, 5, 1);
+  for (let r = 0; r < 2; r++) for (let i = -4; i <= 4; i++) { if (i === 0) continue;
+    const wx = i * 62, wy = -60 - r * 100; shape(ctx, [[wx - 18, wy], [wx - 18, wy - 46], [wx - 10, wy - 58], [wx, wy - 62], [wx + 10, wy - 58], [wx + 18, wy - 46], [wx + 18, wy]], '#5b4636', C.ink, 3, .6); }
+  shape(ctx, [[-40, 0], [-40, -110], [-28, -128], [0, -138], [28, -128], [40, -110], [40, 0]], '#5b4636', C.ink, 4, .6); // kapı
+  for (let i = 0; i < 3; i++) shape(ctx, [[-80 - i * 14, i * 14 + 14], [80 + i * 14, i * 14 + 14], [80 + i * 14, i * 14], [-80 - i * 14, i * 14]], '#b39472', C.ink, 3, .5); // basamak
+  ctx.restore();
+  flagPole(ctx, x, y - 310 * s, 150 * s, 90 * s, .7, lt);
+}
+// Kutlayan kalabalık (bayraklı); sürekli hareket
+function crowd(ctx, lt, x0, x1, y, n = 22, s = 1) {
+  const r = rng(77);
+  for (let i = 0; i < n; i++) { const x = lerp(x0, x1, r()), yy = y + r() * 60; const jump = Math.max(0, Math.sin(lt * 7 + i * 1.7)) * 14;
+    pawn(ctx, x, yy - jump, s, ['#b7342a', '#3a3f47', '#6e4a2c', '#2f6b4f'][i % 4]);
+    if (i % 5 === 0) { line(ctx, [[x + 8 * s, yy - jump - 20 * s], [x + 8 * s, yy - jump - 120 * s]], '#6e4a2c', 4 * s, .3); turkFlag(ctx, x + 8 * s, yy - jump - 120 * s, 40 * s, .5, lt); } }
 }
