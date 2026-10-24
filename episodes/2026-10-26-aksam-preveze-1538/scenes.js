@@ -160,9 +160,30 @@ function firkateyn(ctx, x, y, s, lt) {
 function rain(ctx, lt, amt = 1) { ctx.save(); ctx.globalAlpha = .55 * amt; ctx.strokeStyle = '#c8d4dc'; ctx.lineWidth = 3; for (let i = 0; i < 120; i++) { const x = (hash(i) * 1400 + lt * 200) % 1400 - 160, y = ((hash(i + 7) * 2000 + lt * 1500) % 2000) - 100; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x - 14, y + 46); ctx.stroke(); } ctx.restore(); }
 
 const SCENES = [
-  { s: 0, e: 2.93, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Haçlı donanması fenerlerini söndürüp kaçtı!', 'Preveze 1538'); ctx.restore();
-    [0, 1, 2].forEach(i => { const off = 1 - clamp((lt - (1.2 + i * .45)) / .25); fener(ctx, 320 + i * 140, 1272 + Math.sin(lt * 3 + i) * 6, .7, off, lt + i); });
+  { s: 0, e: 2.93, draw(ctx, lt, d) { // HOOK — gece denizi, Haçlı gemilerinin fenerleri tek tek söner, gemiler karanlığa kaçar
+    shake(ctx, lt, 0, 18, .3);
+    const z = lt < .3 ? lerp(1.16, 1.0, eOut(lt / .3)) : lerp(1.0, 1.07, eInOut((lt - .3) / (d - .3)));
+    ctx.translate(W / 2, 1050); ctx.scale(z, z); ctx.translate(-W / 2, -1050);
+    seaSide(ctx, lt, { y0: 1180, top: '#070b16', bot: '#1d2a44', sea: '#101b2e', dark: true, noClouds: true });
+    for (let i = 0; i < 60; i++) { const tw = .4 + .6 * Math.abs(Math.sin(lt * 3 + i * 1.7)); ctx.globalAlpha = tw * .8; ell(ctx, hash(i) * W, 120 + hash(i + 9) * 900, 2.5, 2.5, '#fff8e0', null); } ctx.globalAlpha = 1;
+    const mg = ctx.createRadialGradient(820, 720, 10, 820, 720, 260); mg.addColorStop(0, 'rgba(240,235,210,.35)'); mg.addColorStop(1, 'rgba(240,235,210,0)'); ctx.fillStyle = mg; ctx.fillRect(500, 400, 700, 700);
+    ell(ctx, 820, 720, 54, 54, '#efe9d2', null); ell(ctx, 804, 706, 12, 10, 'rgba(180,175,150,.5)', null); ell(ctx, 838, 738, 9, 8, 'rgba(180,175,150,.5)', null); ell(ctx, 830, 700, 6, 5, 'rgba(180,175,150,.45)', null);
+    // ay yansıması
+    for (let i = 0; i < 8; i++) { const w = 70 - i * 6 + Math.sin(lt * 5 + i) * 14; line(ctx, [[800 - w, 1200 + i * 26], [800 + w, 1200 + i * 26]], 'rgba(240,235,210,.3)', 5, .3); }
+    const off = (t0) => 1 - clamp((lt - t0) / .18);
+    // gemiler: [x, y, ölçek, lt kayması, fener sönme zamanları]
+    const ships = [[200 - lt * 40, 1190, .4, 1, [.3, .5, .7]], [930 - lt * 40, 1180, .32, 3, [.85, 1.05, 1.25]], [640 - lt * 70, 1340, .95, 2, [1.45, 1.75, 2.05, 2.35]]];
+    { const oc = document.createElement('canvas'); oc.width = W; oc.height = H; const g3 = oc.getContext('2d'); g3.setTransform(ctx.getTransform());
+      ships.forEach(([x, y, sc, o]) => kalyon(g3, x, y, sc, lt + o, { hull: '#1c1712', dir: -1, flag: '#3b4b6a' }));
+      g3.setTransform(1, 0, 0, 1, 0, 0); g3.globalCompositeOperation = 'source-atop'; g3.fillStyle = 'rgba(22,32,62,.55)'; g3.fillRect(0, 0, W, H);
+      ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0); ctx.drawImage(oc, 0, 0); ctx.restore(); }
+    // fenerler (karartmanın üstünde parlar)
+    ships.forEach(([x, y, sc, o, ts]) => { const yy = y + Math.sin((lt + o) * 1.8 + x * .01) * 4; ts.forEach((t0, i) => fener(ctx, x - sc * (-220 + i * 40) * 1, yy + sc * -160, .55 * sc * (sc < .5 ? 1.6 : 1), off(t0), lt + i)); });
+    // ön plan dalgaları
+    for (let r = 0; r < 3; r++) { ctx.save(); ctx.strokeStyle = 'rgba(160,190,220,.35)'; ctx.lineWidth = 5; for (let i = 0; i < 8; i++) { const x = ((i * 170 + lt * (90 + r * 40)) % 1400) - 200, y = 1400 + r * 50; ctx.beginPath(); ctx.moveTo(x, y); ctx.quadraticCurveTo(x + 40, y - 16, x + 80, y); ctx.stroke(); } ctx.restore(); }
+    // karanlık vinyet (fenerler söndükçe artar)
+    const dk = clamp((lt - 1.5) / 1.2) * .4; const vg = ctx.createLinearGradient(0, 700, 0, 1300); vg.addColorStop(0, 'rgba(3,5,12,0)'); vg.addColorStop(1, `rgba(3,5,12,${dk})`); ctx.fillStyle = vg; ctx.fillRect(-200, 700, W + 400, 1300);
+    hookText(ctx, lt + .6, 'Haçlı donanması, fenerlerini söndürüp kaçtı!', { style: 'split', key: 'FENER', y: 420 });
   } },
   { s: 2.93, e: 5.77, draw(ctx, lt, d) { // 1538, Papa'nın çağrısı
     ctx.drawImage(paperTex('#e2cfa6', 'warm'), 0, 0); camera(ctx, lt, d, 1, 1.06, W / 2, 850);
