@@ -44,7 +44,11 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
      ateş (`fire`), toz (`dust`), düşen/dönen nesneler, kamera kayması (`pan`). Darbe anlarında (mühür, savaş, düşüş) `shake` kullan.
      Sadece yazı/etiket belirmesi aksiyon sayılmaz.
    - **Kısa sahneler:** Her sahne 1,8–4 sn → video başına 16–24 sahne. 1 sn'den uzun hareketsiz an olmaz.
-7. Konu tekrarı yok: `topics.md` listesine bak. Dönemleri çeşitlendir (Hun, Göktürk, Selçuklu, Osmanlı, Cumhuriyet, dünya tarihi, ilginç olaylar).
+7. **KALİTE (amatör görünüm yok):** Mühür/damga için yalnızca `sealPro(ctx, 'orta yazı', 'halka yazısı', x, y, r, renk, lt, gecikme, 'alt satır')`
+   ve `stampBox(ctx, 'YAZI', x, y, boyut, renk, lt, gecikme, açı, 'alt satır')` kullan (temiz geometri + mürekkep dokusu).
+   Yazı içeren grafikler titrek elle çizilmez. Kompozisyon dengeli olmalı: öğeler üst üste binmez, boş yer bırakılmaz, her sahnenin tek bir
+   odak noktası olur. "İlkokul çizimi" gibi duran bir öğe (çarpık şekil, sıkışık yazı, rastgele yerleşim) görürsen yeniden tasarla.
+8. Konu tekrarı yok: `topics.md` listesine bak. Dönemleri çeşitlendir (Hun, Göktürk, Selçuklu, Osmanlı, Cumhuriyet, dünya tarihi, ilginç olaylar).
 
 ## Günlük adımlar
 0. **Hazırlık:** Depo `/home/claude/tarih-haber-video` altında değilse `add_repo` (emrahyavuz09/tarih-haber-video, push) ile ekle ve klonla.
@@ -65,7 +69,7 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
    `OUTRO_AT = DURATION - 1.6`. Sahne sınırlarını (sıkıştırılmış) `words.json` zamanlarına göre koy; 16–24 sahne, her biri 1,8–4 sn, her birinde sürekli aksiyon (kural 6).
    İlk sahne hookCard. Kütüphane (`engine/lib.js`): `bg, camera(sahne dosyasında tanımla), tag, bigText, stamp, boxStamp, bubble, pin, arrow,
    curvePts, shape, ell, line, pawn, sword, alparslan, diyojen (taçlı hükümdar şablonu), padisah, turkFlag, flagPole, meclis, crowd, crown, horseArcher, arrowShot, yurt, chainLink,
-   drawSea, drawLand, proj, ANATOLIA, THRACE, mountains, paperTex, shake, pan, marching, dust, fire, hookCard`. Yeni figür gerekiyorsa lib.js'e genel fonksiyon olarak ekle (sonraki günler de kullanır).
+   drawSea, drawLand, proj, ANATOLIA, THRACE, mountains, paperTex, shake, pan, marching, dust, fire, hookCard, sealPro, stampBox`. Yeni figür gerekiyorsa lib.js'e genel fonksiyon olarak ekle (sonraki günler de kullanır).
 6. **Kontrol:** `node engine/render.js episodes/<klasör> stills` → kareleri tek bir temas sayfasında birleştir (PIL) ve **Read ile bak**.
    Taşma, üst üste binme, okunmayan yazı, boş ya da durağan sahne varsa düzelt ve tekrar bak. Temiz olana kadar yayına geçme.
 7. **Video:** `bash engine/build.sh episodes/<klasör>` → `final.mp4`. Süreyi ve birkaç kareyi kontrol et.

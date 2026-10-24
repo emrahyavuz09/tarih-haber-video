@@ -575,3 +575,64 @@ function crowd(ctx, lt, x0, x1, y, n = 22, s = 1) {
     pawn(ctx, x, yy - jump, s, ['#b7342a', '#3a3f47', '#6e4a2c', '#2f6b4f'][i % 4]);
     if (i % 5 === 0) { line(ctx, [[x + 8 * s, yy - jump - 20 * s], [x + 8 * s, yy - jump - 120 * s]], '#6e4a2c', 4 * s, .3); turkFlag(ctx, x + 8 * s, yy - jump - 120 * s, 40 * s, .5, lt); } }
 }
+
+// ---------- PROFESYONEL MÜHÜR / DAMGA (eski stamp ve boxStamp'ın yerine) ----------
+// Mürekkep dokusu maskesi (önbellekli)
+const _grungeCache = {};
+function grungeMask(w, h, seed = 3) {
+  const k = w + 'x' + h + ':' + seed; if (_grungeCache[k]) return _grungeCache[k];
+  const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d'); const r = rng(seed);
+  for (let i = 0; i < (w * h) / 1400; i++) { g.fillStyle = `rgba(0,0,0,${.2 + r() * .5})`; const s = .5 + r() * 1.6; g.beginPath(); g.arc(r() * w, r() * h, s, 0, 7); g.fill(); }
+  for (let i = 0; i < 7; i++) { g.strokeStyle = `rgba(0,0,0,${.15 + r() * .25})`; g.lineWidth = 1 + r() * 3; g.beginPath(); const y = r() * h; g.moveTo(0, y); g.bezierCurveTo(w * .3, y + (r() - .5) * 40, w * .6, y + (r() - .5) * 40, w, y + (r() - .5) * 30); g.stroke(); }
+  return (_grungeCache[k] = c);
+}
+function arcText(g, str, r, size, startAng, endAng, inward = false) {
+  g.font = `700 ${size}px ${F_SANS}`; const chars = [...str]; const widths = chars.map(ch => g.measureText(ch).width);
+  const total = widths.reduce((a, b) => a + b, 0); const span = total / r; let a = (startAng + endAng) / 2 - span / 2;
+  chars.forEach((ch, i) => { const aa = a + widths[i] / 2 / r; g.save(); g.rotate(aa); g.translate(0, -r); g.fillText(ch, 0, 0); g.restore(); a += widths[i] / r; });
+}
+// Yuvarlak resmî mühür: main = ortadaki kelime, ring = halka boyunca yazı (ör. "TÜRKİYE CUMHURİYETİ"), sub = alt küçük satır (ör. "1923")
+function sealPro(ctx, main, ring, x, y, r, color, lt, delay = 0, sub = '', rot = -9) {
+  const p = prog(lt, delay, .32); if (p <= 0) return;
+  const S = Math.ceil(r * 2.3); const c = document.createElement('canvas'); c.width = c.height = S; const g = c.getContext('2d');
+  g.translate(S / 2, S / 2); g.fillStyle = color; g.strokeStyle = color; g.textAlign = 'center'; g.textBaseline = 'middle';
+  g.lineWidth = r * .075; g.beginPath(); g.arc(0, 0, r * .96, 0, 7); g.stroke();
+  g.lineWidth = r * .022; g.beginPath(); g.arc(0, 0, r * .80, 0, 7); g.stroke(); g.beginPath(); g.arc(0, 0, r * .56, 0, 7); g.stroke();
+  // halka yazısı
+  if (ring) { let fs = r * .15; g.font = `700 ${fs}px ${F_SANS}`; while (g.measureText(up(ring)).width / (r * .705) > Math.PI * 1.15 && fs > 8) { fs -= 1; g.font = `700 ${fs}px ${F_SANS}`; } g.textBaseline = 'middle'; arcText(g, up(ring), r * .705, fs, 0, 0); }
+  // alt kavis: yıldızlar
+  const star = (sx, sy, sr) => { g.beginPath(); for (let i = 0; i < 10; i++) { const a = -Math.PI / 2 + i * Math.PI / 5; const rr = i % 2 ? sr * .42 : sr; g.lineTo(sx + Math.cos(a) * rr, sy + Math.sin(a) * rr); } g.closePath(); g.fill(); };
+  [-.5, 0, .5].forEach(k => { const a = Math.PI / 2 + k * .55; star(Math.cos(a) * r * .69, Math.sin(a) * r * .69, r * (k ? .055 : .075)); });
+  // orta yazı (iki satıra bölünebilir)
+  const words = up(main).split(' '); let lines = [up(main)];
+  if (words.length > 1 && up(main).length > 9) { let best = null; for (let k = 1; k < words.length; k++) { const a = words.slice(0, k).join(' '), b = words.slice(k).join(' '); const m = Math.max(a.length, b.length); if (!best || m < best[0]) best = [m, [a, b]]; } lines = best[1]; }
+  let fs = r * .26; g.font = `700 ${fs}px ${F_SANS}`; while (Math.max(...lines.map(l => g.measureText(l).width)) > r * 1.02 && fs > 10) { fs -= 1; g.font = `700 ${fs}px ${F_SANS}`; }
+  const lh = fs * 1.02; lines.forEach((l, i) => g.fillText(l, 0, (i - (lines.length - 1) / 2) * lh - (sub ? r * .06 : 0)));
+  if (sub) { g.font = `700 ${r * .12}px ${F_SANS}`; g.fillRect(-r * .3, (lines.length / 2) * lh - r * .02, r * .6, r * .012); g.fillText(up(sub), 0, (lines.length / 2) * lh + r * .11); }
+  // mürekkep dokusu
+  g.setTransform(1, 0, 0, 1, 0, 0); g.globalCompositeOperation = 'destination-out'; g.drawImage(grungeMask(S, S, Math.round(r)), 0, 0);
+  // basma animasyonu
+  const e = eOut(p); const sc = lerp(1.9, 1, e) + Math.sin(p * Math.PI) * .03;
+  x = fitX(ctx, x, y, r + 10);
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot * Math.PI / 180); ctx.scale(sc, sc); ctx.globalAlpha = clamp(p * 1.8) * .9;
+  ctx.globalCompositeOperation = 'multiply'; ctx.drawImage(c, -S / 2, -S / 2); ctx.restore();
+}
+// Dikdörtgen damga: çift çerçeve, temiz geometri, mürekkep dokusu
+function stampBox(ctx, s, x, y, size, color, lt, delay = 0, rot = -7, sub = '') {
+  const p = prog(lt, delay, .26); if (p <= 0) return;
+  s = up(s); ctx.font = `700 ${size}px ${F_SANS}`;
+  const maxW = (SAFE.r - SAFE.l) / ctx.getTransform().a * .92; while (ctx.measureText(s).width + size * .9 > maxW && size > 20) { size -= 2; ctx.font = `700 ${size}px ${F_SANS}`; }
+  const w = ctx.measureText(s).width + size * .9, h = size * (sub ? 1.75 : 1.35);
+  const c = document.createElement('canvas'); c.width = Math.ceil(w + 40); c.height = Math.ceil(h + 40); const g = c.getContext('2d');
+  g.translate(c.width / 2, c.height / 2); g.strokeStyle = g.fillStyle = color; g.textAlign = 'center'; g.textBaseline = 'middle';
+  g.lineWidth = size * .09; g.strokeRect(-w / 2, -h / 2, w, h); g.lineWidth = size * .03; g.strokeRect(-w / 2 + size * .16, -h / 2 + size * .16, w - size * .32, h - size * .32);
+  g.font = `700 ${size}px ${F_SANS}`; g.fillText(s, 0, sub ? -size * .18 : size * .05);
+  if (sub) { g.font = `700 ${size * .3}px ${F_SANS}`; g.fillText(up(sub), 0, size * .5); }
+  g.setTransform(1, 0, 0, 1, 0, 0); g.globalCompositeOperation = 'destination-out'; g.drawImage(grungeMask(c.width, c.height, s.length * 7), 0, 0);
+  const sc = lerp(2.0, 1, eOut(p)); x = fitX(ctx, x, y, w / 2 + 12);
+  ctx.save(); ctx.translate(x, y); ctx.rotate(rot * Math.PI / 180); ctx.scale(sc, sc); ctx.globalAlpha = clamp(p * 1.8) * .92;
+  ctx.globalCompositeOperation = 'multiply'; ctx.drawImage(c, -c.width / 2, -c.height / 2); ctx.restore();
+}
+// Eski API'yi yeni tasarıma yönlendir (eski bölümler de güzelleşsin)
+stamp = function (ctx, s, x, y, r, color, lt, delay = 0, sub = '', rot = -9) { sealPro(ctx, s, sub, x, y, r * 1.15, color, lt, delay, '', rot); };
+boxStamp = function (ctx, s, x, y, size, color, lt, delay = 0, rot = -7) { stampBox(ctx, s, x, y, size, color, lt, delay, rot); };
