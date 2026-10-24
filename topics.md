@@ -13,6 +13,7 @@
 | 2026-11-02 | Kanuni'nin Zigetvar'da ölümünün Sokullu tarafından gizlenmesi (1566) — akşam | üretildi, planlanmadı |
 | 2026-10-26 | Preveze 1538: Barbaros, Andrea Doria, Haçlı donanması, rüzgâr kesildi — akşam | üretildi, planlanmadı |
 | 2026-10-30 | Kaşgarlı Mahmud'un dünya haritası (Divânu Lugâti't-Türk, Balasagun, doğu yukarıda) — sabah | üretildi, planlanmadı |
+| 2026-11-06 | Sabiha Gökçen: dünyanın ilk kadın savaş pilotu (Türkkuşu, 1937 bröve, Balkan uçuşu; Atatürk çizilmedi) — sabah | üretildi, planlanmadı |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)
