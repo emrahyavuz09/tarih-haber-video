@@ -15,6 +15,7 @@
 | 2026-10-30 | Kaşgarlı Mahmud'un dünya haritası (Divânu Lugâti't-Türk, Balasagun, doğu yukarıda) — sabah | üretildi, planlanmadı |
 | 2026-11-06 | Sabiha Gökçen: dünyanın ilk kadın savaş pilotu (Türkkuşu, 1937 bröve, Balkan uçuşu; Atatürk çizilmedi) — sabah | üretildi, planlanmadı |
 | 2026-11-03 | Uluğ Bey ve Semerkant rasathanesi, yıldız kataloğu — sabah | üretildi, planlanmadı |
+| 2026-10-27 | Hezârfen Ahmed Çelebi'nin Galata'dan Üsküdar'a uçuşu (rivayet, tek kaynak Evliya Çelebi) — sabah | üretildi, planlanmadı |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)
