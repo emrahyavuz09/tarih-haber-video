@@ -112,9 +112,34 @@ function volley(ctx, lt, from, to, n, t0, dur, color = C.ink) {
 function stuck(ctx, to, n, color = C.ink) { for (let i = 0; i < n; i++) { const tx = to[0] + (hash(i + 7) - .5) * 60, ty = to[1] + (hash(i + 11) - .5) * 60; line(ctx, [[tx, ty], [tx - 50, ty + 6 - hash(i) * 12]], color, 4, .2); } }
 
 const SCENES = [
-  { s: 0, e: 2.3, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt + .5, d + .5, 'Bu ok ıslık çalınca...', '10.000 atlı ateş ederdi!'); ctx.restore();
-    whistleArrow(ctx, lerp(-200, 1250, (lt / d)), 1180 + Math.sin(lt * 3) * 10, -0.04, .9, lt);
+  { s: 0, e: 2.3, draw(ctx, lt, d) { // HOOK — gün batımı bozkır, ekrana vınlayarak gelen ıslıklı ok
+    shake(ctx, lt, 0, 18, .32);
+    const z = lt < .3 ? lerp(1.16, 1.0, eOut(lt / .3)) : lerp(1.0, 1.05, eInOut((lt - .3) / (d - .3)));
+    ctx.translate(W / 2, 900); ctx.scale(z, z); ctx.translate(-W / 2, -900);
+    const sky = ctx.createLinearGradient(0, 0, 0, 1250); sky.addColorStop(0, '#2b1c26'); sky.addColorStop(.5, '#a6493a'); sky.addColorStop(1, '#f0a24c');
+    ctx.fillStyle = sky; ctx.fillRect(-200, -200, W + 400, 1500);
+    const sg = ctx.createRadialGradient(540, 1150, 30, 540, 1150, 560); sg.addColorStop(0, 'rgba(255,214,130,.9)'); sg.addColorStop(1, 'rgba(255,170,80,0)'); ctx.fillStyle = sg; ctx.fillRect(-200, 400, W + 400, 1100);
+    ell(ctx, 540, 1150, 170, 170, '#f6c66a', null);
+    shape(ctx, [[-300, 1190], [-60, 1140], [200, 1175], [440, 1125], [700, 1170], [940, 1115], [1200, 1160], [1400, 1140], [1400, 2200], [-300, 2200]], '#5a3322', C.ink, 5, 1.2);
+    shape(ctx, [[-300, 1250], [300, 1230], [700, 1260], [1100, 1235], [1400, 1250], [1400, 2200], [-300, 2200]], '#3a2216', null);
+    shape(ctx, [[-300, 1500], [300, 1470], [700, 1495], [1100, 1465], [1400, 1490], [1400, 2200], [-300, 2200]], '#22140d', null);
+    // ufuktaki atlı okçular
+    for (let i = 0; i < 9; i++) { const x = ((lt * 300 + i * 170) % 1600) - 300; horseArcher(ctx, x, 1215 + (i % 3) * 18, .3 + (i % 3) * .03, 1, lt * 16 + i * 1.3, '#2a170f'); }
+    dust(ctx, lt, 280, 1220, 10, 'rgba(240,170,90,.25)'); dust(ctx, lt, 760, 1220, 10, 'rgba(240,170,90,.25)');
+    // ön planda dörtnala geçen büyük atlı okçular
+    for (let i = 0; i < 3; i++) { const x = ((lt * 520 + i * 520) % 1560) - 260; horseArcher(ctx, x, 1400 + (i % 2) * 40, .95, 1, lt * 18 + i * 2, '#140b07'); }
+    dust(ctx, lt, ((lt * 520) % 1560) - 380, 1420, 12, 'rgba(150,95,60,.35)');
+    // ardındaki yüzlerce ok
+    for (let i = 0; i < 110; i++) { const p = ((lt * .75 + hash(i + 40)) % 1); const x0 = 90 + hash(i) * 780, k = .35 + hash(i + 5) * .5;
+      const x = x0 + p * 260 * k, y = 1200 - p * 640 - Math.sin(p * Math.PI) * 60; ctx.save(); ctx.globalAlpha = .85; ctx.translate(x, y); ctx.scale(k, k); arrowShot(ctx, 0, 0, -1.05 + p * .35, 70, '#1a100b'); ctx.restore(); }
+    // hız çizgileri (gökyüzünde)
+    ctx.save(); ctx.strokeStyle = 'rgba(255,240,210,.4)'; ctx.lineWidth = 4;
+    for (let i = 0; i < 16; i++) { const a = i / 16 * Math.PI * 2 + hash(i) * .3; const r0 = 300 + ((lt * 900 + hash(i) * 400) % 420); const ex = 560 + Math.cos(a) * r0, ey = 860 + Math.sin(a) * r0 * .7; if (ey > 1120 || ey < 560) continue; ctx.beginPath(); ctx.moveTo(ex, ey); ctx.lineTo(560 + Math.cos(a) * (r0 + 110), 860 + Math.sin(a) * (r0 + 110) * .7); ctx.stroke(); }
+    ctx.restore();
+    // ıslıklı ok kameraya doğru büyüyerek gelir
+    const p = eOut(clamp((lt + .2) / d)); const sc = lerp(.8, 1.85, p);
+    whistleArrow(ctx, lerp(470, 680, p), lerp(880, 840, p) + Math.sin(lt * 30) * 3 * (1 - p), lerp(-.14, .04, p), sc, lt * 1.6, true);
+    hookText(ctx, lt + .6, 'Bu ok ıslık çalınca, on bin atlı ateş ederdi!', { style: 'zoom', key: 'ISLIK', y: 430 });
   } },
   { s: 2.3, e: 4.2, draw(ctx, lt, d) { // on bin atlı ateş
     shake(ctx, lt, .3, 10); camera(ctx, lt, d, 1.05, 1.12, 540, 900);
