@@ -20,6 +20,7 @@
 | 2026-11-03 | Çaldıran 1514 (Yavuz Sultan Selim, Şah İsmail, araba siperi, zincirli toplar, Tebriz) — akşam | üretildi, planlanmadı |
 | 2026-11-06 | Sakarya Meydan Muharebesi 1921 ("Hattı müdafaa yoktur, sathı müdafaa vardır...", 22 gün 22 gece, Mareşal ve Gazi; Atatürk çizilmedi) — akşam | üretildi, planlanmadı |
 | 2026-10-27 | Niğbolu 1396: Yıldırım Bayezid, Sigismund'un Haçlı ordusu, kayıkla kaçış, Nevers fidyesi — akşam | üretildi, planlanmadı |
+| 2026-11-07 | Pîrî Reis'in 1513 dünya haritası (Gelibolu, Kolomb haritası, Topkapı'da bulunuşu, Kitâb-ı Bahriye) — sabah | üretildi, planlanmadı |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)

@@ -23,3 +23,4 @@ Aylık kota: 130000
 | 2026-10-24 | 982 | Sakarya 1921, 2026-11-06 akşam (1 okuma) |
 | 2026-10-24 | 676 | Lale Devri, 2026-10-31 sabah (1 okuma) |
 | 2026-10-24 | 1012 | Niğbolu 1396, 2026-10-27 akşam (1 okuma) |
+| 2026-10-24 | 745 | Pîrî Reis haritası, 2026-11-07 sabah (1 okuma) |

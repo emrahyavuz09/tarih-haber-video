@@ -1,0 +1,610 @@
+{
+ "words": [
+  {
+   "text": "Bir",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.231
+  },
+  {
+   "text": "Osmanlı",
+   "type": "word",
+   "start": 0.308,
+   "end": 0.769
+  },
+  {
+   "text": "denizcisi,",
+   "type": "word",
+   "start": 0.846,
+   "end": 1.615
+  },
+  {
+   "text": "Amerika'yı",
+   "type": "word",
+   "start": 1.654,
+   "end": 2.192
+  },
+  {
+   "text": "haritaya",
+   "type": "word",
+   "start": 2.231,
+   "end": 2.692
+  },
+  {
+   "text": "çizdi!",
+   "type": "word",
+   "start": 2.769,
+   "end": 3.154
+  },
+  {
+   "text": "Yıl",
+   "type": "word",
+   "start": 3.288,
+   "end": 3.519
+  },
+  {
+   "text": "bin",
+   "type": "word",
+   "start": 3.596,
+   "end": 3.75
+  },
+  {
+   "text": "beş",
+   "type": "word",
+   "start": 3.827,
+   "end": 3.981
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 4.058,
+   "end": 4.135
+  },
+  {
+   "text": "on",
+   "type": "word",
+   "start": 4.212,
+   "end": 4.25
+  },
+  {
+   "text": "üç.",
+   "type": "word",
+   "start": 4.288,
+   "end": 4.779
+  },
+  {
+   "text": "Gelibolu'da",
+   "type": "word",
+   "start": 4.856,
+   "end": 5.394
+  },
+  {
+   "text": "Pîrî",
+   "type": "word",
+   "start": 5.548,
+   "end": 5.856
+  },
+  {
+   "text": "Reis,",
+   "type": "word",
+   "start": 5.933,
+   "end": 6.394
+  },
+  {
+   "text": "deri",
+   "type": "word",
+   "start": 6.471,
+   "end": 6.625
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 6.702,
+   "end": 6.779
+  },
+  {
+   "text": "parşömen",
+   "type": "word",
+   "start": 6.856,
+   "end": 7.24
+  },
+  {
+   "text": "üzerine",
+   "type": "word",
+   "start": 7.317,
+   "end": 7.702
+  },
+  {
+   "text": "dünya",
+   "type": "word",
+   "start": 7.779,
+   "end": 8.087
+  },
+  {
+   "text": "haritası",
+   "type": "word",
+   "start": 8.163,
+   "end": 8.548
+  },
+  {
+   "text": "çiziyor.",
+   "type": "word",
+   "start": 8.587,
+   "end": 9.13
+  },
+  {
+   "text": "Amcası",
+   "type": "word",
+   "start": 9.163,
+   "end": 9.625
+  },
+  {
+   "text": "Kemal",
+   "type": "word",
+   "start": 9.702,
+   "end": 9.933
+  },
+  {
+   "text": "Reis'le",
+   "type": "word",
+   "start": 10.01,
+   "end": 10.548
+  },
+  {
+   "text": "yıllarca",
+   "type": "word",
+   "start": 10.625,
+   "end": 11.087
+  },
+  {
+   "text": "denizlerde",
+   "type": "word",
+   "start": 11.163,
+   "end": 11.625
+  },
+  {
+   "text": "dolaşmış,",
+   "type": "word",
+   "start": 11.702,
+   "end": 12.394
+  },
+  {
+   "text": "usta",
+   "type": "word",
+   "start": 12.548,
+   "end": 12.702
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 12.779,
+   "end": 12.856
+  },
+  {
+   "text": "denizci.",
+   "type": "word",
+   "start": 12.933,
+   "end": 13.505
+  },
+  {
+   "text": "Haritada",
+   "type": "word",
+   "start": 13.51,
+   "end": 13.971
+  },
+  {
+   "text": "yaklaşık",
+   "type": "word",
+   "start": 14.048,
+   "end": 14.51
+  },
+  {
+   "text": "yirmi",
+   "type": "word",
+   "start": 14.663,
+   "end": 14.894
+  },
+  {
+   "text": "kaynak",
+   "type": "word",
+   "start": 14.971,
+   "end": 15.279
+  },
+  {
+   "text": "kullandı:",
+   "type": "word",
+   "start": 15.356,
+   "end": 15.928
+  },
+  {
+   "text": "eski",
+   "type": "word",
+   "start": 15.952,
+   "end": 16.26
+  },
+  {
+   "text": "dünya",
+   "type": "word",
+   "start": 16.337,
+   "end": 16.567
+  },
+  {
+   "text": "haritaları,",
+   "type": "word",
+   "start": 16.644,
+   "end": 17.409
+  },
+  {
+   "text": "Arap",
+   "type": "word",
+   "start": 17.471,
+   "end": 17.779
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 17.856,
+   "end": 17.933
+  },
+  {
+   "text": "Portekiz",
+   "type": "word",
+   "start": 18.01,
+   "end": 18.471
+  },
+  {
+   "text": "haritaları...",
+   "type": "word",
+   "start": 18.548,
+   "end": 19.202
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 19.317,
+   "end": 19.433
+  },
+  {
+   "text": "Kristof",
+   "type": "word",
+   "start": 19.635,
+   "end": 20.019
+  },
+  {
+   "text": "Kolomb'un",
+   "type": "word",
+   "start": 20.096,
+   "end": 20.481
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 20.558,
+   "end": 20.712
+  },
+  {
+   "text": "haritası!",
+   "type": "word",
+   "start": 20.788,
+   "end": 21.327
+  },
+  {
+   "text": "Bugün",
+   "type": "word",
+   "start": 21.481,
+   "end": 21.788
+  },
+  {
+   "text": "haritanın",
+   "type": "word",
+   "start": 21.942,
+   "end": 22.404
+  },
+  {
+   "text": "yalnızca",
+   "type": "word",
+   "start": 22.481,
+   "end": 22.942
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 23.019,
+   "end": 23.173
+  },
+  {
+   "text": "parçası",
+   "type": "word",
+   "start": 23.25,
+   "end": 23.635
+  },
+  {
+   "text": "kaldı.",
+   "type": "word",
+   "start": 23.712,
+   "end": 24.154
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 24.192,
+   "end": 24.231
+  },
+  {
+   "text": "parçada",
+   "type": "word",
+   "start": 24.308,
+   "end": 24.846
+  },
+  {
+   "text": "Avrupa",
+   "type": "word",
+   "start": 25.0,
+   "end": 25.385
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 25.462,
+   "end": 25.538
+  },
+  {
+   "text": "Afrika",
+   "type": "word",
+   "start": 25.692,
+   "end": 26.0
+  },
+  {
+   "text": "kıyıları,",
+   "type": "word",
+   "start": 26.077,
+   "end": 26.702
+  },
+  {
+   "text": "Atlas",
+   "type": "word",
+   "start": 26.894,
+   "end": 27.087
+  },
+  {
+   "text": "Okyanusu",
+   "type": "word",
+   "start": 27.125,
+   "end": 27.625
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 27.702,
+   "end": 27.856
+  },
+  {
+   "text": "Güney",
+   "type": "word",
+   "start": 27.933,
+   "end": 28.163
+  },
+  {
+   "text": "Amerika",
+   "type": "word",
+   "start": 28.24,
+   "end": 28.548
+  },
+  {
+   "text": "görülüyor.",
+   "type": "word",
+   "start": 28.625,
+   "end": 29.163
+  },
+  {
+   "text": "Harita",
+   "type": "word",
+   "start": 29.269,
+   "end": 29.731
+  },
+  {
+   "text": "yüzyıllarca",
+   "type": "word",
+   "start": 29.808,
+   "end": 30.5
+  },
+  {
+   "text": "unutuldu.",
+   "type": "word",
+   "start": 30.577,
+   "end": 31.216
+  },
+  {
+   "text": "Cumhuriyet'in",
+   "type": "word",
+   "start": 31.298,
+   "end": 31.913
+  },
+  {
+   "text": "ilk",
+   "type": "word",
+   "start": 31.99,
+   "end": 32.144
+  },
+  {
+   "text": "yıllarında,",
+   "type": "word",
+   "start": 32.221,
+   "end": 32.837
+  },
+  {
+   "text": "Topkapı",
+   "type": "word",
+   "start": 32.913,
+   "end": 33.337
+  },
+  {
+   "text": "Sarayı",
+   "type": "word",
+   "start": 33.375,
+   "end": 33.683
+  },
+  {
+   "text": "müzeye",
+   "type": "word",
+   "start": 33.76,
+   "end": 34.067
+  },
+  {
+   "text": "dönüşürken",
+   "type": "word",
+   "start": 34.106,
+   "end": 34.683
+  },
+  {
+   "text": "yeniden",
+   "type": "word",
+   "start": 34.76,
+   "end": 35.144
+  },
+  {
+   "text": "bulundu.",
+   "type": "word",
+   "start": 35.221,
+   "end": 35.74
+  },
+  {
+   "text": "Pîrî",
+   "type": "word",
+   "start": 35.791,
+   "end": 36.048
+  },
+  {
+   "text": "Reis,",
+   "type": "word",
+   "start": 36.125,
+   "end": 36.51
+  },
+  {
+   "text": "Kitâb-ı",
+   "type": "word",
+   "start": 36.625,
+   "end": 36.945
+  },
+  {
+   "text": "Bahriye'yi",
+   "type": "word",
+   "start": 36.971,
+   "end": 37.433
+  },
+  {
+   "text": "de",
+   "type": "word",
+   "start": 37.51,
+   "end": 37.587
+  },
+  {
+   "text": "yazdı.",
+   "type": "word",
+   "start": 37.625,
+   "end": 38.154
+  },
+  {
+   "text": "Akdeniz'in",
+   "type": "word",
+   "start": 38.231,
+   "end": 38.692
+  },
+  {
+   "text": "kıyılarını,",
+   "type": "word",
+   "start": 38.769,
+   "end": 39.5
+  },
+  {
+   "text": "adalarını",
+   "type": "word",
+   "start": 39.615,
+   "end": 40.154
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 40.231,
+   "end": 40.308
+  },
+  {
+   "text": "limanlarını",
+   "type": "word",
+   "start": 40.385,
+   "end": 41.0
+  },
+  {
+   "text": "tek",
+   "type": "word",
+   "start": 41.154,
+   "end": 41.385
+  },
+  {
+   "text": "tek",
+   "type": "word",
+   "start": 41.462,
+   "end": 41.615
+  },
+  {
+   "text": "haritaladı.",
+   "type": "word",
+   "start": 41.692,
+   "end": 42.322
+  },
+  {
+   "text": "Bir",
+   "type": "word",
+   "start": 42.385,
+   "end": 42.538
+  },
+  {
+   "text": "harita",
+   "type": "word",
+   "start": 42.615,
+   "end": 42.923
+  },
+  {
+   "text": "parçası...",
+   "type": "word",
+   "start": 43.0,
+   "end": 43.76
+  },
+  {
+   "text": "ama",
+   "type": "word",
+   "start": 43.875,
+   "end": 43.99
+  },
+  {
+   "text": "beş",
+   "type": "word",
+   "start": 44.221,
+   "end": 44.375
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 44.452,
+   "end": 44.606
+  },
+  {
+   "text": "yıllık",
+   "type": "word",
+   "start": 44.683,
+   "end": 44.913
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 44.99,
+   "end": 45.144
+  },
+  {
+   "text": "miras.",
+   "type": "word",
+   "start": 45.221,
+   "end": 45.875
+  }
+ ]
+}
