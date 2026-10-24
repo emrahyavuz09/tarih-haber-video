@@ -1,0 +1,808 @@
+{
+ "words": [
+  {
+   "text": "Düşman,",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.654
+  },
+  {
+   "text": "Ankara'ya",
+   "type": "word",
+   "start": 0.769,
+   "end": 1.192
+  },
+  {
+   "text": "dayanmıştı!",
+   "type": "word",
+   "start": 1.269,
+   "end": 2.024
+  },
+  {
+   "text": "Bin",
+   "type": "word",
+   "start": 2.058,
+   "end": 2.135
+  },
+  {
+   "text": "dokuz",
+   "type": "word",
+   "start": 2.212,
+   "end": 2.442
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 2.596,
+   "end": 2.673
+  },
+  {
+   "text": "yirmi",
+   "type": "word",
+   "start": 2.75,
+   "end": 2.942
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 2.981,
+   "end": 3.058
+  },
+  {
+   "text": "yazı.",
+   "type": "word",
+   "start": 3.135,
+   "end": 3.606
+  },
+  {
+   "text": "Yunan",
+   "type": "word",
+   "start": 3.644,
+   "end": 3.913
+  },
+  {
+   "text": "ordusu",
+   "type": "word",
+   "start": 3.99,
+   "end": 4.375
+  },
+  {
+   "text": "Eskişehir'i",
+   "type": "word",
+   "start": 4.452,
+   "end": 5.106
+  },
+  {
+   "text": "geçmiş,",
+   "type": "word",
+   "start": 5.144,
+   "end": 5.76
+  },
+  {
+   "text": "Ankara'ya",
+   "type": "word",
+   "start": 5.837,
+   "end": 6.221
+  },
+  {
+   "text": "doğru",
+   "type": "word",
+   "start": 6.298,
+   "end": 6.529
+  },
+  {
+   "text": "ilerliyor.",
+   "type": "word",
+   "start": 6.683,
+   "end": 7.255
+  },
+  {
+   "text": "Türk",
+   "type": "word",
+   "start": 7.308,
+   "end": 7.538
+  },
+  {
+   "text": "ordusu",
+   "type": "word",
+   "start": 7.615,
+   "end": 8.0
+  },
+  {
+   "text": "Sakarya",
+   "type": "word",
+   "start": 8.077,
+   "end": 8.538
+  },
+  {
+   "text": "Irmağı'nın",
+   "type": "word",
+   "start": 8.615,
+   "end": 9.0
+  },
+  {
+   "text": "doğusuna",
+   "type": "word",
+   "start": 9.077,
+   "end": 9.462
+  },
+  {
+   "text": "çekildi.",
+   "type": "word",
+   "start": 9.538,
+   "end": 10.12
+  },
+  {
+   "text": "Meclis'te",
+   "type": "word",
+   "start": 10.192,
+   "end": 10.885
+  },
+  {
+   "text": "endişe",
+   "type": "word",
+   "start": 10.962,
+   "end": 11.346
+  },
+  {
+   "text": "büyüktü.",
+   "type": "word",
+   "start": 11.423,
+   "end": 11.986
+  },
+  {
+   "text": "Beş",
+   "type": "word",
+   "start": 12.077,
+   "end": 12.231
+  },
+  {
+   "text": "Ağustos'ta",
+   "type": "word",
+   "start": 12.308,
+   "end": 12.923
+  },
+  {
+   "text": "Mustafa",
+   "type": "word",
+   "start": 13.077,
+   "end": 13.385
+  },
+  {
+   "text": "Kemal",
+   "type": "word",
+   "start": 13.462,
+   "end": 13.692
+  },
+  {
+   "text": "Paşa,",
+   "type": "word",
+   "start": 13.769,
+   "end": 14.231
+  },
+  {
+   "text": "Başkomutan",
+   "type": "word",
+   "start": 14.269,
+   "end": 14.846
+  },
+  {
+   "text": "oldu.",
+   "type": "word",
+   "start": 14.923,
+   "end": 15.245
+  },
+  {
+   "text": "Yirmi",
+   "type": "word",
+   "start": 15.346,
+   "end": 15.538
+  },
+  {
+   "text": "üç",
+   "type": "word",
+   "start": 15.577,
+   "end": 15.692
+  },
+  {
+   "text": "Ağustos.",
+   "type": "word",
+   "start": 15.731,
+   "end": 16.346
+  },
+  {
+   "text": "Sakarya'da",
+   "type": "word",
+   "start": 16.529,
+   "end": 17.144
+  },
+  {
+   "text": "büyük",
+   "type": "word",
+   "start": 17.298,
+   "end": 17.529
+  },
+  {
+   "text": "savaş",
+   "type": "word",
+   "start": 17.606,
+   "end": 17.913
+  },
+  {
+   "text": "başladı.",
+   "type": "word",
+   "start": 17.99,
+   "end": 18.553
+  },
+  {
+   "text": "Saldırılar",
+   "type": "word",
+   "start": 18.673,
+   "end": 19.288
+  },
+  {
+   "text": "dalga",
+   "type": "word",
+   "start": 19.365,
+   "end": 19.673
+  },
+  {
+   "text": "dalga",
+   "type": "word",
+   "start": 19.75,
+   "end": 19.981
+  },
+  {
+   "text": "geliyordu.",
+   "type": "word",
+   "start": 20.058,
+   "end": 20.716
+  },
+  {
+   "text": "Amaçları",
+   "type": "word",
+   "start": 20.74,
+   "end": 21.202
+  },
+  {
+   "text": "belliydi:",
+   "type": "word",
+   "start": 21.279,
+   "end": 21.909
+  },
+  {
+   "text": "Ankara'yı",
+   "type": "word",
+   "start": 21.952,
+   "end": 22.413
+  },
+  {
+   "text": "almak",
+   "type": "word",
+   "start": 22.49,
+   "end": 22.875
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 23.029,
+   "end": 23.106
+  },
+  {
+   "text": "Meclis",
+   "type": "word",
+   "start": 23.26,
+   "end": 23.567
+  },
+  {
+   "text": "ordusunu",
+   "type": "word",
+   "start": 23.644,
+   "end": 24.106
+  },
+  {
+   "text": "yok",
+   "type": "word",
+   "start": 24.183,
+   "end": 24.337
+  },
+  {
+   "text": "etmek.",
+   "type": "word",
+   "start": 24.413,
+   "end": 24.952
+  },
+  {
+   "text": "Ve",
+   "type": "word",
+   "start": 24.99,
+   "end": 25.029
+  },
+  {
+   "text": "Başkomutan'dan",
+   "type": "word",
+   "start": 25.183,
+   "end": 26.029
+  },
+  {
+   "text": "tarihe",
+   "type": "word",
+   "start": 26.106,
+   "end": 26.49
+  },
+  {
+   "text": "geçen",
+   "type": "word",
+   "start": 26.567,
+   "end": 26.952
+  },
+  {
+   "text": "emir",
+   "type": "word",
+   "start": 27.029,
+   "end": 27.26
+  },
+  {
+   "text": "geldi:",
+   "type": "word",
+   "start": 27.337,
+   "end": 27.721
+  },
+  {
+   "text": "\"Hattı",
+   "type": "word",
+   "start": 27.856,
+   "end": 28.163
+  },
+  {
+   "text": "müdafaa",
+   "type": "word",
+   "start": 28.24,
+   "end": 28.702
+  },
+  {
+   "text": "yoktur,",
+   "type": "word",
+   "start": 28.779,
+   "end": 29.361
+  },
+  {
+   "text": "sathı",
+   "type": "word",
+   "start": 29.5,
+   "end": 29.808
+  },
+  {
+   "text": "müdafaa",
+   "type": "word",
+   "start": 29.885,
+   "end": 30.346
+  },
+  {
+   "text": "vardır.",
+   "type": "word",
+   "start": 30.462,
+   "end": 30.889
+  },
+  {
+   "text": "O",
+   "type": "word",
+   "start": 30.952,
+   "end": 31.029
+  },
+  {
+   "text": "satıh",
+   "type": "word",
+   "start": 31.144,
+   "end": 31.413
+  },
+  {
+   "text": "bütün",
+   "type": "word",
+   "start": 31.644,
+   "end": 31.952
+  },
+  {
+   "text": "vatandır.\"",
+   "type": "word",
+   "start": 32.067,
+   "end": 32.659
+  },
+  {
+   "text": "Yani",
+   "type": "word",
+   "start": 32.74,
+   "end": 33.048
+  },
+  {
+   "text": "tek",
+   "type": "word",
+   "start": 33.202,
+   "end": 33.356
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 33.433,
+   "end": 33.51
+  },
+  {
+   "text": "hat",
+   "type": "word",
+   "start": 33.587,
+   "end": 33.74
+  },
+  {
+   "text": "değil,",
+   "type": "word",
+   "start": 33.817,
+   "end": 34.24
+  },
+  {
+   "text": "vatanın",
+   "type": "word",
+   "start": 34.356,
+   "end": 34.817
+  },
+  {
+   "text": "her",
+   "type": "word",
+   "start": 34.894,
+   "end": 35.048
+  },
+  {
+   "text": "karışı",
+   "type": "word",
+   "start": 35.125,
+   "end": 35.433
+  },
+  {
+   "text": "savunulacaktı.",
+   "type": "word",
+   "start": 35.51,
+   "end": 36.389
+  },
+  {
+   "text": "Mehmetçik",
+   "type": "word",
+   "start": 36.452,
+   "end": 37.067
+  },
+  {
+   "text": "tepe",
+   "type": "word",
+   "start": 37.221,
+   "end": 37.452
+  },
+  {
+   "text": "tepe,",
+   "type": "word",
+   "start": 37.529,
+   "end": 37.99
+  },
+  {
+   "text": "siper",
+   "type": "word",
+   "start": 38.067,
+   "end": 38.375
+  },
+  {
+   "text": "siper",
+   "type": "word",
+   "start": 38.452,
+   "end": 38.76
+  },
+  {
+   "text": "direndi.",
+   "type": "word",
+   "start": 38.875,
+   "end": 39.298
+  },
+  {
+   "text": "Savaş",
+   "type": "word",
+   "start": 39.49,
+   "end": 39.875
+  },
+  {
+   "text": "yirmi",
+   "type": "word",
+   "start": 40.029,
+   "end": 40.26
+  },
+  {
+   "text": "iki",
+   "type": "word",
+   "start": 40.337,
+   "end": 40.49
+  },
+  {
+   "text": "gün,",
+   "type": "word",
+   "start": 40.567,
+   "end": 40.952
+  },
+  {
+   "text": "yirmi",
+   "type": "word",
+   "start": 41.029,
+   "end": 41.26
+  },
+  {
+   "text": "iki",
+   "type": "word",
+   "start": 41.337,
+   "end": 41.413
+  },
+  {
+   "text": "gece",
+   "type": "word",
+   "start": 41.49,
+   "end": 41.721
+  },
+  {
+   "text": "sürdü.",
+   "type": "word",
+   "start": 41.798,
+   "end": 42.264
+  },
+  {
+   "text": "Millî",
+   "type": "word",
+   "start": 42.327,
+   "end": 42.635
+  },
+  {
+   "text": "Mücadele'nin",
+   "type": "word",
+   "start": 42.712,
+   "end": 43.404
+  },
+  {
+   "text": "en",
+   "type": "word",
+   "start": 43.558,
+   "end": 43.712
+  },
+  {
+   "text": "kanlı",
+   "type": "word",
+   "start": 43.788,
+   "end": 44.019
+  },
+  {
+   "text": "savaşıydı.",
+   "type": "word",
+   "start": 44.096,
+   "end": 44.812
+  },
+  {
+   "text": "On",
+   "type": "word",
+   "start": 44.894,
+   "end": 44.971
+  },
+  {
+   "text": "Eylül'de",
+   "type": "word",
+   "start": 45.048,
+   "end": 45.51
+  },
+  {
+   "text": "Türk",
+   "type": "word",
+   "start": 45.663,
+   "end": 45.817
+  },
+  {
+   "text": "ordusu",
+   "type": "word",
+   "start": 45.894,
+   "end": 46.279
+  },
+  {
+   "text": "karşı",
+   "type": "word",
+   "start": 46.356,
+   "end": 46.663
+  },
+  {
+   "text": "taarruza",
+   "type": "word",
+   "start": 46.74,
+   "end": 47.125
+  },
+  {
+   "text": "geçti.",
+   "type": "word",
+   "start": 47.202,
+   "end": 47.587
+  },
+  {
+   "text": "On",
+   "type": "word",
+   "start": 47.712,
+   "end": 47.788
+  },
+  {
+   "text": "üç",
+   "type": "word",
+   "start": 47.865,
+   "end": 47.942
+  },
+  {
+   "text": "Eylül'de",
+   "type": "word",
+   "start": 48.019,
+   "end": 48.404
+  },
+  {
+   "text": "düşman,",
+   "type": "word",
+   "start": 48.558,
+   "end": 49.019
+  },
+  {
+   "text": "Sakarya'nın",
+   "type": "word",
+   "start": 49.096,
+   "end": 49.635
+  },
+  {
+   "text": "batısına",
+   "type": "word",
+   "start": 49.712,
+   "end": 50.096
+  },
+  {
+   "text": "çekiliyordu.",
+   "type": "word",
+   "start": 50.173,
+   "end": 50.899
+  },
+  {
+   "text": "Meclis,",
+   "type": "word",
+   "start": 50.99,
+   "end": 51.49
+  },
+  {
+   "text": "Mustafa",
+   "type": "word",
+   "start": 51.529,
+   "end": 51.913
+  },
+  {
+   "text": "Kemal'e",
+   "type": "word",
+   "start": 51.99,
+   "end": 52.298
+  },
+  {
+   "text": "Mareşal",
+   "type": "word",
+   "start": 52.452,
+   "end": 52.837
+  },
+  {
+   "text": "rütbesini",
+   "type": "word",
+   "start": 52.913,
+   "end": 53.529
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 53.606,
+   "end": 53.76
+  },
+  {
+   "text": "Gazi",
+   "type": "word",
+   "start": 53.913,
+   "end": 54.221
+  },
+  {
+   "text": "unvanını",
+   "type": "word",
+   "start": 54.298,
+   "end": 54.76
+  },
+  {
+   "text": "verdi.",
+   "type": "word",
+   "start": 54.875,
+   "end": 55.236
+  },
+  {
+   "text": "Sakarya,",
+   "type": "word",
+   "start": 55.365,
+   "end": 56.058
+  },
+  {
+   "text": "Millî",
+   "type": "word",
+   "start": 56.135,
+   "end": 56.442
+  },
+  {
+   "text": "Mücadele'nin",
+   "type": "word",
+   "start": 56.493,
+   "end": 57.135
+  },
+  {
+   "text": "dönüm",
+   "type": "word",
+   "start": 57.212,
+   "end": 57.442
+  },
+  {
+   "text": "noktası",
+   "type": "word",
+   "start": 57.519,
+   "end": 57.904
+  },
+  {
+   "text": "oldu.",
+   "type": "word",
+   "start": 57.981,
+   "end": 58.288
+  },
+  {
+   "text": "Sakarya'da",
+   "type": "word",
+   "start": 58.481,
+   "end": 59.019
+  },
+  {
+   "text": "geri",
+   "type": "word",
+   "start": 59.096,
+   "end": 59.288
+  },
+  {
+   "text": "çekiliş",
+   "type": "word",
+   "start": 59.327,
+   "end": 59.712
+  },
+  {
+   "text": "bitti...",
+   "type": "word",
+   "start": 59.788,
+   "end": 60.365
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 60.442,
+   "end": 60.519
+  },
+  {
+   "text": "Büyük",
+   "type": "word",
+   "start": 60.673,
+   "end": 60.904
+  },
+  {
+   "text": "Zafer'in",
+   "type": "word",
+   "start": 60.981,
+   "end": 61.365
+  },
+  {
+   "text": "yolu",
+   "type": "word",
+   "start": 61.442,
+   "end": 61.673
+  },
+  {
+   "text": "açıldı.",
+   "type": "word",
+   "start": 61.827,
+   "end": 62.49
+  }
+ ]
+}
