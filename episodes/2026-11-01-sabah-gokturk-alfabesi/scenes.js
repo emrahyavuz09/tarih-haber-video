@@ -90,12 +90,25 @@ function lockKey(ctx, x, y, s, turn, open) {
 }
 
 const SCENES = [
-  { s: 0, e: 3.1, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Türkçenin en eski yazısı sağdan sola!', 'Göktürk alfabesi'); ctx.restore();
-    const sz = 130, wd = otWidth(TURK, sz);
-    ctx.save(); ctx.fillStyle = 'rgba(243,233,210,.92)'; tornRect(ctx, CX - wd / 2 - 50, 1150, wd + 100, 170, '#e8dcc0', 5); ctx.restore();
-    otWord(ctx, TURK, CX + wd / 2, 1290, sz, C.ink, Math.floor(lt * 2.4) + 1, true);
-    arrow(ctx, [[CX + wd / 2 + 10, 1345], [CX - wd / 2 - 10, 1345]], eInOut(prog(lt, .3, 1.6)), C.cream, 8);
+  { s: 0, e: 3.1, draw(ctx, lt, d) { // HOOK — dev taş yazıt; TÜRK harfleri sağdan sola kazınıyor, kıvılcımlar
+    ctx.save(); shake(ctx, lt, 0, 18, .3);
+    const z = lerp(1.2, 1, eOut(clamp(lt / .3))) * lerp(1, 1.05, eInOut(lt / d)); ctx.translate(CX, 1000); ctx.scale(z, z); ctx.translate(-CX, -1000);
+    const g = ctx.createLinearGradient(0, 0, 0, 1300); g.addColorStop(0, '#e9dcc0'); g.addColorStop(1, '#f6ecd6'); ctx.fillStyle = g; ctx.fillRect(-300, -300, W + 600, H + 600);
+    shape(ctx, [[-300, 760], [100, 700], [420, 745], [760, 690], [1400, 740], [1400, 2300], [-300, 2300]], '#b9b08a', 'rgba(42,29,21,.4)', 4, 1);
+    shape(ctx, [[-300, 1200], [400, 1180], [1400, 1210], [1400, 2300], [-300, 2300]], '#8f8a64', null);
+    for (let i = 0; i < 4; i++) { const x = ((i * 300 + lt * 30) % 1300) - 120; line(ctx, [[x, 620 + (i % 2) * 30], [x + 14, 611 + (i % 2) * 30], [x + 28, 620 + (i % 2) * 30]], C.ink, 3, .3); }
+    ctx.save(); ctx.shadowColor = 'rgba(0,0,0,.35)'; ctx.shadowBlur = 30; ctx.shadowOffsetY = 14;
+    shape(ctx, [[110, 1320], [100, 830], [150, 780], [810, 770], [880, 820], [890, 1320]], '#a9a497', C.ink, 7, .8); ctx.restore();
+    line(ctx, [[160, 840], [200, 880], [190, 930]], 'rgba(42,29,21,.3)', 3, .5); line(ctx, [[830, 1200], [800, 1250]], 'rgba(42,29,21,.3)', 3, .5);
+    const sz = 220, wd = otWidth(TURK, sz), xr = CX + wd / 2 + 10, n = Math.min(4, Math.floor((lt + .35) * 2.2) + 1);
+    otWord(ctx, TURK, xr, 1130, sz, '#3a342c', n, true);
+    let xc = xr; for (let i = 0; i < Math.min(n, 4); i++) xc -= OT[TURK[i]].w * sz / OT_UPM;
+    const ph = ((lt + .35) * 2.2) % 1, hit = ph < .25 ? ph / .25 : 1 - (ph - .25) / .75;
+    if (lt < 1.6) { chisel(ctx, xc + 30, 1050, .85, hit); chips(ctx, lt, xc + 30, 1050); for (let i = 0; i < 8; i++) { const k = (ph + hash(i) * .3) % 1; const a = -Math.PI * .8 + hash(i + 2) * Math.PI * .9; ctx.globalAlpha = 1 - k; ell(ctx, xc + 30 + Math.cos(a) * k * 160, 1050 + Math.sin(a) * k * 160 + k * k * 60, 5, 5, '#ffcf5a', null); } ctx.globalAlpha = 1; }
+    else { chips(ctx, lt, xc + 20, 1060, 1.6); }
+    if (lt > .6) arrow(ctx, [[xr, 1230], [xr - wd - 20, 1230]], eInOut(clamp((lt - .55) / 1.4)), C.red, 9);
+    ctx.restore();
+    hookText(ctx, lt + 0.6, 'Türkçenin en eski yazısı, sağdan sola yazılırdı!', { style: 'scroll', key: 'SAĞDAN', y: 420, size: 80 });
   } },
   { s: 3.1, e: 6.3, draw(ctx, lt, d) { // Göktürk alfabesi / Orhun yazısı
     const g = ctx.createLinearGradient(0, 0, 0, 1300); g.addColorStop(0, '#cfe0e6'); g.addColorStop(1, '#efe4c6'); ctx.fillStyle = g; ctx.fillRect(-200, -200, W + 400, H + 400);
