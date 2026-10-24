@@ -7,7 +7,7 @@
 | 2026-10-25 | Mete Han'ın ıslıklı okları (Asya Hun, Tuman Han, onlu sistem) — sabah | üretildi, planlanmadı; açılış: zoom |
 | 2026-10-25 | Mohaç 1526: İki saatte biten savaş (Kanuni, II. Layoş, Budin) — akşam | üretildi, planlanmadı; açılış: slam |
 | 2026-11-02 | Kafes usulü: şehzadelerin sarayda tutulması (I. Ahmed, ekber-erşed, II. Süleyman) — sabah | üretildi, planlanmadı — açılış: stencil |
-| 2026-10-26 | IV. Murad'ın kahve ve tütün yasağı (1633 Cibali yangını, kahvehaneler, fetva) — sabah | üretildi, planlanmadı |
+| 2026-10-26 | IV. Murad'ın kahve ve tütün yasağı (1633 Cibali yangını, kahvehaneler, fetva) — sabah | üretildi, planlanmadı; açılış: marker |
 | 2026-10-29 | Cumhuriyet'in ilanı, 29 Ekim 1923 (101 pare top, 158 oy, Meclis; Atatürk çizilmedi) — akşam | üretildi, planlanmadı; açılış: slam |
 | 2026-11-05 | Talas 751: Tang Çini, Abbasiler, Karluklar ve kâğıdın Batı'ya yolculuğu (rivayet) — akşam | üretildi, planlanmadı; açılış: scroll |
 | 2026-11-02 | Kanuni'nin Zigetvar'da ölümünün Sokullu tarafından gizlenmesi (1566) — akşam | üretildi, planlanmadı — açılış: split |

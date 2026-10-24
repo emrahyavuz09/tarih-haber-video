@@ -144,9 +144,32 @@ function smokeCol(ctx, lt, x, y, n = 8, c = 'rgba(70,60,55,.5)', sc = 1) {
 function warmBg(ctx, lt) { ctx.drawImage(paperTex('#e2cfa6', 'warm'), 0, 0); }
 
 const SCENES = [
-  { s: 0, e: 2.32, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Bir padişah kahveyi yasakladı!', 'IV. Murad · 1633'); ctx.restore();
-    fincan(ctx, 470, 1250 + Math.sin(lt * 3) * 6, .85, lt, true, .35);
+  { s: 0, e: 2.32, draw(ctx, lt, d) { // HOOK — sıcak kahvehane, tüten fincan, düşen yasak mührü
+    shake(ctx, lt, .08, 24, .35);
+    const z = lt < .25 ? lerp(1.15, 1.0, eOut(lt / .25)) : lerp(1.0, 1.07, eInOut((lt - .25) / (d - .25)));
+    ctx.translate(W / 2, 1000); ctx.scale(z, z); ctx.translate(-W / 2, -1000);
+    const wall = ctx.createLinearGradient(0, 0, 0, H); wall.addColorStop(0, '#3a2416'); wall.addColorStop(.55, '#6b4528'); wall.addColorStop(1, '#2a1a10');
+    ctx.fillStyle = wall; ctx.fillRect(-200, -200, W + 400, H + 400);
+    for (let i = 0; i < 9; i++) { const x = -60 + i * 150; line(ctx, [[x, 560], [x, 1120]], 'rgba(20,12,6,.35)', 5, .4); }
+    // raf + küçük fincanlar ve cezveler
+    shape(ctx, [[-40, 640], [1120, 640], [1120, 664], [-40, 664]], '#8b5a32', C.ink, 4, .5);
+    for (let i = 0; i < 6; i++) { const x = 90 + i * 160; if (i % 2) { ctx.save(); ctx.translate(x, 612); shape(ctx, [[-26, 26], [-20, -18], [20, -18], [26, 26]], '#c08a3a', C.ink, 4, .4); line(ctx, [[20, -6], [70, -22]], '#6e4a2c', 6, .2); ctx.restore(); } else { ctx.save(); ctx.translate(x, 616); shape(ctx, [[-28, -24], [28, -24], [22, 18], [-22, 18]], '#f6f1e6', C.ink, 4, .4); line(ctx, [[-26, -12], [26, -12]], C.red, 6, .2); ctx.restore(); } }
+    // fener ışığı (titrer)
+    const fl = .8 + Math.sin(lt * 13) * .08 + Math.sin(lt * 7.3) * .06;
+    const g = ctx.createRadialGradient(540, 930, 40, 540, 930, 620); g.addColorStop(0, `rgba(255,190,100,${.5 * fl})`); g.addColorStop(1, 'rgba(255,170,80,0)'); ctx.fillStyle = g; ctx.fillRect(-200, 300, W + 400, 1300);
+    // masa
+    shape(ctx, [[-60, 1080], [1140, 1080], [1140, 1140], [-60, 1140]], '#7a4a26', C.ink, 6, .6);
+    ctx.fillStyle = '#4a2c18'; ctx.fillRect(-60, 1140, W + 120, 800);
+    // havada uçuşan kahve çekirdekleri
+    for (let i = 0; i < 14; i++) { const k = (lt * .6 + hash(i)) % 1; const x = 120 + hash(i + 4) * 760 + Math.sin(k * 6 + i) * 30, y = 700 + k * 480; ctx.save(); ctx.translate(x, y); ctx.rotate(k * 8 + i); ell(ctx, 0, 0, 13, 9, '#3b2416', C.ink, 2); line(ctx, [[-8, 0], [8, 0]], '#8b5a32', 2, .1); ctx.restore(); }
+    // büyük tüten fincan (mühür vurunca sarsılır)
+    const hit = lt > .08 ? Math.sin((lt - .08) * 40) * 6 * Math.max(0, 1 - (lt - .08) * 3) : 0;
+    fincan(ctx, 500 + hit, 960, 1.4, lt, true, .7);
+    // masaya çarpan yasak kâğıdı + damga
+    const pp = eBack(clamp((lt + .22) / .3)); ctx.save(); ctx.translate(540, lerp(860, 1225, pp)); ctx.rotate(lerp(-.3, -.04, pp));
+    ctx.fillStyle = 'rgba(0,0,0,.35)'; ctx.fillRect(-292, -87, 600, 180); tornRect(ctx, -300, -95, 600, 180, '#f1e4c4', 5); ctx.restore();
+    stampBox(ctx, 'YASAK', 540, 1222, 92, '#c4271c', lt + .1, .0, -7, 'IV. MURAD · 1633');
+    hookText(ctx, lt + .6, 'Bir padişah, kahveyi yasakladı!', { style: 'marker', key: 'KAHVE', y: 420 });
   } },
   { s: 2.32, e: 4.3, draw(ctx, lt, d) { // 1633, İstanbul
     const g = ctx.createLinearGradient(0, 0, 0, 1100); g.addColorStop(0, '#e6d3a8'); g.addColorStop(1, '#f1e3c2'); ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
