@@ -329,8 +329,8 @@ function hookCard(ctx, lt, d, line1, line2 = '', bgc = '#a8352b') {
   words.forEach(w => { const t = cur ? cur + ' ' + w : w; if (ctx.measureText(t).width > (SAFE.r - SAFE.l) - 40) { lines.push(cur); cur = w; } else cur = t; }); lines.push(cur);
   const y0 = 760 - (lines.length - 1) * 60;
   lines.forEach((l, i) => bigText(ctx, l, (SAFE.l + SAFE.r) / 2, y0 + i * 120, 92, C.cream, lt, i * .12, F_SANS, [C.ink, 12]));
-  if (line2) tag(ctx, up(line2), (SAFE.l + SAFE.r) / 2, y0 + lines.length * 120 + 40, 60, lt, .35, C.ink, C.cream);
-  boxStamp(ctx, '?', SAFE.r - 70, 380, 150, C.cream, lt, .5, 12);
+  if (line2) tag(ctx, up(line2), (SAFE.l + SAFE.r) / 2, y0 + lines.length * 120 + 40, 60, lt, .15, C.ink, C.cream);
+  boxStamp(ctx, '?', SAFE.r - 70, 380, 150, C.cream, lt, .25, 12);
 }
 // ---------- kapanış (son ~1.6 sn üstüne bindirilir) ----------
 function outro(ctx, lt) {
@@ -497,5 +497,32 @@ function rings(ctx, x, y, s) {
   ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
   [[-38, 0], [38, 0]].forEach(([dx, dy]) => { ctx.beginPath(); ctx.arc(dx, dy, 62, 0, 7); ctx.strokeStyle = C.ink; ctx.lineWidth = 26; ctx.stroke(); ctx.strokeStyle = C.gold; ctx.lineWidth = 16; ctx.stroke(); });
   shape(ctx, [[38, -62], [22, -92], [38, -112], [54, -92]], '#bfe3ef', C.ink, 4);
+  ctx.restore();
+}
+
+// ---------- AKSİYON yardımcıları (her sahnede hareket olmalı) ----------
+// Darbe sarsıntısı: sahne çiziminin başında çağır. at: sarsıntı anı (sn), amp: piksel
+function shake(ctx, lt, at, amp = 16, dur = .35) {
+  const p = (lt - at) / dur; if (p < 0 || p > 1) return;
+  const k = (1 - p) * amp; ctx.translate(Math.sin(lt * 90) * k, Math.cos(lt * 77) * k * .7);
+}
+// Kaydırma + yakınlaşma (Ken Burns). dx,dy: sahne boyunca toplam kayma
+function pan(ctx, lt, d, dx = 0, dy = 0, z0 = 1, z1 = 1.1, cx = W / 2, cy = 760) {
+  const e = eInOut(lt / d); const z = lerp(z0, z1, e);
+  ctx.translate(cx + dx * e, cy + dy * e); ctx.scale(z, z); ctx.translate(-cx, -cy);
+}
+// Yürüyen/ilerleyen birlik: n piyon, sürekli hareket (dir 1 sağa, -1 sola)
+function marching(ctx, lt, x0, y, n, color, dir = 1, speed = 90, s = 1.1, shield = null) {
+  for (let i = 0; i < n; i++) { const x = x0 + dir * (lt * speed) + i * 46 * -dir; const bob = Math.abs(Math.sin(lt * 9 + i)) * -6; pawn(ctx, x, y + bob + (i % 2) * 18, s, color, shield); }
+}
+// Toz/duman parçacıkları (sahneye canlılık katar)
+function dust(ctx, lt, x, y, n = 14, color = 'rgba(120,95,60,.35)') {
+  for (let i = 0; i < n; i++) { const t = (lt * .8 + i / n) % 1; const xx = x + (hash(i) - .5) * 160 + t * 60; const yy = y - t * 120; ctx.globalAlpha = (1 - t) * .9; ell(ctx, xx, yy, 10 + t * 30, 8 + t * 22, color, null); }
+  ctx.globalAlpha = 1;
+}
+// Ateş titremesi
+function fire(ctx, x, y, s, lt) {
+  ctx.save(); ctx.translate(x, y); ctx.scale(s, s);
+  for (let i = 0; i < 3; i++) { const h = 90 - i * 24 + Math.sin(lt * 14 + i) * 10; const w = 40 - i * 10; shape(ctx, [[-w, 0], [-w * .6, -h * .5], [0, -h], [w * .6, -h * .5], [w, 0]], ['#e2572b', '#f09a2a', '#f8d25a'][i], i ? null : C.ink, 4, 3); }
   ctx.restore();
 }

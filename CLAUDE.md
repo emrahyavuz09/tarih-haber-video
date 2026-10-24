@@ -8,7 +8,7 @@ Kullanıcı bilgisayarını açmaz: her şey bulutta, bağlayıcılarla (ElevenL
 - ElevenLabs sesi: **Cavit P. - Energetic, Dynamic, Fast-Paced** → `voice_id: lxZLq5dcyw12UangGJgN`, model `eleven_v4`
 - Metricool marka: `blogId: 7618441`, saat dilimi `Europe/Istanbul`
 - Video medya adresi: `https://raw.githubusercontent.com/emrahyavuz09/tarih-haber-video/media/videos/<klasör>.mp4`
-- Format: 1080x1920, 30 fps, 55–75 sn
+- Format: 1080x1920, 30 fps, 45–65 sn (sıkıştırılmış ses sonrası)
 
 ## Görsel üslup (değiştirme)
 Eski kâğıt dokusu, krem/kırmızı/koyu kahve palet, el çizimi titreyen çizgiler, basit karakterler (büst), haritalar,
@@ -31,7 +31,17 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
    Ağzı konuşurken bile oynatılmaz, alıntı balonu kullanılırsa sözü kelimesi kelimesine doğru ve kaynaklı olmalıdır.
    Osmanlı padişahları (`padisah()`), Türk hükümdarları ve şehitler onurlu çizilir. Türk milletini, devletini ya da kurucularını küçük düşüren
    espri, ifade ya da görsel yok. Tartışmalı siyasi konulara girilmez. Şüpheye düşersen daha saygılı olanı seç.
-6. Konu tekrarı yok: `topics.md` listesine bak. Dönemleri çeşitlendir (Hun, Göktürk, Selçuklu, Osmanlı, Cumhuriyet, dünya tarihi, ilginç olaylar).
+6. **TEMPO ve AKSİYON (çok önemli):** Video hızlı ve akıcı olmalı, dikkat hiç düşmemeli.
+   - **Hızlı giriş:** İlk karede hook yazısı zaten ekranda (gecikme yok). Hook cümlesi ≤ 2 sn, ikinci sahneye ~2. saniyede geç.
+     Metin selam/giriş cümlesiyle başlamaz, doğrudan olayın en çarpıcı anıyla başlar.
+   - **Boşluksuz ses:** Ses indirildikten sonra MUTLAKA `python3 engine/tighten.py episodes/<klasör>` çalıştır (sahneleri yazmadan ÖNCE):
+     kelime arası boşlukları kısaltır, sesi x1.08 hızlandırır ve `words.json`'u günceller. Metinde "..." en fazla 2 kez.
+   - **Her sahnede aksiyon:** Hiçbir sahne durağan değil; sahne boyunca en az bir şey sürekli hareket eder: dörtnala atlar (`horseArcher`),
+     yürüyen birlikler (`marching`), uçan oklar (`arrowShot`), çizilerek ilerleyen harita okları (`arrow` + `partial`), dalgalanan bayrak,
+     ateş (`fire`), toz (`dust`), düşen/dönen nesneler, kamera kayması (`pan`). Darbe anlarında (mühür, savaş, düşüş) `shake` kullan.
+     Sadece yazı/etiket belirmesi aksiyon sayılmaz.
+   - **Kısa sahneler:** Her sahne 1,8–4 sn → video başına 16–24 sahne. 1 sn'den uzun hareketsiz an olmaz.
+7. Konu tekrarı yok: `topics.md` listesine bak. Dönemleri çeşitlendir (Hun, Göktürk, Selçuklu, Osmanlı, Cumhuriyet, dünya tarihi, ilginç olaylar).
 
 ## Günlük adımlar
 0. **Hazırlık:** Depo `/home/claude/tarih-haber-video` altında değilse `add_repo` (emrahyavuz09/tarih-haber-video, push) ile ekle ve klonla.
@@ -39,7 +49,7 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
 1. **Konu:** `topics.md`'yi oku. Gerekirse WebSearch ile bugünün tarihine denk gelen olaylara ve Türk tarih kanallarında tutan konulara bak.
    Görsel olarak anlatılabilir (harita, savaş düzeni, karakterler), merak uyandıran bir konu seç. Klasör: `episodes/YYYY-MM-DD-kisa-ad/`.
 2. **Araştırma:** WebSearch/WebFetch ile en az 2 kaynak. Önemli bilgileri ve kaynak URL'lerini `notes.md`'ye yaz.
-3. **Metin:** `script.txt` (kurallar 1, 3, 4, 5).
+3. **Metin:** `script.txt` (kurallar 1, 3, 4, 5, 6).
 4. **Ses (ElevenLabs bağlayıcısı):** Önce `creative_generate_speech` ile `estimate_only: true` çağır. Kredi yetersizlik hatası dönerse DUR:
    video yayınlama, kullanıcıya "ElevenLabs kredin yetersiz, yükleme yap" bildirimi gönder. Tahmini krediyi `credits.md`'ye (tarih, kredi) ekle;
    bu dosyada `Aylık kota:` yazıyorsa ve ayın toplamı kotanın %80'ini geçtiyse özet mesajında uyar.
@@ -47,13 +57,14 @@ mühürler, yırtık kâğıt etiketler, kelime kelime altyazı (konuşulan keli
    → `creative_get_flow_run_status` ile tamamlanana kadar bekle → ilk okumanın `content_url`'ini `voice.mp3` olarak indir (curl).
    Aynı okumayı `creative_add_flow_asset_node` (generation_id) ile düğüme koy → `creative_transcribe_audio` (eleven_scribe_v1, connect_from)
    → bitince `words_download_url`'i `words.json` olarak indir. Üretimi asla yeniden deneme (kredi harcar).
+   Hemen ardından `python3 engine/tighten.py episodes/<klasör>` (kural 6).
 5. **Sahneler:** `scenes.js` yaz. `SCENES = [{s, e, draw(ctx, lt, d)}]`, `KEY = [...]` (BÜYÜK HARF anahtar kelimeler), `DURATION = son kelime bitişi + 2.2`,
-   `OUTRO_AT = DURATION - 1.6`. Sahne sınırlarını `words.json` zamanlarına göre koy; 12–16 sahne, her biri 2,5–7 sn.
+   `OUTRO_AT = DURATION - 1.6`. Sahne sınırlarını (sıkıştırılmış) `words.json` zamanlarına göre koy; 16–24 sahne, her biri 1,8–4 sn, her birinde sürekli aksiyon (kural 6).
    İlk sahne hookCard. Kütüphane (`engine/lib.js`): `bg, camera(sahne dosyasında tanımla), tag, bigText, stamp, boxStamp, bubble, pin, arrow,
    curvePts, shape, ell, line, pawn, sword, alparslan, diyojen (taçlı hükümdar şablonu), padisah, ataturk ({kalpak:true} Kurtuluş Savaşı), turkFlag, flagPole, crown, horseArcher, arrowShot, yurt, chainLink,
-   drawSea, drawLand, proj, ANATOLIA, THRACE, mountains, paperTex`. Yeni figür gerekiyorsa lib.js'e genel fonksiyon olarak ekle (sonraki günler de kullanır).
+   drawSea, drawLand, proj, ANATOLIA, THRACE, mountains, paperTex, shake, pan, marching, dust, fire, hookCard`. Yeni figür gerekiyorsa lib.js'e genel fonksiyon olarak ekle (sonraki günler de kullanır).
 6. **Kontrol:** `node engine/render.js episodes/<klasör> stills` → kareleri tek bir temas sayfasında birleştir (PIL) ve **Read ile bak**.
-   Taşma, üst üste binme, okunmayan yazı, boş sahne varsa düzelt ve tekrar bak. Temiz olana kadar yayına geçme.
+   Taşma, üst üste binme, okunmayan yazı, boş ya da durağan sahne varsa düzelt ve tekrar bak. Temiz olana kadar yayına geçme.
 7. **Video:** `bash engine/build.sh episodes/<klasör>` → `final.mp4`. Süreyi ve birkaç kareyi kontrol et.
 8. **Metinler (`meta.json`):**
    - `youtube`: `title` (≤ 70 karakter, merak + anahtar kelime), `description` (hook cümlesi, 2–3 cümle özet, 3–5 hashtag, en altta "Kaynaklar:" listesi), `tags` (8–15)
