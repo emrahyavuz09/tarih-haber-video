@@ -17,6 +17,7 @@
 | 2026-11-03 | Uluğ Bey ve Semerkant rasathanesi, yıldız kataloğu — sabah | üretildi, planlanmadı |
 | 2026-10-27 | Hezârfen Ahmed Çelebi'nin Galata'dan Üsküdar'a uçuşu (rivayet, tek kaynak Evliya Çelebi) — sabah | üretildi, planlanmadı |
 | 2026-10-30 | Dandanakan 1040 (Tuğrul ve Çağrı Beyler, Gazneli Mesud, kuyular, Büyük Selçuklu'nun doğuşu) — akşam | üretildi, planlanmadı |
+| 2026-11-03 | Çaldıran 1514 (Yavuz Sultan Selim, Şah İsmail, araba siperi, zincirli toplar, Tebriz) — akşam | üretildi, planlanmadı |
 
 ## Önceki sohbetlerde işlenen konular (tekrar etme)
 - Gemilerin karadan yürütülmesi (İstanbul'un fethi)

@@ -1,0 +1,844 @@
+{
+ "words": [
+  {
+   "text": "Topu",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.299
+  },
+  {
+   "text": "olmayan",
+   "type": "word",
+   "start": 0.374,
+   "end": 0.822
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 0.897,
+   "end": 0.972
+  },
+  {
+   "text": "ordu,",
+   "type": "word",
+   "start": 1.084,
+   "end": 1.458
+  },
+  {
+   "text": "toplara",
+   "type": "word",
+   "start": 1.523,
+   "end": 1.897
+  },
+  {
+   "text": "karşı",
+   "type": "word",
+   "start": 1.972,
+   "end": 2.271
+  },
+  {
+   "text": "hücuma",
+   "type": "word",
+   "start": 2.308,
+   "end": 2.645
+  },
+  {
+   "text": "kalktı!",
+   "type": "word",
+   "start": 2.72,
+   "end": 3.266
+  },
+  {
+   "text": "Bin",
+   "type": "word",
+   "start": 3.327,
+   "end": 3.477
+  },
+  {
+   "text": "beş",
+   "type": "word",
+   "start": 3.551,
+   "end": 3.701
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 3.776,
+   "end": 3.85
+  },
+  {
+   "text": "on",
+   "type": "word",
+   "start": 3.925,
+   "end": 4.0
+  },
+  {
+   "text": "dört.",
+   "type": "word",
+   "start": 4.075,
+   "end": 4.523
+  },
+  {
+   "text": "Yavuz",
+   "type": "word",
+   "start": 4.561,
+   "end": 4.822
+  },
+  {
+   "text": "Sultan",
+   "type": "word",
+   "start": 4.86,
+   "end": 5.196
+  },
+  {
+   "text": "Selim,",
+   "type": "word",
+   "start": 5.271,
+   "end": 5.645
+  },
+  {
+   "text": "ordusuyla",
+   "type": "word",
+   "start": 5.72,
+   "end": 6.243
+  },
+  {
+   "text": "doğuya,",
+   "type": "word",
+   "start": 6.318,
+   "end": 6.916
+  },
+  {
+   "text": "Safevi",
+   "type": "word",
+   "start": 6.991,
+   "end": 7.364
+  },
+  {
+   "text": "hükümdarı",
+   "type": "word",
+   "start": 7.402,
+   "end": 7.963
+  },
+  {
+   "text": "Şah",
+   "type": "word",
+   "start": 8.037,
+   "end": 8.187
+  },
+  {
+   "text": "İsmail'in",
+   "type": "word",
+   "start": 8.262,
+   "end": 8.86
+  },
+  {
+   "text": "üzerine",
+   "type": "word",
+   "start": 8.935,
+   "end": 9.308
+  },
+  {
+   "text": "yürüdü.",
+   "type": "word",
+   "start": 9.346,
+   "end": 9.757
+  },
+  {
+   "text": "Yol",
+   "type": "word",
+   "start": 9.85,
+   "end": 10.075
+  },
+  {
+   "text": "çok",
+   "type": "word",
+   "start": 10.15,
+   "end": 10.299
+  },
+  {
+   "text": "uzundu.",
+   "type": "word",
+   "start": 10.374,
+   "end": 10.822
+  },
+  {
+   "text": "Erzak",
+   "type": "word",
+   "start": 10.916,
+   "end": 11.29
+  },
+  {
+   "text": "azalmış,",
+   "type": "word",
+   "start": 11.364,
+   "end": 11.888
+  },
+  {
+   "text": "askerler",
+   "type": "word",
+   "start": 11.972,
+   "end": 12.495
+  },
+  {
+   "text": "yorgun",
+   "type": "word",
+   "start": 12.57,
+   "end": 12.869
+  },
+  {
+   "text": "düşmüştü.",
+   "type": "word",
+   "start": 12.944,
+   "end": 13.556
+  },
+  {
+   "text": "Yirmi",
+   "type": "word",
+   "start": 13.701,
+   "end": 13.888
+  },
+  {
+   "text": "üç",
+   "type": "word",
+   "start": 13.925,
+   "end": 14.037
+  },
+  {
+   "text": "Ağustos.",
+   "type": "word",
+   "start": 14.075,
+   "end": 14.673
+  },
+  {
+   "text": "Çaldıran",
+   "type": "word",
+   "start": 14.804,
+   "end": 15.252
+  },
+  {
+   "text": "Ovası.",
+   "type": "word",
+   "start": 15.29,
+   "end": 15.79
+  },
+  {
+   "text": "İki",
+   "type": "word",
+   "start": 15.85,
+   "end": 16.0
+  },
+  {
+   "text": "ordu",
+   "type": "word",
+   "start": 16.075,
+   "end": 16.374
+  },
+  {
+   "text": "karşı",
+   "type": "word",
+   "start": 16.449,
+   "end": 16.673
+  },
+  {
+   "text": "karşıya",
+   "type": "word",
+   "start": 16.748,
+   "end": 17.121
+  },
+  {
+   "text": "geldi.",
+   "type": "word",
+   "start": 17.196,
+   "end": 17.57
+  },
+  {
+   "text": "Yavuz",
+   "type": "word",
+   "start": 17.701,
+   "end": 18.075
+  },
+  {
+   "text": "ordusunu",
+   "type": "word",
+   "start": 18.15,
+   "end": 18.673
+  },
+  {
+   "text": "dikkatle",
+   "type": "word",
+   "start": 18.748,
+   "end": 19.196
+  },
+  {
+   "text": "dizdi.",
+   "type": "word",
+   "start": 19.271,
+   "end": 19.743
+  },
+  {
+   "text": "Merkezde",
+   "type": "word",
+   "start": 19.822,
+   "end": 20.271
+  },
+  {
+   "text": "yeniçeriler.",
+   "type": "word",
+   "start": 20.346,
+   "end": 21.098
+  },
+  {
+   "text": "Önlerinde",
+   "type": "word",
+   "start": 21.14,
+   "end": 21.664
+  },
+  {
+   "text": "arabalardan",
+   "type": "word",
+   "start": 21.813,
+   "end": 22.411
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 22.486,
+   "end": 22.561
+  },
+  {
+   "text": "duvar,",
+   "type": "word",
+   "start": 22.636,
+   "end": 23.145
+  },
+  {
+   "text": "arkasında",
+   "type": "word",
+   "start": 23.206,
+   "end": 23.804
+  },
+  {
+   "text": "birbirine",
+   "type": "word",
+   "start": 23.953,
+   "end": 24.327
+  },
+  {
+   "text": "zincirlenmiş",
+   "type": "word",
+   "start": 24.402,
+   "end": 25.075
+  },
+  {
+   "text": "toplar.",
+   "type": "word",
+   "start": 25.15,
+   "end": 25.678
+  },
+  {
+   "text": "Safevi",
+   "type": "word",
+   "start": 25.776,
+   "end": 26.15
+  },
+  {
+   "text": "ordusunun",
+   "type": "word",
+   "start": 26.224,
+   "end": 26.673
+  },
+  {
+   "text": "gücü,",
+   "type": "word",
+   "start": 26.748,
+   "end": 27.271
+  },
+  {
+   "text": "hızlı",
+   "type": "word",
+   "start": 27.308,
+   "end": 27.645
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 27.72,
+   "end": 27.794
+  },
+  {
+   "text": "cesur",
+   "type": "word",
+   "start": 27.944,
+   "end": 28.243
+  },
+  {
+   "text": "süvarileriydi.",
+   "type": "word",
+   "start": 28.28,
+   "end": 29.154
+  },
+  {
+   "text": "Ama",
+   "type": "word",
+   "start": 29.224,
+   "end": 29.374
+  },
+  {
+   "text": "topçusu",
+   "type": "word",
+   "start": 29.449,
+   "end": 29.822
+  },
+  {
+   "text": "yoktu.",
+   "type": "word",
+   "start": 29.897,
+   "end": 30.36
+  },
+  {
+   "text": "Savaş,",
+   "type": "word",
+   "start": 30.486,
+   "end": 31.009
+  },
+  {
+   "text": "Safevi",
+   "type": "word",
+   "start": 31.159,
+   "end": 31.383
+  },
+  {
+   "text": "süvarilerinin",
+   "type": "word",
+   "start": 31.458,
+   "end": 32.206
+  },
+  {
+   "text": "şiddetli",
+   "type": "word",
+   "start": 32.28,
+   "end": 32.729
+  },
+  {
+   "text": "hücumuyla",
+   "type": "word",
+   "start": 32.766,
+   "end": 33.252
+  },
+  {
+   "text": "başladı.",
+   "type": "word",
+   "start": 33.327,
+   "end": 33.776
+  },
+  {
+   "text": "Osmanlı",
+   "type": "word",
+   "start": 33.897,
+   "end": 34.346
+  },
+  {
+   "text": "sol",
+   "type": "word",
+   "start": 34.421,
+   "end": 34.57
+  },
+  {
+   "text": "kanadı",
+   "type": "word",
+   "start": 34.645,
+   "end": 35.019
+  },
+  {
+   "text": "ağır",
+   "type": "word",
+   "start": 35.168,
+   "end": 35.393
+  },
+  {
+   "text": "kayıplar",
+   "type": "word",
+   "start": 35.43,
+   "end": 35.841
+  },
+  {
+   "text": "verdi.",
+   "type": "word",
+   "start": 35.953,
+   "end": 36.313
+  },
+  {
+   "text": "Sonra",
+   "type": "word",
+   "start": 36.449,
+   "end": 36.748
+  },
+  {
+   "text": "toplar",
+   "type": "word",
+   "start": 36.822,
+   "end": 37.121
+  },
+  {
+   "text": "ateş",
+   "type": "word",
+   "start": 37.196,
+   "end": 37.421
+  },
+  {
+   "text": "açtı.",
+   "type": "word",
+   "start": 37.495,
+   "end": 37.902
+  },
+  {
+   "text": "Yeniçeri",
+   "type": "word",
+   "start": 37.972,
+   "end": 38.346
+  },
+  {
+   "text": "tüfekleri",
+   "type": "word",
+   "start": 38.421,
+   "end": 38.869
+  },
+  {
+   "text": "gürledi.",
+   "type": "word",
+   "start": 38.944,
+   "end": 39.528
+  },
+  {
+   "text": "Ova,",
+   "type": "word",
+   "start": 39.579,
+   "end": 39.953
+  },
+  {
+   "text": "barut",
+   "type": "word",
+   "start": 40.028,
+   "end": 40.252
+  },
+  {
+   "text": "dumanına",
+   "type": "word",
+   "start": 40.327,
+   "end": 40.701
+  },
+  {
+   "text": "büründü.",
+   "type": "word",
+   "start": 40.776,
+   "end": 41.238
+  },
+  {
+   "text": "Süvari",
+   "type": "word",
+   "start": 41.374,
+   "end": 41.748
+  },
+  {
+   "text": "dalgaları",
+   "type": "word",
+   "start": 41.785,
+   "end": 42.271
+  },
+  {
+   "text": "birer",
+   "type": "word",
+   "start": 42.421,
+   "end": 42.72
+  },
+  {
+   "text": "birer",
+   "type": "word",
+   "start": 42.794,
+   "end": 43.019
+  },
+  {
+   "text": "dağıldı.",
+   "type": "word",
+   "start": 43.093,
+   "end": 43.682
+  },
+  {
+   "text": "Şah",
+   "type": "word",
+   "start": 43.757,
+   "end": 43.981
+  },
+  {
+   "text": "İsmail",
+   "type": "word",
+   "start": 44.019,
+   "end": 44.43
+  },
+  {
+   "text": "yaralandı",
+   "type": "word",
+   "start": 44.505,
+   "end": 45.103
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 45.252,
+   "end": 45.327
+  },
+  {
+   "text": "savaş",
+   "type": "word",
+   "start": 45.477,
+   "end": 45.701
+  },
+  {
+   "text": "alanından",
+   "type": "word",
+   "start": 45.776,
+   "end": 46.224
+  },
+  {
+   "text": "çekildi.",
+   "type": "word",
+   "start": 46.299,
+   "end": 46.818
+  },
+  {
+   "text": "Safevi",
+   "type": "word",
+   "start": 46.953,
+   "end": 47.327
+  },
+  {
+   "text": "ordusu",
+   "type": "word",
+   "start": 47.439,
+   "end": 47.701
+  },
+  {
+   "text": "dağıldı,",
+   "type": "word",
+   "start": 47.776,
+   "end": 48.378
+  },
+  {
+   "text": "kampı",
+   "type": "word",
+   "start": 48.439,
+   "end": 48.738
+  },
+  {
+   "text": "ve",
+   "type": "word",
+   "start": 48.813,
+   "end": 48.888
+  },
+  {
+   "text": "hazinesi",
+   "type": "word",
+   "start": 48.963,
+   "end": 49.561
+  },
+  {
+   "text": "Osmanlı'nın",
+   "type": "word",
+   "start": 49.71,
+   "end": 50.308
+  },
+  {
+   "text": "eline",
+   "type": "word",
+   "start": 50.383,
+   "end": 50.682
+  },
+  {
+   "text": "geçti.",
+   "type": "word",
+   "start": 50.757,
+   "end": 51.178
+  },
+  {
+   "text": "Eylül",
+   "type": "word",
+   "start": 51.252,
+   "end": 51.477
+  },
+  {
+   "text": "başında",
+   "type": "word",
+   "start": 51.551,
+   "end": 51.925
+  },
+  {
+   "text": "Yavuz,",
+   "type": "word",
+   "start": 52.0,
+   "end": 52.523
+  },
+  {
+   "text": "Safevi",
+   "type": "word",
+   "start": 52.598,
+   "end": 52.972
+  },
+  {
+   "text": "başkenti",
+   "type": "word",
+   "start": 53.047,
+   "end": 53.495
+  },
+  {
+   "text": "Tebriz'e",
+   "type": "word",
+   "start": 53.57,
+   "end": 54.019
+  },
+  {
+   "text": "girdi.",
+   "type": "word",
+   "start": 54.056,
+   "end": 54.477
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 54.551,
+   "end": 54.626
+  },
+  {
+   "text": "zaferle",
+   "type": "word",
+   "start": 54.701,
+   "end": 55.224
+  },
+  {
+   "text": "Doğu",
+   "type": "word",
+   "start": 55.374,
+   "end": 55.523
+  },
+  {
+   "text": "Anadolu'nun",
+   "type": "word",
+   "start": 55.598,
+   "end": 56.121
+  },
+  {
+   "text": "büyük",
+   "type": "word",
+   "start": 56.196,
+   "end": 56.421
+  },
+  {
+   "text": "kısmı",
+   "type": "word",
+   "start": 56.495,
+   "end": 56.794
+  },
+  {
+   "text": "Osmanlı'ya",
+   "type": "word",
+   "start": 56.944,
+   "end": 57.467
+  },
+  {
+   "text": "geçti.",
+   "type": "word",
+   "start": 57.542,
+   "end": 57.972
+  },
+  {
+   "text": "Tebriz'den",
+   "type": "word",
+   "start": 58.047,
+   "end": 58.495
+  },
+  {
+   "text": "gelen",
+   "type": "word",
+   "start": 58.57,
+   "end": 58.794
+  },
+  {
+   "text": "ipek",
+   "type": "word",
+   "start": 58.869,
+   "end": 59.168
+  },
+  {
+   "text": "yolları",
+   "type": "word",
+   "start": 59.206,
+   "end": 59.542
+  },
+  {
+   "text": "da",
+   "type": "word",
+   "start": 59.617,
+   "end": 59.692
+  },
+  {
+   "text": "Osmanlı",
+   "type": "word",
+   "start": 59.916,
+   "end": 60.29
+  },
+  {
+   "text": "denetimine",
+   "type": "word",
+   "start": 60.364,
+   "end": 60.813
+  },
+  {
+   "text": "girdi.",
+   "type": "word",
+   "start": 60.85,
+   "end": 61.257
+  },
+  {
+   "text": "Tek",
+   "type": "word",
+   "start": 61.299,
+   "end": 61.523
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 61.598,
+   "end": 61.673
+  },
+  {
+   "text": "günde...",
+   "type": "word",
+   "start": 61.748,
+   "end": 62.285
+  },
+  {
+   "text": "barut,",
+   "type": "word",
+   "start": 62.393,
+   "end": 62.878
+  },
+  {
+   "text": "doğunun",
+   "type": "word",
+   "start": 62.991,
+   "end": 63.364
+  },
+  {
+   "text": "kaderini",
+   "type": "word",
+   "start": 63.439,
+   "end": 63.813
+  },
+  {
+   "text": "değiştirdi.",
+   "type": "word",
+   "start": 63.888,
+   "end": 64.579
+  }
+ ]
+}
