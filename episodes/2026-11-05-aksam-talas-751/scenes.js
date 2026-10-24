@@ -206,8 +206,35 @@ function quill(ctx, x, y, s, rot) {
 
 const SCENES = [
   { s: 0, e: 2.55, draw(ctx, lt, d) { // HOOK
-    ctx.save(); hookCard(ctx, lt, d, 'Bir savaş, kâğıdı dünyaya mı yaydı?', 'TALAS 751'); ctx.restore();
-    for (let i = 0; i < 4; i++) { const k = (lt * .45 + i / 4) % 1; paperSheet(ctx, 180 + i * 200 + Math.sin(lt * 2 + i) * 30, 1170 + k * 150, 120, 150, Math.sin(lt * 2.5 + i) * .6, 4); }
+    // AÇILIŞ (scroll): gün batımında karşı karşıya iki ordu, rüzgârda uçuşan kâğıtlar, üstte açılan parşömen
+    ctx.save(); shake(ctx, lt, 0, 22, .4);
+    const z = lt < .4 ? lerp(1.22, 1.03, eOut(lt / .4)) : lerp(1.03, 1.0, (lt - .4) / (d - .4));
+    ctx.translate(W / 2, 1000); ctx.scale(z, z); ctx.translate(-W / 2, -1000);
+    ground(ctx, lt * 3, { sun: true, sunX: 540, sunY: 960, top: '#c8693a', bot: '#f2c27a', ground: '#8a6a3e' });
+    ctx.save(); ctx.filter = 'brightness(0.32) saturate(0.6)';
+    banner(ctx, 130, 1160, 250, lt, TANGC, 100); banner(ctx, 870, 1160, 250, lt + 1, ABBC, -100);
+    for (let i = 0; i < 4; i++) soldier(ctx, 110 + i * 70 + lt * 22, 1190 + (i % 2) * 12, 1.05, 'tang', lt * 9 + i, { dir: 1, shield: '#8b3a22' });
+    for (let i = 0; i < 4; i++) soldier(ctx, 890 - i * 70 - lt * 22, 1190 + (i % 2) * 12, 1.05, 'abb', lt * 9 + i + 2, { dir: -1, shield: '#2b2522' });
+    for (let i = 0; i < 4; i++) soldier(ctx, 80 + i * 88 + lt * 30, 1310 + (i % 2) * 10, 1.35, 'tang', lt * 9 + i * 1.3, { dir: 1 });
+    for (let i = 0; i < 4; i++) soldier(ctx, 920 - i * 88 - lt * 30, 1310 + (i % 2) * 10, 1.35, 'abb', lt * 9 + i * 1.3 + 1, { dir: -1 });
+    ctx.restore();
+    dust(ctx, lt, 260, 1330, 10, 'rgba(90,60,30,.35)'); dust(ctx, lt + .5, 760, 1320, 10, 'rgba(90,60,30,.35)');
+    // rüzgâr çizgileri
+    for (let i = 0; i < 9; i++) { const k = (lt * 1.6 + i / 9) % 1; const yy = 640 + hash(i + 4) * 560; const xx = 1150 - k * 1500; ctx.globalAlpha = .55 * Math.sin(k * Math.PI); line(ctx, [[xx, yy], [xx + 160, yy - 18]], '#fff4dc', 4, .3); }
+    ctx.globalAlpha = 1;
+    // uçuşan kâğıt yaprakları (sağdan sola, dönerek)
+    for (let i = 0; i < 8; i++) { const sp = .32 + hash(i + 11) * .25; const k = (lt * sp + hash(i) ) % 1; const x = 1150 - k * 1450; const y = 680 + hash(i + 2) * 520 + Math.sin(lt * 3 + i * 2) * 50 - k * 120;
+      const sz = .7 + hash(i + 7) * .6; paperSheet(ctx, x, y, 110 * sz, 140 * sz, lt * (2 + i % 3) * (i % 2 ? 1 : -1) + i, 4); }
+    // ilk anda kameraya çarpan büyük yaprak
+    if (lt < .7) { const k = eOut(lt / .7); paperSheet(ctx, lerp(760, -320, k), lerp(980, 820, k), 260, 330, -.3 - k * 2.2, 6); }
+    ctx.restore();
+    // parşömen şerit (yazının zemini)
+    ctx.save(); ctx.setTransform(1, 0, 0, 1, 0, 0);
+    const op = eOut(clamp((lt + .6) / .5)), half = 440 * op, py0 = 268, py1 = 600;
+    shape(ctx, [[500 - half, py0], [500 + half, py0], [500 + half, py1], [500 - half, py1]], '#f3e6c4', C.ink, 6, 1.2);
+    for (const sx of [500 - half, 500 + half]) { shape(ctx, [[sx - 22, py0 - 22], [sx + 22, py0 - 22], [sx + 22, py1 + 22], [sx - 22, py1 + 22]], '#b88a52', C.ink, 5, .8); line(ctx, [[sx - 8, py0 - 10], [sx - 8, py1 + 10]], 'rgba(255,240,210,.5)', 4, .3); }
+    ctx.restore();
+    hookText(ctx, lt + .6, 'Bir savaş, kâğıdı dünyaya mı yaydı?', { style: 'scroll', key: 'KÂĞIDI', y: 434, accent: C.red, size: 84 });
   } },
   { s: 2.55, e: 5.75, draw(ctx, lt, d) { // 751, Orta Asya, Talas Irmağı
     camera(ctx, lt, d, 1, 1.12, ...PA(71.4, 42.9)); caMap(ctx, lt);
