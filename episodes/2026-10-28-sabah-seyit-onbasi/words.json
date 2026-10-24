@@ -1,0 +1,628 @@
+{
+ "words": [
+  {
+   "text": "Dev",
+   "type": "word",
+   "start": 0.0,
+   "end": 0.231
+  },
+  {
+   "text": "top",
+   "type": "word",
+   "start": 0.308,
+   "end": 0.462
+  },
+  {
+   "text": "mermisini...",
+   "type": "word",
+   "start": 0.538,
+   "end": 1.471
+  },
+  {
+   "text": "sırtında",
+   "type": "word",
+   "start": 1.51,
+   "end": 1.933
+  },
+  {
+   "text": "taşıdı!",
+   "type": "word",
+   "start": 2.01,
+   "end": 2.394
+  },
+  {
+   "text": "On",
+   "type": "word",
+   "start": 2.548,
+   "end": 2.625
+  },
+  {
+   "text": "sekiz",
+   "type": "word",
+   "start": 2.702,
+   "end": 2.933
+  },
+  {
+   "text": "Mart,",
+   "type": "word",
+   "start": 3.087,
+   "end": 3.471
+  },
+  {
+   "text": "bin",
+   "type": "word",
+   "start": 3.51,
+   "end": 3.548
+  },
+  {
+   "text": "dokuz",
+   "type": "word",
+   "start": 3.625,
+   "end": 3.856
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 3.933,
+   "end": 4.01
+  },
+  {
+   "text": "on",
+   "type": "word",
+   "start": 4.163,
+   "end": 4.202
+  },
+  {
+   "text": "beş.",
+   "type": "word",
+   "start": 4.24,
+   "end": 4.683
+  },
+  {
+   "text": "Çanakkale",
+   "type": "word",
+   "start": 4.721,
+   "end": 5.144
+  },
+  {
+   "text": "Boğazı.",
+   "type": "word",
+   "start": 5.221,
+   "end": 5.683
+  },
+  {
+   "text": "Düşman",
+   "type": "word",
+   "start": 5.827,
+   "end": 6.135
+  },
+  {
+   "text": "donanması,",
+   "type": "word",
+   "start": 6.212,
+   "end": 6.904
+  },
+  {
+   "text": "Rumeli",
+   "type": "word",
+   "start": 6.981,
+   "end": 7.288
+  },
+  {
+   "text": "Mecidiye",
+   "type": "word",
+   "start": 7.365,
+   "end": 7.75
+  },
+  {
+   "text": "Tabyası'nı",
+   "type": "word",
+   "start": 7.827,
+   "end": 8.327
+  },
+  {
+   "text": "ateşe",
+   "type": "word",
+   "start": 8.365,
+   "end": 8.75
+  },
+  {
+   "text": "boğar.",
+   "type": "word",
+   "start": 8.788,
+   "end": 9.255
+  },
+  {
+   "text": "Topun",
+   "type": "word",
+   "start": 9.308,
+   "end": 9.615
+  },
+  {
+   "text": "mermi",
+   "type": "word",
+   "start": 9.692,
+   "end": 10.0
+  },
+  {
+   "text": "vinci",
+   "type": "word",
+   "start": 10.115,
+   "end": 10.308
+  },
+  {
+   "text": "bozulur.",
+   "type": "word",
+   "start": 10.385,
+   "end": 10.846
+  },
+  {
+   "text": "Arkadaşlarının",
+   "type": "word",
+   "start": 10.952,
+   "end": 11.721
+  },
+  {
+   "text": "çoğu",
+   "type": "word",
+   "start": 11.798,
+   "end": 12.106
+  },
+  {
+   "text": "yaralıdır.",
+   "type": "word",
+   "start": 12.183,
+   "end": 12.774
+  },
+  {
+   "text": "Topçu",
+   "type": "word",
+   "start": 12.827,
+   "end": 13.135
+  },
+  {
+   "text": "eri",
+   "type": "word",
+   "start": 13.25,
+   "end": 13.365
+  },
+  {
+   "text": "Seyit,",
+   "type": "word",
+   "start": 13.442,
+   "end": 13.904
+  },
+  {
+   "text": "dev",
+   "type": "word",
+   "start": 14.019,
+   "end": 14.135
+  },
+  {
+   "text": "mermiyi",
+   "type": "word",
+   "start": 14.25,
+   "end": 14.519
+  },
+  {
+   "text": "sırtlanır.",
+   "type": "word",
+   "start": 14.596,
+   "end": 15.255
+  },
+  {
+   "text": "Kaynaklarda",
+   "type": "word",
+   "start": 15.317,
+   "end": 16.01
+  },
+  {
+   "text": "ağırlığı",
+   "type": "word",
+   "start": 16.087,
+   "end": 16.548
+  },
+  {
+   "text": "iki",
+   "type": "word",
+   "start": 16.625,
+   "end": 16.856
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 16.894,
+   "end": 17.01
+  },
+  {
+   "text": "on",
+   "type": "word",
+   "start": 17.087,
+   "end": 17.163
+  },
+  {
+   "text": "beş",
+   "type": "word",
+   "start": 17.202,
+   "end": 17.317
+  },
+  {
+   "text": "okka,",
+   "type": "word",
+   "start": 17.394,
+   "end": 17.933
+  },
+  {
+   "text": "yani",
+   "type": "word",
+   "start": 18.036,
+   "end": 18.24
+  },
+  {
+   "text": "yaklaşık",
+   "type": "word",
+   "start": 18.394,
+   "end": 18.856
+  },
+  {
+   "text": "iki",
+   "type": "word",
+   "start": 18.933,
+   "end": 19.087
+  },
+  {
+   "text": "yüz",
+   "type": "word",
+   "start": 19.163,
+   "end": 19.24
+  },
+  {
+   "text": "yetmiş",
+   "type": "word",
+   "start": 19.317,
+   "end": 19.548
+  },
+  {
+   "text": "altı",
+   "type": "word",
+   "start": 19.625,
+   "end": 19.779
+  },
+  {
+   "text": "kilo",
+   "type": "word",
+   "start": 19.856,
+   "end": 20.01
+  },
+  {
+   "text": "olarak",
+   "type": "word",
+   "start": 20.087,
+   "end": 20.394
+  },
+  {
+   "text": "geçer.",
+   "type": "word",
+   "start": 20.471,
+   "end": 20.856
+  },
+  {
+   "text": "Mermi",
+   "type": "word",
+   "start": 20.971,
+   "end": 21.356
+  },
+  {
+   "text": "namluya",
+   "type": "word",
+   "start": 21.433,
+   "end": 21.817
+  },
+  {
+   "text": "sürülür.",
+   "type": "word",
+   "start": 21.894,
+   "end": 22.38
+  },
+  {
+   "text": "Top",
+   "type": "word",
+   "start": 22.462,
+   "end": 22.692
+  },
+  {
+   "text": "yeniden",
+   "type": "word",
+   "start": 22.846,
+   "end": 23.231
+  },
+  {
+   "text": "gürler!",
+   "type": "word",
+   "start": 23.308,
+   "end": 23.812
+  },
+  {
+   "text": "Rivayete",
+   "type": "word",
+   "start": 23.894,
+   "end": 24.356
+  },
+  {
+   "text": "göre",
+   "type": "word",
+   "start": 24.433,
+   "end": 24.663
+  },
+  {
+   "text": "bu",
+   "type": "word",
+   "start": 24.74,
+   "end": 24.817
+  },
+  {
+   "text": "atışlardan",
+   "type": "word",
+   "start": 24.894,
+   "end": 25.433
+  },
+  {
+   "text": "biri,",
+   "type": "word",
+   "start": 25.51,
+   "end": 25.894
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 25.971,
+   "end": 26.048
+  },
+  {
+   "text": "İngiliz",
+   "type": "word",
+   "start": 26.202,
+   "end": 26.51
+  },
+  {
+   "text": "zırhlısını",
+   "type": "word",
+   "start": 26.587,
+   "end": 27.048
+  },
+  {
+   "text": "vurdu.",
+   "type": "word",
+   "start": 27.125,
+   "end": 27.524
+  },
+  {
+   "text": "O",
+   "type": "word",
+   "start": 27.587,
+   "end": 27.663
+  },
+  {
+   "text": "gün",
+   "type": "word",
+   "start": 27.74,
+   "end": 27.817
+  },
+  {
+   "text": "düşman,",
+   "type": "word",
+   "start": 27.894,
+   "end": 28.51
+  },
+  {
+   "text": "Boğaz'da",
+   "type": "word",
+   "start": 28.587,
+   "end": 28.971
+  },
+  {
+   "text": "üç",
+   "type": "word",
+   "start": 29.125,
+   "end": 29.24
+  },
+  {
+   "text": "savaş",
+   "type": "word",
+   "start": 29.279,
+   "end": 29.587
+  },
+  {
+   "text": "gemisini",
+   "type": "word",
+   "start": 29.663,
+   "end": 29.971
+  },
+  {
+   "text": "kaybetti.",
+   "type": "word",
+   "start": 30.048,
+   "end": 30.587
+  },
+  {
+   "text": "Bu",
+   "type": "word",
+   "start": 30.75,
+   "end": 30.827
+  },
+  {
+   "text": "kahramanlıkla",
+   "type": "word",
+   "start": 30.904,
+   "end": 31.596
+  },
+  {
+   "text": "onbaşılığa",
+   "type": "word",
+   "start": 31.75,
+   "end": 32.288
+  },
+  {
+   "text": "yükseldi,",
+   "type": "word",
+   "start": 32.365,
+   "end": 33.038
+  },
+  {
+   "text": "adı",
+   "type": "word",
+   "start": 33.115,
+   "end": 33.346
+  },
+  {
+   "text": "Koca",
+   "type": "word",
+   "start": 33.5,
+   "end": 33.731
+  },
+  {
+   "text": "Seyit",
+   "type": "word",
+   "start": 33.808,
+   "end": 34.038
+  },
+  {
+   "text": "diye",
+   "type": "word",
+   "start": 34.115,
+   "end": 34.269
+  },
+  {
+   "text": "anıldı.",
+   "type": "word",
+   "start": 34.346,
+   "end": 34.803
+  },
+  {
+   "text": "Savaştan",
+   "type": "word",
+   "start": 34.894,
+   "end": 35.356
+  },
+  {
+   "text": "sonra",
+   "type": "word",
+   "start": 35.433,
+   "end": 35.74
+  },
+  {
+   "text": "Seyit'ten",
+   "type": "word",
+   "start": 35.894,
+   "end": 36.356
+  },
+  {
+   "text": "mermiyi",
+   "type": "word",
+   "start": 36.433,
+   "end": 36.817
+  },
+  {
+   "text": "yeniden",
+   "type": "word",
+   "start": 36.894,
+   "end": 37.279
+  },
+  {
+   "text": "kaldırması",
+   "type": "word",
+   "start": 37.317,
+   "end": 37.817
+  },
+  {
+   "text": "istendi.",
+   "type": "word",
+   "start": 37.933,
+   "end": 38.428
+  },
+  {
+   "text": "Kaldıramadı.",
+   "type": "word",
+   "start": 38.49,
+   "end": 39.183
+  },
+  {
+   "text": "Fotoğrafı",
+   "type": "word",
+   "start": 39.279,
+   "end": 39.894
+  },
+  {
+   "text": "tahta",
+   "type": "word",
+   "start": 40.048,
+   "end": 40.356
+  },
+  {
+   "text": "bir",
+   "type": "word",
+   "start": 40.433,
+   "end": 40.51
+  },
+  {
+   "text": "mermiyle",
+   "type": "word",
+   "start": 40.587,
+   "end": 40.971
+  },
+  {
+   "text": "çekildi.",
+   "type": "word",
+   "start": 41.048,
+   "end": 41.51
+  },
+  {
+   "text": "Çanakkale",
+   "type": "word",
+   "start": 41.654,
+   "end": 42.192
+  },
+  {
+   "text": "geçilmedi.",
+   "type": "word",
+   "start": 42.269,
+   "end": 42.909
+  },
+  {
+   "text": "Çünkü",
+   "type": "word",
+   "start": 42.99,
+   "end": 43.298
+  },
+  {
+   "text": "orada,",
+   "type": "word",
+   "start": 43.375,
+   "end": 43.913
+  },
+  {
+   "text": "Seyit",
+   "type": "word",
+   "start": 44.067,
+   "end": 44.375
+  },
+  {
+   "text": "gibi",
+   "type": "word",
+   "start": 44.413,
+   "end": 44.606
+  },
+  {
+   "text": "kahramanlar",
+   "type": "word",
+   "start": 44.683,
+   "end": 45.221
+  },
+  {
+   "text": "vardı!",
+   "type": "word",
+   "start": 45.298,
+   "end": 45.846
+  }
+ ]
+}
