@@ -1,0 +1,29 @@
+(async()=>{const I=__I__;const S=ms=>new Promise(r=>setTimeout(r,ms));
+HTMLMediaElement.prototype.play=function(){this.muted=true;return Promise.resolve()};
+const PG='296c266345a812c2b52383e7483a5c797badd361';
+const get=(path)=>new Promise((res,rej)=>{const h=e=>{if(!e.data||(!e.data.__th&&!e.data.__thj))return;removeEventListener('message',h);fr.remove();if(e.data.err)rej(e.data.err);else if(e.data.__thj)res(e.data.t);else res(new File([e.data.buf],path.split('/').pop(),{type:'video/mp4'}))};addEventListener('message',h);const fr=document.createElement('iframe');fr.style.display='none';fr.src=`https://raw.githack.com/emrahyavuz09/tarih-haber-video/${PG}/index.html?`+(path.endsWith('.json')?'u=':'p=')+encodeURIComponent(path);document.body.appendChild(fr);setTimeout(()=>rej('timeout'),90000)});
+const st=window.__st=[];try{
+const J=JSON.parse(await get('996eb10fe6c0816243b6ad33141069a689d5c8fe/jobs.json'));const x=J[I];window.__x=x;
+const fp=get(x.path);
+let cb;for(let k=0;k<30&&!(cb=document.querySelector('[role=combobox]'));k++)await S(400);
+cb.click();await S(800);
+const opt=[...document.querySelectorAll('[role=option],[role=checkbox],[role=menuitemcheckbox],[aria-checked]')].find(o=>/tarihhaber/.test(o.innerText||o.getAttribute('aria-label')||''));
+if(opt&&opt.getAttribute('aria-checked')!=='false'&&opt.getAttribute('aria-selected')!=='false'){opt.click();await S(600);}
+document.body.click();await S(500);
+st.push('acct '+cb.innerText.trim());
+if(/tarihhaber/.test(cb.innerText))throw new Error('IG still selected');
+let file=await fp;st.push('file '+file.size);
+const oc=HTMLInputElement.prototype.click;HTMLInputElement.prototype.click=function(){if(this.type==='file'&&file){const f=file;file=null;const el=this;setTimeout(()=>{const dt=new DataTransfer();dt.items.add(f);el.files=dt.files;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}))},50);return}return oc.call(this)};
+[...document.querySelectorAll('[role=button],button')].find(b=>b.innerText.trim()==='Video Ekle').click();
+for(let k=0;k<120&&!/%100/.test(document.body.innerText);k++)await S(1000);
+st.push(/%100/.test(document.body.innerText)?'upload100':'UPLOAD NOT DONE');
+window.__clip=async()=>{const ed=document.querySelector('[contenteditable=true]');ed.focus();const r=await Promise.race([navigator.clipboard.writeText(__x.fb).then(()=>'ok'),S(4000).then(()=>'TO')]);if(r!=='ok')throw new Error('clip '+r);ed.focus();return 'clip ok'};
+window.__fin=async()=>{const ed=document.querySelector('[contenteditable=true]');const t=ed.innerText.trim(),c=__x.fb.trim();if(t.slice(0,25)!==c.slice(0,25)||!t.endsWith('yansıtmayabilir.'))throw new Error('MISMATCH '+t.slice(0,40));ed.blur();
+ const btn=t=>[...document.querySelectorAll('[role=button],button')].filter(b=>b.innerText.trim()===t&&b.offsetParent).pop();btn('İleri').click();await S(2500);btn('İleri').click();await S(2500);
+ [...document.querySelectorAll('[role=button],button')].filter(b=>b.innerText.trim()==='Planla'&&b.offsetParent)[0].click();await S(1500);
+ const spin=(el,tg)=>{el.focus();for(let k=0;k<80;k++){const v=parseInt(el.getAttribute('aria-valuenow'));if(v===tg)return true;const key=v<tg?'ArrowUp':'ArrowDown';el.dispatchEvent(new KeyboardEvent('keydown',{key,code:key,keyCode:key==='ArrowUp'?38:40,bubbles:true,cancelable:true}))}return false};
+ const sp=[...document.querySelectorAll('[role=spinbutton]')];const [h,m]=__x.fb_time.split(':').map(Number);spin(sp[0],h);spin(sp[1],m);
+ const d=[...document.querySelectorAll('input')].find(i=>i.placeholder==='gg.aa.yyyy');d.focus();d.select();return 'date focused; spin '+sp.map(s=>s.getAttribute('aria-valuenow')).join(':')};
+window.__go=async()=>{const d=[...document.querySelectorAll('input')].find(i=>i.placeholder==='gg.aa.yyyy').value;const sp=[...document.querySelectorAll('[role=spinbutton]')].map(s=>s.getAttribute('aria-valuenow')).join(':');const mon=__x.date.slice(5,7)==='10'?'Ekim':'Kasım';const want=parseInt(__x.date.slice(8))+' '+mon+' 2026';const ws=__x.fb_time.split(':').map(Number).join(':');if(d!==want||sp!==ws)throw new Error('MISMATCH '+d+' '+sp+' want '+want+' '+ws);
+ const b=[...document.querySelectorAll('[role=button],button')].filter(b=>b.innerText.trim()==='Planla'&&b.offsetParent).pop();b.click();for(let k=0;k<20&&!document.querySelector('[role=dialog]');k++)await S(500);return document.querySelector('[role=dialog]')?.innerText.replace(/\s+/g,' ').slice(0,140)};
+st.push('READY');}catch(e){st.push('ERR '+e)}})();'started'
