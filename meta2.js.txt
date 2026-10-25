@@ -1,0 +1,24 @@
+(async()=>{const I=__I__;const S=ms=>new Promise(r=>setTimeout(r,ms));
+HTMLMediaElement.prototype.play=function(){this.muted=true;return Promise.resolve()};
+const PG='296c266345a812c2b52383e7483a5c797badd361';
+const get=(path)=>new Promise((res,rej)=>{const h=e=>{if(!e.data||(!e.data.__th&&!e.data.__thj))return;removeEventListener('message',h);fr.remove();if(e.data.err)rej(e.data.err);else if(e.data.__thj)res(e.data.t);else res(new File([e.data.buf],path.split('/').pop(),{type:'video/mp4'}))};addEventListener('message',h);const fr=document.createElement('iframe');fr.style.display='none';fr.src=`https://raw.githack.com/emrahyavuz09/tarih-haber-video/${PG}/index.html?`+(path.endsWith('.json')?'u=':'p=')+encodeURIComponent(path);document.body.appendChild(fr);setTimeout(()=>rej('timeout'),90000)});
+const st=window.__st=[];try{
+const J=JSON.parse(await get('996eb10fe6c0816243b6ad33141069a689d5c8fe/jobs.json'));const x=J[I];window.__x=x;
+let file=await get(x.path);st.push('file '+file.size);
+const oc=HTMLInputElement.prototype.click;HTMLInputElement.prototype.click=function(){if(this.type==='file'&&file){const f=file;file=null;const el=this;setTimeout(()=>{const dt=new DataTransfer();dt.items.add(f);el.files=dt.files;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}))},50);return}return oc.call(this)};
+let vb;for(let k=0;k<20&&!(vb=[...document.querySelectorAll('[role=button],button')].find(b=>b.innerText.trim()==='Video Ekle'));k++)await S(500);
+vb.click();
+for(let k=0;k<120&&!/%100/.test(document.body.innerText);k++)await S(1000);
+st.push(/%100/.test(document.body.innerText)?'upload100':'UPLOAD NOT DONE');
+const sw=document.querySelector('input[type=checkbox][aria-label^="Gönderiyi Facebook ve Instagram"]');if(!sw.checked)sw.click();await S(1500);
+document.querySelector('[role=tab][aria-label="Facebook"]').click();await S(900);
+window.__ed=()=>document.querySelector('[contenteditable=true]');
+window.__prep=async(which)=>{document.querySelector('[role=tab][aria-label="'+(which==='fb'?'Facebook':'Instagram')+'"]').click();await S(900);const ed=__ed();ed.focus();await Promise.race([navigator.clipboard.writeText(__x[which]),S(4000)]);return 'prep '+which+' '+ed.innerText.trim().length};
+window.__chk=(which)=>{const t=__ed().innerText.trim(),c=__x[which].trim();if(t.slice(0,25)!==c.slice(0,25)||!t.endsWith('yansıtmayabilir.'))throw new Error('PASTE MISMATCH '+which+': '+t.slice(0,50));return which+' ok '+t.length};
+window.__next=async()=>{const btn=t=>[...document.querySelectorAll('[role=button],button')].filter(b=>b.innerText.trim()===t&&b.offsetParent).pop();btn('İleri').click();await S(2500);btn('İleri').click();await S(2500);btn('Planla').click();await S(1500);
+ const spin=(el,tg)=>{el.focus();for(let k=0;k<80;k++){const v=parseInt(el.getAttribute('aria-valuenow'));if(v===tg)return true;const key=v<tg?'ArrowUp':'ArrowDown';el.dispatchEvent(new KeyboardEvent('keydown',{key,code:key,keyCode:key==='ArrowUp'?38:40,bubbles:true,cancelable:true}))}return false};
+ const sp=[...document.querySelectorAll('[role=spinbutton]')];const [fh,fm]=__x.fb_time.split(':').map(Number),[ih,im]=__x.ig_time.split(':').map(Number);
+ return 'spin '+[spin(sp[0],fh),spin(sp[1],fm),spin(sp[2],ih),spin(sp[3],im)].join(',')};
+window.__date=(k)=>{const d=[...document.querySelectorAll('input')].filter(i=>i.placeholder==='gg.aa.yyyy')[k];d.focus();d.select();return 'focused date '+k};
+window.__final=()=>{const d=[...document.querySelectorAll('input')].filter(i=>i.placeholder==='gg.aa.yyyy').map(i=>i.value);const sp=[...document.querySelectorAll('[role=spinbutton]')].map(s=>s.getAttribute('aria-valuenow')).join(',');const mon=__x.date.slice(5,7)==='10'?'Ekim':'Kasım';const want=parseInt(__x.date.slice(8))+' '+mon+' 2026';const ws=[...__x.fb_time.split(':'),...__x.ig_time.split(':')].map(Number).join(',');if(d[0]!==want||d[1]!==want||sp!==ws)throw new Error('MISMATCH '+d+' '+sp+' want '+want+' '+ws);[...document.querySelectorAll('[role=button],button')].filter(b=>b.innerText.trim()==='Planla'&&b.offsetParent).pop().click();return 'planla clicked '+want+' '+sp};
+st.push('READY');}catch(e){st.push('ERR '+e)}})();'started'
