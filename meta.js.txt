@@ -1,0 +1,27 @@
+(async()=>{const I=__I__;const S=ms=>new Promise(r=>setTimeout(r,ms));
+HTMLMediaElement.prototype.play=function(){this.muted=true;return Promise.resolve()};
+const H='69d6dde9fc97237a147d9cf8b9b107563f9ecd75',PG='296c266345a812c2b52383e7483a5c797badd361';
+const get=(path)=>new Promise((res,rej)=>{const h=e=>{if(!e.data||(!e.data.__th&&!e.data.__thj))return;removeEventListener('message',h);fr.remove();if(e.data.err)rej(e.data.err);else if(e.data.__thj)res(e.data.t);else res(new File([e.data.buf],path.split('/').pop(),{type:'video/mp4'}))};addEventListener('message',h);const fr=document.createElement('iframe');fr.style.display='none';fr.src=`https://raw.githack.com/emrahyavuz09/tarih-haber-video/${PG}/index.html?`+(path.endsWith('.json')?'u=':'p=')+encodeURIComponent(path);document.body.appendChild(fr);setTimeout(()=>rej('timeout'),90000)});
+const st=window.__st=[];try{
+const L=JSON.parse(await get(H+'/v2_manifest.json'));const x=L[I];window.__x=x;
+let file=await get(H+'/videos/'+x.f);st.push('file '+file.size);
+const oc=HTMLInputElement.prototype.click;HTMLInputElement.prototype.click=function(){if(this.type==='file'&&file){const f=file;file=null;const el=this;setTimeout(()=>{const dt=new DataTransfer();dt.items.add(f);el.files=dt.files;el.dispatchEvent(new Event('input',{bubbles:true}));el.dispatchEvent(new Event('change',{bubbles:true}))},50);return}return oc.call(this)};
+let vb;for(let k=0;k<20&&!(vb=[...document.querySelectorAll('[role=button],button')].find(b=>b.innerText.trim()==='Video Ekle'));k++)await S(500);
+vb.click();
+for(let k=0;k<120&&!/%100/.test(document.body.innerText);k++)await S(1000);
+st.push(/%100/.test(document.body.innerText)?'upload100':'UPLOAD NOT DONE');
+const sw=document.querySelector('input[type=checkbox][aria-label^="Gönderiyi Facebook ve Instagram"]');if(!sw.checked)sw.click();await S(1500);
+const paste=async t=>{const ed=document.querySelector('[contenteditable=true]');ed.focus();const dt=new DataTransfer();dt.setData('text/plain',t);ed.dispatchEvent(new ClipboardEvent('paste',{clipboardData:dt,bubbles:true,cancelable:true}));await S(900);return ed.innerText.trim()};
+document.querySelector('[role=tab][aria-label="Facebook"]').click();await S(900);
+let a=await paste(x.fb);st.push('fb '+a.length);
+document.querySelector('[role=tab][aria-label="Instagram"]').click();await S(1200);
+let b=await paste(x.ig);st.push('ig '+b.length+' '+(b.slice(0,15)===x.ig.slice(0,15)));
+document.querySelector('[role=tab][aria-label="Facebook"]').click();await S(900);
+const fbt=document.querySelector('[contenteditable=true]').innerText.trim();st.push('fbcheck '+(fbt.slice(0,15)===x.fb.slice(0,15))+' '+fbt.endsWith('yansıtmayabilir.'));
+const btn=t=>[...document.querySelectorAll('[role=button],button')].filter(b=>b.innerText.trim()===t&&b.offsetParent).pop();
+btn('İleri').click();await S(2500);btn('İleri').click();await S(2500);
+btn('Planla').click();await S(1500);
+const spin=(el,tg)=>{el.focus();for(let k=0;k<80;k++){const v=parseInt(el.getAttribute('aria-valuenow'));if(v===tg)return true;const key=v<tg?'ArrowUp':'ArrowDown';el.dispatchEvent(new KeyboardEvent('keydown',{key,code:key,keyCode:key==='ArrowUp'?38:40,bubbles:true,cancelable:true}))}return false};
+const sp=[...document.querySelectorAll('[role=spinbutton]')];const [fh,fm]=x.fb_time.split(':').map(Number),[ih,im]=x.ig_time.split(':').map(Number);
+st.push('spin '+[spin(sp[0],fh),spin(sp[1],fm),spin(sp[2],ih),spin(sp[3],im)].join(','));
+st.push('READY');}catch(e){st.push('ERR '+e)}})();'started'
